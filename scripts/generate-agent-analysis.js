@@ -607,7 +607,152 @@ try {
         };
     });
 
-    // 7. commentaryHints
+    // 7. Helper to build window analysis for Botmanen summary
+    const buildWindowAnalysis = (windowSize) => {
+        if (playedMatches.length === 0) {
+            return {
+                matches: [],
+                participantPoints: [],
+                topPerformers: [],
+                perfectScores: [],
+                biggestRisers: [],
+                biggestFallers: [],
+                zeroPointers: []
+            };
+        }
+
+        const startIdx = Math.max(0, playedMatches.length - windowSize);
+        const subMatchesInWindow = playedMatches.slice(startIdx);
+        const startMatch = subMatchesInWindow[0];
+        const leaderboardBefore = getLeaderboardAtState(startMatch.nr - 1, matches, textResults, workbook);
+
+        const participantPoints = currentLeaderboard.map(nowP => {
+            const beforeP = leaderboardBefore.find(x => x.sheetName === nowP.sheetName) || { rank: currentLeaderboard.length, totalPoints: 0 };
+            
+            let pointsInWindow = 0;
+            let exactResultsInWindow = 0;
+            const pointsByMatch = [];
+
+            subMatchesInWindow.forEach(m => {
+                const pm = nowP.matches[m.nr - 1];
+                let pts = null;
+                let guessStr = null;
+                let winnerCorrect = null;
+                let exactCorrect = null;
+
+                if (pm) {
+                    pts = pm.points;
+                    if (pm.hasGuess) {
+                        guessStr = `${pm.guess1}-${pm.guess2}`;
+                        if (pts !== null) {
+                            winnerCorrect = (Math.sign(pm.guess1 - pm.guess2) === Math.sign(m.goals1 - m.goals2));
+                            exactCorrect = (pts === 6);
+                        }
+                    }
+                    if (pts !== null) {
+                        pointsInWindow += pts;
+                        if (pts === 6) exactResultsInWindow++;
+                    }
+                }
+
+                pointsByMatch.push({
+                    matchNr: m.nr,
+                    points: pts,
+                    guess: guessStr,
+                    actual: `${m.goals1}-${m.goals2}`,
+                    isWinnerCorrect: winnerCorrect,
+                    isExactCorrect: exactCorrect
+                });
+            });
+
+            return {
+                name: nowP.name,
+                rankBeforeWindow: beforeP.rank,
+                rankNow: nowP.rank,
+                rankChange: beforeP.rank - nowP.rank,
+                pointsInWindow: pointsInWindow,
+                totalPointsNow: nowP.totalPoints,
+                exactResultsInWindow: exactResultsInWindow,
+                pointsByMatch: pointsByMatch
+            };
+        });
+
+        // Sort participantPoints by pointsInWindow desc, then exact desc, then rankNow asc
+        participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.rankNow - b.rankNow);
+
+        const matchesSummary = subMatchesInWindow.map(m => ({
+            nr: m.nr,
+            team1: m.team1,
+            team2: m.team2,
+            result: `${m.goals1}-${m.goals2}`
+        }));
+
+        const topPerformers = participantPoints.slice(0, 5).map(p => ({
+            name: p.name,
+            pointsInWindow: p.pointsInWindow,
+            exactResultsInWindow: p.exactResultsInWindow
+        }));
+
+        const perfectScores = [];
+        participantPoints.forEach(p => {
+            p.pointsByMatch.forEach(pm => {
+                if (pm.points === 6) {
+                    const m = subMatchesInWindow.find(x => x.nr === pm.matchNr);
+                    perfectScores.push({
+                        name: p.name,
+                        matchNr: pm.matchNr,
+                        match: `${m.team1}–${m.team2}`,
+                        guess: pm.guess,
+                        actual: pm.actual
+                    });
+                }
+            });
+        });
+
+        const biggestRisers = [...participantPoints]
+            .filter(p => p.rankChange > 0)
+            .sort((a, b) => b.rankChange - a.rankChange || b.pointsInWindow - a.pointsInWindow)
+            .slice(0, 5)
+            .map(p => ({
+                name: p.name,
+                rankBeforeWindow: p.rankBeforeWindow,
+                rankNow: p.rankNow,
+                rankChange: p.rankChange,
+                pointsInWindow: p.pointsInWindow
+            }));
+
+        const biggestFallers = [...participantPoints]
+            .filter(p => p.rankChange < 0)
+            .sort((a, b) => a.rankChange - b.rankChange || a.pointsInWindow - b.pointsInWindow)
+            .slice(0, 5)
+            .map(p => ({
+                name: p.name,
+                rankBeforeWindow: p.rankBeforeWindow,
+                rankNow: p.rankNow,
+                rankChange: p.rankChange,
+                pointsInWindow: p.pointsInWindow
+            }));
+
+        const zeroPointers = participantPoints
+            .filter(p => p.pointsInWindow === 0)
+            .map(p => ({
+                name: p.name,
+                rankNow: p.rankNow,
+                pointsInWindow: 0
+            }));
+
+        return {
+            matches: matchesSummary,
+            participantPoints: participantPoints,
+            topPerformers: topPerformers,
+            perfectScores: perfectScores,
+            biggestRisers: biggestRisers,
+            biggestFallers: biggestFallers,
+            zeroPointers: zeroPointers
+        };
+    };
+
+    // 8. commentaryHints for original JSON
     const topPerformersLastWindow = last3MatchesWindow.participantPoints.slice(0, 3).map(p => ({
         name: p.name,
         pointsInWindow: p.pointsInWindow,
@@ -630,7 +775,6 @@ try {
         .filter(p => p.pointsInWindow === 6)
         .map(p => p.name);
 
-    // Tight groups (difference in points between 1st and 4th place is <= 3)
     const tightGroups = [];
     groups.forEach(g => {
         const groupMatches = matches.filter(m => m.group === g);
@@ -670,7 +814,7 @@ try {
         participantsNeedingComeback
     };
 
-    // 8. Construct final JSON
+    // 9. Construct original agent-analysis.json
     const finalJson = {
         schemaVersion: 1,
         generatedAt: new Date().toISOString(),
@@ -710,19 +854,128 @@ try {
         commentaryHints: commentaryHints
     };
 
+    // 10. Construct new botmanen-summary.json
+    const latestPlayedMatches = [];
+    if (playedMatches.length > 0) {
+        const L = playedMatches[playedMatches.length - 1];
+        const latestDatePrefix = L.date.split(' ')[0];
+        playedMatches
+            .filter(m => m.date.startsWith(latestDatePrefix))
+            .forEach(m => {
+                latestPlayedMatches.push({
+                    nr: m.nr,
+                    date: m.date,
+                    group: m.group,
+                    team1: m.team1,
+                    team2: m.team2,
+                    goals1: m.goals1,
+                    goals2: m.goals2
+                });
+            });
+    }
+
+    const leaderboardTop = currentLeaderboard.slice(0, 10).map(p => ({
+        rank: p.rank,
+        name: p.name,
+        totalPoints: p.totalPoints,
+        matchPoints: p.matchPoints,
+        exactlyCorrect: p.exactlyCorrect
+    }));
+
+    const last3Analysis = buildWindowAnalysis(3);
+    const last5Analysis = buildWindowAnalysis(5);
+
+    const leader = currentLeaderboard.length > 0 ? {
+        name: currentLeaderboard[0].name,
+        points: currentLeaderboard[0].totalPoints
+    } : { name: "", points: 0 };
+
+    const closestChasers = currentLeaderboard
+        .slice(1, 6)
+        .map(p => ({
+            name: p.name,
+            rank: p.rank,
+            points: p.totalPoints,
+            pointsBehindLeader: leader.points - p.totalPoints
+        }));
+
+    let tightTopComment = "Kärjessä ei ole merkittävää pistekehitystä.";
+    if (closestChasers.length > 0) {
+        const diff = closestChasers[0].pointsBehindLeader;
+        if (diff === 0) {
+            tightTopComment = "Kärjessä on tasapeli!";
+        } else if (diff === 1) {
+            tightTopComment = "Kärki on yhden pisteen sisällä.";
+        } else if (diff <= 3) {
+            tightTopComment = `Kärki on erittäin tiukka, eroa vain ${diff} pistettä.`;
+        } else {
+            tightTopComment = `Johtaja pitää ${diff} pisteen eron seuraavaan.`;
+        }
+    }
+
+    const suggestParts = [];
+    if (currentLeaderboard.length > 0) {
+        suggestParts.push(`Koko kisan kärjessä on ${leader.name} (${leader.points}p).`);
+        if (closestChasers.length > 0) {
+            const firstChaser = closestChasers[0];
+            suggestParts.push(`Lähimpänä haastajana on ${firstChaser.name} (${firstChaser.points}p, eroa vain ${firstChaser.pointsBehindLeader}p).`);
+        }
+        if (last3Analysis.topPerformers.length > 0) {
+            const tp = last3Analysis.topPerformers[0];
+            suggestParts.push(`Viimeisen 3 ottelun aikana parasta tahtia on pitänyt ${tp.name} keräten ${tp.pointsInWindow}p.`);
+        }
+        if (last3Analysis.biggestRisers.length > 0) {
+            const riser = last3Analysis.biggestRisers[0];
+            suggestParts.push(`Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut ${riser.name} (+${riser.rankChange} sijaa).`);
+        }
+        if (last3Analysis.biggestFallers.length > 0) {
+            const faller = last3Analysis.biggestFallers[0];
+            suggestParts.push(`Eniten sijoitustaan menetti ${faller.name} (${faller.rankChange} sijaa).`);
+        }
+        if (last3Analysis.perfectScores.length > 0) {
+            const exacts = last3Analysis.perfectScores.slice(0, 3).map(ps => `${ps.name} (${ps.match} veikkaus ${ps.guess})`);
+            suggestParts.push(`Täydellisiä 6 pisteen osumia saivat: ${exacts.join(', ')}.`);
+        }
+    }
+
+    const botmanenJson = {
+        schemaVersion: 2,
+        generatedAt: new Date().toISOString(),
+        summary: {
+            playedMatchesCount: playedCount,
+            totalMatches: 72,
+            lastPlayedMatchNr: summaryLastMatchNr,
+            latestPlayedDate: summaryLatestDate,
+            participantCount: currentLeaderboard.length
+        },
+        latestPlayedMatches: latestPlayedMatches,
+        leaderboardTop: leaderboardTop,
+        last3MatchesAnalysis: last3Analysis,
+        last5MatchesAnalysis: last5Analysis,
+        commentaryHints: {
+            leader: leader,
+            closestChasers: closestChasers,
+            tightTopComment: tightTopComment,
+            suggestedFinnishSummary: suggestParts.join(" ")
+        }
+    };
+
     // Ensure output dir exists
     if (!fs.existsSync(outputDir)) {
         fs.mkdirSync(outputDir, { recursive: true });
     }
 
     fs.writeFileSync(outputPath, JSON.stringify(finalJson, null, 2));
+    const botmanenOutputPath = path.join(outputDir, 'botmanen-summary.json');
+    fs.writeFileSync(botmanenOutputPath, JSON.stringify(botmanenJson, null, 2));
 
     // Console logs (requirement 9)
     console.log(`\n=== Agent Analysis Generation Successful ===`);
     console.log(`Matches read: 72`);
     console.log(`Played matches found: ${playedCount}`);
     console.log(`Participants found: ${currentLeaderboard.length}`);
-    console.log(`Output written to: ${outputPath}\n`);
+    console.log(`Output written to: ${outputPath}`);
+    console.log(`Output written to: ${botmanenOutputPath}\n`);
 
 } catch (err) {
     console.error('Error generating agent analysis:', err);
