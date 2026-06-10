@@ -234,6 +234,11 @@ function calculateLeaderboard(customMatches, customStandings, customFinalists, c
         const pSheet = workbook.Sheets[sheetName];
         if (!pSheet) continue;
         const getPValue = (addr) => pSheet[addr] ? pSheet[addr].v : undefined;
+        const nameInSheet = getPValue('H2');
+        const nameInRow = row[2];
+        if ((!nameInSheet || !String(nameInSheet).trim()) && (!nameInRow || !String(nameInRow).trim())) {
+            continue;
+        }
         const participantName = getPValue('H2') ? String(getPValue('H2')).trim() : (row[2] ? String(row[2]).trim() : `Osallistuja ${sheetName}`);
         
         let matchPoints = 0, exactlyCorrect = 0;
