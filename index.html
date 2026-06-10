@@ -2744,11 +2744,11 @@
                     showPlayerProfile(p.sheetName);
                 };
 
-                let rankContent = p.rank;
+                let rankContent = '';
                 let rankClass = `rank-${p.rank}`;
-                if (p.rank === 1) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span>';
-                else if (p.rank === 2) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span>';
-                else if (p.rank === 3) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span>';
+                if (p.rank === 1) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span> ';
+                else if (p.rank === 2) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span> ';
+                else if (p.rank === 3) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span> ';
 
                 tr.className = rankClass;
 
@@ -2764,7 +2764,7 @@
                 }
 
                 tr.innerHTML = `
-                    <td class="td-rank" style="vertical-align: middle;">${rankContent} <span style="font-size: 0.85rem; font-weight: 500; margin-left: 0.2rem;">#${p.rank}</span></td>
+                    <td class="td-rank" style="vertical-align: middle;">${rankContent}<span style="font-size: 0.85rem; font-weight: 500;">#${p.rank}</span></td>
                     <td class="td-name">${p.name}</td>
                     <td style="text-align: center;" class="td-sub-points hide-mobile">${p.matchPoints} p</td>
                     <td style="text-align: center;" class="td-sub-points hide-mobile">${groupPointsHtml}</td>

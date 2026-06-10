@@ -938,7 +938,11 @@ try {
     }));
 
     const last3Analysis = buildWindowAnalysis(3);
-    const last5Analysis = buildWindowAnalysis(5);
+    const last5Raw = buildWindowAnalysis(5);
+    const last5Analysis = {
+        participantPoints: last5Raw.participantPoints,
+        topPerformers: last5Raw.topPerformers
+    };
 
     const leader = currentLeaderboard.length > 0 ? {
         name: currentLeaderboard[0].name,
