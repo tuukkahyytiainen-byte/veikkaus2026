@@ -706,7 +706,7 @@ try {
             groupPointsAdded: p.groupPointsAdded,
             finalistsAdded: p.finalistsAdded,
             thirdFourthAdded: p.thirdFourthAdded,
-            matches: participantMatches,
+            // matches: participantMatches, // Omitted to keep JSON file size small (< 100 KB) for AI agent consumption
             aggregates: {
                 pointsLastMatch: lastMatchPoints,
                 pointsLast3Matches: last3MatchesPoints,
