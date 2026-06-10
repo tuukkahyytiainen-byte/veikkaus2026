@@ -1743,6 +1743,14 @@
                     <h2 style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;">Pisteiden kehitys otteluittain</h2>
                     <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Seuraa, kuinka kukin veikkaaja on kerännyt pisteitä pelien edetessä. Voit näyttää ja piilottaa linjoja sivupalkin valintaruuduista.</p>
                     
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+                        <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500;">Näytettävä jakso:</span>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button id="chart-filter-all" class="filter-btn active" onclick="setChartWindow('all')">Kaikki ottelut</button>
+                            <button id="chart-filter-10" class="filter-btn" onclick="setChartWindow('10')">10 viimeisintä ottelua</button>
+                        </div>
+                    </div>
+                    
                     <div id="progress-chart-placeholder" style="display: none; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 1rem; text-align: center;">
                         <i class="fa-solid fa-chart-line" style="font-size: 4rem; color: var(--text-muted); margin-bottom: 1.5rem;"></i>
                         <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;">Ei pelattuja otteluita</h3>
@@ -3249,6 +3257,7 @@
 
         // Point Progress Chart logic
         let progressChart = null;
+        let chartWindowMode = 'all';
         const chartColors = [
             '#10b981', '#f59e0b', '#3b82f6', '#8b5cf6', '#ec4899',
             '#06b6d4', '#f97316', '#a855f7', '#14b8a6', '#84cc16',
@@ -3257,6 +3266,13 @@
             '#fb7185', '#38bdf8', '#f472b6', '#a78bfa', '#fb923c',
             '#a3e635', '#4ade80', '#22d3ee', '#818cf8', '#facc15'
         ];
+
+        function setChartWindow(mode) {
+            chartWindowMode = mode;
+            document.getElementById('chart-filter-all').classList.toggle('active', mode === 'all');
+            document.getElementById('chart-filter-10').classList.toggle('active', mode === '10');
+            renderProgressChart();
+        }
 
         function renderProgressChart() {
             const container = document.getElementById('progress-chart-container');
@@ -3273,7 +3289,8 @@
             container.style.display = 'grid';
             placeholder.style.display = 'none';
             
-            const labels = playedMatches.map(m => `Ottelu ${m.nr}`);
+            const matchesToShow = chartWindowMode === '10' ? playedMatches.slice(-10) : playedMatches;
+            const labels = matchesToShow.map(m => `Ottelu ${m.nr}`);
             
             const datasets = players.map((p, pIdx) => {
                 let cumulative = 0;
@@ -3281,7 +3298,9 @@
                 playedMatches.forEach(m => {
                     const pm = p.matches[m.nr - 1];
                     cumulative += pm ? (pm.points || 0) : 0;
-                    data.push(cumulative);
+                    if (matchesToShow.includes(m)) {
+                        data.push(cumulative);
+                    }
                 });
                 
                 const color = chartColors[pIdx % chartColors.length];
