@@ -1502,6 +1502,9 @@
 
         /* Mobile responsive adjustments */
         @media (max-width: 600px) {
+            body {
+                font-size: 0.85rem !important;
+            }
             .app-container {
                 padding: 1rem 0.5rem;
             }
@@ -1517,7 +1520,7 @@
                 gap: 1rem;
             }
             .header-title-container h1 {
-                font-size: 1.5rem;
+                font-size: 1.35rem;
             }
             .logo-icon {
                 font-size: 2rem;
@@ -1527,12 +1530,34 @@
                 padding: 0.25rem;
             }
             .tab-btn {
-                padding: 0.5rem 1rem;
-                font-size: 0.85rem;
+                padding: 0.45rem 0.75rem !important;
+                font-size: 0.775rem !important;
+            }
+            .tab-btn i {
+                font-size: 0.9rem !important;
             }
             .hide-mobile {
                 display: none !important;
             }
+            
+            /* Table sizes on mobile */
+            table {
+                font-size: 0.8rem !important;
+            }
+            th {
+                font-size: 0.725rem !important;
+                padding: 0.75rem 0.4rem !important;
+            }
+            td {
+                padding: 0.7rem 0.4rem !important;
+            }
+            .td-name {
+                font-size: 0.85rem !important;
+            }
+            .td-points {
+                font-size: 0.9rem !important;
+            }
+
             .chart-container-wrapper {
                 height: 320px;
             }
@@ -1562,12 +1587,35 @@
             .match-card {
                 padding: 1rem;
             }
+
+            /* Stat cards in profile */
+            .profile-stat-card {
+                padding: 0.75rem 0.5rem !important;
+            }
+            .stat-label {
+                font-size: 0.675rem !important;
+            }
+            .stat-value {
+                font-size: 1.35rem !important;
+            }
+
+            /* Modals */
             .modal-content {
                 padding: 1.25rem;
                 max-height: 90vh;
             }
             .modal-header h2 {
                 font-size: 1.35rem;
+            }
+            .modal-table th {
+                font-size: 0.7rem !important;
+            }
+            .modal-table td {
+                font-size: 0.775rem !important;
+                padding: 0.5rem 0.35rem !important;
+            }
+            .modal-player-name {
+                font-size: 0.8rem !important;
             }
         }
 
