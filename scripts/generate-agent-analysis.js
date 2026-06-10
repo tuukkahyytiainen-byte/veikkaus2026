@@ -874,8 +874,85 @@ try {
         participantsNeedingComeback
     };
 
+    const emailLatestMatches = last3MatchesWindow.matches || [];
+    const emailTopPerformers = last3MatchesWindow.participantPoints || [];
+    const emailPerfectScores = perfectScores || [];
+    const emailLeaderboardTop = currentLeaderboard.slice(0, 12).map(p => {
+        const winInfo = last3MatchesWindow.participantPoints
+            ? last3MatchesWindow.participantPoints.find(x => x.name === p.name)
+            : null;
+        return {
+            name: p.name,
+            rankNow: p.rank,
+            totalPointsNow: p.totalPoints,
+            pointsInWindow: winInfo ? winInfo.pointsInWindow : 0
+        };
+    });
+
+    const emailBiggestRisers = last3MatchesWindow.participantPoints
+        ? last3MatchesWindow.participantPoints
+            .filter(p => p.rankChange > 0)
+            .sort((a, b) => b.rankChange - a.rankChange || b.pointsInWindow - a.pointsInWindow)
+            .slice(0, 8)
+            .map(p => ({
+                name: p.name,
+                rankChange: p.rankChange,
+                rankBeforeWindow: p.rankBeforeWindow,
+                rankNow: p.rankNow,
+                pointsInWindow: p.pointsInWindow
+            }))
+        : [];
+
+    const emailBiggestFallers = last3MatchesWindow.participantPoints
+        ? last3MatchesWindow.participantPoints
+            .filter(p => p.rankChange < 0)
+            .sort((a, b) => a.rankChange - b.rankChange || a.pointsInWindow - b.pointsInWindow)
+            .slice(0, 8)
+            .map(p => ({
+                name: p.name,
+                rankChange: p.rankChange,
+                rankBeforeWindow: p.rankBeforeWindow,
+                rankNow: p.rankNow,
+                pointsInWindow: p.pointsInWindow
+            }))
+        : [];
+
+    const emailParticipantsNeedingComeback = last3MatchesWindow.participantPoints
+        ? last3MatchesWindow.participantPoints
+            .filter(p => p.pointsInWindow <= 3 || p.rankChange < 0)
+            .sort((a, b) => a.pointsInWindow - b.pointsInWindow || a.rankChange - b.rankChange)
+            .slice(0, 8)
+            .map(p => ({
+                name: p.name,
+                rankNow: p.rankNow,
+                rankChange: p.rankChange,
+                pointsInWindow: p.pointsInWindow,
+                totalPointsNow: p.totalPointsNow
+            }))
+        : [];
+
+    const emailDigest = {
+        window: "last3Matches",
+        generatedAt: new Date().toISOString(),
+        summary: {
+            playedMatchesCount: playedCount,
+            totalMatches: 72,
+            lastPlayedMatchNr: summaryLastMatchNr,
+            latestPlayedDate: summaryLatestDate,
+            participantCount: currentLeaderboard.length
+        },
+        latestMatches: emailLatestMatches,
+        topPerformers: emailTopPerformers,
+        perfectScores: emailPerfectScores,
+        leaderboardTop: emailLeaderboardTop,
+        biggestRisers: emailBiggestRisers,
+        biggestFallers: emailBiggestFallers,
+        participantsNeedingComeback: emailParticipantsNeedingComeback
+    };
+
     // 9. Construct original agent-analysis.json
     const finalJson = {
+        emailDigest: emailDigest,
         schemaVersion: 1,
         generatedAt: new Date().toISOString(),
         source: {
