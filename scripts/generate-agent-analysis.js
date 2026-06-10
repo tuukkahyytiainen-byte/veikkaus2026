@@ -451,80 +451,184 @@ try {
     // 4. Calculate Current Leaderboard
     const currentLeaderboard = calculateLeaderboard(matches, actualStandings, actualFinalists, actual34, workbook);
 
-    // 5. Calculate Windows
+    // 5. Calculate Windows (V2 schema)
     const playedMatches = matches.filter(m => m.hasResult).sort((a, b) => a.nr - b.nr);
-    let lastMatchWindow = { participantPoints: [] };
-    let last3MatchesWindow = { participantPoints: [] };
-    let last5MatchesWindow = { participantPoints: [] };
-    let latestDateWindow = { participantPoints: [] };
+    let lastMatchWindow = { matches: [], participantPoints: [] };
+    let last3MatchesWindow = { matches: [], participantPoints: [] };
+    let last5MatchesWindow = { matches: [], participantPoints: [] };
+    let latestDateWindow = { matches: [], participantPoints: [] };
 
     let summaryLastMatchNr = 0;
     let summaryLatestDate = "";
+
+    const buildV2Window = (windowSize) => {
+        if (playedMatches.length === 0) {
+            return {
+                matches: [],
+                participantPoints: []
+            };
+        }
+
+        const startIdx = Math.max(0, playedMatches.length - windowSize);
+        const subMatchesInWindow = playedMatches.slice(startIdx);
+        const startMatch = subMatchesInWindow[0];
+        const leaderboardBefore = getLeaderboardAtState(startMatch.nr - 1, matches, textResults, workbook);
+
+        const matchesSummary = subMatchesInWindow.map(m => ({
+            nr: m.nr,
+            date: m.date,
+            group: m.group,
+            team1: m.team1,
+            team2: m.team2,
+            goals1: m.goals1,
+            goals2: m.goals2,
+            resultText: `${m.goals1}-${m.goals2}`,
+            hasResult: m.hasResult
+        }));
+
+        const participantPoints = currentLeaderboard.map(nowP => {
+            const beforeP = leaderboardBefore.find(x => x.sheetName === nowP.sheetName) || { rank: currentLeaderboard.length, totalPoints: 0 };
+            
+            let pointsInWindow = 0;
+            let exactResultsInWindow = 0;
+            const matchPoints = [];
+
+            subMatchesInWindow.forEach(m => {
+                const pm = nowP.matches[m.nr - 1];
+                let pts = null;
+                let predStr = null;
+                let exact = false;
+
+                if (pm) {
+                    pts = pm.points;
+                    if (pm.hasGuess) {
+                        predStr = `${pm.guess1}-${pm.guess2}`;
+                        exact = (pts === 6);
+                    }
+                    if (pts !== null) {
+                        pointsInWindow += pts;
+                        if (pts === 6) exactResultsInWindow++;
+                    }
+                }
+
+                matchPoints.push({
+                    matchNr: m.nr,
+                    team1: m.team1,
+                    team2: m.team2,
+                    resultText: `${m.goals1}-${m.goals2}`,
+                    predictedResultText: predStr,
+                    points: pts,
+                    exactResult: exact
+                });
+            });
+
+            return {
+                name: nowP.name,
+                rankNow: nowP.rank,
+                totalPointsNow: nowP.totalPoints,
+                pointsInWindow: pointsInWindow,
+                rankBeforeWindow: beforeP.rank,
+                rankChange: beforeP.rank - nowP.rank,
+                exactResultsInWindow: exactResultsInWindow,
+                matchPoints: matchPoints
+            };
+        });
+
+        // Sort by pointsInWindow desc, then exactResultsInWindow desc, then rankNow asc
+        participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.rankNow - b.rankNow);
+
+        return {
+            matches: matchesSummary,
+            participantPoints: participantPoints
+        };
+    };
+
+    const buildV2WindowForDate = (dateMatches) => {
+        if (dateMatches.length === 0) return { matches: [], participantPoints: [] };
+        
+        const startMatch = dateMatches[0];
+        const leaderboardBefore = getLeaderboardAtState(startMatch.nr - 1, matches, textResults, workbook);
+
+        const matchesSummary = dateMatches.map(m => ({
+            nr: m.nr,
+            date: m.date,
+            group: m.group,
+            team1: m.team1,
+            team2: m.team2,
+            goals1: m.goals1,
+            goals2: m.goals2,
+            resultText: `${m.goals1}-${m.goals2}`,
+            hasResult: m.hasResult
+        }));
+
+        const participantPoints = currentLeaderboard.map(nowP => {
+            const beforeP = leaderboardBefore.find(x => x.sheetName === nowP.sheetName) || { rank: currentLeaderboard.length, totalPoints: 0 };
+            
+            let pointsInWindow = 0;
+            let exactResultsInWindow = 0;
+            const matchPoints = [];
+
+            dateMatches.forEach(m => {
+                const pm = nowP.matches[m.nr - 1];
+                let pts = null;
+                let predStr = null;
+                let exact = false;
+
+                if (pm) {
+                    pts = pm.points;
+                    if (pm.hasGuess) {
+                        predStr = `${pm.guess1}-${pm.guess2}`;
+                        exact = (pts === 6);
+                    }
+                    if (pts !== null) {
+                        pointsInWindow += pts;
+                        if (pts === 6) exactResultsInWindow++;
+                    }
+                }
+
+                matchPoints.push({
+                    matchNr: m.nr,
+                    team1: m.team1,
+                    team2: m.team2,
+                    resultText: `${m.goals1}-${m.goals2}`,
+                    predictedResultText: predStr,
+                    points: pts,
+                    exactResult: exact
+                });
+            });
+
+            return {
+                name: nowP.name,
+                rankNow: nowP.rank,
+                totalPointsNow: nowP.totalPoints,
+                pointsInWindow: pointsInWindow,
+                rankBeforeWindow: beforeP.rank,
+                rankChange: beforeP.rank - nowP.rank,
+                exactResultsInWindow: exactResultsInWindow,
+                matchPoints: matchPoints
+            };
+        });
+
+        participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.rankNow - b.rankNow);
+
+        return {
+            matches: matchesSummary,
+            participantPoints: participantPoints
+        };
+    };
 
     if (playedMatches.length > 0) {
         const L = playedMatches[playedMatches.length - 1];
         summaryLastMatchNr = L.nr;
         summaryLatestDate = L.date;
 
-        const buildWindowData = (startMatchIdx, endMatchIdx) => {
-            const subMatchesInWindow = playedMatches.slice(startMatchIdx, endMatchIdx + 1);
-            if (subMatchesInWindow.length === 0) return [];
+        lastMatchWindow = buildV2Window(1);
+        last3MatchesWindow = buildV2Window(3);
+        last5MatchesWindow = buildV2Window(5);
 
-            const startMatch = subMatchesInWindow[0];
-            const leaderboardBefore = getLeaderboardAtState(startMatch.nr - 1, matches, textResults, workbook);
-
-            return currentLeaderboard.map(nowP => {
-                const beforeP = leaderboardBefore.find(x => x.sheetName === nowP.sheetName) || { rank: currentLeaderboard.length, totalPoints: 0 };
-                
-                let pointsInWindow = 0;
-                let exactResultsInWindow = 0;
-                subMatchesInWindow.forEach(m => {
-                    const pm = nowP.matches[m.nr - 1];
-                    if (pm && pm.points !== null) {
-                        pointsInWindow += pm.points;
-                        if (pm.points === 6) exactResultsInWindow++;
-                    }
-                });
-
-                return {
-                    name: nowP.name,
-                    sheetName: nowP.sheetName,
-                    rankNow: nowP.rank,
-                    pointsInWindow: pointsInWindow,
-                    totalPointsNow: nowP.totalPoints,
-                    rankBeforeWindow: beforeP.rank,
-                    rankChange: beforeP.rank - nowP.rank,
-                    exactResultsInWindow: exactResultsInWindow
-                };
-            });
-        };
-
-        // Last Match
-        lastMatchWindow.participantPoints = buildWindowData(playedMatches.length - 1, playedMatches.length - 1);
-        lastMatchWindow.participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.name.localeCompare(b.name));
-
-        // Last 3 Matches
-        const startIdx3 = Math.max(0, playedMatches.length - 3);
-        last3MatchesWindow.participantPoints = buildWindowData(startIdx3, playedMatches.length - 1);
-        last3MatchesWindow.participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.name.localeCompare(b.name));
-
-        // Last 5 Matches
-        const startIdx5 = Math.max(0, playedMatches.length - 5);
-        last5MatchesWindow.participantPoints = buildWindowData(startIdx5, playedMatches.length - 1);
-        last5MatchesWindow.participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.name.localeCompare(b.name));
-
-        // Latest Date
         const latestDatePrefix = L.date.split(' ')[0];
         const dateMatches = playedMatches.filter(m => m.date.startsWith(latestDatePrefix));
-        if (dateMatches.length > 0) {
-            const firstDateMatch = dateMatches[0];
-            const lastDateMatch = dateMatches[dateMatches.length - 1];
-            const startIdxDate = playedMatches.findIndex(m => m.nr === firstDateMatch.nr);
-            const endIdxDate = playedMatches.findIndex(m => m.nr === lastDateMatch.nr);
-            
-            latestDateWindow.participantPoints = buildWindowData(startIdxDate, endIdxDate);
-            latestDateWindow.participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.name.localeCompare(b.name));
-        }
+        latestDateWindow = buildV2WindowForDate(dateMatches);
     }
 
     // 6. Build Detailed Participant Data
@@ -609,107 +713,37 @@ try {
 
     // 7. Helper to build window analysis for Botmanen summary
     const buildWindowAnalysis = (windowSize) => {
-        if (playedMatches.length === 0) {
-            return {
-                matches: [],
-                participantPoints: [],
-                topPerformers: [],
-                perfectScores: [],
-                biggestRisers: [],
-                biggestFallers: [],
-                zeroPointers: []
-            };
-        }
+        const w = buildV2Window(windowSize);
+        const zeroPointers = w.participantPoints
+            .filter(p => p.pointsInWindow === 0)
+            .map(p => ({
+                name: p.name,
+                rankNow: p.rankNow,
+                pointsInWindow: 0
+            }));
 
-        const startIdx = Math.max(0, playedMatches.length - windowSize);
-        const subMatchesInWindow = playedMatches.slice(startIdx);
-        const startMatch = subMatchesInWindow[0];
-        const leaderboardBefore = getLeaderboardAtState(startMatch.nr - 1, matches, textResults, workbook);
-
-        const participantPoints = currentLeaderboard.map(nowP => {
-            const beforeP = leaderboardBefore.find(x => x.sheetName === nowP.sheetName) || { rank: currentLeaderboard.length, totalPoints: 0 };
-            
-            let pointsInWindow = 0;
-            let exactResultsInWindow = 0;
-            const pointsByMatch = [];
-
-            subMatchesInWindow.forEach(m => {
-                const pm = nowP.matches[m.nr - 1];
-                let pts = null;
-                let guessStr = null;
-                let winnerCorrect = null;
-                let exactCorrect = null;
-
-                if (pm) {
-                    pts = pm.points;
-                    if (pm.hasGuess) {
-                        guessStr = `${pm.guess1}-${pm.guess2}`;
-                        if (pts !== null) {
-                            winnerCorrect = (Math.sign(pm.guess1 - pm.guess2) === Math.sign(m.goals1 - m.goals2));
-                            exactCorrect = (pts === 6);
-                        }
-                    }
-                    if (pts !== null) {
-                        pointsInWindow += pts;
-                        if (pts === 6) exactResultsInWindow++;
-                    }
-                }
-
-                pointsByMatch.push({
-                    matchNr: m.nr,
-                    points: pts,
-                    guess: guessStr,
-                    actual: `${m.goals1}-${m.goals2}`,
-                    isWinnerCorrect: winnerCorrect,
-                    isExactCorrect: exactCorrect
-                });
-            });
-
-            return {
-                name: nowP.name,
-                rankBeforeWindow: beforeP.rank,
-                rankNow: nowP.rank,
-                rankChange: beforeP.rank - nowP.rank,
-                pointsInWindow: pointsInWindow,
-                totalPointsNow: nowP.totalPoints,
-                exactResultsInWindow: exactResultsInWindow,
-                pointsByMatch: pointsByMatch
-            };
-        });
-
-        // Sort participantPoints by pointsInWindow desc, then exact desc, then rankNow asc
-        participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.rankNow - b.rankNow);
-
-        const matchesSummary = subMatchesInWindow.map(m => ({
-            nr: m.nr,
-            team1: m.team1,
-            team2: m.team2,
-            result: `${m.goals1}-${m.goals2}`
-        }));
-
-        const topPerformers = participantPoints.slice(0, 5).map(p => ({
+        const topPerformers = w.participantPoints.slice(0, 5).map(p => ({
             name: p.name,
             pointsInWindow: p.pointsInWindow,
             exactResultsInWindow: p.exactResultsInWindow
         }));
 
         const perfectScores = [];
-        participantPoints.forEach(p => {
-            p.pointsByMatch.forEach(pm => {
+        w.participantPoints.forEach(p => {
+            p.matchPoints.forEach(pm => {
                 if (pm.points === 6) {
-                    const m = subMatchesInWindow.find(x => x.nr === pm.matchNr);
                     perfectScores.push({
                         name: p.name,
                         matchNr: pm.matchNr,
-                        match: `${m.team1}–${m.team2}`,
-                        guess: pm.guess,
-                        actual: pm.actual
+                        match: `${pm.team1}–${pm.team2}`,
+                        guess: pm.predictedResultText,
+                        actual: pm.resultText
                     });
                 }
             });
         });
 
-        const biggestRisers = [...participantPoints]
+        const biggestRisers = [...w.participantPoints]
             .filter(p => p.rankChange > 0)
             .sort((a, b) => b.rankChange - a.rankChange || b.pointsInWindow - a.pointsInWindow)
             .slice(0, 5)
@@ -721,7 +755,7 @@ try {
                 pointsInWindow: p.pointsInWindow
             }));
 
-        const biggestFallers = [...participantPoints]
+        const biggestFallers = [...w.participantPoints]
             .filter(p => p.rankChange < 0)
             .sort((a, b) => a.rankChange - b.rankChange || a.pointsInWindow - b.pointsInWindow)
             .slice(0, 5)
@@ -733,17 +767,9 @@ try {
                 pointsInWindow: p.pointsInWindow
             }));
 
-        const zeroPointers = participantPoints
-            .filter(p => p.pointsInWindow === 0)
-            .map(p => ({
-                name: p.name,
-                rankNow: p.rankNow,
-                pointsInWindow: 0
-            }));
-
         return {
-            matches: matchesSummary,
-            participantPoints: participantPoints,
+            matches: w.matches,
+            participantPoints: w.participantPoints,
             topPerformers: topPerformers,
             perfectScores: perfectScores,
             biggestRisers: biggestRisers,
@@ -752,28 +778,57 @@ try {
         };
     };
 
-    // 8. commentaryHints for original JSON
-    const topPerformersLastWindow = last3MatchesWindow.participantPoints.slice(0, 3).map(p => ({
-        name: p.name,
-        pointsInWindow: p.pointsInWindow,
-        exactResultsInWindow: p.exactResultsInWindow
-    }));
+    // 8. commentaryHints for original JSON (V2 structure)
+    const topPerformersLastWindow = last3MatchesWindow.participantPoints
+        .slice(0, 5)
+        .map(p => ({
+            name: p.name,
+            pointsInWindow: p.pointsInWindow,
+            rankNow: p.rankNow,
+            totalPointsNow: p.totalPointsNow
+        }));
 
     const biggestRisers = [...last3MatchesWindow.participantPoints]
-        .sort((a, b) => b.rankChange - a.rankChange)
-        .slice(0, 3)
         .filter(p => p.rankChange > 0)
-        .map(p => ({ name: p.name, rankChange: p.rankChange, rankNow: p.rankNow }));
+        .sort((a, b) => b.rankChange - a.rankChange || b.pointsInWindow - a.pointsInWindow)
+        .slice(0, 5)
+        .map(p => ({
+            name: p.name,
+            rankChange: p.rankChange,
+            rankBeforeWindow: p.rankBeforeWindow,
+            rankNow: p.rankNow,
+            pointsInWindow: p.pointsInWindow
+        }));
 
     const biggestFallers = [...last3MatchesWindow.participantPoints]
-        .sort((a, b) => a.rankChange - b.rankChange)
-        .slice(0, 3)
         .filter(p => p.rankChange < 0)
-        .map(p => ({ name: p.name, rankChange: p.rankChange, rankNow: p.rankNow }));
+        .sort((a, b) => a.rankChange - b.rankChange || a.pointsInWindow - b.pointsInWindow)
+        .slice(0, 5)
+        .map(p => ({
+            name: p.name,
+            rankChange: p.rankChange,
+            rankBeforeWindow: p.rankBeforeWindow,
+            rankNow: p.rankNow,
+            pointsInWindow: p.pointsInWindow
+        }));
 
-    const perfectScores = lastMatchWindow.participantPoints
-        .filter(p => p.pointsInWindow === 6)
-        .map(p => p.name);
+    const perfectScores = last3MatchesWindow.participantPoints
+        .filter(p => p.exactResultsInWindow > 0)
+        .map(p => {
+            const perfMatches = p.matchPoints
+                .filter(mp => mp.exactResult)
+                .map(mp => ({
+                    matchNr: mp.matchNr,
+                    team1: mp.team1,
+                    team2: mp.team2,
+                    resultText: mp.resultText
+                }));
+            return {
+                name: p.name,
+                exactResultsInWindow: p.exactResultsInWindow,
+                matches: perfMatches
+            };
+        });
 
     const tightGroups = [];
     groups.forEach(g => {
