@@ -1,0 +1,3703 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM 2026 Veikkaussovellus</title>
+    <meta name="description" content="Jalkapallon MM-kisojen 2026 veikkauksen virallinen pistelaskenta ja tulospalvelu. Seuraa sijoituksia ja vertaile veikkauksia reaaliajassa.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- SheetJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --bg-base: #0b0f19;
+            --bg-surface: rgba(20, 26, 46, 0.65);
+            --bg-surface-hover: rgba(30, 39, 69, 0.8);
+            --bg-card: rgba(17, 24, 43, 0.9);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.15);
+            
+            --primary: #10b981; /* emerald-500 */
+            --primary-glow: rgba(16, 185, 129, 0.15);
+            --accent-gold: #f59e0b; /* amber-500 */
+            --accent-gold-glow: rgba(245, 158, 11, 0.15);
+            --accent-blue: #3b82f6; /* blue-500 */
+            --accent-blue-glow: rgba(59, 130, 246, 0.15);
+            --danger: #ef4444; /* red-500 */
+            --danger-glow: rgba(239, 68, 68, 0.15);
+            
+            --text-primary: #f8fafc; /* slate-50 */
+            --text-secondary: #94a3b8; /* slate-400 */
+            --text-muted: #64748b; /* slate-500 */
+            
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            --shadow-glow: 0 0 20px rgba(16, 185, 129, 0.2);
+            --glass-blur: blur(16px);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-base);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(245, 158, 11, 0.03) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-base);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Container Layout */
+        .app-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Header section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .header-title-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.3));
+        }
+
+        .header-title-container h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            background: linear-gradient(to right, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .status-badge {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .status-badge i {
+            color: var(--primary);
+        }
+
+        .status-badge.accent i {
+            color: var(--accent-gold);
+        }
+
+        /* Tab Navigation */
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(15, 23, 42, 0.4);
+            padding: 0.35rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none; /* Hide scrollbar Firefox */
+        }
+        .tabs::-webkit-scrollbar {
+            display: none; /* Hide scrollbar Chrome/Safari */
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .tab-btn.active {
+            color: var(--text-primary);
+            background: var(--bg-surface-hover);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-premium);
+        }
+
+        .tab-btn i {
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .tab-btn.active i {
+            color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        /* Views */
+        .tab-view {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .tab-view.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Glassmorphic card base style */
+        .glass-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.75rem;
+            backdrop-filter: var(--glass-blur);
+            box-shadow: var(--shadow-premium);
+            transition: var(--transition-smooth);
+        }
+
+        .glass-card:hover {
+            border-color: var(--border-hover);
+        }
+
+        /* Welcome/Upload section */
+        #upload-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-top: 3rem;
+            border: 2px dashed rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            background: rgba(20, 26, 46, 0.3);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        #upload-section:hover {
+            border-color: var(--primary);
+            background: rgba(16, 185, 129, 0.02);
+        }
+
+        .upload-icon {
+            font-size: 4rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        #upload-section:hover .upload-icon {
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .upload-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .upload-desc {
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+
+        .upload-btn {
+            background: linear-gradient(135deg, var(--primary), #059669);
+            color: white;
+            border: none;
+            padding: 0.85rem 2rem;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+            transition: var(--transition-smooth);
+        }
+
+        .upload-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Leaderboard table styles */
+        .search-bar-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .input-wrapper {
+            position: relative;
+            flex-grow: 1;
+            min-width: 280px;
+        }
+
+        .input-wrapper i {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border-color);
+            padding: 0.85rem 1.25rem 0.85rem 3rem;
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background: rgba(15, 23, 42, 0.6);
+            color: var(--text-secondary);
+            font-family: var(--font-display);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            padding: 1.2rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 1.1rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+        }
+
+        tbody tr {
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        tbody tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .td-rank {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.1rem;
+            width: 80px;
+        }
+
+        .rank-medal {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 1rem;
+        }
+
+        .rank-1 .rank-medal { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+        .rank-2 .rank-medal { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.3); }
+        .rank-3 .rank-medal { background: rgba(180, 83, 9, 0.15); color: #d97706; border: 1px solid rgba(180, 83, 9, 0.3); }
+
+        .td-name {
+            font-family: var(--font-display);
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 1.05rem;
+        }
+
+        .td-points {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .td-sub-points {
+            color: var(--text-secondary);
+        }
+
+        .badge-exact {
+            background: var(--accent-gold-glow);
+            color: var(--accent-gold);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            font-family: var(--font-display);
+        }
+
+        /* Matches view styling */
+        .filter-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-family: var(--font-display);
+            padding: 0.45rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .filter-btn:hover {
+            color: var(--text-primary);
+            border-color: var(--border-hover);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-glow);
+            color: var(--primary);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .matches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .match-card {
+            background: rgba(17, 24, 43, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: var(--transition-smooth);
+            backdrop-filter: var(--glass-blur);
+            cursor: pointer;
+        }
+
+        .match-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-2px);
+            background: rgba(17, 24, 43, 0.8);
+        }
+
+        .match-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.025em;
+        }
+
+        .match-group-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+
+        .match-teams {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .match-team {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .team-info {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .team-flag {
+            font-size: 1.25rem;
+        }
+
+        .match-score {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.15rem;
+            width: 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .match-score.empty {
+            color: var(--text-muted);
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        .match-footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 0.75rem;
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .match-stats {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .stat-item.exact i { color: var(--accent-gold); }
+        .stat-item.sign i { color: var(--primary); }
+
+        /* Groups View Styling */
+        .groups-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .group-card {
+            background: rgba(17, 24, 43, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .group-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .group-table-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.45rem 0.25rem;
+            font-size: 0.875rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            align-items: center;
+        }
+
+        .group-table-row:last-child {
+            border-bottom: none;
+        }
+
+        .group-pos {
+            font-family: var(--font-display);
+            font-weight: 700;
+            width: 20px;
+            color: var(--text-muted);
+        }
+
+        .group-pos-1 { color: var(--accent-gold); }
+        .group-pos-2 { color: var(--text-secondary); }
+
+        .group-team-name {
+            flex-grow: 1;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Profiles View Styling */
+        .player-selector-container {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .player-dropdown {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.85rem 1.5rem;
+            border-radius: 10px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.95rem;
+            outline: none;
+            cursor: pointer;
+            min-width: 250px;
+            transition: var(--transition-smooth);
+        }
+
+        .player-dropdown:focus {
+            border-color: var(--primary);
+        }
+
+        .player-profile-header {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-stat-card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .profile-stat-card:hover {
+            border-color: var(--border-hover);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .stat-value.points {
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+        }
+
+        .profile-coupon-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            .profile-coupon-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .coupon-section-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ffffff;
+        }
+
+        .coupon-section-title i {
+            color: var(--primary);
+        }
+
+        .player-matches-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            max-height: 800px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .player-match-row {
+            background: rgba(15, 23, 42, 0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 0.9rem 1.25rem;
+            display: grid;
+            grid-template-columns: 40px 1.5fr 1fr 1fr 50px;
+            align-items: center;
+            gap: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        @media (max-width: 600px) {
+            .player-match-row {
+                grid-template-columns: 30px 1fr 1fr 40px;
+                grid-template-rows: auto auto;
+                gap: 0.5rem;
+            }
+            .player-match-row .pm-meta {
+                grid-column: 1 / -1;
+            }
+        }
+
+        .pm-num {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .pm-teams {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .pm-guess-block, .pm-result-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .pm-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .pm-val {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .pm-points {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-align: center;
+            border-radius: 6px;
+            padding: 0.25rem 0.5rem;
+        }
+
+        /* Color classes for scoring */
+        .pts-6 { background: rgba(16, 185, 129, 0.12); color: var(--primary); border: 1px solid rgba(16, 185, 129, 0.3); }
+        .pts-4-5 { background: rgba(59, 130, 246, 0.12); color: var(--accent-blue); border: 1px solid rgba(59, 130, 246, 0.3); }
+        .pts-1-3 { background: rgba(245, 158, 11, 0.12); color: var(--accent-gold); border: 1px solid rgba(245, 158, 11, 0.3); }
+        .pts-0 { background: rgba(239, 68, 68, 0.08); color: var(--danger); border: 1px solid rgba(239, 68, 68, 0.2); }
+        .pts-none { background: rgba(255, 255, 255, 0.03); color: var(--text-secondary); border: 1px solid var(--border-color); }
+
+        .player-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .medals-box {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+
+        .medals-title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .medals-title i { color: var(--accent-gold); }
+
+        .medals-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .medal-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .medal-name {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .medal-score {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Side-by-side comparison tables */
+        .standing-compare-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .compare-row {
+            display: grid;
+            grid-template-columns: 25px 1fr 1fr 40px;
+            align-items: center;
+            padding: 0.5rem 0.25rem;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .compare-row:last-child {
+            border-bottom: none;
+        }
+
+        .compare-row.correct {
+            background: rgba(16, 185, 129, 0.03);
+        }
+
+        .compare-row.incorrect {
+            background: rgba(239, 68, 68, 0.02);
+        }
+
+        .compare-pos {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .compare-guess {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .compare-actual {
+            color: var(--text-secondary);
+        }
+
+        .compare-points {
+            font-family: var(--font-display);
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .compare-points.correct { color: var(--primary); }
+        .compare-points.incorrect { color: var(--danger); }
+
+        .compare-header {
+            display: grid;
+            grid-template-columns: 25px 1fr 1fr 40px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 0.25rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Rules section */
+        .rules-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .rules-block h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .rules-block h3 i {
+            color: var(--primary);
+        }
+
+        .rules-block p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .rules-example-box {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.25rem;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .example-card {
+            background: rgba(10, 15, 30, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .example-title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .example-body {
+            font-size: 0.825rem;
+            color: var(--text-secondary);
+        }
+
+        .example-pts {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Loading indicator */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg-base);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid var(--border-color);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Progress Layout */
+        .progress-layout {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 992px) {
+            .progress-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .chart-container-wrapper {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            background: rgba(15, 23, 42, 0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .legend-sidebar {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            max-height: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .legend-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .legend-actions {
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .legend-action-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .legend-action-btn:hover {
+            background: var(--bg-surface-hover);
+            color: var(--text-primary);
+            border-color: var(--border-hover);
+        }
+
+        .legend-list {
+            overflow-y: auto;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-right: 0.25rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.85rem;
+            cursor: pointer;
+            padding: 0.3rem 0.5rem;
+            border-radius: 6px;
+            transition: var(--transition-smooth);
+            user-select: none;
+        }
+
+        .legend-item:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .legend-checkbox {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1.5px solid var(--text-muted);
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            transition: var(--transition-smooth);
+            background: transparent;
+        }
+
+        .legend-checkbox:checked {
+            border-color: var(--color-indicator);
+            background-color: var(--color-indicator);
+        }
+
+        .legend-checkbox:checked::after {
+            content: '✓';
+            position: absolute;
+            color: #0b0f19;
+            font-size: 10px;
+            font-weight: 900;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .legend-color-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            background: var(--color-indicator);
+            box-shadow: 0 0 5px var(--color-indicator);
+        }
+
+        .legend-player-name {
+            font-weight: 500;
+            color: var(--text-secondary);
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .legend-item.active .legend-player-name {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .legend-player-points {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .legend-item.active .legend-player-points {
+            color: var(--primary);
+        }
+
+        /* Live pulse badge */
+        .live-pulse-badge {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: var(--primary);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse-animation 1.5s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        /* Finished status badge */
+        .status-finished-badge {
+            background: rgba(148, 163, 184, 0.1);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            color: var(--text-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(11, 15, 25, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            animation: fadeIn 0.25s ease-out;
+        }
+
+        /* Modal Content Card */
+        .modal-content {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.5rem;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            line-height: 1;
+        }
+
+        .modal-close-btn:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        .modal-header {
+            margin-bottom: 1rem;
+            padding-right: 2rem;
+        }
+
+        .modal-header h2 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .modal-body-scroll {
+            overflow-y: auto;
+            flex-grow: 1;
+            padding-right: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        /* Modal Table Styling */
+        .modal-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .modal-table th {
+            padding: 0.85rem 0.5rem;
+            background: rgba(15, 23, 42, 0.4);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .modal-table td {
+            padding: 0.9rem 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            font-size: 0.95rem;
+            vertical-align: middle;
+        }
+
+        .modal-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .modal-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .modal-player-name {
+            font-weight: 600;
+            color: #ffffff;
+            font-family: var(--font-display);
+        }
+
+        .modal-guess-val {
+            font-family: var(--font-display);
+            font-weight: 700;
+        }
+
+        /* Simulation Layout */
+        .simulation-layout {
+            display: grid;
+            grid-template-columns: 1.25fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+        @media (max-width: 1024px) {
+            .simulation-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        .sim-header-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .sim-toggle-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            user-select: none;
+        }
+        .sim-matches-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            max-height: 700px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+        .sim-match-row {
+            background: rgba(15, 23, 42, 0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            transition: var(--transition-smooth);
+        }
+        .sim-match-row:hover {
+            border-color: var(--border-hover);
+            background: rgba(15, 23, 42, 0.5);
+        }
+        .sim-teams-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            flex-grow: 1;
+        }
+        .sim-team-line {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .sim-inputs-block {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .sim-score-input {
+            width: 45px;
+            height: 36px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: #ffffff;
+            text-align: center;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition-smooth);
+            -moz-appearance: textfield;
+        }
+        .sim-score-input::-webkit-outer-spin-button,
+        .sim-score-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .sim-score-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 10px var(--primary-glow);
+            background: rgba(15, 23, 42, 0.8);
+        }
+        .sim-score-divider {
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+        .rank-change {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.1rem 0.35rem;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.15rem;
+            margin-left: 0.4rem;
+            vertical-align: middle;
+        }
+        .rank-change.up {
+            color: var(--primary);
+            background: rgba(16, 185, 129, 0.1);
+        }
+        .rank-change.down {
+            color: var(--danger);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="loading-overlay" id="loading-spinner">
+        <div class="spinner"></div>
+        <div class="loading-text" id="loading-message">Ladataan veikkaustietoja...</div>
+    </div>
+
+    <div class="app-container">
+        <header>
+            <div class="header-title-container">
+                <i class="fa-solid fa-trophy logo-icon"></i>
+                <div>
+                    <h1>MM 2026 Veikkaus</h1>
+                </div>
+            </div>
+            <div class="header-meta" id="header-stats" style="display: none;">
+                <div class="status-badge">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span id="played-matches-badge">Pelatut ottelut: 0 / 72</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Drag & Drop Zone / Local Upload Fallback -->
+        <div class="glass-card" id="upload-zone" style="display: none; margin-bottom: 2rem;">
+            <div id="upload-section" onclick="document.getElementById('file-input').click()">
+                <i class="fa-solid fa-file-excel upload-icon"></i>
+                <div class="upload-title">MM2026_pistelaskenta.xlsx -tiedostoa ei voitu ladata automaattisesti</div>
+                <div class="upload-desc">
+                    Jos avasit HTML-tiedoston suoraan tietokoneeltasi (file://-osoite), selain estää tiedoston lataamisen automaattisesti turvallisuussyistä. 
+                    Vedä ja pudota Excel-tiedosto tähän, tai klikkaa painiketta valitaksesi sen tietokoneeltasi.
+                </div>
+                <button class="upload-btn">Valitse Excel-tiedosto</button>
+                <input type="file" id="file-input" style="display: none;" accept=".xlsx">
+            </div>
+        </div>
+
+        <div id="main-content" style="display: none;">
+            <!-- Tab buttons -->
+            <nav class="tabs">
+                <button class="tab-btn active" onclick="switchTab('leaderboard')">
+                    <i class="fa-solid fa-list-ol"></i> Sarjataulukko
+                </button>
+                <button class="tab-btn" onclick="switchTab('matches')">
+                    <i class="fa-solid fa-calendar-days"></i> Ottelut
+                </button>
+                <button class="tab-btn" onclick="switchTab('groups')">
+                    <i class="fa-solid fa-cubes"></i> Lohkot
+                </button>
+                <button class="tab-btn" onclick="switchTab('profiles')">
+                    <i class="fa-solid fa-user"></i> Osallistujaprofiilit
+                </button>
+                <button class="tab-btn" onclick="switchTab('progress')">
+                    <i class="fa-solid fa-chart-line"></i> Pistekehitys
+                </button>
+                <button class="tab-btn" onclick="switchTab('simulation')">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Simulaatio
+                </button>
+                <button class="tab-btn" onclick="switchTab('rules')">
+                    <i class="fa-solid fa-circle-info"></i> Säännöt
+                </button>
+            </nav>
+
+            <!-- 1. Leaderboard View -->
+            <section class="tab-view active" id="view-leaderboard">
+                <div class="glass-card">
+                    <div class="search-bar-container">
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" class="search-input" id="search-players" placeholder="Hae osallistujaa..." oninput="filterLeaderboard()">
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sija</th>
+                                    <th>Osallistuja</th>
+                                    <th style="text-align: center;">Ottelupisteet</th>
+                                    <th style="text-align: center;">Lohkopisteet</th>
+                                    <th style="text-align: center;">Finaalipisteet</th>
+                                    <th style="text-align: center;">Täsmälleen oikein</th>
+                                    <th style="text-align: center;">Yhteensä</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-body">
+                                <!-- Leaderboard data populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="leaderboard-explanation" style="margin-top: 1rem; padding: 0.75rem 1.25rem; border-radius: 8px; background: rgba(15, 23, 42, 0.25); border: 1px solid var(--border-color); font-size: 0.825rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                        <span id="group-points-exp-note">* Lohkopisteet lasketaan yhteispisteisiin vasta, kun kaikki lohkovaiheen ottelut on pelattu.</span>
+                        <span id="final-points-exp-note">** Finaali- ja pronssipisteet lasketaan yhteispisteisiin vasta, kun otteluparit ovat selvillä.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Matches View -->
+            <section class="tab-view" id="view-matches">
+                <div class="glass-card">
+                    <div class="filter-tabs" id="match-group-filters">
+                        <!-- Group filters populated dynamically -->
+                    </div>
+                    <div class="matches-grid" id="matches-grid">
+                        <!-- Match cards populated dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Groups View -->
+            <section class="tab-view" id="view-groups">
+                <div class="groups-grid" id="groups-grid">
+                    <!-- Groups populated dynamically -->
+                </div>
+            </section>
+
+            <!-- 4. Progress Chart View -->
+            <section class="tab-view" id="view-progress">
+                <div class="glass-card">
+                    <h2 style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;">Pisteiden kehitys otteluittain</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Seuraa, kuinka kukin veikkaaja on kerännyt pisteitä pelien edetessä. Voit näyttää ja piilottaa linjoja sivupalkin valintaruuduista.</p>
+                    
+                    <div id="progress-chart-placeholder" style="display: none; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 1rem; text-align: center;">
+                        <i class="fa-solid fa-chart-line" style="font-size: 4rem; color: var(--text-muted); margin-bottom: 1.5rem;"></i>
+                        <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;">Ei pelattuja otteluita</h3>
+                        <p style="color: var(--text-secondary); max-width: 400px;">Pisteiden kehitys visualisoidaan tähän heti, kun ensimmäisten otteluiden tulokset on päivitetty Exceliin tai tulostiedostoon.</p>
+                    </div>
+
+                    <div id="progress-chart-container" class="progress-layout">
+                        <div class="chart-container-wrapper">
+                            <canvas id="progress-chart"></canvas>
+                        </div>
+                        <div class="legend-sidebar">
+                            <div class="legend-header">
+                                <span>Veikkaajat</span>
+                                <div class="legend-actions">
+                                    <button onclick="toggleAllLines(true)" class="legend-action-btn">Kaikki</button>
+                                    <button onclick="toggleAllLines(false)" class="legend-action-btn">Tyhjennä</button>
+                                    <button onclick="selectTopNLines(5)" class="legend-action-btn">Top 5</button>
+                                </div>
+                            </div>
+                            <div class="legend-list" id="chart-legend-list">
+                                <!-- Legend populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Profiles View -->
+            <section class="tab-view" id="view-profiles">
+                <div class="glass-card">
+                    <div class="player-selector-container">
+                        <label for="player-select" style="font-family: var(--font-display); font-weight: 600; color: var(--text-secondary);">Valitse osallistuja:</label>
+                        <select id="player-select" class="player-dropdown" onchange="showPlayerProfile(this.value)">
+                            <!-- Players populated dynamically -->
+                        </select>
+                    </div>
+
+                    <div id="player-profile-content">
+                        <!-- Pelaajan nimi otsikko -->
+                        <h2 id="profile-player-name" style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin-top: 1rem; margin-bottom: 1.5rem; color: #ffffff; display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-circle-user" style="color: var(--primary);"></i>
+                            <span id="profile-name-span">Pelaajan Nimi</span>
+                        </h2>
+                        <!-- Stat Summary Header -->
+                        <div class="player-profile-header">
+                            <div class="profile-stat-card">
+                                <div class="stat-label">Sijoitus</div>
+                                <div class="stat-value" id="profile-rank">-</div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="stat-label">Yhteispisteet</div>
+                                <div class="stat-value points" id="profile-total-points">0</div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="stat-label">Ottelupisteet</div>
+                                <div class="stat-value" id="profile-match-points">0</div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="stat-label">Lohkopisteet</div>
+                                <div class="stat-value" id="profile-group-points">0</div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="stat-label">Finaalit / 3-4</div>
+                                <div class="stat-value" id="profile-final-points">0</div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="stat-label">Täsmälleen oikein</div>
+                                <div class="stat-value" id="profile-exact">-</div>
+                            </div>
+                        </div>
+
+                        <!-- Coupon details -->
+                        <div class="profile-coupon-container">
+                            <!-- Left: Match predictions -->
+                            <div>
+                                <div class="coupon-section-title">
+                                    <i class="fa-solid fa-futbol"></i> Ottelut ja Veikkaukset
+                                </div>
+                                <div class="player-matches-list" id="player-matches-list">
+                                    <!-- Matches list populated dynamically -->
+                                </div>
+                            </div>
+
+                            <!-- Right: Standings & Finals -->
+                            <div class="player-sidebar">
+                                <div class="medals-box">
+                                    <div class="medals-title">
+                                        <i class="fa-solid fa-crown"></i> Finaaliveikkaus
+                                    </div>
+                                    <div class="medals-list" id="profile-finalists-predictions">
+                                        <!-- Final predictions list -->
+                                    </div>
+                                </div>
+
+                                <div class="medals-box">
+                                    <div class="medals-title">
+                                        <i class="fa-solid fa-award"></i> Sijat 3-4 Veikkaus
+                                    </div>
+                                    <div class="medals-list" id="profile-34-predictions">
+                                        <!-- 3-4 predictions list -->
+                                    </div>
+                                </div>
+
+                                <div class="medals-box">
+                                    <div class="medals-title">
+                                        <i class="fa-solid fa-table"></i> Lohkoveikkaukset
+                                    </div>
+                                    <div class="player-dropdown-group-container" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                                        <select id="compare-group-select" class="player-dropdown" style="padding: 0.5rem 1rem; min-width: 100px; flex-grow: 1;" onchange="renderGroupComparison(this.value)">
+                                            <!-- Group choices -->
+                                        </select>
+                                    </div>
+                                    <div class="standing-compare-grid" id="group-compare-grid">
+                                        <!-- Standing compare list -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Simulation View -->
+            <section class="tab-view" id="view-simulation">
+                <div class="simulation-layout">
+                    <!-- Left Column: Match Score Inputs -->
+                    <div class="glass-card">
+                        <div class="sim-header-controls">
+                            <h2 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: #ffffff;">Otteluiden simulaatio</h2>
+                            <label class="sim-toggle-label">
+                                <input type="checkbox" id="sim-show-all-checkbox" onchange="toggleSimShowAll(this.checked)">
+                                <span>Näytä myös pelatut ottelut</span>
+                            </label>
+                        </div>
+                        
+                        <div class="player-selector-container" style="margin-bottom: 1.5rem; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 1.25rem;">
+                            <div style="display: flex; flex-direction: column; gap: 0.25rem; flex-grow: 1;">
+                                <label for="sim-player-select" style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">Kopioi pohjaksi osallistujan veikkaukset:</label>
+                                <div style="display: flex; gap: 0.75rem; align-items: center; margin-top: 0.4rem;">
+                                    <select id="sim-player-select" class="player-dropdown" style="min-width: 200px; padding: 0.5rem 1rem;">
+                                        <!-- Populated dynamically -->
+                                    </select>
+                                    <button onclick="copyPlayerPredictionsToSim()" class="upload-btn" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">Kopioi</button>
+                                </div>
+                            </div>
+                            <button onclick="resetSimulation()" class="legend-action-btn" style="padding: 0.5rem 1.25rem; font-size: 0.85rem; height: fit-content; align-self: flex-end;">Tyhjennä</button>
+                        </div>
+
+
+
+                        <div class="sim-matches-list" id="sim-matches-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Simulated Standings -->
+                    <div class="glass-card">
+                        <h2 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: #ffffff; margin-bottom: 1.5rem;">Simuloitu sarjataulukko</h2>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Sija</th>
+                                        <th>Osallistuja</th>
+                                        <th style="text-align: center;">Pisteet (Real ➔ Sim)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="sim-leaderboard-body">
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Rules View -->
+            <section class="tab-view" id="view-rules">
+                <div class="glass-card rules-container">
+                    <div class="rules-block">
+                        <h3><i class="fa-solid fa-circle-info"></i> Veikkauskisan Säännöt</h3>
+                        <p>
+                            Veikkauksen kohteena on jalkapallon MM-kisat 2026 (Kanada, Meksiko ja Yhdysvallat). Pelit pelataan 11.6. - 19.7.2026.
+                            Veikkauksessa ennustetaan kaikkien 72 ottelun lopputulokset, alkulohkojen lopulliset järjestykset, finaalijoukkueet sekä semifinaalissa pudonneet (sijat 3 ja 4) joukkueet.
+                        </p>
+                        <p>
+                            <strong>Tasatilanteet:</strong> Pisteiden ollessa tasan paremmuuden ratkaisee ensisijaisesti täsmälleen oikein veikattujen ottelutulosten määrä. Jos tämäkään ei tuo ratkaisua, sijoitus jaetaan.
+                        </p>
+                    </div>
+
+                    <div class="rules-block">
+                        <h3><i class="fa-solid fa-star"></i> Ottelupisteytys</h3>
+                        <p>
+                            Ensimmäinen edellytys pisteiden saamiselle on ottelun voittajan tai tasapelin oikeellisuus (eli veikkausmerkki 1-X-2 on oikein). 
+                            Tämän jälkeen pisteitä kertyy seuraavasti:
+                        </p>
+                        <p>
+                            <strong>Normaalit ottelut (jos voittaja ratkeaa varsinaisella peliajalla):</strong>
+                            Pisteet lasketaan kaavalla: <code>max(0, 6 - maalimäärävirheiden summa)</code>. 
+                            Jokainen maali, jolla veikkaus heittää todellisesta maalimäärästä (joko joukkueella 1 tai joukkueella 2), vähentää maksimipistemäärästä (6 p) yhden pisteen.
+                            Jos veikattu maaliluku heittää yhteensä enemmän kuin 3 maalia, ottelusta saa 0 pistettä.
+                        </p>
+                        <p>
+                            <strong>Tasapelit:</strong>
+                            Täysin oikeasta tasapelituloksesta (esim. veikkaus 2-2, tulos 2-2) saa <strong>6 pistettä</strong>.
+                            Muusta oikeasta tasapeliveikkauksesta (esim. veikkaus 1-1, tulos 3-3) saa <strong>3 pistettä</strong>.
+                        </p>
+                    </div>
+
+                    <div class="rules-block">
+                        <div class="rules-example-box">
+                            <h4 style="margin-bottom: 0.75rem; font-family: var(--font-display); font-weight: 700; color: #ffffff;">Esimerkkejä ottelupisteistä:</h4>
+                            <div class="example-grid">
+                                <div class="example-card">
+                                    <div class="example-title">Täysin oikea tulos <span class="example-pts">6 p</span></div>
+                                    <div class="example-body">
+                                        Veikkaus: 3 - 1<br>
+                                        Tulos: 3 - 1<br>
+                                        Molemmat maalilukemat oikein: 3 + 3 = 6p.
+                                    </div>
+                                </div>
+                                <div class="example-card">
+                                    <div class="example-title">Yhden maalin heitto <span class="example-pts">5 p</span></div>
+                                    <div class="example-body">
+                                        Veikkaus: 3 - 1<br>
+                                        Tulos: 2 - 1<br>
+                                        Team 1 heittää yhdellä: 6 - 1 = 5p.
+                                    </div>
+                                </div>
+                                <div class="example-card">
+                                    <div class="example-title">Väärä merkki (1-X-2) <span class="example-pts">0 p</span></div>
+                                    <div class="example-body">
+                                        Veikkaus: 3 - 1<br>
+                                        Tulos: 1 - 1<br>
+                                        Veikattu voittoa, tuli tasapeli.
+                                    </div>
+                                </div>
+                                <div class="example-card">
+                                    <div class="example-title">Oikea tasapeli, väärät maalit <span class="example-pts">3 p</span></div>
+                                    <div class="example-body">
+                                        Veikkaus: 2 - 2<br>
+                                        Tulos: 3 - 3<br>
+                                        Veikattu tasapeliä, maalit väärin.
+                                    </div>
+                                </div>
+                                <div class="example-card">
+                                    <div class="example-title">Maalit liikaa pielessä <span class="example-pts">0 p</span></div>
+                                    <div class="example-body">
+                                        Veikkaus: 1 - 0<br>
+                                        Tulos: 5 - 3<br>
+                                        Merkki oikein, mutta virhe (4+3=7) on yli 3.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rules-block">
+                        <h3><i class="fa-solid fa-table-list"></i> Lohko- ja Finaalipisteytys</h3>
+                        <p>
+                            <strong>Alkulohkojen järjestys:</strong> Kustakin alkulohkon (lohkot A - L) täsmälleen oikein veikatusta sijoituksesta (sijat 1, 2, 3 ja 4) saa <strong>2 pistettä</strong>. Lohkopisteitä on jaossa maksimissaan 96 pistettä.
+                        </p>
+                        <p>
+                            <strong>Finaalijoukkueet:</strong> Jokaisesta oikein veikatusta finaalijoukkueesta saa <strong>2 pistettä</strong> (järjestyksellä ei väliä, max 4 p).
+                        </p>
+                        <p>
+                            <strong>Sijat 3-4 (Välierissä pudonneet):</strong> Jokaisesta oikeasta välieriin päässeestä ja siellä pudonneesta joukkueesta saa <strong>2 pistettä</strong> (järjestyksellä ei väliä, max 4 p).
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Country codes mapping for FlagCDN flags
+        const countryCodes = {
+            "Algeria": "dz",
+            "Argentiina": "ar",
+            "Australia": "au",
+            "Belgia": "be",
+            "Bosnia ja Hertsegovina": "ba",
+            "Brasilia": "br",
+            "Curaçao": "cw",
+            "Ecuador": "ec",
+            "Egypti": "eg",
+            "Englanti": "gb-eng",
+            "Espanja": "es",
+            "Etelä-Afrikka": "za",
+            "Etelä-Korea": "kr",
+            "Ghana": "gh",
+            "Haiti": "ht",
+            "Hollanti": "nl",
+            "Irak": "iq",
+            "Iran": "ir",
+            "Itävalta": "at",
+            "Japani": "jp",
+            "Jordania": "jo",
+            "Kanada": "ca",
+            "Kap Verde": "cv",
+            "Kolumbia": "co",
+            "Kongon DR": "cd",
+            "Kroatia": "hr",
+            "Marokko": "ma",
+            "Meksiko": "mx",
+            "Norja": "no",
+            "Norsunluurannikko": "ci",
+            "Panama": "pa",
+            "Paraguay": "py",
+            "Portugali": "pt",
+            "Qatar": "qa",
+            "Ranska": "fr",
+            "Ruotsi": "se",
+            "Saksa": "de",
+            "Saudi-Arabia": "sa",
+            "Senegal": "sn",
+            "Skotlanti": "gb-sct",
+            "Sveitsi": "ch",
+            "Tshekki": "cz",
+            "Tunisia": "tn",
+            "Turkki": "tr",
+            "USA": "us",
+            "Uruguay": "uy",
+            "Uusi-Seelanti": "nz",
+            "Uzbekistan": "uz"
+        };
+
+        const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
+
+        // Global State variables
+        let workbook = null;
+        let excelArrayBuffer = null;
+        let players = [];
+        let matches = [];
+        let actualStandings = {};
+        let actualFinalists = [];
+        let actual34 = [];
+        let selectedPlayerSheet = '';
+        let textResults = null;
+        let apiGames = [];
+        let apiGroups = [];
+        let apiTeams = [];
+        let activeMatchFilter = 'Kaikki';
+        let simulatedScores = {};
+        let simShowAllMatches = false;
+
+        // Mapping from API English names to Finnish normalized names
+        const apiTeamNameToFinnish = {
+            "south africa": "Etelä-Afrikka",
+            "brazil": "Brasilia",
+            "scotland": "Skotlanti",
+            "turkey": "Turkki",
+            "ivory coast": "Norsunluurannikko",
+            "netherlands": "Hollanti",
+            "cape verde": "Kap Verde",
+            "france": "Ranska",
+            "tunisia": "Tunisia",
+            "egypt": "Egypti",
+            "iraq": "Irak",
+            "portugal": "Portugali",
+            "uzbekistan": "Uzbekistan",
+            "colombia": "Kolumbia",
+            "ecuador": "Ecuador",
+            "japan": "Japani",
+            "new zealand": "Uusi-Seelanti",
+            "saudi arabia": "Saudi-Arabia",
+            "austria": "Itävalta",
+            "ghana": "Ghana",
+            "south korea": "Etelä-Korea",
+            "spain": "Espanja",
+            "norway": "Norja",
+            "argentina": "Argentiina",
+            "democratic republic of the congo": "Kongon DR",
+            "england": "Englanti",
+            "czech republic": "Tshekki",
+            "canada": "Kanada",
+            "qatar": "Qatar",
+            "switzerland": "Sveitsi",
+            "morocco": "Marokko",
+            "paraguay": "Paraguay",
+            "curaçao": "Curaçao",
+            "sweden": "Ruotsi",
+            "algeria": "Algeria",
+            "jordan": "Jordania",
+            "haiti": "Haiti",
+            "germany": "Saksa",
+            "uruguay": "Uruguay",
+            "senegal": "Senegal",
+            "panama": "Panama",
+            "mexico": "Meksiko",
+            "bosnia and herzegovina": "Bosnia ja Hertsegovina",
+            "united states": "USA",
+            "australia": "Australia",
+            "belgium": "Belgia",
+            "iran": "Iran",
+            "croatia": "Kroatia"
+        };
+
+        // Spelling Normalization Function to correct human typos
+        function normalizeTeamName(name) {
+            if (!name) return "";
+            let clean = name.trim().toLowerCase()
+                .replace(/[\.-]/g, ' ')
+                .replace(/\s+/g, ' ');
+
+            if (apiTeamNameToFinnish[clean]) return apiTeamNameToFinnish[clean];
+
+            const mapping = {
+                "algeria": "Algeria",
+                "argentiina": "Argentiina", "argentina": "Argentiina", "argenttiina": "Argentiina",
+                "australia": "Australia",
+                "belgia": "Belgia",
+                "bosnia hertegovina": "Bosnia ja Hertsegovina", 
+                "bosnia hertse": "Bosnia ja Hertsegovina", 
+                "bosnia hertzegovina": "Bosnia ja Hertsegovina",
+                "bosnia ja hertsegovina": "Bosnia ja Hertsegovina", 
+                "bosnia-hertsegovina": "Bosnia ja Hertsegovina",
+                "bosnia herzegovina": "Bosnia ja Hertsegovina", 
+                "bosnia": "Bosnia ja Hertsegovina",
+                "brasialia": "Brasilia", "brasilia": "Brasilia",
+                "curacao": "Curaçao", "curaçao": "Curaçao",
+                "ecuador": "Ecuador", "equador": "Ecuador",
+                "egypti": "Egypti", "eqypti": "Egypti",
+                "englanti": "Englanti",
+                "espanja": "Espanja",
+                "etekä korea": "Etelä-Korea", "etela afrikka": "Etelä-Afrikka", "etelä afrikka": "Etelä-Afrikka",
+                "etelä korea": "Etelä-Korea", "etelä-afrikka": "Etelä-Afrikka", "etelä-korea": "Etelä-Korea",
+                "ghana": "Ghana",
+                "haiti": "Haiti", "vaiti": "Haiti",
+                "hollanti": "Hollanti",
+                "irak": "Irak",
+                "iran": "Iran",
+                "itävalta": "Itävalta",
+                "japani": "Japani",
+                "jordania": "Jordania",
+                "kanada": "Kanada",
+                "kap verde": "Kap Verde",
+                "kolumbia": "Kolumbia",
+                "kongo": "Kongon DR", "kongon dr": "Kongon DR",
+                "kroatia": "Kroatia",
+                "marokko": "Marokko",
+                "meksiko": "Meksiko", "mexico": "Meksiko",
+                "norja": "Norja",
+                "norsunluurannikko": "Norsunluurannikko", "norsunluurannikon": "Norsunluurannikko",
+                "panama": "Panama",
+                "paraguay": "Paraguay", "paraguaysta": "Paraguay", "paraquai": "Paraguay", "paraquay": "Paraguay",
+                "portugal": "Portugali", "portugali": "Portugali",
+                "qagar": "Qatar", "qatar": "Qatar", "quatar": "Qatar",
+                "ranska": "Ranska",
+                "ruotsi": "Ruotsi",
+                "saksa": "Saksa",
+                "saudi arabia": "Saudi-Arabia", "saudi-arabia": "Saudi-Arabia",
+                "senegal": "Senegal", "senegas": "Senegal",
+                "skotlanti": "Skotlanti",
+                "sveitsi": "Sveitsi",
+                "tsekki": "Tshekki", "tshekki": "Tshekki", "tšekki": "Tshekki",
+                "tunisia": "Tunisia",
+                "turkki": "Turkki",
+                "usa": "USA",
+                "uruguay": "Uruguay", "uruqay": "Uruguay", "uruquai": "Uruguay",
+                "uusi seelantia": "Uusi-Seelanti", "uusi seelanti": "Uusi-Seelanti", "uusi-seelanti": "Uusi-Seelanti",
+                "uzbekistan": "Uzbekistan"
+            };
+
+            if (mapping[clean]) return mapping[clean];
+            for (const key in mapping) {
+                if (clean.includes(key) || key.includes(clean)) return mapping[key];
+            }
+            return name.charAt(0).toUpperCase() + name.slice(1);
+        }
+
+        const getFlag = (team) => {
+            const norm = normalizeTeamName(team);
+            const code = countryCodes[norm];
+            if (code) {
+                return `<img src="https://flagcdn.com/w20/${code}.png" alt="${norm}" style="vertical-align: middle; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.25); width: 20px; height: auto; display: inline-block;">`;
+            }
+            return '🏳️';
+        };
+        const displayTeam = (team) => normalizeTeamName(team);
+
+        function parseResultsText(text) {
+            const lines = text.split('\n');
+            const parsedMatches = {};
+            const parsedStandings = {};
+            let parsedFinalists = [];
+            let parsed34 = [];
+
+            lines.forEach(line => {
+                line = line.trim();
+                if (!line || line.startsWith('#')) return;
+                const matchMatch = line.match(/^(\d+)\s*:\s*(\d+)\s*-\s*(\d+)/);
+                if (matchMatch) {
+                    parsedMatches[Number(matchMatch[1])] = { goals1: Number(matchMatch[2]), goals2: Number(matchMatch[3]) };
+                    return;
+                }
+                const groupMatch = line.match(/^Lohko\s+([A-L])\s*:\s*(.+)$/i);
+                if (groupMatch) {
+                    const teams = groupMatch[2].split(',').map(t => t.trim()).filter(Boolean);
+                    if (teams.length > 0) parsedStandings[groupMatch[1].toUpperCase()] = teams.map(t => normalizeTeamName(t));
+                    return;
+                }
+                const finalistsMatch = line.match(/^Finaali\s*:\s*(.+)$/i);
+                if (finalistsMatch) parsedFinalists = finalistsMatch[1].split(',').map(t => normalizeTeamName(t.trim())).filter(Boolean);
+                const thirdFourthMatch = line.match(/^Pronssi\s*:\s*(.+)$/i);
+                if (thirdFourthMatch) parsed34 = thirdFourthMatch[1].split(',').map(t => normalizeTeamName(t.trim())).filter(Boolean);
+            });
+            return { matches: parsedMatches, standings: parsedStandings, finalists: parsedFinalists, thirdFourth: parsed34 };
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            attemptAutoLoad();
+            setupDragAndDrop();
+        });
+
+        function fetchLiveGames() {
+            const cacheBuster = '?t=' + new Date().getTime();
+            const directUrl = 'https://worldcup26.ir/get/games' + cacheBuster;
+            const proxyUrl = 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games';
+
+            return fetch(directUrl)
+                .then(res => {
+                    if (!res.ok) throw new Error('Direct fetch status: ' + res.status);
+                    return res.json();
+                })
+                .catch(err => {
+                    console.log('Suora haku epäonnistui tai CORS esti sen. Kokeillaan CORS-proxyä...', err);
+                    return fetch(proxyUrl)
+                        .then(res => {
+                            if (!res.ok) throw new Error('Proxy fetch status: ' + res.status);
+                            return res.json();
+                        });
+                });
+        }
+
+        function fetchLiveGroupsAndTeams() {
+            const cacheBuster = '?t=' + new Date().getTime();
+            const directGroupsUrl = 'https://worldcup26.ir/get/groups' + cacheBuster;
+            const proxyGroupsUrl = 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups';
+            const directTeamsUrl = 'https://worldcup26.ir/get/teams' + cacheBuster;
+            const proxyTeamsUrl = 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams';
+
+            const fetchGroups = fetch(directGroupsUrl)
+                .then(res => {
+                    if (!res.ok) throw new Error('Direct groups fetch failed');
+                    return res.json();
+                })
+                .catch(() => {
+                    return fetch(proxyGroupsUrl).then(res => res.json());
+                });
+
+            const fetchTeams = fetch(directTeamsUrl)
+                .then(res => {
+                    if (!res.ok) throw new Error('Direct teams fetch failed');
+                    return res.json();
+                })
+                .catch(() => {
+                    return fetch(proxyTeamsUrl).then(res => res.json());
+                });
+
+            return Promise.all([fetchGroups, fetchTeams])
+                .then(([groupsData, teamsData]) => {
+                    if (groupsData && groupsData.groups) apiGroups = groupsData.groups;
+                    if (teamsData && teamsData.teams) apiTeams = teamsData.teams;
+                })
+                .catch(err => console.log('Ei voitu ladata live-lohkoja tai joukkueita netistä.', err));
+        }
+
+        function attemptAutoLoad() {
+            const isHttp = window.location.protocol.startsWith('http');
+            const cacheBuster = isHttp ? '?t=' + new Date().getTime() : '';
+            const txtUrl = 'tulokset.txt' + cacheBuster;
+            const excelUrl = 'MM2026_pistelaskenta.xlsx' + cacheBuster;
+            
+            fetch(txtUrl)
+                .then(res => res.ok ? res.text() : null)
+                .then(text => { if (text) textResults = parseResultsText(text); })
+                .catch(err => console.log('tulokset.txt ei käytössä.'))
+                .finally(() => {
+                    // Fetch API games if served over http (to avoid CORS block on file://)
+                    if (isHttp) {
+                        const gamesPromise = fetchLiveGames()
+                            .then(data => {
+                                if (data && data.games) {
+                                    apiGames = data.games;
+                                }
+                            })
+                            .catch(err => console.log('Ei voitu ladata live-tuloksia netistä.', err));
+                        
+                        const groupsPromise = fetchLiveGroupsAndTeams()
+                            .catch(err => console.log('Ei voitu ladata live-lohkoja netistä.', err));
+                        
+                        Promise.all([gamesPromise, groupsPromise])
+                            .finally(() => {
+                                loadExcel();
+                            });
+                    } else {
+                        loadExcel();
+                    }
+                });
+                
+            function loadExcel() {
+                fetch(excelUrl)
+                    .then(response => response.ok ? response.arrayBuffer() : Promise.reject())
+                    .then(ab => processExcelData(ab))
+                    .catch(err => {
+                        document.getElementById('upload-zone').style.display = 'block';
+                        hideLoading();
+                    });
+            }
+        }
+
+        // Start live scores refresh every 60 seconds (only if served over http/s)
+        if (window.location.protocol.startsWith('http')) {
+            setInterval(fetchLiveScores, 60000);
+        }
+
+        function fetchLiveScores() {
+            const gamesPromise = fetchLiveGames()
+                .then(data => {
+                    if (data && data.games) {
+                        apiGames = data.games;
+                    }
+                })
+                .catch(err => console.log('Virhe ladattaessa live-tuloksia:', err));
+            
+            const groupsPromise = fetchLiveGroupsAndTeams()
+                .catch(err => console.log('Virhe ladattaessa live-lohkoja:', err));
+            
+            Promise.all([gamesPromise, groupsPromise])
+                .finally(() => {
+                    calculateAndRender();
+                });
+        }
+
+        function setupDragAndDrop() {
+            const dropZone = document.getElementById('upload-zone');
+            const fileInput = document.getElementById('file-input');
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(e => dropZone.addEventListener(e, (ev) => { ev.preventDefault(); ev.stopPropagation(); }));
+            dropZone.addEventListener('drop', (e) => handleFile(e.dataTransfer.files[0]));
+            fileInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
+        }
+
+        function handleFile(file) {
+            if (!file) return;
+            if (file.name.endsWith('.txt')) {
+                showLoading('Käsitellään tulostiedostoa...');
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    textResults = parseResultsText(e.target.result);
+                    if (excelArrayBuffer) {
+                        processExcelData(excelArrayBuffer);
+                    } else {
+                        hideLoading();
+                        alert('Lataa ensin Excel-tiedosto (.xlsx), ennen kuin lataat tulostiedoston!');
+                    }
+                };
+                reader.readAsText(file);
+            } else {
+                showLoading('Käsitellään Excel-tiedostoa...');
+                const reader = new FileReader();
+                reader.onload = (e) => processExcelData(e.target.result);
+                reader.readAsArrayBuffer(file);
+            }
+        }
+
+        function processExcelData(arrayBuffer) {
+            excelArrayBuffer = arrayBuffer;
+            workbook = XLSX.read(arrayBuffer, { type: 'array' });
+            calculateAndRender();
+        }
+
+        function getGroupTeamsFromMatches(groupLetter, matchesList = matches) {
+            const teams = new Set();
+            matchesList.forEach(m => {
+                if (m.group === groupLetter) {
+                    if (m.team1) teams.add(normalizeTeamName(m.team1));
+                    if (m.team2) teams.add(normalizeTeamName(m.team2));
+                }
+            });
+            return Array.from(teams);
+        }
+
+        function calculateGroupStandings(groupLetter, originalOrder, matchesList = matches) {
+            const groupMatches = matchesList.filter(m => m.group === groupLetter);
+            const playedGroupMatches = groupMatches.filter(m => m.hasResult);
+            
+            // Jos yhtään peliä ei ole pelattu lohkossa, palautetaan Excelin oletusjärjestys
+            if (playedGroupMatches.length === 0) return originalOrder;
+            
+            const stats = {};
+            originalOrder.forEach(t => {
+                if (t) {
+                    stats[t] = { name: t, points: 0, gd: 0, gf: 0, ga: 0, wins: 0, draws: 0, losses: 0 };
+                }
+            });
+            
+            groupMatches.forEach(m => {
+                if (!m.hasResult) return;
+                const t1 = m.team1;
+                const t2 = m.team2;
+                const g1 = m.goals1;
+                const g2 = m.goals2;
+                
+                if (stats[t1] && stats[t2]) {
+                    stats[t1].gf += g1;
+                    stats[t1].ga += g2;
+                    stats[t1].gd += (g1 - g2);
+                    
+                    stats[t2].gf += g2;
+                    stats[t2].ga += g1;
+                    stats[t2].gd += (g2 - g1);
+                    
+                    if (g1 > g2) {
+                        stats[t1].points += 3;
+                        stats[t1].wins += 1;
+                        stats[t2].losses += 1;
+                    } else if (g1 < g2) {
+                        stats[t2].points += 3;
+                        stats[t2].wins += 1;
+                        stats[t1].losses += 1;
+                    } else {
+                        stats[t1].points += 1;
+                        stats[t1].draws += 1;
+                        stats[t2].points += 1;
+                        stats[t2].draws += 1;
+                    }
+                }
+            });
+            
+            const sortedTeams = Object.values(stats).sort((a, b) => {
+                return b.points - a.points || 
+                       b.gd - a.gd || 
+                       b.gf - a.gf || 
+                       (originalOrder.indexOf(a.name) - originalOrder.indexOf(b.name));
+            });
+            return sortedTeams.map(t => t.name);
+        }
+
+        function calculateLeaderboard(customMatches, customStandings, customFinalists, custom34) {
+            if (!workbook) return [];
+            const pisteetSheet = workbook.Sheets['Pisteet'];
+            const pisteetRows = XLSX.utils.sheet_to_json(pisteetSheet, { header: 1 });
+            const calculatedPlayers = [];
+
+            for (let r = 5; r < pisteetRows.length; r++) {
+                const row = pisteetRows[r];
+                if (!row || !row[1]) continue;
+                const sheetName = String(row[1]).trim();
+                const pSheet = workbook.Sheets[sheetName];
+                if (!pSheet) continue;
+                const getPValue = (addr) => pSheet[addr] ? pSheet[addr].v : undefined;
+                const participantName = getPValue('H2') ? String(getPValue('H2')).trim() : (row[2] ? String(row[2]).trim() : `Osallistuja ${sheetName}`);
+                
+                let matchPoints = 0, exactlyCorrect = 0;
+                const playerMatches = [];
+
+                for (let m = 1; m <= 72; m++) {
+                    const g1Val = getPValue(`I${6 + m}`), g2Val = getPValue(`K${6 + m}`);
+                    const actual = customMatches[m - 1], hasGuess = g1Val !== undefined && g1Val !== null && g2Val !== undefined && g2Val !== null;
+                    let pts = null;
+                    if (actual.hasResult && hasGuess) {
+                        const guess1 = Number(g1Val), guess2 = Number(g2Val), act1 = actual.goals1, act2 = actual.goals2;
+                        if (Math.sign(guess1 - guess2) !== Math.sign(act1 - act2)) pts = 0;
+                        else if (act1 === act2) pts = (guess1 === act1 && guess2 === act2) ? 6 : 3;
+                        else pts = Math.max(0, 6 - (Math.abs(guess1 - act1) + Math.abs(guess2 - act2)));
+                        matchPoints += pts;
+                        if (pts === 6) exactlyCorrect++;
+                    }
+                    playerMatches.push({ nr: m, guess1: hasGuess ? Number(g1Val) : null, guess2: hasGuess ? Number(g2Val) : null, points: pts, hasGuess: hasGuess });
+                }
+
+                let groupPoints = 0;
+                const groupGuesses = {};
+                groups.forEach((g, gIdx) => {
+                    groupGuesses[g] = [];
+                    const startRow = gIdx >= 6 ? 14 : 8;
+                    const colLetter = XLSX.utils.encode_col(15 + (gIdx % 6));
+                    for (let pos = 1; pos <= 4; pos++) {
+                        const guess = normalizeTeamName(String(getPValue(`${colLetter}${startRow + pos - 1}`) || ''));
+                        const actual = customStandings[g][pos - 1];
+                        let pts = (actual && guess === actual) ? 2 : 0;
+                        groupPoints += pts;
+                        groupGuesses[g].push({ pos, guess, actual, points: pts });
+                    }
+                });
+
+                const f1 = normalizeTeamName(String(getPValue('E79') || '')), f2 = normalizeTeamName(String(getPValue('G79') || ''));
+                const t1 = normalizeTeamName(String(getPValue('E80') || '')), t2 = normalizeTeamName(String(getPValue('G80') || ''));
+                
+                let finalistPoints = 0;
+                if (customFinalists.length > 0) {
+                    if (f1 && customFinalists.includes(f1)) finalistPoints += 2;
+                    if (f2 && customFinalists.includes(f2)) finalistPoints += 2;
+                }
+                let thirdFourthPoints = 0;
+                if (custom34.length > 0) {
+                    if (t1 && custom34.includes(t1)) thirdFourthPoints += 2;
+                    if (t2 && custom34.includes(t2)) thirdFourthPoints += 2;
+                }
+
+                const allGroupsPlayed = customMatches.every(m => m.hasResult);
+                const finalistsAdded = customFinalists.length === 2;
+                const thirdFourthAdded = custom34.length === 2;
+
+                const addedGroupPoints = allGroupsPlayed ? groupPoints : 0;
+                const addedFinalistPoints = finalistsAdded ? finalistPoints : 0;
+                const addedThirdFourthPoints = thirdFourthAdded ? thirdFourthPoints : 0;
+
+                const totalPoints = matchPoints + addedGroupPoints + addedFinalistPoints + addedThirdFourthPoints;
+
+                calculatedPlayers.push({
+                    sheetName,
+                    name: participantName,
+                    matchPoints,
+                    groupPoints,
+                    finalPoints: finalistPoints + thirdFourthPoints,
+                    totalPoints: totalPoints,
+                    exactlyCorrect,
+                    matches: playerMatches,
+                    groupGuesses,
+                    finalistGuesses: [f1, f2],
+                    thirdFourthGuesses: [t1, t2],
+                    groupPointsAdded: allGroupsPlayed,
+                    finalistsAdded: finalistsAdded,
+                    thirdFourthAdded: thirdFourthAdded
+                });
+            }
+
+            calculatedPlayers.sort((a, b) => b.totalPoints - a.totalPoints || b.exactlyCorrect - a.exactlyCorrect || a.name.localeCompare(b.name));
+            calculatedPlayers.forEach((p, i) => {
+                p.rank = (i > 0 && p.totalPoints === calculatedPlayers[i - 1].totalPoints && p.exactlyCorrect === calculatedPlayers[i - 1].exactlyCorrect) ? calculatedPlayers[i - 1].rank : i + 1;
+            });
+
+            return calculatedPlayers;
+        }
+
+        function calculateAndRender() {
+            if (!workbook) return;
+            const tuloksetSheet = workbook.Sheets['Tulokset'];
+            const getTValue = (addr) => tuloksetSheet[addr] ? tuloksetSheet[addr].v : undefined;
+            
+            matches = [];
+            let playedCount = 0;
+            for (let m = 1; m <= 72; m++) {
+                const row = 5 + m;
+                const nr = getTValue(`A${row}`);
+                const date = getTValue(`B${row}`);
+                const group = getTValue(`C${row}`);
+                const t1 = getTValue(`D${row}`);
+                const t2 = getTValue(`F${row}`);
+                
+                let g1 = getTValue(`G${row}`);
+                let g2 = getTValue(`I${row}`);
+                let hasResult = g1 !== undefined && g1 !== null && g1 !== '' && g2 !== undefined && g2 !== null && g2 !== '';
+                let status = hasResult ? 'Päättynyt' : 'Pelaamaton';
+                
+                const apiGame = apiGames.find(g => Number(g.id) === m);
+                if (apiGame && apiGame.time_elapsed !== 'notstarted') {
+                    g1 = Number(apiGame.home_score);
+                    g2 = Number(apiGame.away_score);
+                    hasResult = true;
+                    status = apiGame.finished === 'TRUE' ? 'Päättynyt' : `LIVE ${apiGame.time_elapsed}'`;
+                }
+                
+                if (textResults && textResults.matches && textResults.matches[m]) {
+                    g1 = textResults.matches[m].goals1;
+                    g2 = textResults.matches[m].goals2;
+                    hasResult = true;
+                    status = 'Päättynyt';
+                }
+                
+                if (hasResult) playedCount++;
+                
+                matches.push({
+                    nr: Number(nr),
+                    date: String(date || ''),
+                    group: String(group || ''),
+                    team1: String(t1 || ''),
+                    team2: String(t2 || ''),
+                    goals1: hasResult ? Number(g1) : null,
+                    goals2: hasResult ? Number(g2) : null,
+                    hasResult: hasResult,
+                    status: status,
+                    originallyHadResult: hasResult
+                });
+            }
+            
+            document.getElementById('played-matches-badge').innerText = `Pelatut ottelut: ${playedCount} / 72`;
+            document.getElementById('header-stats').style.display = 'flex';
+            
+            actualStandings = {};
+            groups.forEach((g, gIdx) => {
+                if (textResults && textResults.standings && textResults.standings[g]) {
+                    actualStandings[g] = textResults.standings[g];
+                } else {
+                    let apiOrder = null;
+                    const apiGroup = apiGroups.find(x => x.name === g);
+                    if (apiGroup && apiGroup.teams && apiTeams.length > 0) {
+                        const mappedOrder = apiGroup.teams.map(tInfo => {
+                            const teamObj = apiTeams.find(t => t.id === tInfo.team_id);
+                            return teamObj ? normalizeTeamName(teamObj.name_en) : null;
+                        }).filter(Boolean);
+                        if (mappedOrder.length === 4) {
+                            apiOrder = mappedOrder;
+                        }
+                    }
+                    
+                    if (apiOrder) {
+                        actualStandings[g] = apiOrder;
+                    } else {
+                        const isSecondHalf = gIdx >= 6;
+                        const startRow = isSecondHalf ? 12 : 6;
+                        const colLetter = XLSX.utils.encode_col(12 + (gIdx % 6));
+                        const originalOrder = [];
+                        for (let pos = 1; pos <= 4; pos++) {
+                            const val = getTValue(`${colLetter}${startRow + pos - 1}`);
+                            originalOrder.push(val ? normalizeTeamName(String(val)) : null);
+                        }
+                        const cleanOrder = originalOrder.filter(Boolean);
+                        const fallbackOrder = cleanOrder.length === 4 ? cleanOrder : getGroupTeamsFromMatches(g);
+                        actualStandings[g] = calculateGroupStandings(g, fallbackOrder, matches);
+                    }
+                }
+            });
+            
+            if (textResults && textResults.finalists.length) {
+                actualFinalists = textResults.finalists;
+            } else {
+                const apiFinalGame = apiGames.find(g => Number(g.id) === 104);
+                if (apiFinalGame && apiFinalGame.home_team_name_en && apiFinalGame.away_team_name_en && apiFinalGame.home_team_name_en !== 'null' && apiFinalGame.away_team_name_en !== 'null') {
+                    actualFinalists = [
+                        normalizeTeamName(apiFinalGame.home_team_name_en),
+                        normalizeTeamName(apiFinalGame.away_team_name_en)
+                    ].filter(Boolean);
+                } else {
+                    actualFinalists = [getTValue('M20') ? normalizeTeamName(String(getTValue('M20'))) : null, getTValue('M21') ? normalizeTeamName(String(getTValue('M21'))) : null].filter(Boolean);
+                }
+            }
+
+            if (textResults && textResults.thirdFourth.length) {
+                actual34 = textResults.thirdFourth;
+            } else {
+                const apiThirdPlaceGame = apiGames.find(g => Number(g.id) === 103);
+                if (apiThirdPlaceGame && apiThirdPlaceGame.home_team_name_en && apiThirdPlaceGame.away_team_name_en && apiThirdPlaceGame.home_team_name_en !== 'null' && apiThirdPlaceGame.away_team_name_en !== 'null') {
+                    actual34 = [
+                        normalizeTeamName(apiThirdPlaceGame.home_team_name_en),
+                        normalizeTeamName(apiThirdPlaceGame.away_team_name_en)
+                    ].filter(Boolean);
+                } else {
+                    actual34 = [getTValue('M23') ? normalizeTeamName(String(getTValue('M23'))) : null, getTValue('M24') ? normalizeTeamName(String(getTValue('M24'))) : null].filter(Boolean);
+                }
+            }
+            
+            // Run calculation engine
+            players = calculateLeaderboard(matches, actualStandings, actualFinalists, actual34);
+            document.getElementById('upload-zone').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+
+            renderLeaderboard();
+            renderMatchesFilters();
+            renderMatches(activeMatchFilter);
+            renderGroupsView();
+            populatePlayerDropdowns();
+
+            if (players.length > 0) {
+                if (!selectedPlayerSheet || !players.some(p => p.sheetName === selectedPlayerSheet)) {
+                    selectedPlayerSheet = players[0].sheetName;
+                }
+                document.getElementById('player-select').value = selectedPlayerSheet;
+                showPlayerProfile(selectedPlayerSheet);
+            }
+
+            const activeTab = document.querySelector('.tab-btn.active');
+            if (activeTab && activeTab.getAttribute('onclick').includes('progress')) {
+                renderProgressChart();
+            }
+            if (activeTab && activeTab.getAttribute('onclick').includes('simulation')) {
+                renderSimMatches();
+                calculateAndRenderSimulation();
+            }
+
+            hideLoading();
+        }
+
+        function renderLeaderboard(filterText = '') {
+            const body = document.getElementById('leaderboard-body');
+            body.innerHTML = '';
+            
+            const q = filterText.toLowerCase().trim();
+
+            players.forEach(p => {
+                if (q && !p.name.toLowerCase().includes(q)) return;
+
+                const tr = document.createElement('tr');
+                tr.onclick = () => {
+                    switchTab('profiles');
+                    document.getElementById('player-select').value = p.sheetName;
+                    showPlayerProfile(p.sheetName);
+                };
+
+                let rankContent = p.rank;
+                let rankClass = `rank-${p.rank}`;
+                if (p.rank === 1) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span>';
+                else if (p.rank === 2) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span>';
+                else if (p.rank === 3) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span>';
+
+                tr.className = rankClass;
+
+                let groupPointsHtml = `${p.groupPoints} p`;
+                if (!p.groupPointsAdded) {
+                    groupPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Ei vielä mukana yhteispisteissä. Lisätään kun kaikki lohkovaiheen ottelut on pelattu.">${p.groupPoints} p *</span>`;
+                }
+
+                let finalPointsHtml = `${p.finalPoints} p`;
+                const finalMatchupsClear = p.finalistsAdded && p.thirdFourthAdded;
+                if (!finalMatchupsClear) {
+                    finalPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Ei vielä mukana yhteispisteissä. Lisätään kun finaali- ja pronssiparit ovat selvillä.">${p.finalPoints} p **</span>`;
+                }
+
+                tr.innerHTML = `
+                    <td class="td-rank" style="vertical-align: middle;">${rankContent} <span style="font-size: 0.85rem; font-weight: 500; margin-left: 0.2rem;">#${p.rank}</span></td>
+                    <td class="td-name">${p.name}</td>
+                    <td style="text-align: center;" class="td-sub-points">${p.matchPoints} p</td>
+                    <td style="text-align: center;" class="td-sub-points">${groupPointsHtml}</td>
+                    <td style="text-align: center;" class="td-sub-points">${finalPointsHtml}</td>
+                    <td style="text-align: center;"><span class="badge-exact">${p.exactlyCorrect} kpl</span></td>
+                    <td style="text-align: center;" class="td-points">${p.totalPoints} p</td>
+                `;
+                body.appendChild(tr);
+            });
+
+            if (body.children.length === 0) {
+                body.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 3rem 0;">Ei osallistujia nimellä "${filterText}"</td></tr>`;
+            }
+
+            // Dynamic explanation update
+            const firstPlayer = players[0];
+            const groupNote = document.getElementById('group-points-exp-note');
+            const finalNote = document.getElementById('final-points-exp-note');
+            
+            if (firstPlayer) {
+                if (groupNote) {
+                    groupNote.style.color = firstPlayer.groupPointsAdded ? 'var(--primary)' : 'var(--text-muted)';
+                    groupNote.innerHTML = firstPlayer.groupPointsAdded 
+                        ? '<i class="fa-solid fa-circle-check"></i> Lohkopisteet on laskettu mukaan yhteispisteisiin.' 
+                        : '* Lohkopisteet lasketaan yhteispisteisiin vasta, kun kaikki lohkovaiheen ottelut on pelattu.';
+                }
+                if (finalNote) {
+                    const finalMatchupsClear = firstPlayer.finalistsAdded && firstPlayer.thirdFourthAdded;
+                    finalNote.style.color = finalMatchupsClear ? 'var(--primary)' : 'var(--text-muted)';
+                    finalNote.innerHTML = finalMatchupsClear 
+                        ? '<i class="fa-solid fa-circle-check"></i> Finaali- ja pronssipisteet on laskettu mukaan yhteispisteisiin.' 
+                        : '** Finaali- ja pronssipisteet lasketaan yhteispisteisiin vasta, kun otteluparit ovat selvillä.';
+                }
+            }
+        }
+
+        function filterLeaderboard() {
+            const query = document.getElementById('search-players').value;
+            renderLeaderboard(query);
+        }
+
+        // Render Match filters (Groups A-L + Kaikki + Playoffs)
+        function renderMatchesFilters() {
+            const container = document.getElementById('match-group-filters');
+            container.innerHTML = '';
+
+            const btnAll = document.createElement('button');
+            btnAll.className = 'filter-btn active';
+            btnAll.innerText = 'Kaikki ottelut';
+            btnAll.onclick = () => setActiveFilter(btnAll, 'Kaikki');
+            container.appendChild(btnAll);
+
+            groups.forEach(g => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.innerText = `Lohko ${g}`;
+                btn.onclick = () => setActiveFilter(btn, g);
+                container.appendChild(btn);
+            });
+        }
+
+        function setActiveFilter(activeBtn, groupVal) {
+            activeMatchFilter = groupVal;
+            document.querySelectorAll('#match-group-filters .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+            renderMatches(groupVal);
+        }
+
+        // Render Matches Grid
+        function renderMatches(groupFilter) {
+            const grid = document.getElementById('matches-grid');
+            grid.innerHTML = '';
+
+            matches.forEach(m => {
+                if (groupFilter !== 'Kaikki' && m.group !== groupFilter) return;
+
+                // Calculate statistics for this match across all players
+                let exactCount = 0;
+                let signCount = 0;
+                let guessCount = 0;
+
+                players.forEach(p => {
+                    const pm = p.matches[m.nr - 1];
+                    if (pm && pm.points !== null) {
+                        guessCount++;
+                        if (pm.points === 6) exactCount++;
+                        if (pm.points > 0) signCount++;
+                    }
+                });
+
+                const card = document.createElement('div');
+                card.className = 'match-card';
+                card.onclick = () => openMatchModal(m.nr);
+                
+                let statusBadge = '';
+                if (m.status && m.status.startsWith('LIVE')) {
+                    statusBadge = `<span class="live-pulse-badge"><span class="pulse-dot"></span>${m.status}</span>`;
+                } else if (m.status === 'Päättynyt') {
+                    statusBadge = `<span class="status-finished-badge">Päättynyt</span>`;
+                }
+
+                let statusTextUnder = '';
+                if (m.hasResult) {
+                    if (m.status && m.status.startsWith('LIVE')) {
+                        statusTextUnder = `<span class="pulse-dot" style="margin: 0; width: 6px; height: 6px;"></span> <span style="color: var(--primary);">KÄYNNISSÄ • ${m.status.replace('LIVE ', '')}</span>`;
+                    } else {
+                        statusTextUnder = `<i class="fa-solid fa-circle-check" style="color: var(--primary); font-size: 0.75rem;"></i> <span style="color: var(--text-secondary);">Peli päättynyt</span>`;
+                    }
+                } else {
+                    statusTextUnder = `<i class="fa-regular fa-clock" style="color: var(--text-muted); font-size: 0.75rem;"></i> <span style="color: var(--text-secondary);">Alkamatta</span>`;
+                }
+                
+                card.innerHTML = `
+                    <div>
+                        <div class="match-header">
+                            <span>Ottelu ${m.nr} • ${m.date}</span>
+                            <div style="display: flex; gap: 0.4rem; align-items: center;">
+                                ${statusBadge}
+                                <span class="match-group-badge">Lohko ${m.group}</span>
+                            </div>
+                        </div>
+                        <div class="match-teams">
+                            <div class="match-team">
+                                <div class="team-info">
+                                    <span class="team-flag">${getFlag(m.team1)}</span>
+                                    <span>${displayTeam(m.team1)}</span>
+                                </div>
+                                <span class="match-score ${!m.hasResult ? 'empty' : ''}">${m.hasResult ? m.goals1 : '-'}</span>
+                            </div>
+                            <div class="match-team">
+                                <div class="team-info">
+                                    <span class="team-flag">${getFlag(m.team2)}</span>
+                                    <span>${displayTeam(m.team2)}</span>
+                                </div>
+                                <span class="match-score ${!m.hasResult ? 'empty' : ''}">${m.hasResult ? m.goals2 : '-'}</span>
+                            </div>
+                        </div>
+                        <div class="match-status-row" style="margin-top: 0.6rem; text-align: center; font-size: 0.775rem; font-weight: 600; padding: 0.3rem 0.5rem; border-radius: 6px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.03); display: flex; align-items: center; justify-content: center; gap: 0.35rem;">
+                            ${statusTextUnder}
+                        </div>
+                    </div>
+                    <div class="match-footer">
+                        <span>Veikkauksia: ${guessCount} / ${players.length}</span>
+                        ${m.hasResult ? `
+                        <div class="match-stats">
+                            <span class="stat-item exact" title="Täsmälleen oikea tulos"><i class="fa-solid fa-circle-check"></i> ${exactCount}</span>
+                            <span class="stat-item sign" title="Oikea merkki (1-X-2)"><i class="fa-solid fa-circle-play"></i> ${signCount}</span>
+                        </div>
+                        ` : '<span style="font-size: 0.75rem; color: var(--text-muted);">Pelaamaton</span>'}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Render Groups grid
+        function renderGroupsView() {
+            const grid = document.getElementById('groups-grid');
+            grid.innerHTML = '';
+
+            groups.forEach(g => {
+                const card = document.createElement('div');
+                card.className = 'group-card';
+                card.style.padding = '1.25rem 1rem';
+                
+                const stats = {};
+                const teamList = actualStandings[g] || [];
+                teamList.forEach(t => {
+                    if (t) {
+                        stats[t] = { name: t, mp: 0, gf: 0, ga: 0, points: 0 };
+                    }
+                });
+
+                const groupMatches = matches.filter(m => m.group === g);
+                groupMatches.forEach(m => {
+                    if (!m.hasResult) return;
+                    const t1 = normalizeTeamName(m.team1);
+                    const t2 = normalizeTeamName(m.team2);
+                    const g1 = m.goals1;
+                    const g2 = m.goals2;
+
+                    if (stats[t1] && stats[t2]) {
+                        stats[t1].mp++;
+                        stats[t2].mp++;
+                        stats[t1].gf += g1;
+                        stats[t1].ga += g2;
+                        stats[t2].gf += g2;
+                        stats[t2].ga += g1;
+
+                        if (g1 > g2) {
+                            stats[t1].points += 3;
+                        } else if (g1 < g2) {
+                            stats[t2].points += 3;
+                        } else {
+                            stats[t1].points += 1;
+                            stats[t2].points += 1;
+                        }
+                    }
+                });
+
+                let rowsContent = '';
+                teamList.forEach((team, idx) => {
+                    const posClass = idx === 0 ? 'group-pos-1' : idx === 1 ? 'group-pos-2' : '';
+                    const tStats = stats[team] || { mp: 0, gf: 0, ga: 0, points: 0 };
+                    
+                    rowsContent += `
+                        <div class="group-table-row" style="display: grid; grid-template-columns: 24px 1fr 30px 45px 30px; gap: 0.25rem; font-size: 0.85rem; align-items: center; padding: 0.5rem 0.25rem;">
+                            <span class="group-pos ${posClass}" style="font-weight: 700; text-align: left;">${idx + 1}</span>
+                            <span class="group-team-name" style="font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: flex; align-items: center; gap: 0.4rem;">
+                                ${team ? `${getFlag(team)} ${displayTeam(team)}` : '<em style="color: var(--text-muted)">Ei asetettu</em>'}
+                            </span>
+                            <span style="text-align: center; color: var(--text-secondary); font-family: var(--font-display);">${team ? tStats.mp : '-'}</span>
+                            <span style="text-align: center; color: var(--text-muted); font-size: 0.8rem; font-family: var(--font-display);">${team ? `${tStats.gf}-${tStats.ga}` : '-'}</span>
+                            <span style="text-align: right; font-weight: 700; color: var(--primary); font-family: var(--font-display); padding-right: 0.25rem;">${team ? `${tStats.points}p` : '-'}</span>
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="group-title" style="margin-bottom: 0.5rem; padding-bottom: 0.4rem;">
+                        <span>Lohko ${g}</span>
+                        <i class="fa-solid fa-shield-halved" style="font-size: 0.9rem; color: var(--text-muted);"></i>
+                    </div>
+                    <div class="group-table-header" style="display: grid; grid-template-columns: 24px 1fr 30px 45px 30px; gap: 0.25rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); padding: 0.25rem; border-bottom: 1px solid var(--border-color); margin-bottom: 0.25rem;">
+                        <span></span>
+                        <span>Joukkue</span>
+                        <span style="text-align: center;" title="Pelatut ottelut">O</span>
+                        <span style="text-align: center;" title="Maaliero">Maalit</span>
+                        <span style="text-align: right;" title="Pisteet">Pst</span>
+                    </div>
+                    <div>${rowsContent}</div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Populate Player dropdown in Profile tab
+        function populatePlayerDropdowns() {
+            const select = document.getElementById('player-select');
+            select.innerHTML = '';
+            players.forEach(p => {
+                const opt = document.createElement('option');
+                opt.value = p.sheetName;
+                opt.innerText = p.name;
+                select.appendChild(opt);
+            });
+
+            const compareSelect = document.getElementById('compare-group-select');
+            compareSelect.innerHTML = '';
+            groups.forEach(g => {
+                const opt = document.createElement('option');
+                opt.value = g;
+                opt.innerText = `Lohko ${g}`;
+                compareSelect.appendChild(opt);
+            });
+
+            const simSelect = document.getElementById('sim-player-select');
+            if (simSelect) {
+                simSelect.innerHTML = '';
+                players.forEach(p => {
+                    const opt = document.createElement('option');
+                    opt.value = p.sheetName;
+                    opt.innerText = p.name;
+                    simSelect.appendChild(opt);
+                });
+            }
+        }
+
+        // Show player details profile
+        function showPlayerProfile(sheetName) {
+            selectedPlayerSheet = sheetName;
+            const p = players.find(x => x.sheetName === sheetName);
+            if (!p) return;
+
+            // Set player name header
+            document.getElementById('profile-name-span').innerText = p.name;
+
+            document.getElementById('profile-rank').innerText = `#${p.rank}`;
+            document.getElementById('profile-total-points').innerText = `${p.totalPoints} p`;
+            document.getElementById('profile-match-points').innerText = `${p.matchPoints} p`;
+            
+            if (p.groupPointsAdded) {
+                document.getElementById('profile-group-points').innerText = `${p.groupPoints} p`;
+                document.getElementById('profile-group-points').style.color = '';
+            } else {
+                document.getElementById('profile-group-points').innerText = `${p.groupPoints} p *`;
+                document.getElementById('profile-group-points').style.color = 'var(--text-muted)';
+            }
+            
+            const finalMatchupsClear = p.finalistsAdded && p.thirdFourthAdded;
+            if (finalMatchupsClear) {
+                document.getElementById('profile-final-points').innerText = `${p.finalPoints} p`;
+                document.getElementById('profile-final-points').style.color = '';
+            } else {
+                document.getElementById('profile-final-points').innerText = `${p.finalPoints} p **`;
+                document.getElementById('profile-final-points').style.color = 'var(--text-muted)';
+            }
+            
+            document.getElementById('profile-exact').innerText = `${p.exactlyCorrect} kpl`;
+
+            // Render Match guesses
+            const matchContainer = document.getElementById('player-matches-list');
+            matchContainer.innerHTML = '';
+
+            p.matches.forEach((pm, idx) => {
+                const actual = matches[idx];
+                const row = document.createElement('div');
+                row.className = 'player-match-row';
+
+                let pointsClass = 'pts-none';
+                let pointsText = '-';
+                if (pm.points !== null) {
+                    pointsText = `+${pm.points}p`;
+                    if (pm.points === 6) pointsClass = 'pts-6';
+                    else if (pm.points >= 4) pointsClass = 'pts-4-5';
+                    else if (pm.points >= 1) pointsClass = 'pts-1-3';
+                    else pointsClass = 'pts-0';
+                }
+
+                row.innerHTML = `
+                    <span class="pm-num">#${actual.nr}</span>
+                    <span class="pm-teams">
+                        <div>${getFlag(actual.team1)} ${displayTeam(actual.team1)}</div>
+                        <div>${getFlag(actual.team2)} ${displayTeam(actual.team2)}</div>
+                    </span>
+                    <div class="pm-guess-block">
+                        <span class="pm-label">Veikkaus</span>
+                        <span class="pm-val">${pm.hasGuess ? `${pm.guess1} - ${pm.guess2}` : 'Ei veikkausta'}</span>
+                    </div>
+                    <div class="pm-result-block">
+                        <span class="pm-label">Tulos</span>
+                        <span class="pm-val" style="color: ${actual.hasResult ? '#ffffff' : 'var(--text-muted)'};">
+                            ${actual.hasResult ? `${actual.goals1} - ${actual.goals2}` : 'Pelaamatta'}
+                        </span>
+                        ${actual.status && actual.status.startsWith('LIVE') ? `<span style="font-size: 0.65rem; color: var(--primary); font-weight: 700; text-transform: uppercase; display: flex; align-items: center; gap: 4px; margin-top: 2px;"><span class="pulse-dot" style="width: 5px; height: 5px; margin: 0;"></span>${actual.status}</span>` : ''}
+                    </div>
+                    <span class="pm-points ${pointsClass}">${pointsText}</span>
+                `;
+                matchContainer.appendChild(row);
+            });
+
+            // Render Finals Guesses comparison
+            const finalistsDiv = document.getElementById('profile-finalists-predictions');
+            finalistsDiv.innerHTML = '';
+            
+            p.finalistGuesses.forEach(guess => {
+                const isCorrect = guess && actualFinalists.includes(guess);
+                const isIncorrect = guess && actualFinalists.length > 0 && !isCorrect;
+                
+                let checkIcon = '';
+                let pointsBadge = '';
+                if (isCorrect) {
+                    checkIcon = '<i class="fa-solid fa-circle-check" style="color: var(--primary)"></i>';
+                    pointsBadge = '<span class="compare-points correct">+2p</span>';
+                } else if (isIncorrect) {
+                    checkIcon = '<i class="fa-solid fa-circle-xmark" style="color: var(--danger)"></i>';
+                    pointsBadge = '<span class="compare-points incorrect">0p</span>';
+                }
+
+                finalistsDiv.innerHTML += `
+                    <div class="medal-row">
+                        <span class="medal-name">${guess ? `${getFlag(guess)} ${displayTeam(guess)}` : '<em>Ei veikkausta</em>'} ${checkIcon}</span>
+                        ${pointsBadge}
+                    </div>
+                `;
+            });
+
+            const thirdFourthDiv = document.getElementById('profile-34-predictions');
+            thirdFourthDiv.innerHTML = '';
+            
+            p.thirdFourthGuesses.forEach(guess => {
+                const isCorrect = guess && actual34.includes(guess);
+                const isIncorrect = guess && actual34.length > 0 && !isCorrect;
+                
+                let checkIcon = '';
+                let pointsBadge = '';
+                if (isCorrect) {
+                    checkIcon = '<i class="fa-solid fa-circle-check" style="color: var(--primary)"></i>';
+                    pointsBadge = '<span class="compare-points correct">+2p</span>';
+                } else if (isIncorrect) {
+                    checkIcon = '<i class="fa-solid fa-circle-xmark" style="color: var(--danger)"></i>';
+                    pointsBadge = '<span class="compare-points incorrect">0p</span>';
+                }
+
+                thirdFourthDiv.innerHTML += `
+                    <div class="medal-row">
+                        <span class="medal-name">${guess ? `${getFlag(guess)} ${displayTeam(guess)}` : '<em>Ei veikkausta</em>'} ${checkIcon}</span>
+                        ${pointsBadge}
+                    </div>
+                `;
+            });
+
+            // Render default group comparison (Group A)
+            document.getElementById('compare-group-select').value = 'A';
+            renderGroupComparison('A');
+        }
+
+        // Render Group predictions vs actuals for profile tab
+        function renderGroupComparison(groupLetter) {
+            const p = players.find(x => x.sheetName === selectedPlayerSheet);
+            if (!p) return;
+
+            const grid = document.getElementById('group-compare-grid');
+            grid.innerHTML = `
+                <div class="compare-header">
+                    <span>Sija</span>
+                    <span>Veikkaus</span>
+                    <span>Toteutunut</span>
+                    <span style="text-align: right;">Pts</span>
+                </div>
+            `;
+
+            const guesses = p.groupGuesses[groupLetter];
+
+            guesses.forEach(g => {
+                const isCorrect = g.actual && g.guess && g.guess === g.actual;
+                const isIncorrect = g.actual && g.guess && g.guess !== g.actual;
+
+                let rowClass = '';
+                let ptsClass = '';
+                let ptsText = '-';
+
+                if (g.actual && g.guess) {
+                    if (isCorrect) {
+                        rowClass = 'correct';
+                        ptsClass = 'correct';
+                        ptsText = '+2p';
+                    } else {
+                        rowClass = 'incorrect';
+                        ptsClass = 'incorrect';
+                        ptsText = '0p';
+                    }
+                }
+
+                grid.innerHTML += `
+                    <div class="compare-row ${rowClass}">
+                        <span class="compare-pos">${g.pos}</span>
+                        <span class="compare-guess">${g.guess ? `${getFlag(g.guess)} ${displayTeam(g.guess)}` : '<em>Tyhjä</em>'}</span>
+                        <span class="compare-actual">${g.actual ? `${getFlag(g.actual)} ${displayTeam(g.actual)}` : '<em>Pelaamatta</em>'}</span>
+                        <span class="compare-points ${ptsClass}">${ptsText}</span>
+                    </div>
+                `;
+            });
+        }
+
+        // Tab Switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-view').forEach(view => {
+                view.classList.remove('active');
+            });
+
+            // Find clicked button
+            const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(btn => {
+                return btn.getAttribute('onclick').includes(tabId);
+            });
+            if (activeBtn) activeBtn.classList.add('active');
+
+            const activeView = document.getElementById(`view-${tabId}`);
+            if (activeView) activeView.classList.add('active');
+
+            if (tabId === 'progress') {
+                setTimeout(renderProgressChart, 50);
+            }
+
+            if (tabId === 'simulation') {
+                setTimeout(() => {
+                    renderSimMatches();
+                    calculateAndRenderSimulation();
+                }, 50);
+            }
+        }
+
+        // Point Progress Chart logic
+        let progressChart = null;
+        const chartColors = [
+            '#10b981', '#f59e0b', '#3b82f6', '#8b5cf6', '#ec4899',
+            '#06b6d4', '#f97316', '#a855f7', '#14b8a6', '#84cc16',
+            '#f43f5e', '#0ea5e9', '#d946ef', '#6366f1', '#22c55e',
+            '#eab308', '#f87171', '#60a5fa', '#c084fc', '#2dd4bf',
+            '#fb7185', '#38bdf8', '#f472b6', '#a78bfa', '#fb923c',
+            '#a3e635', '#4ade80', '#22d3ee', '#818cf8', '#facc15'
+        ];
+
+        function renderProgressChart() {
+            const container = document.getElementById('progress-chart-container');
+            const placeholder = document.getElementById('progress-chart-placeholder');
+            
+            const playedMatches = matches.filter(m => m.hasResult).sort((a, b) => a.nr - b.nr);
+            
+            if (playedMatches.length === 0) {
+                container.style.display = 'none';
+                placeholder.style.display = 'flex';
+                return;
+            }
+            
+            container.style.display = 'grid';
+            placeholder.style.display = 'none';
+            
+            const labels = playedMatches.map(m => `Ottelu ${m.nr}`);
+            
+            const datasets = players.map((p, pIdx) => {
+                let cumulative = 0;
+                const data = [];
+                playedMatches.forEach(m => {
+                    const pm = p.matches[m.nr - 1];
+                    cumulative += pm ? (pm.points || 0) : 0;
+                    data.push(cumulative);
+                });
+                
+                const color = chartColors[pIdx % chartColors.length];
+                
+                return {
+                    label: p.name,
+                    sheetName: p.sheetName,
+                    data: data,
+                    borderColor: color,
+                    backgroundColor: color + '15',
+                    borderWidth: 2,
+                    tension: 0.15,
+                    pointRadius: 2.5,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: color,
+                    pointHoverBorderColor: '#ffffff',
+                    pointHoverBorderWidth: 1.5,
+                    hidden: pIdx >= 5
+                };
+            });
+            
+            if (progressChart) {
+                progressChart.destroy();
+            }
+            
+            const lineLabelsPlugin = {
+                id: 'lineLabels',
+                afterDatasetsDraw(chart) {
+                    const { ctx, chartArea } = chart;
+                    if (!chartArea) return;
+                    ctx.save();
+                    ctx.font = 'bold 11px Outfit, sans-serif';
+                    ctx.textBaseline = 'middle';
+                    
+                    const activeLabels = [];
+                    chart.data.datasets.forEach((dataset, i) => {
+                        const meta = chart.getDatasetMeta(i);
+                        if (chart.isDatasetVisible(i) && meta.data.length > 0) {
+                            const lastPoint = meta.data[meta.data.length - 1];
+                            if (lastPoint && lastPoint.x !== undefined && lastPoint.y !== undefined) {
+                                activeLabels.push({
+                                    label: dataset.label,
+                                    color: dataset.borderColor,
+                                    x: lastPoint.x + 8,
+                                    y: lastPoint.y
+                                });
+                            }
+                        }
+                    });
+
+                    // Sort labels by y coordinate (lower y is higher points) to resolve overlaps
+                    activeLabels.sort((a, b) => a.y - b.y);
+                    
+                    const minSpacing = 14;
+                    
+                    // First pass: resolve overlaps from top to bottom
+                    for (let idx = 1; idx < activeLabels.length; idx++) {
+                        if (activeLabels[idx].y - activeLabels[idx - 1].y < minSpacing) {
+                            activeLabels[idx].y = activeLabels[idx - 1].y + minSpacing;
+                        }
+                    }
+
+                    // Second pass: clamp to bottom boundary and push back up if needed
+                    const bottomBound = chartArea.bottom;
+                    if (activeLabels.length > 0 && activeLabels[activeLabels.length - 1].y > bottomBound) {
+                        activeLabels[activeLabels.length - 1].y = bottomBound;
+                        for (let idx = activeLabels.length - 2; idx >= 0; idx--) {
+                            if (activeLabels[idx + 1].y - activeLabels[idx].y < minSpacing) {
+                                activeLabels[idx].y = activeLabels[idx + 1].y - minSpacing;
+                            }
+                        }
+                    }
+
+                    // Third pass: clamp to top boundary and push back down if needed
+                    const topBound = chartArea.top;
+                    if (activeLabels.length > 0 && activeLabels[0].y < topBound) {
+                        activeLabels[0].y = topBound;
+                        for (let idx = 1; idx < activeLabels.length; idx++) {
+                            if (activeLabels[idx].y - activeLabels[idx - 1].y < minSpacing) {
+                                activeLabels[idx].y = activeLabels[idx - 1].y + minSpacing;
+                            }
+                        }
+                    }
+
+                    // Draw labels on canvas
+                    activeLabels.forEach(al => {
+                        ctx.fillStyle = al.color;
+                        ctx.fillText(al.label, al.x, al.y);
+                    });
+                    
+                    ctx.restore();
+                }
+            };
+            
+            const ctx = document.getElementById('progress-chart').getContext('2d');
+            progressChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                plugins: [lineLabelsPlugin],
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            right: 90
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(15, 23, 42, 0.95)',
+                            titleFont: { family: 'Outfit', size: 13, weight: 'bold' },
+                            bodyFont: { family: 'Plus Jakarta Sans', size: 12 },
+                            borderColor: 'rgba(255, 255, 255, 0.1)',
+                            borderWidth: 1,
+                            padding: 10,
+                            displayColors: true,
+                            callbacks: {
+                                label: function(context) {
+                                    const pIdx = context.datasetIndex;
+                                    const mIdx = context.dataIndex;
+                                    const matchNr = playedMatches[mIdx].nr;
+                                    const p = players[pIdx];
+                                    const pm = p.matches[matchNr - 1];
+                                    const ptsThisMatch = pm ? (pm.points || 0) : 0;
+                                    return ` ${p.name}: ${context.raw} p (+${ptsThisMatch}p ottelusta ${matchNr})`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.05)',
+                                borderColor: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: '#94a3b8',
+                                font: { family: 'Plus Jakarta Sans', size: 10 }
+                            }
+                        },
+                        y: {
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.05)',
+                                borderColor: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: '#94a3b8',
+                                font: { family: 'Plus Jakarta Sans', size: 11 }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Kertymäpisteet',
+                                color: '#94a3b8',
+                                font: { family: 'Plus Jakarta Sans', size: 11, weight: 'bold' }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            renderLegendList();
+        }
+
+        function renderLegendList() {
+            const list = document.getElementById('chart-legend-list');
+            list.innerHTML = '';
+            
+            progressChart.data.datasets.forEach((dataset, idx) => {
+                const player = players[idx];
+                const visible = progressChart.isDatasetVisible(idx);
+                
+                const item = document.createElement('div');
+                item.className = `legend-item ${visible ? 'active' : ''}`;
+                item.style.setProperty('--color-indicator', dataset.borderColor);
+                item.onclick = () => toggleLine(idx);
+                
+                item.innerHTML = `
+                    <input type="checkbox" class="legend-checkbox" ${visible ? 'checked' : ''} style="--color-indicator: ${dataset.borderColor};">
+                    <span class="legend-color-dot" style="--color-indicator: ${dataset.borderColor};"></span>
+                    <span class="legend-player-name">${dataset.label}</span>
+                    <span class="legend-player-points">${player.totalPoints} p</span>
+                `;
+                
+                list.appendChild(item);
+            });
+        }
+
+        function toggleLine(idx) {
+            const visible = progressChart.isDatasetVisible(idx);
+            progressChart.setDatasetVisibility(idx, !visible);
+            progressChart.update();
+            renderLegendList();
+        }
+
+        function toggleAllLines(show) {
+            progressChart.data.datasets.forEach((dataset, idx) => {
+                progressChart.setDatasetVisibility(idx, show);
+            });
+            progressChart.update();
+            renderLegendList();
+        }
+
+        function selectTopNLines(n) {
+            progressChart.data.datasets.forEach((dataset, idx) => {
+                progressChart.setDatasetVisibility(idx, idx < n);
+            });
+            progressChart.update();
+            renderLegendList();
+        }
+
+        // Match predictions modal logic
+        let currentModalMatchNr = null;
+
+        function openMatchModal(matchNr) {
+            currentModalMatchNr = matchNr;
+            const m = matches[matchNr - 1];
+            if (!m) return;
+            
+            document.getElementById('modal-match-title').innerText = `Ottelu ${m.nr}`;
+            
+            const detailsText = `${getFlag(m.team1)} ${displayTeam(m.team1)} - ${getFlag(m.team2)} ${displayTeam(m.team2)}`;
+            let resultText = ' • Pelaamatta';
+            if (m.hasResult) {
+                const liveLabel = m.status && m.status.startsWith('LIVE') ? ` <span class="live-pulse-badge" style="padding: 0.1rem 0.3rem; font-size: 0.7rem; vertical-align: middle;"><span class="pulse-dot"></span>${m.status}</span>` : ' • Päättynyt';
+                resultText = ` • <strong>${m.goals1} - ${m.goals2}</strong>${liveLabel}`;
+            }
+            document.getElementById('modal-match-details').innerHTML = detailsText + resultText;
+            
+            document.getElementById('modal-search-players').value = '';
+            renderModalPredictions();
+            
+            document.getElementById('match-modal').style.display = 'flex';
+            window.addEventListener('keydown', handleModalKeyDown);
+        }
+
+        function closeMatchModal(event) {
+            if (event && event.target !== document.getElementById('match-modal')) return;
+            document.getElementById('match-modal').style.display = 'none';
+            window.removeEventListener('keydown', handleModalKeyDown);
+        }
+
+        function handleModalKeyDown(e) {
+            if (e.key === 'Escape') {
+                closeMatchModal();
+            }
+        }
+
+        function filterModalPredictions() {
+            renderModalPredictions();
+        }
+
+        function renderModalPredictions() {
+            const body = document.getElementById('modal-predictions-body');
+            body.innerHTML = '';
+            
+            const q = document.getElementById('modal-search-players').value.toLowerCase().trim();
+            const match = matches[currentModalMatchNr - 1];
+            
+            const predictions = players.map(p => {
+                const pm = p.matches[currentModalMatchNr - 1];
+                return {
+                    name: p.name,
+                    sheetName: p.sheetName,
+                    rank: p.rank,
+                    guess1: pm ? pm.guess1 : null,
+                    guess2: pm ? pm.guess2 : null,
+                    points: pm ? pm.points : null,
+                    hasGuess: pm ? pm.hasGuess : false
+                };
+            });
+            
+            if (match.hasResult) {
+                predictions.sort((a, b) => {
+                    if (a.hasGuess && !b.hasGuess) return -1;
+                    if (!a.hasGuess && b.hasGuess) return 1;
+                    return (b.points || 0) - (a.points || 0) || a.name.localeCompare(b.name);
+                });
+            } else {
+                predictions.sort((a, b) => a.rank - b.rank || a.name.localeCompare(b.name));
+            }
+            
+            predictions.forEach(p => {
+                if (q && !p.name.toLowerCase().includes(q)) return;
+                
+                const tr = document.createElement('tr');
+                tr.style.cursor = 'pointer';
+                tr.onclick = () => {
+                    document.getElementById('match-modal').style.display = 'none';
+                    window.removeEventListener('keydown', handleModalKeyDown);
+                    
+                    switchTab('profiles');
+                    document.getElementById('player-select').value = p.sheetName;
+                    showPlayerProfile(p.sheetName);
+                };
+                
+                let guessText = 'Ei veikkausta';
+                if (p.hasGuess) {
+                    guessText = `${p.guess1} - ${p.guess2}`;
+                }
+                
+                let pointsClass = 'pts-none';
+                let pointsText = '-';
+                if (match.hasResult && p.hasGuess) {
+                    pointsText = `+${p.points}p`;
+                    if (p.points === 6) pointsClass = 'pts-6';
+                    else if (p.points >= 4) pointsClass = 'pts-4-5';
+                    else if (p.points >= 1) pointsClass = 'pts-1-3';
+                    else pointsClass = 'pts-0';
+                }
+                
+                tr.innerHTML = `
+                    <td class="modal-player-name">${p.name} <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">#${p.rank}</span></td>
+                    <td style="text-align: center;" class="modal-guess-val">${guessText}</td>
+                    <td style="text-align: center;"><span class="pm-points ${pointsClass}" style="font-size: 0.85rem; padding: 0.15rem 0.4rem; display: inline-block; width: 50px;">${pointsText}</span></td>
+                `;
+                body.appendChild(tr);
+            });
+            
+            if (body.children.length === 0) {
+                body.innerHTML = `<tr><td colspan="3" style="text-align: center; color: var(--text-muted); padding: 2rem 0;">Ei hakua vastaavia veikkaajia</td></tr>`;
+            }
+        }
+
+        // Loading Indicators
+        function showLoading(message = 'Ladataan...') {
+            document.getElementById('loading-message').innerText = message;
+            const s = document.getElementById('loading-spinner');
+            s.style.display = 'flex';
+            s.style.opacity = '1';
+        }
+
+        function hideLoading() {
+            const s = document.getElementById('loading-spinner');
+            s.style.opacity = '0';
+            setTimeout(() => {
+                s.style.display = 'none';
+            }, 500);
+        }
+
+        // Simulation Tab Functions
+        function toggleSimShowAll(showAll) {
+            simShowAllMatches = showAll;
+            renderSimMatches();
+        }
+
+        function onSimScoreChange(matchNr) {
+            const g1Val = document.getElementById(`sim-m-${matchNr}-g1`).value;
+            const g2Val = document.getElementById(`sim-m-${matchNr}-g2`).value;
+
+            if (g1Val !== "" && g2Val !== "") {
+                simulatedScores[matchNr] = {
+                    goals1: Number(g1Val),
+                    goals2: Number(g2Val)
+                };
+            } else {
+                delete simulatedScores[matchNr];
+            }
+
+            calculateAndRenderSimulation();
+        }
+
+        function copyPlayerPredictionsToSim() {
+            const sheetName = document.getElementById('sim-player-select').value;
+            const p = players.find(x => x.sheetName === sheetName);
+            if (!p) return;
+
+            matches.forEach(m => {
+                if (!m.originallyHadResult) {
+                    const pm = p.matches[m.nr - 1];
+                    if (pm && pm.hasGuess) {
+                        simulatedScores[m.nr] = {
+                            goals1: pm.guess1,
+                            goals2: pm.guess2
+                        };
+                    }
+                }
+            });
+
+            renderSimMatches();
+            calculateAndRenderSimulation();
+        }
+
+        function resetSimulation() {
+            simulatedScores = {};
+            
+            renderSimMatches();
+            calculateAndRenderSimulation();
+        }
+
+        function renderSimMatches() {
+            const container = document.getElementById('sim-matches-list');
+            if (!container) return;
+            container.innerHTML = '';
+
+            let count = 0;
+            matches.forEach(m => {
+                const hadResult = m.originallyHadResult;
+                if (!simShowAllMatches && hadResult) return;
+
+                count++;
+                const row = document.createElement('div');
+                row.className = 'sim-match-row';
+
+                let val1 = '';
+                let val2 = '';
+                if (simulatedScores[m.nr] !== undefined) {
+                    val1 = simulatedScores[m.nr].goals1;
+                    val2 = simulatedScores[m.nr].goals2;
+                } else if (hadResult) {
+                    val1 = m.goals1;
+                    val2 = m.goals2;
+                }
+
+                row.innerHTML = `
+                    <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700; width: 60px; flex-shrink: 0;">
+                        #${m.nr}<br>${m.date.split(' ')[0]}
+                    </div>
+                    <div class="sim-teams-block">
+                        <div class="sim-team-line">
+                            ${getFlag(m.team1)} <span>${displayTeam(m.team1)}</span>
+                        </div>
+                        <div class="sim-team-line">
+                            ${getFlag(m.team2)} <span>${displayTeam(m.team2)}</span>
+                        </div>
+                    </div>
+                    <div class="sim-inputs-block">
+                        <input type="number" min="0" value="${val1}" class="sim-score-input" id="sim-m-${m.nr}-g1" oninput="onSimScoreChange(${m.nr})">
+                        <span class="sim-score-divider">-</span>
+                        <input type="number" min="0" value="${val2}" class="sim-score-input" id="sim-m-${m.nr}-g2" oninput="onSimScoreChange(${m.nr})">
+                    </div>
+                `;
+                container.appendChild(row);
+            });
+
+            if (count === 0) {
+                container.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 2rem 0;">Ei simuloitavia otteluita</div>`;
+            }
+        }
+
+        function calculateAndRenderSimulation() {
+            if (!workbook) return;
+            
+            // 1. Create a copy of the matches array
+            const simMatches = matches.map(m => {
+                const copy = { ...m };
+                if (simulatedScores[m.nr] !== undefined) {
+                    copy.goals1 = simulatedScores[m.nr].goals1;
+                    copy.goals2 = simulatedScores[m.nr].goals2;
+                    copy.hasResult = true;
+                    copy.status = 'Simuloitu';
+                }
+                return copy;
+            });
+
+            // 2. Compute simulated standings
+            const simStandings = {};
+            const tuloksetSheet = workbook.Sheets['Tulokset'];
+            const getTValue = (addr) => tuloksetSheet[addr] ? tuloksetSheet[addr].v : undefined;
+
+            groups.forEach((g, gIdx) => {
+                if (textResults && textResults.standings && textResults.standings[g]) {
+                    simStandings[g] = textResults.standings[g];
+                } else {
+                    const isSecondHalf = gIdx >= 6;
+                    const startRow = isSecondHalf ? 12 : 6;
+                    const colLetter = XLSX.utils.encode_col(12 + (gIdx % 6));
+                    const originalOrder = [];
+                    for (let pos = 1; pos <= 4; pos++) {
+                        const val = getTValue(`${colLetter}${startRow + pos - 1}`);
+                        originalOrder.push(val ? normalizeTeamName(String(val)) : null);
+                    }
+                    const cleanOrder = originalOrder.filter(Boolean);
+                    const fallbackOrder = cleanOrder.length === 4 ? cleanOrder : getGroupTeamsFromMatches(g);
+                    simStandings[g] = calculateGroupStandings(g, fallbackOrder, simMatches);
+                }
+            });
+
+            // 3. Compute simulated player points
+            const simPlayers = calculateLeaderboard(simMatches, simStandings, actualFinalists, actual34);
+
+            // 4. Render the simulated leaderboard
+            const body = document.getElementById('sim-leaderboard-body');
+            if (!body) return;
+            body.innerHTML = '';
+
+            simPlayers.forEach(p => {
+                const realPlayer = players.find(x => x.sheetName === p.sheetName);
+                if (!realPlayer) return;
+
+                // Calculate rank change
+                const rankDelta = realPlayer.rank - p.rank;
+                let rankChangeHtml = '';
+                if (rankDelta > 0) {
+                    rankChangeHtml = `<span class="rank-change up"><i class="fa-solid fa-arrow-up"></i> ${rankDelta}</span>`;
+                } else if (rankDelta < 0) {
+                    rankChangeHtml = `<span class="rank-change down"><i class="fa-solid fa-arrow-down"></i> ${Math.abs(rankDelta)}</span>`;
+                } else {
+                    rankChangeHtml = `<span class="rank-change neutral">•</span>`;
+                }
+
+                // Points change
+                const ptsDelta = p.totalPoints - realPlayer.totalPoints;
+                const ptsDeltaText = ptsDelta > 0 ? ` (+${ptsDelta}p)` : ptsDelta < 0 ? ` (${ptsDelta}p)` : '';
+                const ptsClass = ptsDelta > 0 ? 'color: var(--primary); font-weight: bold;' : '';
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="td-rank" style="vertical-align: middle;">
+                        #${p.rank} ${rankChangeHtml}
+                    </td>
+                    <td class="td-name" style="font-size: 0.95rem;">${p.name}</td>
+                    <td style="text-align: center; font-family: var(--font-display); font-size: 0.95rem;">
+                        ${realPlayer.totalPoints} ➔ <span style="${ptsClass}">${p.totalPoints}</span><span style="font-size: 0.8rem; color: var(--text-secondary);">${ptsDeltaText}</span>
+                    </td>
+                `;
+                body.appendChild(tr);
+            });
+        }
+    </script>
+
+    <!-- Match predictions modal -->
+    <div id="match-modal" class="modal-overlay" style="display: none;" onclick="closeMatchModal(event)">
+        <div class="modal-content glass-card" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeMatchModal()">&times;</button>
+            <div class="modal-header">
+                <h2 id="modal-match-title">Ottelun veikkaukset</h2>
+                <div id="modal-match-details" style="margin-top: 0.5rem; font-size: 1.05rem; color: var(--text-secondary);">Meksiko - Ruotsi</div>
+            </div>
+            <div class="modal-search-container" style="margin-bottom: 1rem;">
+                <div class="input-wrapper" style="width: 100%;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="modal-search-players" class="search-input" placeholder="Hae veikkaajaa..." oninput="filterModalPredictions()">
+                </div>
+            </div>
+            <div class="modal-body-scroll">
+                <table class="modal-table">
+                    <thead>
+                        <tr>
+                            <th>Veikkaaja</th>
+                            <th style="text-align: center;">Veikkaus</th>
+                            <th style="text-align: center;">Pisteet</th>
+                        </tr>
+                    </thead>
+                    <tbody id="modal-predictions-body">
+                        <!-- Predictions populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
