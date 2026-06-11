@@ -2785,55 +2785,23 @@
 
         function fetchLiveGames() {
             const cacheBuster = '?t=' + new Date().getTime();
-            const directUrl = 'https://worldcup26.ir/get/games' + cacheBuster;
-            const proxyUrl = 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games';
-
-            return fetch(directUrl)
+            return fetch('agent-analysis.json' + cacheBuster)
                 .then(res => {
-                    if (!res.ok) throw new Error('Direct fetch status: ' + res.status);
+                    if (!res.ok) throw new Error('Status: ' + res.status);
                     return res.json();
                 })
-                .catch(err => {
-                    console.log('Suora haku epäonnistui tai CORS esti sen. Kokeillaan CORS-proxyä...', err);
-                    return fetch(proxyUrl)
-                        .then(res => {
-                            if (!res.ok) throw new Error('Proxy fetch status: ' + res.status);
-                            return res.json();
-                        });
+                .then(data => {
+                    if (data && data.matches) {
+                        return {
+                            games: mapAgentAnalysisMatchesToApiGames(data.matches)
+                        };
+                    }
+                    throw new Error('Data does not contain matches');
                 });
         }
 
         function fetchLiveGroupsAndTeams() {
-            const cacheBuster = '?t=' + new Date().getTime();
-            const directGroupsUrl = 'https://worldcup26.ir/get/groups' + cacheBuster;
-            const proxyGroupsUrl = 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups';
-            const directTeamsUrl = 'https://worldcup26.ir/get/teams' + cacheBuster;
-            const proxyTeamsUrl = 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams';
-
-            const fetchGroups = fetch(directGroupsUrl)
-                .then(res => {
-                    if (!res.ok) throw new Error('Direct groups fetch failed');
-                    return res.json();
-                })
-                .catch(() => {
-                    return fetch(proxyGroupsUrl).then(res => res.json());
-                });
-
-            const fetchTeams = fetch(directTeamsUrl)
-                .then(res => {
-                    if (!res.ok) throw new Error('Direct teams fetch failed');
-                    return res.json();
-                })
-                .catch(() => {
-                    return fetch(proxyTeamsUrl).then(res => res.json());
-                });
-
-            return Promise.all([fetchGroups, fetchTeams])
-                .then(([groupsData, teamsData]) => {
-                    if (groupsData && groupsData.groups) apiGroups = groupsData.groups;
-                    if (teamsData && teamsData.teams) apiTeams = teamsData.teams;
-                })
-                .catch(err => console.log('Ei voitu ladata live-lohkoja tai joukkueita netistä.', err));
+            return Promise.resolve();
         }
 
         function attemptAutoLoad() {
@@ -2855,23 +2823,7 @@
                                     apiGames = data.games;
                                 }
                             })
-                            .catch(err => {
-                                console.log('Ei voitu ladata live-tuloksia netistä, yritetään fallbackia agent-analysis.json:ista...', err);
-                                return fetch('agent-analysis.json' + cacheBuster)
-                                    .then(res => {
-                                        if (!res.ok) throw new Error('Status ' + res.status);
-                                        return res.json();
-                                    })
-                                    .then(data => {
-                                        if (data && data.matches) {
-                                            console.log('Ladattu pelitiedot fallback-tiedostosta.');
-                                            apiGames = mapAgentAnalysisMatchesToApiGames(data.matches);
-                                        }
-                                    })
-                                    .catch(fallbackErr => {
-                                        console.log('Fallback-haku epäonnistui myös.', fallbackErr);
-                                    });
-                            });
+                            .catch(err => console.log('Ei voitu ladata live-tuloksia netistä.', err));
                         
                         const groupsPromise = fetchLiveGroupsAndTeams()
                             .catch(err => console.log('Ei voitu ladata live-lohkoja netistä.', err));
@@ -2902,28 +2854,13 @@
         }
 
         function fetchLiveScores() {
-            const cacheBuster = '?t=' + new Date().getTime();
             const gamesPromise = fetchLiveGames()
                 .then(data => {
                     if (data && data.games) {
                         apiGames = data.games;
                     }
                 })
-                .catch(err => {
-                    console.log('Virhe ladattaessa live-tuloksia, yritetään fallbackia...', err);
-                    return fetch('agent-analysis.json' + cacheBuster)
-                        .then(res => {
-                            if (!res.ok) throw new Error('Status ' + res.status);
-                            return res.json();
-                        })
-                        .then(data => {
-                            if (data && data.matches) {
-                                console.log('Ladattu pelitiedot fallback-tiedostosta live-päivityksessä.');
-                                apiGames = mapAgentAnalysisMatchesToApiGames(data.matches);
-                            }
-                        })
-                        .catch(fallbackErr => console.log('Fallback epäonnistui myös.', fallbackErr));
-                });
+                .catch(err => console.log('Virhe ladattaessa live-tuloksia:', err));
             
             const groupsPromise = fetchLiveGroupsAndTeams()
                 .catch(err => console.log('Virhe ladattaessa live-lohkoja:', err));
