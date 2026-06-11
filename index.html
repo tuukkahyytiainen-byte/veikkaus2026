@@ -2183,7 +2183,7 @@
                                     <tr>
                                         <th>Sija</th>
                                         <th>Osallistuja</th>
-                                        <th style="text-align: center;">Pisteet</th>
+                                        <th style="text-align: center;">Ottelupisteet</th>
                                         <th style="text-align: center;">Ero</th>
                                         <th style="text-align: center;">Tilanne</th>
                                     </tr>
@@ -2194,7 +2194,7 @@
                             </table>
                         </div>
                         <div style="margin-top: 1rem; font-size: 0.775rem; color: var(--text-muted); line-height: 1.4; display: flex; flex-direction: column; gap: 0.2rem;">
-                            <span>* Vertailu perustuu osallistujien kokonaispisteisiin (Total Points).</span>
+                            <span>* Vertailu perustuu osallistujien ottelupisteisiin (Match Points).</span>
                             <span>* Koska Botmasella ei ole lohkojen sijoitus- tai jatkopeliveikkauksia, hänen lohko- ja finaalipisteensä ovat aina 0.</span>
                         </div>
                     </div>
@@ -3727,38 +3727,39 @@
             document.getElementById('botmanen-total-points').innerText = `${botPoints.totalPoints} p`;
             document.getElementById('botmanen-exact-matches').innerText = `${botPoints.exactlyCorrect} kpl`;
             
-            // Calculate virtual rank for Botmanen
+            // Calculate virtual rank for Botmanen using matchPoints
             let allPlayersWithBot = players.map(p => ({
                 name: p.name,
-                totalPoints: p.totalPoints,
+                sheetName: p.sheetName,
+                matchPoints: p.matchPoints,
                 exactlyCorrect: p.exactlyCorrect,
                 isBot: false
             }));
             allPlayersWithBot.push({
                 name: "Botmanen",
-                totalPoints: botPoints.totalPoints,
+                matchPoints: botPoints.matchPoints,
                 exactlyCorrect: botPoints.exactlyCorrect,
                 isBot: true
             });
-            allPlayersWithBot.sort((a, b) => b.totalPoints - a.totalPoints || b.exactlyCorrect - a.exactlyCorrect || a.name.localeCompare(b.name));
+            allPlayersWithBot.sort((a, b) => b.matchPoints - a.matchPoints || b.exactlyCorrect - a.exactlyCorrect || a.name.localeCompare(b.name));
             
             let virtualRank = 1;
             allPlayersWithBot.forEach((p, idx) => {
-                p.rank = (idx > 0 && p.totalPoints === allPlayersWithBot[idx - 1].totalPoints) ? allPlayersWithBot[idx - 1].rank : idx + 1;
+                p.matchRank = (idx > 0 && p.matchPoints === allPlayersWithBot[idx - 1].matchPoints) ? allPlayersWithBot[idx - 1].matchRank : idx + 1;
                 if (p.isBot) {
-                    virtualRank = p.rank;
+                    virtualRank = p.matchRank;
                 }
             });
             document.getElementById('botmanen-virtual-rank').innerText = `#${virtualRank} / ${allPlayersWithBot.length}`;
             
-            // Count players above, tied, and below Botmanen
+            // Count players above, tied, and below Botmanen based on matchPoints
             let countAbove = 0;
             let countTied = 0;
             let countBelow = 0;
             
             players.forEach(p => {
-                if (p.totalPoints > botPoints.totalPoints) countAbove++;
-                else if (p.totalPoints === botPoints.totalPoints) countTied++;
+                if (p.matchPoints > botPoints.matchPoints) countAbove++;
+                else if (p.matchPoints === botPoints.matchPoints) countTied++;
                 else countBelow++;
             });
             
@@ -3772,10 +3773,11 @@
             
             const playerQuery = document.getElementById('search-botmanen-players')?.value.toLowerCase().trim() || '';
             
-            players.forEach(p => {
+            allPlayersWithBot.forEach(p => {
+                if (p.isBot) return; // Skip Botmanen in the comparison rows
                 if (playerQuery && !p.name.toLowerCase().includes(playerQuery)) return;
                 
-                const diff = p.totalPoints - botPoints.totalPoints;
+                const diff = p.matchPoints - botPoints.matchPoints;
                 let diffText = diff > 0 ? `+${diff}` : `${diff}`;
                 let diffStyle = 'color: var(--text-muted); font-weight: 600;';
                 let statusBadgeClass = 'draw';
@@ -3800,9 +3802,9 @@
                 };
                 
                 tr.innerHTML = `
-                    <td class="td-rank">#${p.rank}</td>
+                    <td class="td-rank">#${p.matchRank}</td>
                     <td class="td-name">${p.name}</td>
-                    <td style="text-align: center;" class="td-points">${p.totalPoints} p</td>
+                    <td style="text-align: center;" class="td-points">${p.matchPoints} p</td>
                     <td style="text-align: center; ${diffStyle}">${diffText} p</td>
                     <td style="text-align: center;">
                         <span class="botmanen-badge ${statusBadgeClass}">${statusText}</span>
