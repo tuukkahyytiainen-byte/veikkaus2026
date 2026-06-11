@@ -557,6 +557,25 @@
             font-size: 1rem;
         }
 
+        .match-scorers {
+            font-size: 0.725rem;
+            color: var(--text-muted);
+            padding-left: 1.85rem;
+            margin-top: 0.1rem;
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-weight: 500;
+        }
+
+        .match-scorers span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
         .match-footer {
             border-top: 1px solid var(--border-color);
             padding-top: 0.75rem;
@@ -1587,6 +1606,10 @@
             .match-card {
                 padding: 1rem;
             }
+            .match-scorers {
+                padding-left: 1.6rem;
+                font-size: 0.7rem;
+            }
 
             /* Stat cards in profile */
             .profile-stat-card {
@@ -2590,6 +2613,39 @@
             "croatia": "Kroatia"
         };
 
+        function parseScorers(scorersVal) {
+            if (!scorersVal || scorersVal === 'null' || scorersVal === 'undefined') return [];
+            if (Array.isArray(scorersVal)) return scorersVal;
+            if (typeof scorersVal === 'string') {
+                const trimmed = scorersVal.trim();
+                if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+                    try {
+                        const parsed = JSON.parse(trimmed);
+                        if (Array.isArray(parsed)) return parsed;
+                    } catch (e) {
+                        // ignore error, fall through
+                    }
+                }
+                return trimmed.split(',').map(s => s.trim()).filter(Boolean);
+            }
+            return [];
+        }
+
+        function formatLiveStatus(timeElapsed) {
+            if (!timeElapsed || timeElapsed === 'notstarted') return '';
+            let elapsed = timeElapsed.trim().toUpperCase();
+            if (elapsed === 'HT' || elapsed === 'HALF-TIME' || elapsed === 'HALFTIME') {
+                return 'LIVE (HT)';
+            }
+            if (elapsed === 'FT' || elapsed === 'FINISHED') {
+                return 'Päättynyt';
+            }
+            if (/^\d+$/.test(elapsed)) {
+                return `LIVE ${elapsed}'`;
+            }
+            return `LIVE ${timeElapsed}`;
+        }
+
         // Spelling Normalization Function to correct human typos
         function normalizeTeamName(name) {
             if (!name) return "";
@@ -3054,12 +3110,24 @@
                 let hasResult = g1 !== undefined && g1 !== null && g1 !== '' && g2 !== undefined && g2 !== null && g2 !== '';
                 let status = hasResult ? 'Päättynyt' : 'Pelaamaton';
                 
+                let homeScorers = null;
+                let awayScorers = null;
+                let apiHomeScore = null;
+                let apiAwayScore = null;
+
                 const apiGame = apiGames.find(g => Number(g.id) === m);
+                if (apiGame) {
+                    homeScorers = apiGame.home_scorers;
+                    awayScorers = apiGame.away_scorers;
+                    apiHomeScore = apiGame.home_score !== null && apiGame.home_score !== undefined ? Number(apiGame.home_score) : null;
+                    apiAwayScore = apiGame.away_score !== null && apiGame.away_score !== undefined ? Number(apiGame.away_score) : null;
+                }
+
                 if (apiGame && apiGame.time_elapsed !== 'notstarted') {
                     g1 = Number(apiGame.home_score);
                     g2 = Number(apiGame.away_score);
                     hasResult = true;
-                    status = apiGame.finished === 'TRUE' ? 'Päättynyt' : `LIVE ${apiGame.time_elapsed}'`;
+                    status = apiGame.finished === 'TRUE' ? 'Päättynyt' : formatLiveStatus(apiGame.time_elapsed);
                 }
                 
                 if (textResults && textResults.matches && textResults.matches[m]) {
@@ -3071,6 +3139,11 @@
                 
                 if (hasResult) playedCount++;
                 
+                // Show scorers only if the resolved score matches the API score
+                const showScorers = apiGame && hasResult && 
+                                    apiHomeScore !== null && apiAwayScore !== null && 
+                                    (Number(g1) === apiHomeScore) && (Number(g2) === apiAwayScore);
+                
                 matches.push({
                     nr: Number(nr),
                     date: String(date || ''),
@@ -3081,7 +3154,9 @@
                     goals2: hasResult ? Number(g2) : null,
                     hasResult: hasResult,
                     status: status,
-                    originallyHadResult: hasResult
+                    originallyHadResult: hasResult,
+                    homeScorers: showScorers ? homeScorers : null,
+                    awayScorers: showScorers ? awayScorers : null
                 });
             }
             
@@ -3334,6 +3409,33 @@
                     statusTextUnder = `<i class="fa-regular fa-clock" style="color: var(--text-muted); font-size: 0.75rem;"></i> <span style="color: var(--text-secondary);">Alkamatta</span>`;
                 }
                 
+                let homeScorersHtml = '';
+                let awayScorersHtml = '';
+                
+                if (m.homeScorers) {
+                    const parsed = parseScorers(m.homeScorers);
+                    if (parsed.length > 0) {
+                        homeScorersHtml = `
+                            <div class="match-scorers" title="${parsed.join(', ')}">
+                                <i class="fa-solid fa-soccer-ball"></i>
+                                <span>${parsed.join(', ')}</span>
+                            </div>
+                        `;
+                    }
+                }
+                
+                if (m.awayScorers) {
+                    const parsed = parseScorers(m.awayScorers);
+                    if (parsed.length > 0) {
+                        awayScorersHtml = `
+                            <div class="match-scorers" title="${parsed.join(', ')}">
+                                <i class="fa-solid fa-soccer-ball"></i>
+                                <span>${parsed.join(', ')}</span>
+                            </div>
+                        `;
+                    }
+                }
+
                 card.innerHTML = `
                     <div>
                         <div class="match-header">
@@ -3344,19 +3446,25 @@
                             </div>
                         </div>
                         <div class="match-teams">
-                            <div class="match-team">
-                                <div class="team-info">
-                                    <span class="team-flag">${getFlag(m.team1)}</span>
-                                    <span>${displayTeam(m.team1)}</span>
+                            <div style="display: flex; flex-direction: column;">
+                                <div class="match-team">
+                                    <div class="team-info">
+                                        <span class="team-flag">${getFlag(m.team1)}</span>
+                                        <span>${displayTeam(m.team1)}</span>
+                                    </div>
+                                    <span class="match-score ${!m.hasResult ? 'empty' : ''}">${m.hasResult ? m.goals1 : '-'}</span>
                                 </div>
-                                <span class="match-score ${!m.hasResult ? 'empty' : ''}">${m.hasResult ? m.goals1 : '-'}</span>
+                                ${homeScorersHtml}
                             </div>
-                            <div class="match-team">
-                                <div class="team-info">
-                                    <span class="team-flag">${getFlag(m.team2)}</span>
-                                    <span>${displayTeam(m.team2)}</span>
+                            <div style="display: flex; flex-direction: column;">
+                                <div class="match-team">
+                                    <div class="team-info">
+                                        <span class="team-flag">${getFlag(m.team2)}</span>
+                                        <span>${displayTeam(m.team2)}</span>
+                                    </div>
+                                    <span class="match-score ${!m.hasResult ? 'empty' : ''}">${m.hasResult ? m.goals2 : '-'}</span>
                                 </div>
-                                <span class="match-score ${!m.hasResult ? 'empty' : ''}">${m.hasResult ? m.goals2 : '-'}</span>
+                                ${awayScorersHtml}
                             </div>
                         </div>
                         <div class="match-status-row" style="margin-top: 0.6rem; text-align: center; font-size: 0.775rem; font-weight: 600; padding: 0.3rem 0.5rem; border-radius: 6px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.03); display: flex; align-items: center; justify-content: center; gap: 0.35rem;">
@@ -4180,6 +4288,30 @@
             }
             document.getElementById('modal-match-details').innerHTML = detailsText + resultText;
             
+            const scorersDiv = document.getElementById('modal-match-scorers');
+            if (m.hasResult && (m.homeScorers || m.awayScorers)) {
+                let homeHtml = '';
+                let awayHtml = '';
+                const homeList = parseScorers(m.homeScorers);
+                const awayList = parseScorers(m.awayScorers);
+                
+                if (homeList.length > 0) {
+                    homeHtml = `<div style="display: flex; align-items: flex-start; gap: 0.4rem; color: var(--text-secondary); text-align: left;"><i class="fa-solid fa-soccer-ball" style="margin-top: 0.2rem; font-size: 0.75rem; color: var(--text-muted);"></i><span><strong>${displayTeam(m.team1)}:</strong> ${homeList.join(', ')}</span></div>`;
+                }
+                if (awayList.length > 0) {
+                    awayHtml = `<div style="display: flex; align-items: flex-start; gap: 0.4rem; color: var(--text-secondary); text-align: left;"><i class="fa-solid fa-soccer-ball" style="margin-top: 0.2rem; font-size: 0.75rem; color: var(--text-muted);"></i><span><strong>${displayTeam(m.team2)}:</strong> ${awayList.join(', ')}</span></div>`;
+                }
+                
+                if (homeHtml || awayHtml) {
+                    scorersDiv.innerHTML = homeHtml + awayHtml;
+                    scorersDiv.style.display = 'flex';
+                } else {
+                    scorersDiv.style.display = 'none';
+                }
+            } else {
+                scorersDiv.style.display = 'none';
+            }
+            
             document.getElementById('modal-search-players').value = '';
             renderModalPredictions();
             
@@ -4479,6 +4611,7 @@
             <div class="modal-header">
                 <h2 id="modal-match-title">Ottelun veikkaukset</h2>
                 <div id="modal-match-details" style="margin-top: 0.5rem; font-size: 1.05rem; color: var(--text-secondary);">Meksiko - Ruotsi</div>
+                <div id="modal-match-scorers" style="margin-top: 0.75rem; font-size: 0.85rem; padding: 0.6rem 0.8rem; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; display: none; flex-direction: column; gap: 0.35rem;"></div>
             </div>
             <div class="modal-search-container" style="margin-bottom: 1rem;">
                 <div class="input-wrapper" style="width: 100%;">
