@@ -622,6 +622,116 @@ try {
         };
     };
 
+    const reportingDays = [
+        { date: "12.6.", matches: [1, 2] },
+        { date: "13.6.", matches: [3, 4] },
+        { date: "14.6.", matches: [5, 6, 7, 8] },
+        { date: "15.6.", matches: [9, 10, 11, 12] },
+        { date: "16.6.", matches: [13, 14, 15, 16] },
+        { date: "17.6.", matches: [17, 18, 19, 20] },
+        { date: "18.6.", matches: [21, 22, 23, 24] },
+        { date: "19.6.", matches: [25, 26, 27, 28] },
+        { date: "20.6.", matches: [29, 30, 31, 32] },
+        { date: "21.6.", matches: [33, 34, 35, 36] },
+        { date: "22.6.", matches: [37, 38, 39, 40] },
+        { date: "23.6.", matches: [41, 42, 43, 44] },
+        { date: "24.6.", matches: [45, 46, 47, 48] },
+        { date: "25.6.", matches: [49, 50, 51, 52, 53, 54] },
+        { date: "26.6.", matches: [55, 56, 57, 58, 59, 60] },
+        { date: "27.6.", matches: [61, 62, 63, 64, 65, 66] },
+        { date: "28.6.", matches: [67, 68, 69, 70, 71, 72] }
+    ];
+
+    let currentReportingDay = null;
+    let reportingWindow = { matches: [], participantPoints: [] };
+
+    const buildCustomMatchesWindow = (matchNrs) => {
+        if (playedMatches.length === 0 || matchNrs.length === 0) {
+            return {
+                matches: [],
+                participantPoints: []
+            };
+        }
+
+        const subMatchesInWindow = playedMatches.filter(m => matchNrs.includes(m.nr));
+        if (subMatchesInWindow.length === 0) {
+            return {
+                matches: [],
+                participantPoints: []
+            };
+        }
+
+        const minMatchNr = Math.min(...matchNrs);
+        const leaderboardBefore = getLeaderboardAtState(minMatchNr - 1, matches, textResults, workbook);
+
+        const matchesSummary = subMatchesInWindow.map(m => ({
+            nr: m.nr,
+            date: m.date,
+            group: m.group,
+            team1: m.team1,
+            team2: m.team2,
+            goals1: m.goals1,
+            goals2: m.goals2,
+            resultText: `${m.goals1}-${m.goals2}`,
+            hasResult: m.hasResult
+        }));
+
+        const participantPoints = currentLeaderboard.map(nowP => {
+            const beforeP = leaderboardBefore.find(x => x.sheetName === nowP.sheetName) || { rank: currentLeaderboard.length, totalPoints: 0 };
+            
+            let pointsInWindow = 0;
+            let exactResultsInWindow = 0;
+            const matchPoints = [];
+
+            subMatchesInWindow.forEach(m => {
+                const pm = nowP.matches[m.nr - 1];
+                let pts = null;
+                let predStr = null;
+                let exact = false;
+
+                if (pm) {
+                    pts = pm.points;
+                    if (pm.hasGuess) {
+                        predStr = `${pm.guess1}-${pm.guess2}`;
+                        exact = (pts === 6);
+                    }
+                    if (pts !== null) {
+                        pointsInWindow += pts;
+                        if (pts === 6) exactResultsInWindow++;
+                    }
+                }
+
+                matchPoints.push({
+                    matchNr: m.nr,
+                    team1: m.team1,
+                    team2: m.team2,
+                    resultText: `${m.goals1}-${m.goals2}`,
+                    predictedResultText: predStr,
+                    points: pts,
+                    exactResult: exact
+                });
+            });
+
+            return {
+                name: nowP.name,
+                rankNow: nowP.rank,
+                totalPointsNow: nowP.totalPoints,
+                pointsInWindow: pointsInWindow,
+                rankBeforeWindow: beforeP.rank,
+                rankChange: beforeP.rank - nowP.rank,
+                exactResultsInWindow: exactResultsInWindow,
+                matchPoints: matchPoints
+            };
+        });
+
+        participantPoints.sort((a, b) => b.pointsInWindow - a.pointsInWindow || b.exactResultsInWindow - a.exactResultsInWindow || a.rankNow - b.rankNow);
+
+        return {
+            matches: matchesSummary,
+            participantPoints: participantPoints
+        };
+    };
+
     if (playedMatches.length > 0) {
         const L = playedMatches[playedMatches.length - 1];
         summaryLastMatchNr = L.nr;
@@ -634,6 +744,11 @@ try {
         const latestDatePrefix = L.date.split(' ')[0];
         const dateMatches = playedMatches.filter(m => m.date.startsWith(latestDatePrefix));
         latestDateWindow = buildV2WindowForDate(dateMatches);
+
+        currentReportingDay = reportingDays.find(d => d.matches.includes(summaryLastMatchNr));
+        if (currentReportingDay) {
+            reportingWindow = buildCustomMatchesWindow(currentReportingDay.matches);
+        }
     }
 
     // 6. Build Detailed Participant Data
@@ -874,12 +989,29 @@ try {
         participantsNeedingComeback
     };
 
-    const emailLatestMatches = last3MatchesWindow.matches || [];
-    const emailTopPerformers = last3MatchesWindow.participantPoints || [];
-    const emailPerfectScores = perfectScores || [];
+    const emailLatestMatches = reportingWindow.matches || [];
+    const emailTopPerformers = reportingWindow.participantPoints || [];
+    const emailPerfectScores = (reportingWindow.participantPoints || [])
+        .filter(p => p.exactResultsInWindow > 0)
+        .map(p => {
+            const perfMatches = p.matchPoints
+                .filter(mp => mp.exactResult)
+                .map(mp => ({
+                    matchNr: mp.matchNr,
+                    team1: mp.team1,
+                    team2: mp.team2,
+                    resultText: mp.resultText
+                }));
+            return {
+                name: p.name,
+                exactResultsInWindow: p.exactResultsInWindow,
+                matches: perfMatches
+            };
+        });
+
     const emailLeaderboardTop = currentLeaderboard.slice(0, 12).map(p => {
-        const winInfo = last3MatchesWindow.participantPoints
-            ? last3MatchesWindow.participantPoints.find(x => x.name === p.name)
+        const winInfo = reportingWindow.participantPoints
+            ? reportingWindow.participantPoints.find(x => x.name === p.name)
             : null;
         return {
             name: p.name,
@@ -889,8 +1021,8 @@ try {
         };
     });
 
-    const emailBiggestRisers = last3MatchesWindow.participantPoints
-        ? last3MatchesWindow.participantPoints
+    const emailBiggestRisers = reportingWindow.participantPoints
+        ? reportingWindow.participantPoints
             .filter(p => p.rankChange > 0)
             .sort((a, b) => b.rankChange - a.rankChange || b.pointsInWindow - a.pointsInWindow)
             .slice(0, 8)
@@ -903,8 +1035,8 @@ try {
             }))
         : [];
 
-    const emailBiggestFallers = last3MatchesWindow.participantPoints
-        ? last3MatchesWindow.participantPoints
+    const emailBiggestFallers = reportingWindow.participantPoints
+        ? reportingWindow.participantPoints
             .filter(p => p.rankChange < 0)
             .sort((a, b) => a.rankChange - b.rankChange || a.pointsInWindow - b.pointsInWindow)
             .slice(0, 8)
@@ -917,8 +1049,8 @@ try {
             }))
         : [];
 
-    const emailParticipantsNeedingComeback = last3MatchesWindow.participantPoints
-        ? last3MatchesWindow.participantPoints
+    const emailParticipantsNeedingComeback = reportingWindow.participantPoints
+        ? reportingWindow.participantPoints
             .filter(p => p.pointsInWindow <= 3 || p.rankChange < 0)
             .sort((a, b) => a.pointsInWindow - b.pointsInWindow || a.rankChange - b.rankChange)
             .slice(0, 8)
@@ -932,7 +1064,7 @@ try {
         : [];
 
     const emailDigest = {
-        window: "last3Matches",
+        window: currentReportingDay ? currentReportingDay.date : "last3Matches",
         generatedAt: new Date().toISOString(),
         summary: {
             playedMatchesCount: playedCount,

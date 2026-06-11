@@ -50,8 +50,8 @@ if (!Array.isArray(latestMatches)) {
     process.exit(1);
 }
 
-if (latestMatches.length < 1 || latestMatches.length > 3) {
-    console.error(`Error: emailDigest.latestMatches has invalid length: ${latestMatches.length} (expected 1-3)`);
+if (latestMatches.length < 1 || latestMatches.length > 6) {
+    console.error(`Error: emailDigest.latestMatches has invalid length: ${latestMatches.length} (expected 1-6)`);
     process.exit(1);
 }
 console.log(`✓ emailDigest.latestMatches contains ${latestMatches.length} matches`);
