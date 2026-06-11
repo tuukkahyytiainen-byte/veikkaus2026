@@ -1380,25 +1380,6 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
             suggestedFinnishSummary: suggestParts.join(" ")
         }
     };
-
-    // Ensure output dir exists
-    if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, { recursive: true });
-    }
-
-    fs.writeFileSync(outputPath, JSON.stringify(finalJson, null, 2));
-    const botmanenOutputPath = path.join(outputDir, 'botmanen-summary.json');
-    fs.writeFileSync(botmanenOutputPath, JSON.stringify(botmanenJson, null, 2));
-
-    // Console logs (requirement 9)
-    console.log(`\n=== Agent Analysis Generation Successful ===`);
-    console.log(`Matches read: 72`);
-    console.log(`Played matches found: ${playedCount}`);
-    console.log(`Participants found: ${currentLeaderboard.length}`);
-    console.log(`Output written to: ${outputPath}`);
-    console.log(`Output written to: ${botmanenOutputPath}\n`);
-
-
     if (writeFiles && outputDir) {
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
