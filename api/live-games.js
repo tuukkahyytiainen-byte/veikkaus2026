@@ -1,3 +1,5 @@
+const https = require('https');
+
 module.exports = async (req, res) => {
     // Enable CORS
     res.setHeader('Access-Control-Allow-Credentials', 'true');
@@ -10,17 +12,30 @@ module.exports = async (req, res) => {
         return;
     }
 
-    try {
-        console.log('Fetching live games from worldcup26.ir/get/games...');
-        const apiRes = await fetch('https://worldcup26.ir/get/games');
-        if (!apiRes.ok) throw new Error(`API HTTP ${apiRes.status}`);
-        const data = await apiRes.json();
-        
-        // Cache for 30 seconds at edge, allow stale-while-revalidate for 60 seconds
-        res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=60');
-        res.status(200).json(data);
-    } catch (err) {
+    https.get('https://worldcup26.ir/get/games', (apiRes) => {
+        let data = '';
+
+        apiRes.on('data', (chunk) => {
+            data += chunk;
+        });
+
+        apiRes.on('end', () => {
+            try {
+                if (apiRes.statusCode !== 200) {
+                    throw new Error(`API HTTP ${apiRes.statusCode}`);
+                }
+                const jsonData = JSON.parse(data);
+                
+                // Cache for 30 seconds at edge, allow stale-while-revalidate for 60 seconds
+                res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=60');
+                res.status(200).json(jsonData);
+            } catch (err) {
+                console.error('Error parsing live games JSON:', err);
+                res.status(500).json({ error: err.message });
+            }
+        });
+    }).on('error', (err) => {
         console.error('Error fetching live games serverless:', err);
         res.status(500).json({ error: err.message });
-    }
+    });
 };
