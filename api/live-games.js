@@ -12,7 +12,16 @@ module.exports = async (req, res) => {
         return;
     }
 
-    https.get('https://worldcup26.ir/get/games', (apiRes) => {
+    const options = {
+        hostname: 'worldcup26.ir',
+        path: '/get/games',
+        method: 'GET',
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+    };
+
+    https.get(options, (apiRes) => {
         let data = '';
 
         apiRes.on('data', (chunk) => {

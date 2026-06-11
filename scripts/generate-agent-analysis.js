@@ -395,10 +395,8 @@ function parseScorers(scorersVal) {
 function cleanScorerName(name) {
     if (!name) return '';
     let s = name.trim();
-    if (s.startsWith('{')) s = s.slice(1);
-    if (s.endsWith('}')) s = s.slice(0, -1);
-    s = s.trim();
-    s = s.replace(/[“”"]/g, '');
+    // Remove all curly braces, smart quotes, and double quotes globally
+    s = s.replace(/[\{\}“”"\u201C\u201D]/g, '');
     return s.trim();
 }
 

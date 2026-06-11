@@ -2642,10 +2642,8 @@
         function cleanScorerName(name) {
             if (!name) return '';
             let s = name.trim();
-            if (s.startsWith('{')) s = s.slice(1);
-            if (s.endsWith('}')) s = s.slice(0, -1);
-            s = s.trim();
-            s = s.replace(/[“”"]/g, '');
+            // Remove all curly braces, smart quotes, and double quotes globally
+            s = s.replace(/[\{\}“”"\u201C\u201D]/g, '');
             return s.trim();
         }
 
@@ -2796,12 +2794,44 @@
             }));
         }
 
+        const STORAGE_KEY_LIVE_GAMES = 'veikkaus2026_live_games';
+
         function fetchLiveGames() {
-            const cacheBuster = '?t=' + new Date().getTime();
-            return fetch('live-games.json' + cacheBuster)
+            return fetch('live-games.json')
                 .then(res => {
                     if (!res.ok) throw new Error('Status: ' + res.status);
                     return res.json();
+                })
+                .then(data => {
+                    if (data && data.games && data.games.length > 0) {
+                        localStorage.setItem(STORAGE_KEY_LIVE_GAMES, JSON.stringify(data));
+                    } else {
+                        const cached = localStorage.getItem(STORAGE_KEY_LIVE_GAMES);
+                        if (cached) {
+                            try {
+                                const parsed = JSON.parse(cached);
+                                if (parsed && parsed.games && parsed.games.length > 0) {
+                                    console.log('API palautti tyhjän pelilistan, käytetään välimuistia.');
+                                    return parsed;
+                                }
+                            } catch (e) {}
+                        }
+                    }
+                    return data;
+                })
+                .catch(err => {
+                    console.log('Virhe ladattaessa live-tuloksia netistä, yritetään käyttää välimuistia:', err);
+                    const cached = localStorage.getItem(STORAGE_KEY_LIVE_GAMES);
+                    if (cached) {
+                        try {
+                            const parsed = JSON.parse(cached);
+                            console.log('Käytetään välimuistissa olevia live-tuloksia.');
+                            return parsed;
+                        } catch (e) {
+                            console.error('Virhe jäsennettäessä välimuistia:', e);
+                        }
+                    }
+                    throw err;
                 });
         }
 
@@ -2815,47 +2845,62 @@
             const txtUrl = 'tulokset.txt' + cacheBuster;
             const excelUrl = 'MM2026_pistelaskenta.xlsx' + cacheBuster;
             
-            fetch(txtUrl)
-                .then(res => res.ok ? res.text() : null)
-                .then(text => { if (text) textResults = parseResultsText(text); })
-                .catch(err => console.log('tulokset.txt ei käytössä.'))
-                .finally(() => {
-                    // Fetch API games if served over http (to avoid CORS block on file://)
-                    if (isHttp) {
-                        const gamesPromise = fetchLiveGames()
-                            .then(data => {
-                                if (data && data.games) {
-                                    apiGames = data.games;
-                                }
-                            })
-                            .catch(err => console.log('Ei voitu ladata live-tuloksia netistä.', err));
-                        
-                        const groupsPromise = fetchLiveGroupsAndTeams()
-                            .catch(err => console.log('Ei voitu ladata live-lohkoja netistä.', err));
-                        
-                        Promise.all([gamesPromise, groupsPromise])
-                            .finally(() => {
-                                loadExcel();
-                            });
-                    } else {
-                        loadExcel();
+            // Load initial games from localStorage immediately before fetching to render fast
+            try {
+                const cachedGames = localStorage.getItem(STORAGE_KEY_LIVE_GAMES);
+                if (cachedGames) {
+                    const parsed = JSON.parse(cachedGames);
+                    if (parsed && parsed.games) {
+                        apiGames = parsed.games;
+                        console.log('Ladattu alustavat live-tulokset välimuistista:', apiGames.length, 'peliä');
                     }
-                });
-                
-            function loadExcel() {
-                fetch(excelUrl)
-                    .then(response => response.ok ? response.arrayBuffer() : Promise.reject())
-                    .then(ab => processExcelData(ab))
-                    .catch(err => {
-                        document.getElementById('upload-zone').style.display = 'block';
-                        hideLoading();
-                    });
+                }
+            } catch (e) {
+                console.error('Virhe ladattaessa alustavia tuloksia välimuistista:', e);
             }
+
+            const txtPromise = fetch(txtUrl)
+                .then(res => res.ok ? res.text() : null)
+                .then(text => { 
+                    if (text) textResults = parseResultsText(text); 
+                })
+                .catch(err => console.log('tulokset.txt ei käytössä.'));
+
+            const gamesPromise = isHttp ? fetchLiveGames()
+                .then(data => {
+                    if (data && data.games) {
+                        apiGames = data.games;
+                    }
+                })
+                .catch(err => console.log('Ei voitu ladata live-tuloksia netistä.', err)) : Promise.resolve();
+
+            const groupsPromise = isHttp ? fetchLiveGroupsAndTeams()
+                .catch(err => console.log('Ei voitu ladata live-lohkoja netistä.', err)) : Promise.resolve();
+
+            const excelPromise = fetch(excelUrl)
+                .then(response => response.ok ? response.arrayBuffer() : Promise.reject())
+                .catch(err => {
+                    console.error('Excelin lataus epäonnistui:', err);
+                    document.getElementById('upload-zone').style.display = 'block';
+                    hideLoading();
+                    return null;
+                });
+
+            Promise.all([txtPromise, gamesPromise, groupsPromise, excelPromise])
+                .then(([,,, excelBuffer]) => {
+                    if (excelBuffer) {
+                        processExcelData(excelBuffer);
+                    }
+                })
+                .catch(err => {
+                    console.error('Virhe aloitustietojen käsittelyssä:', err);
+                    hideLoading();
+                });
         }
 
-        // Start live scores refresh every 20 seconds (only if served over http/s)
+        // Start live scores refresh every 60 seconds (only if served over http/s)
         if (window.location.protocol.startsWith('http')) {
-            setInterval(fetchLiveScores, 20000);
+            setInterval(fetchLiveScores, 60000);
         }
 
         function fetchLiveScores() {
