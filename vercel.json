@@ -1,4 +1,14 @@
 {
+  "rewrites": [
+    {
+      "source": "/agent-analysis.json",
+      "destination": "/api/agent-analysis"
+    },
+    {
+      "source": "/botmanen-summary.json",
+      "destination": "/api/botmanen-summary"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

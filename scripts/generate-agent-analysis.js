@@ -369,12 +369,88 @@ function getLeaderboardAtState(upToMatchNr, matches, textResults, workbook) {
     return calculateLeaderboard(subMatches, subStandings, subFinalists, sub34, workbook);
 }
 
-// MAIN EXECUTION
-try {
-    const excelPath = 'MM2026_pistelaskenta.xlsx';
-    const txtPath = 'tulokset.txt';
-    const outputDir = 'public';
-    const outputPath = path.join(outputDir, 'agent-analysis.json');
+
+
+function parseScorers(scorersVal) {
+    if (!scorersVal || scorersVal === 'null' || scorersVal === 'undefined') return [];
+    if (Array.isArray(scorersVal)) return scorersVal;
+    if (typeof scorersVal === 'string') {
+        const trimmed = scorersVal.trim();
+        if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+            try {
+                const parsed = JSON.parse(trimmed);
+                if (Array.isArray(parsed)) return parsed;
+            } catch (e) {
+                // ignore
+            }
+        }
+        return trimmed.split(',').map(s => s.trim()).filter(Boolean);
+    }
+    return [];
+}
+
+function formatLiveStatus(timeElapsed) {
+    if (!timeElapsed || timeElapsed === 'notstarted') return '';
+    let elapsed = timeElapsed.trim().toUpperCase();
+    if (elapsed === 'HT' || elapsed === 'HALF-TIME' || elapsed === 'HALFTIME') {
+        return 'LIVE (HT)';
+    }
+    if (elapsed === 'FT' || elapsed === 'FINISHED') {
+        return 'Päättynyt';
+    }
+    if (/^d+$/.test(elapsed)) {
+        return `LIVE ${elapsed}'`;
+    }
+    return `LIVE ${timeElapsed}`;
+}
+
+async function fetchLiveApiData() {
+    let apiGames = [];
+    let apiGroups = [];
+    let apiTeams = [];
+
+    async function fetchResource(url, proxyUrl) {
+        try {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        } catch (err) {
+            console.warn(`Direct fetch for ${url} failed. Trying proxy...`, err.message);
+            try {
+                const res = await fetch(proxyUrl);
+                if (!res.ok) throw new Error(`Proxy HTTP ${res.status}`);
+                return await res.json();
+            } catch (proxyErr) {
+                console.error(`All fetches failed for ${url}:`, proxyErr.message);
+                return null;
+            }
+        }
+    }
+
+    const gamesData = await fetchResource(
+        'https://worldcup26.ir/get/games',
+        'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games'
+    );
+    if (gamesData && gamesData.games) apiGames = gamesData.games;
+
+    const groupsData = await fetchResource(
+        'https://worldcup26.ir/get/groups',
+        'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups'
+    );
+    if (groupsData && groupsData.groups) apiGroups = groupsData.groups;
+
+    const teamsData = await fetchResource(
+        'https://worldcup26.ir/get/teams',
+        'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams'
+    );
+    if (teamsData && teamsData.teams) apiTeams = teamsData.teams;
+
+    return { apiGames, apiGroups, apiTeams };
+}
+
+
+async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGroups = [], apiTeams = [], outputDir, writeFiles = true }) {
+    const outputPath = path.join(outputDir || 'public', 'agent-analysis.json');
 
     // 1. Read files
     if (!fs.existsSync(excelPath)) {
@@ -406,6 +482,26 @@ try {
         let g2 = getTValue(`I${row}`);
         let hasResult = g1 !== undefined && g1 !== null && g1 !== '' && g2 !== undefined && g2 !== null && g2 !== '';
         let status = hasResult ? 'Päättynyt' : 'Pelaamaton';
+
+        let homeScorers = null;
+        let awayScorers = null;
+        let apiHomeScore = null;
+        let apiAwayScore = null;
+
+        const apiGame = apiGames.find(g => Number(g.id) === m);
+        if (apiGame) {
+            homeScorers = apiGame.home_scorers;
+            awayScorers = apiGame.away_scorers;
+            apiHomeScore = apiGame.home_score !== null && apiGame.home_score !== undefined ? Number(apiGame.home_score) : null;
+            apiAwayScore = apiGame.away_score !== null && apiGame.away_score !== undefined ? Number(apiGame.away_score) : null;
+        }
+
+        if (apiGame && apiGame.time_elapsed !== 'notstarted') {
+            g1 = Number(apiGame.home_score);
+            g2 = Number(apiGame.away_score);
+            hasResult = true;
+            status = apiGame.finished === 'TRUE' ? 'Päättynyt' : formatLiveStatus(apiGame.time_elapsed);
+        }
         
         if (textResults && textResults.matches && textResults.matches[m]) {
             g1 = textResults.matches[m].goals1;
@@ -413,9 +509,13 @@ try {
             hasResult = true;
             status = 'Päättynyt';
         }
-        
+
         if (hasResult) playedCount++;
-        
+
+        const showScorers = apiGame && hasResult && 
+                            apiHomeScore !== null && apiAwayScore !== null && 
+                            (Number(g1) === apiHomeScore) && (Number(g2) === apiAwayScore);
+
         matches.push({
             nr: Number(nr),
             date: String(date || ''),
@@ -425,7 +525,10 @@ try {
             goals1: hasResult ? Number(g1) : null,
             goals2: hasResult ? Number(g2) : null,
             hasResult: hasResult,
-            status: status
+            status: status,
+            originallyHadResult: hasResult,
+            homeScorers: showScorers ? homeScorers : null,
+            awayScorers: showScorers ? awayScorers : null
         });
     }
 
@@ -436,24 +539,66 @@ try {
         if (textResults && textResults.standings && textResults.standings[g]) {
             actualStandings[g] = textResults.standings[g];
         } else {
-            const isSecondHalf = gIdx >= 6;
-            const startRow = isSecondHalf ? 12 : 6;
-            const colLetter = XLSX.utils.encode_col(12 + (gIdx % 6));
-            const originalOrder = [];
-            for (let pos = 1; pos <= 4; pos++) {
-                const val = getTValue(`${colLetter}${startRow + pos - 1}`);
-                originalOrder.push(val ? normalizeTeamName(String(val)) : null);
+            let apiOrder = null;
+            const apiGroup = apiGroups.find(x => x.name === g);
+            if (apiGroup && apiGroup.teams && apiTeams.length > 0) {
+                const mappedOrder = apiGroup.teams.map(tInfo => {
+                    const teamObj = apiTeams.find(t => t.id === tInfo.team_id);
+                    return teamObj ? normalizeTeamName(teamObj.name_en) : null;
+                }).filter(Boolean);
+                if (mappedOrder.length === 4) {
+                    apiOrder = mappedOrder;
+                }
             }
-            const cleanOrder = originalOrder.filter(Boolean);
-            const fallbackOrder = cleanOrder.length === 4 ? cleanOrder : getGroupTeamsFromMatches(g, matches);
-            actualStandings[g] = calculateGroupStandings(g, fallbackOrder, matches);
+
+            if (apiOrder) {
+                actualStandings[g] = apiOrder;
+            } else {
+                const isSecondHalf = gIdx >= 6;
+                const startRow = isSecondHalf ? 12 : 6;
+                const colLetter = XLSX.utils.encode_col(12 + (gIdx % 6));
+                const originalOrder = [];
+                for (let pos = 1; pos <= 4; pos++) {
+                    const val = getTValue(`${colLetter}${startRow + pos - 1}`);
+                    originalOrder.push(val ? normalizeTeamName(String(val)) : null);
+                }
+                const cleanOrder = originalOrder.filter(Boolean);
+                const fallbackOrder = cleanOrder.length === 4 ? cleanOrder : getGroupTeamsFromMatches(g, matches);
+                actualStandings[g] = calculateGroupStandings(g, fallbackOrder, matches);
+            }
         }
     });
 
-    const actualFinalists = textResults && textResults.finalists.length ? textResults.finalists : [getTValue('M20') ? normalizeTeamName(String(getTValue('M20'))) : null, getTValue('M21') ? normalizeTeamName(String(getTValue('M21'))) : null].filter(Boolean);
-    const actual34 = textResults && textResults.thirdFourth.length ? textResults.thirdFourth : [getTValue('M23') ? normalizeTeamName(String(getTValue('M23'))) : null, getTValue('M24') ? normalizeTeamName(String(getTValue('M24'))) : null].filter(Boolean);
+    let actualFinalists = [];
+    if (textResults && textResults.finalists.length) {
+        actualFinalists = textResults.finalists;
+    } else {
+        const apiFinalGame = apiGames.find(g => Number(g.id) === 104);
+        if (apiFinalGame && apiFinalGame.home_team_name_en && apiFinalGame.away_team_name_en && apiFinalGame.home_team_name_en !== 'null' && apiFinalGame.away_team_name_en !== 'null') {
+            actualFinalists = [
+                normalizeTeamName(apiFinalGame.home_team_name_en),
+                normalizeTeamName(apiFinalGame.away_team_name_en)
+            ].filter(Boolean);
+        } else {
+            actualFinalists = [getTValue('M20') ? normalizeTeamName(String(getTValue('M20'))) : null, getTValue('M21') ? normalizeTeamName(String(getTValue('M21'))) : null].filter(Boolean);
+        }
+    }
 
-    // 4. Calculate Current Leaderboard
+    let actual34 = [];
+    if (textResults && textResults.thirdFourth.length) {
+        actual34 = textResults.thirdFourth;
+    } else {
+        const apiThirdPlaceGame = apiGames.find(g => Number(g.id) === 103);
+        if (apiThirdPlaceGame && apiThirdPlaceGame.home_team_name_en && apiThirdPlaceGame.away_team_name_en && apiThirdPlaceGame.home_team_name_en !== 'null' && apiThirdPlaceGame.away_team_name_en !== 'null') {
+            actual34 = [
+                normalizeTeamName(apiThirdPlaceGame.home_team_name_en),
+                normalizeTeamName(apiThirdPlaceGame.away_team_name_en)
+            ].filter(Boolean);
+        } else {
+            actual34 = [getTValue('M23') ? normalizeTeamName(String(getTValue('M23'))) : null, getTValue('M24') ? normalizeTeamName(String(getTValue('M24'))) : null].filter(Boolean);
+        }
+    }
+
     const currentLeaderboard = calculateLeaderboard(matches, actualStandings, actualFinalists, actual34, workbook);
 
     // 5. Calculate Windows (V2 schema)
@@ -1250,7 +1395,50 @@ try {
     console.log(`Output written to: ${outputPath}`);
     console.log(`Output written to: ${botmanenOutputPath}\n`);
 
-} catch (err) {
-    console.error('Error generating agent analysis:', err);
-    process.exit(1);
+
+    if (writeFiles && outputDir) {
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+        }
+        fs.writeFileSync(outputPath, JSON.stringify(finalJson, null, 2));
+        const botmanenOutputPath = path.join(outputDir, 'botmanen-summary.json');
+        fs.writeFileSync(botmanenOutputPath, JSON.stringify(botmanenJson, null, 2));
+
+        console.log(`\n=== Agent Analysis Generation Successful ===`);
+        console.log(`Matches read: 72`);
+        console.log(`Played matches found: ${playedCount}`);
+        console.log(`Participants found: ${currentLeaderboard.length}`);
+        console.log(`Output written to: ${outputPath}`);
+        console.log(`Output written to: ${botmanenOutputPath}\n`);
+    }
+
+    return { finalJson, botmanenJson, playedCount, currentLeaderboardLength: currentLeaderboard.length };
 }
+
+if (require.main === module) {
+    (async () => {
+        try {
+            console.log('Fetching live API data for static build...');
+            const { apiGames, apiGroups, apiTeams } = await fetchLiveApiData();
+            await runAnalysisGenerator({
+                excelPath: 'MM2026_pistelaskenta.xlsx',
+                txtPath: 'tulokset.txt',
+                apiGames,
+                apiGroups,
+                apiTeams,
+                outputDir: 'public',
+                writeFiles: true
+            });
+        } catch (e) {
+            console.error('Failed to run static generator:', e);
+            process.exit(1);
+        }
+    })();
+}
+
+module.exports = {
+    runAnalysisGenerator,
+    normalizeTeamName,
+    parseResultsText,
+    fetchLiveApiData
+};
