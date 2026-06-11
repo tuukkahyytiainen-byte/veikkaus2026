@@ -2771,6 +2771,18 @@
             setupDragAndDrop();
         });
 
+        function mapAgentAnalysisMatchesToApiGames(matchesData) {
+            return matchesData.map(m => ({
+                id: String(m.nr),
+                home_score: m.goals1 !== null ? String(m.goals1) : "0",
+                away_score: m.goals2 !== null ? String(m.goals2) : "0",
+                time_elapsed: m.status && m.status.startsWith('LIVE') ? 'live' : (m.status === 'Päättynyt' ? 'FT' : 'notstarted'),
+                finished: m.status === 'Päättynyt' ? 'TRUE' : 'FALSE',
+                home_scorers: m.homeScorers,
+                away_scorers: m.awayScorers
+            }));
+        }
+
         function fetchLiveGames() {
             const cacheBuster = '?t=' + new Date().getTime();
             const directUrl = 'https://worldcup26.ir/get/games' + cacheBuster;
@@ -2843,7 +2855,23 @@
                                     apiGames = data.games;
                                 }
                             })
-                            .catch(err => console.log('Ei voitu ladata live-tuloksia netistä.', err));
+                            .catch(err => {
+                                console.log('Ei voitu ladata live-tuloksia netistä, yritetään fallbackia agent-analysis.json:ista...', err);
+                                return fetch('agent-analysis.json' + cacheBuster)
+                                    .then(res => {
+                                        if (!res.ok) throw new Error('Status ' + res.status);
+                                        return res.json();
+                                    })
+                                    .then(data => {
+                                        if (data && data.matches) {
+                                            console.log('Ladattu pelitiedot fallback-tiedostosta.');
+                                            apiGames = mapAgentAnalysisMatchesToApiGames(data.matches);
+                                        }
+                                    })
+                                    .catch(fallbackErr => {
+                                        console.log('Fallback-haku epäonnistui myös.', fallbackErr);
+                                    });
+                            });
                         
                         const groupsPromise = fetchLiveGroupsAndTeams()
                             .catch(err => console.log('Ei voitu ladata live-lohkoja netistä.', err));
@@ -2874,13 +2902,28 @@
         }
 
         function fetchLiveScores() {
+            const cacheBuster = '?t=' + new Date().getTime();
             const gamesPromise = fetchLiveGames()
                 .then(data => {
                     if (data && data.games) {
                         apiGames = data.games;
                     }
                 })
-                .catch(err => console.log('Virhe ladattaessa live-tuloksia:', err));
+                .catch(err => {
+                    console.log('Virhe ladattaessa live-tuloksia, yritetään fallbackia...', err);
+                    return fetch('agent-analysis.json' + cacheBuster)
+                        .then(res => {
+                            if (!res.ok) throw new Error('Status ' + res.status);
+                            return res.json();
+                        })
+                        .then(data => {
+                            if (data && data.matches) {
+                                console.log('Ladattu pelitiedot fallback-tiedostosta live-päivityksessä.');
+                                apiGames = mapAgentAnalysisMatchesToApiGames(data.matches);
+                            }
+                        })
+                        .catch(fallbackErr => console.log('Fallback epäonnistui myös.', fallbackErr));
+                });
             
             const groupsPromise = fetchLiveGroupsAndTeams()
                 .catch(err => console.log('Virhe ladattaessa live-lohkoja:', err));
