@@ -1619,6 +1619,243 @@
             }
         }
 
+        /* Botmanen-specific styles */
+        .botmanen-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            animation: fadeIn 0.4s ease-out;
+        }
+        @media (min-width: 1024px) {
+            .botmanen-layout {
+                grid-template-columns: 380px 1fr;
+            }
+        }
+        .botmanen-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(20, 26, 46, 0.75), rgba(30, 39, 69, 0.45));
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-premium);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: var(--glass-blur);
+        }
+        .botmanen-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--primary));
+        }
+        .botmanen-avatar-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--primary);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+            margin-bottom: 1.25rem;
+            transition: var(--transition-smooth);
+            background: #0b0f19;
+        }
+        .botmanen-avatar-container:hover {
+            transform: scale(1.05);
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+        }
+        .botmanen-avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .botmanen-name {
+            font-family: var(--font-display);
+            font-size: 1.65rem;
+            font-weight: 800;
+            margin-bottom: 0.15rem;
+            background: linear-gradient(to right, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .botmanen-title {
+            font-size: 0.75rem;
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+        .botmanen-bio {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+        .botmanen-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            width: 100%;
+            margin-bottom: 1.25rem;
+        }
+        .botmanen-stat-item {
+            background: rgba(15, 23, 42, 0.35);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: var(--transition-smooth);
+        }
+        .botmanen-stat-item:hover {
+            background: rgba(15, 23, 42, 0.5);
+            border-color: var(--border-hover);
+        }
+        .botmanen-stat-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+        .botmanen-stat-value {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .botmanen-stat-value.highlight {
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+        }
+        .botmanen-vs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            width: 100%;
+        }
+        .botmanen-vs-card {
+            border-radius: 10px;
+            padding: 0.65rem 0.35rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            transition: var(--transition-smooth);
+        }
+        .botmanen-vs-card.win {
+            background: rgba(16, 185, 129, 0.06);
+            border-color: rgba(16, 185, 129, 0.15);
+        }
+        .botmanen-vs-card.win:hover {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+        .botmanen-vs-card.tie {
+            background: rgba(59, 130, 246, 0.06);
+            border-color: rgba(59, 130, 246, 0.15);
+        }
+        .botmanen-vs-card.tie:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+        .botmanen-vs-card.loss {
+            background: rgba(239, 68, 68, 0.06);
+            border-color: rgba(239, 68, 68, 0.15);
+        }
+        .botmanen-vs-card.loss:hover {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+        .botmanen-vs-label {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+        .botmanen-vs-count {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 800;
+        }
+        .botmanen-vs-card.win .botmanen-vs-count { color: #34d399; }
+        .botmanen-vs-card.tie .botmanen-vs-count { color: #60a5fa; }
+        .botmanen-vs-card.loss .botmanen-vs-count { color: #f87171; }
+
+        .botmanen-table-card {
+            height: 100%;
+        }
+
+        .botmanen-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.725rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            text-align: center;
+        }
+        .botmanen-badge.lead {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.25);
+        }
+        .botmanen-badge.draw {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+        }
+        .botmanen-badge.behind {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.25);
+        }
+        .match-row-correct {
+            background: rgba(16, 185, 129, 0.05) !important;
+        }
+        .match-row-correct td {
+            color: #a7f3d0 !important;
+        }
+        .match-row-correct .badge-points-earned {
+            background: var(--primary);
+            color: #0b0f19;
+            font-weight: 700;
+        }
+        .match-row-partial {
+            background: rgba(59, 130, 246, 0.05) !important;
+        }
+        .match-row-partial td {
+            color: #bfdbfe !important;
+        }
+        .match-row-partial .badge-points-earned {
+            background: var(--accent-blue);
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .badge-points-earned {
+            display: inline-block;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.725rem;
+        }
+        .comment-text {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.825rem;
+        }
+
     </style>
 </head>
 <body>
@@ -1672,6 +1909,9 @@
                 </button>
                 <button class="tab-btn" onclick="switchTab('profiles')">
                     <i class="fa-solid fa-user"></i> Osallistujaprofiilit
+                </button>
+                <button class="tab-btn" onclick="switchTab('botmanen')">
+                    <i class="fa-solid fa-robot"></i> Päihitä Botmanen
                 </button>
                 <button class="tab-btn" onclick="switchTab('progress')">
                     <i class="fa-solid fa-chart-line"></i> Pistekehitys
@@ -1869,6 +2109,129 @@
                                 </div>
                             </div>
                         </div>
+                </div>
+            </section>
+
+            <!-- 5. Beat Botmanen View -->
+            <section class="tab-view" id="view-botmanen">
+                <div class="botmanen-layout">
+                    <!-- Left column: Botmanen Card & Stats -->
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="botmanen-card">
+                            <div class="botmanen-avatar-container">
+                                <img src="botmanen.jpg" alt="Botmanen" class="botmanen-avatar" onerror="this.src='https://placehold.co/150/10b981/ffffff?text=Botmanen'">
+                            </div>
+                            <h2 class="botmanen-name">Botmanen</h2>
+                            <div class="botmanen-title">ChatGPT-Veikkausagentti</div>
+                            <p class="botmanen-bio">
+                                Olen tekoälypohjainen jalkapalloasiantuntija ja virallinen kisakommentaattori. Analysoin pelattujen otteluiden tulokset, nostan esiin kierroksen suurimmat yllättäjät ja pidän huolen, että veikkaajat saavat ansaitsemaansa painetta tai ylistystä. Päihitätkö minut pisteissä?
+                            </p>
+                            
+                            <div class="botmanen-stats-grid">
+                                <div class="botmanen-stat-item">
+                                    <span class="botmanen-stat-label">Pisteet</span>
+                                    <span class="botmanen-stat-value highlight" id="botmanen-total-points">0 p</span>
+                                </div>
+                                <div class="botmanen-stat-item">
+                                    <span class="botmanen-stat-label">Täysin oikein</span>
+                                    <span class="botmanen-stat-value" id="botmanen-exact-matches">0 kpl</span>
+                                </div>
+                                <div class="botmanen-stat-item" style="grid-column: span 2;">
+                                    <span class="botmanen-stat-label">Virtuaalinen sijoitus</span>
+                                    <span class="botmanen-stat-value" id="botmanen-virtual-rank"># -</span>
+                                </div>
+                            </div>
+
+                            <div style="width: 100%; border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
+                                <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.75rem; text-align: left; letter-spacing: 0.05em;">
+                                    Veikkaajien tilanne minua vastaan
+                                </div>
+                                <div class="botmanen-vs-grid">
+                                    <div class="botmanen-vs-card win" title="Veikkaajia, joilla on enemmän pisteitä kuin Botmasella">
+                                        <span class="botmanen-vs-label">Edellä</span>
+                                        <span class="botmanen-vs-count" id="botmanen-count-above">0</span>
+                                    </div>
+                                    <div class="botmanen-vs-card tie" title="Veikkaajia, joilla on sama pistemäärä kuin Botmasella">
+                                        <span class="botmanen-vs-label">Tasan</span>
+                                        <span class="botmanen-vs-count" id="botmanen-count-tied">0</span>
+                                    </div>
+                                    <div class="botmanen-vs-card loss" title="Veikkaajia, joilla on vähemmän pisteitä kuin Botmasella">
+                                        <span class="botmanen-vs-label">Jäljessä</span>
+                                        <span class="botmanen-vs-count" id="botmanen-count-below">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right column: Comparison Table -->
+                    <div class="glass-card botmanen-table-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+                            <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i> Keskinäinen sarjataulukko
+                            </h3>
+                            <div class="input-wrapper" style="width: 250px; margin: 0;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" class="search-input" id="search-botmanen-players" placeholder="Hae osallistujaa..." oninput="renderBeatBotmanen()" style="padding: 0.4rem 0.75rem 0.4rem 2rem; font-size: 0.825rem;">
+                            </div>
+                        </div>
+                        <div class="table-responsive" style="max-height: 480px; overflow-y: auto;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Sija</th>
+                                        <th>Osallistuja</th>
+                                        <th style="text-align: center;">Pisteet</th>
+                                        <th style="text-align: center;">Ero</th>
+                                        <th style="text-align: center;">Tilanne</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="botmanen-comparison-body">
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="margin-top: 1rem; font-size: 0.775rem; color: var(--text-muted); line-height: 1.4; display: flex; flex-direction: column; gap: 0.2rem;">
+                            <span>* Vertailu perustuu osallistujien kokonaispisteisiin (Total Points).</span>
+                            <span>* Koska Botmasella ei ole lohkojen sijoitus- tai jatkopeliveikkauksia, hänen lohko- ja finaalipisteensä ovat aina 0.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom row: Botmanen Predictions & comments -->
+                <div class="glass-card" style="margin-top: 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fa-solid fa-comment-dots" style="color: var(--accent-blue);"></i> Botmasen ennusteet & kommentit
+                            </h3>
+                            <p style="font-size: 0.825rem; color: var(--text-secondary); margin-top: 0.2rem;">
+                                Botmasen tekemät maaliveikkaukset ja perustelut kaikille 72 alkulohkon ottelulle.
+                            </p>
+                        </div>
+                        <div class="input-wrapper" style="width: 250px; margin: 0;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" class="search-input" id="search-botmanen-matches" placeholder="Hae maata tai lohkoa..." oninput="renderBeatBotmanen()" style="padding: 0.4rem 0.75rem 0.4rem 2rem; font-size: 0.825rem;">
+                        </div>
+                    </div>
+                    
+                    <div class="table-responsive" style="max-height: 600px; overflow-y: auto;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 60px; text-align: center;">Nro</th>
+                                    <th style="width: 70px; text-align: center;">Lohko</th>
+                                    <th>Ottelu</th>
+                                    <th style="text-align: center; width: 100px;">Tulos</th>
+                                    <th style="text-align: center; width: 100px;">Ennuste</th>
+                                    <th style="text-align: center; width: 80px;">Pisteet</th>
+                                    <th>Kommentti</th>
+                                </tr>
+                            </thead>
+                            <tbody id="botmanen-predictions-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
@@ -2079,6 +2442,82 @@
         };
 
         const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
+
+        // Botmasen ennusteet (kovakoodattu Excel-pohjaisen kuvakaappauksen mukaan)
+        const botmanenPredictions = [
+            { nr: 1, team1: "Meksiko", team2: "Etelä-Afrikka", guess1: 2, guess2: 0, comment: "Kaikki läh" },
+            { nr: 2, team1: "Etelä-Korea", team2: "Tshekki", guess1: 1, guess2: 1, comment: "1960Tips s" },
+            { nr: 3, team1: "Kanada", team2: "Bosnia ja Hertsegovina", guess1: 2, guess2: 1, comment: "Kanada ko" },
+            { nr: 4, team1: "USA", team2: "Paraguay", guess1: 1, guess2: 0, comment: "USA:lle ko" },
+            { nr: 5, team1: "Haiti", team2: "Skotlanti", guess1: 0, guess2: 1, comment: "Skotlanti" },
+            { nr: 6, team1: "Australia", team2: "Turkki", guess1: 1, guess2: 2, comment: "Turkki saa" },
+            { nr: 7, team1: "Brasilia", team2: "Marokko", guess1: 2, guess2: 1, comment: "Brasilia s" },
+            { nr: 8, team1: "Qatar", team2: "Sveitsi", guess1: 0, guess2: 2, comment: "Sveitsi se" },
+            { nr: 9, team1: "Norsunluurannikko", team2: "Ecuador", guess1: 1, guess2: 2, comment: "Ecuador o" },
+            { nr: 10, team1: "Saksa", team2: "Curaçao", guess1: 4, guess2: 0, comment: "Saksa erit" },
+            { nr: 11, team1: "Hollanti", team2: "Japani", guess1: 2, guess2: 1, comment: "Hollanti s" },
+            { nr: 12, team1: "Ruotsi", team2: "Tunisia", guess1: 2, guess2: 0, comment: "Asiantunt" },
+            { nr: 13, team1: "Saudi-Arabia", team2: "Uruguay", guess1: 0, guess2: 2, comment: "Uruguay s" },
+            { nr: 14, team1: "Espanja", team2: "Kap Verde", guess1: 3, guess2: 0, comment: "Espanja d" },
+            { nr: 15, team1: "Iran", team2: "Uusi-Seelanti", guess1: 1, guess2: 0, comment: "Kaikki arv" },
+            { nr: 16, team1: "Belgia", team2: "Egypti", guess1: 2, guess2: 1, comment: "Belgia suo" },
+            { nr: 17, team1: "Ranska", team2: "Senegal", guess1: 2, guess2: 1, comment: "Ranska va" },
+            { nr: 18, team1: "Irak", team2: "Norja", guess1: 0, guess2: 3, comment: "Norjan hy" },
+            { nr: 19, team1: "Argentiina", team2: "Algeria", guess1: 2, guess2: 0, comment: "Argentiin" },
+            { nr: 20, team1: "Itävalta", team2: "Jordania", guess1: 2, guess2: 0, comment: "Asiantunt" },
+            { nr: 21, team1: "Ghana", team2: "Panama", guess1: 2, guess2: 1, comment: "Ghana niu" },
+            { nr: 22, team1: "Englanti", team2: "Kroatia", guess1: 2, guess2: 0, comment: "Englanni" },
+            { nr: 23, team1: "Portugali", team2: "Kongon DR", guess1: 3, guess2: 0, comment: "Portugali" },
+            { nr: 24, team1: "Uzbekistan", team2: "Kolumbia", guess1: 0, guess2: 2, comment: "Kolumbia" },
+            { nr: 25, team1: "Tshekki", team2: "Etelä-Afrikka", guess1: 2, guess2: 0, comment: "Tshekki suo" },
+            { nr: 26, team1: "Sveitsi", team2: "Bosnia ja Hertsegovina", guess1: 2, guess2: 0, comment: "Sveitsi on" },
+            { nr: 27, team1: "Kanada", team2: "Qatar", guess1: 3, guess2: 0, comment: "Kanada se" },
+            { nr: 28, team1: "Meksiko", team2: "Etelä-Korea", guess1: 2, guess2: 1, comment: "Meksiko s" },
+            { nr: 29, team1: "Brasilia", team2: "Haiti", guess1: 3, guess2: 0, comment: "Brasilia se" },
+            { nr: 30, team1: "Skotlanti", team2: "Marokko", guess1: 0, guess2: 1, comment: "Marokko v" },
+            { nr: 31, team1: "Turkki", team2: "Paraguay", guess1: 1, guess2: 0, comment: "Turkki on" },
+            { nr: 32, team1: "USA", team2: "Australia", guess1: 2, guess2: 1, comment: "USA kotied" },
+            { nr: 33, team1: "Saksa", team2: "Norsunluurannikko", guess1: 2, guess2: 0, comment: "Saksa selv" },
+            { nr: 34, team1: "Ecuador", team2: "Curaçao", guess1: 3, guess2: 0, comment: "Täysi yhty" },
+            { nr: 35, team1: "Hollanti", team2: "Ruotsi", guess1: 2, guess2: 0, comment: "Hollanti r" },
+            { nr: 36, team1: "Tunisia", team2: "Japani", guess1: 0, guess2: 2, comment: "Japani sel" },
+            { nr: 37, team1: "Uruguay", team2: "Kap Verde", guess1: 2, guess2: 0, comment: "Uruguay v" },
+            { nr: 38, team1: "Espanja", team2: "Saudi-Arabia", guess1: 3, guess2: 0, comment: "Espanjan " },
+            { nr: 39, team1: "Belgia", team2: "Iran", guess1: 2, guess2: 0, comment: "Belgia suo" },
+            { nr: 40, team1: "Uusi-Seelanti", team2: "Egypti", guess1: 0, guess2: 1, comment: "Egypti suo" },
+            { nr: 41, team1: "Norja", team2: "Senegal", guess1: 2, guess2: 2, comment: "Tämä on l" },
+            { nr: 42, team1: "Ranska", team2: "Irak", guess1: 3, guess2: 0, comment: "Ranska se" },
+            { nr: 43, team1: "Argentiina", team2: "Itävalta", guess1: 2, guess2: 1, comment: "Argentiin" },
+            { nr: 44, team1: "Jordania", team2: "Algeria", guess1: 0, guess2: 1, comment: "Algeria su" },
+            { nr: 45, team1: "Englanti", team2: "Ghana", guess1: 2, guess2: 0, comment: "Englanti s" },
+            { nr: 46, team1: "Panama", team2: "Kroatia", guess1: 0, guess2: 2, comment: "Kroatia va" },
+            { nr: 47, team1: "Portugali", team2: "Uzbekistan", guess1: 3, guess2: 0, comment: "Portugali" },
+            { nr: 48, team1: "Kolumbia", team2: "Kongon DR", guess1: 2, guess2: 0, comment: "Kolumbia" },
+            { nr: 49, team1: "Skotlanti", team2: "Brasilia", guess1: 0, guess2: 2, comment: "Brasilia vo" },
+            { nr: 50, team1: "Marokko", team2: "Haiti", guess1: 3, guess2: 0, comment: "Täysi linja" },
+            { nr: 51, team1: "Sveitsi", team2: "Kanada", guess1: 1, guess2: 1, comment: "Lohkon ta" },
+            { nr: 52, team1: "Bosnia ja Hertsegovina", team2: "Qatar", guess1: 2, guess2: 0, comment: "Bosnia se" },
+            { nr: 53, team1: "Tshekki", team2: "Meksiko", guess1: 1, guess2: 1, comment: "Meksiko vo" },
+            { nr: 54, team1: "Etelä-Afrikka", team2: "Etelä-Korea", guess1: 0, guess2: 2, comment: "Korea tarv" },
+            { nr: 55, team1: "Curaçao", team2: "Norsunluurannikko", guess1: 0, guess2: 2, comment: "Norsunluu" },
+            { nr: 56, team1: "Ecuador", team2: "Saksa", guess1: 1, guess2: 2, comment: "Saksa suo" },
+            { nr: 57, team1: "Japani", team2: "Ruotsi", guess1: 1, guess2: 1, comment: "Hyvin tasa" },
+            { nr: 58, team1: "Tunisia", team2: "Hollanti", guess1: 0, guess2: 2, comment: "Hollanti se" },
+            { nr: 59, team1: "Turkki", team2: "USA", guess1: 1, guess2: 1, comment: "Lähteet ris" },
+            { nr: 60, team1: "Paraguay", team2: "Australia", guess1: 1, guess2: 0, comment: "Paraguay" },
+            { nr: 61, team1: "Norja", team2: "Ranska", guess1: 1, guess2: 2, comment: "Ranska vo" },
+            { nr: 62, team1: "Senegal", team2: "Irak", guess1: 2, guess2: 0, comment: "Senegal se" },
+            { nr: 63, team1: "Egypti", team2: "Iran", guess1: 0, guess2: 0, comment: "Tasainen," },
+            { nr: 64, team1: "Uusi-Seelanti", team2: "Belgia", guess1: 0, guess2: 3, comment: "Belgia selv" },
+            { nr: 65, team1: "Kap Verde", team2: "Saudi-Arabia", guess1: 1, guess2: 2, comment: "Saudi-Ara" },
+            { nr: 66, team1: "Uruguay", team2: "Espanja", guess1: 1, guess2: 2, comment: "Espanja s" },
+            { nr: 67, team1: "Panama", team2: "Englanti", guess1: 0, guess2: 3, comment: "Englanti s" },
+            { nr: 68, team1: "Kroatia", team2: "Ghana", guess1: 2, guess2: 0, comment: "Kroatia on" },
+            { nr: 69, team1: "Algeria", team2: "Itävalta", guess1: 1, guess2: 1, comment: "Asiantunt" },
+            { nr: 70, team1: "Jordania", team2: "Argentiina", guess1: 0, guess2: 3, comment: "Argentiin" },
+            { nr: 71, team1: "Kolumbia", team2: "Portugali", guess1: 1, guess2: 1, comment: "Todella ta" },
+            { nr: 72, team1: "Kongon DR", team2: "Uzbekistan", guess1: 1, guess2: 1, comment: "Kolmanne" }
+        ];
 
         // Global State variables
         let workbook = null;
@@ -2720,6 +3159,7 @@
             renderMatches(activeMatchFilter);
             renderGroupsView();
             populatePlayerDropdowns();
+            renderBeatBotmanen();
 
             if (players.length > 0) {
                 if (!selectedPlayerSheet || !players.some(p => p.sheetName === selectedPlayerSheet)) {
@@ -3225,6 +3665,203 @@
             });
         }
 
+        function calculateBotmanenPoints(customMatches) {
+            let matchPoints = 0;
+            let exactlyCorrect = 0;
+            const matchScores = [];
+
+            botmanenPredictions.forEach(pred => {
+                const actual = customMatches[pred.nr - 1];
+                let pts = null;
+                let hasGuess = pred.guess1 !== null && pred.guess2 !== null;
+                
+                if (actual && actual.hasResult && hasGuess) {
+                    const guess1 = pred.guess1;
+                    const guess2 = pred.guess2;
+                    const act1 = actual.goals1;
+                    const act2 = actual.goals2;
+                    
+                    if (Math.sign(guess1 - guess2) !== Math.sign(act1 - act2)) {
+                        pts = 0;
+                    } else if (act1 === act2) {
+                        pts = (guess1 === act1 && guess2 === act2) ? 6 : 3;
+                    } else {
+                        pts = Math.max(0, 6 - (Math.abs(guess1 - act1) + Math.abs(guess2 - act2)));
+                    }
+                    matchPoints += pts;
+                    if (pts === 6) exactlyCorrect++;
+                }
+                
+                matchScores.push({
+                    nr: pred.nr,
+                    team1: pred.team1,
+                    team2: pred.team2,
+                    guess1: pred.guess1,
+                    guess2: pred.guess2,
+                    points: pts,
+                    comment: pred.comment,
+                    hasResult: actual ? actual.hasResult : false,
+                    goals1: actual ? actual.goals1 : null,
+                    goals2: actual ? actual.goals2 : null,
+                    group: actual ? actual.group : ''
+                });
+            });
+
+            return {
+                matchPoints,
+                totalPoints: matchPoints, // Botmanen gets 0 for groups/playoffs
+                exactlyCorrect,
+                matches: matchScores
+            };
+        }
+
+        function renderBeatBotmanen() {
+            if (!workbook || players.length === 0) return;
+            
+            // Calculate Botmanen's points
+            const botPoints = calculateBotmanenPoints(matches);
+            
+            // Render Botmanen profile card stats
+            document.getElementById('botmanen-total-points').innerText = `${botPoints.totalPoints} p`;
+            document.getElementById('botmanen-exact-matches').innerText = `${botPoints.exactlyCorrect} kpl`;
+            
+            // Calculate virtual rank for Botmanen
+            let allPlayersWithBot = players.map(p => ({
+                name: p.name,
+                totalPoints: p.totalPoints,
+                exactlyCorrect: p.exactlyCorrect,
+                isBot: false
+            }));
+            allPlayersWithBot.push({
+                name: "Botmanen",
+                totalPoints: botPoints.totalPoints,
+                exactlyCorrect: botPoints.exactlyCorrect,
+                isBot: true
+            });
+            allPlayersWithBot.sort((a, b) => b.totalPoints - a.totalPoints || b.exactlyCorrect - a.exactlyCorrect || a.name.localeCompare(b.name));
+            
+            let virtualRank = 1;
+            allPlayersWithBot.forEach((p, idx) => {
+                p.rank = (idx > 0 && p.totalPoints === allPlayersWithBot[idx - 1].totalPoints) ? allPlayersWithBot[idx - 1].rank : idx + 1;
+                if (p.isBot) {
+                    virtualRank = p.rank;
+                }
+            });
+            document.getElementById('botmanen-virtual-rank').innerText = `#${virtualRank} / ${allPlayersWithBot.length}`;
+            
+            // Count players above, tied, and below Botmanen
+            let countAbove = 0;
+            let countTied = 0;
+            let countBelow = 0;
+            
+            players.forEach(p => {
+                if (p.totalPoints > botPoints.totalPoints) countAbove++;
+                else if (p.totalPoints === botPoints.totalPoints) countTied++;
+                else countBelow++;
+            });
+            
+            document.getElementById('botmanen-count-above').innerText = countAbove;
+            document.getElementById('botmanen-count-tied').innerText = countTied;
+            document.getElementById('botmanen-count-below').innerText = countBelow;
+            
+            // Render player comparison table
+            const compBody = document.getElementById('botmanen-comparison-body');
+            compBody.innerHTML = '';
+            
+            const playerQuery = document.getElementById('search-botmanen-players')?.value.toLowerCase().trim() || '';
+            
+            players.forEach(p => {
+                if (playerQuery && !p.name.toLowerCase().includes(playerQuery)) return;
+                
+                const diff = p.totalPoints - botPoints.totalPoints;
+                let diffText = diff > 0 ? `+${diff}` : `${diff}`;
+                let diffStyle = 'color: var(--text-muted); font-weight: 600;';
+                let statusBadgeClass = 'draw';
+                let statusText = 'Tasan';
+                
+                if (diff > 0) {
+                    diffStyle = 'color: #34d399; font-weight: 700;';
+                    statusBadgeClass = 'lead';
+                    statusText = 'Johdossa';
+                } else if (diff < 0) {
+                    diffStyle = 'color: #f87171; font-weight: 700;';
+                    statusBadgeClass = 'behind';
+                    statusText = 'Häviöllä';
+                }
+                
+                const tr = document.createElement('tr');
+                tr.style.cursor = 'pointer';
+                tr.onclick = () => {
+                    switchTab('profiles');
+                    document.getElementById('player-select').value = p.sheetName;
+                    showPlayerProfile(p.sheetName);
+                };
+                
+                tr.innerHTML = `
+                    <td class="td-rank">#${p.rank}</td>
+                    <td class="td-name">${p.name}</td>
+                    <td style="text-align: center;" class="td-points">${p.totalPoints} p</td>
+                    <td style="text-align: center; ${diffStyle}">${diffText} p</td>
+                    <td style="text-align: center;">
+                        <span class="botmanen-badge ${statusBadgeClass}">${statusText}</span>
+                    </td>
+                `;
+                compBody.appendChild(tr);
+            });
+            
+            if (compBody.children.length === 0) {
+                compBody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-muted); padding: 2rem 0;">Ei osallistujia nimellä "${playerQuery}"</td></tr>`;
+            }
+            
+            // Render predictions and comments table
+            const predBody = document.getElementById('botmanen-predictions-body');
+            predBody.innerHTML = '';
+            
+            const matchQuery = document.getElementById('search-botmanen-matches')?.value.toLowerCase().trim() || '';
+            
+            botPoints.matches.forEach(m => {
+                const matchName = `${m.team1} - ${m.team2}`.toLowerCase();
+                const groupName = `lohko ${m.group}`.toLowerCase();
+                if (matchQuery && !matchName.includes(matchQuery) && !groupName.includes(matchQuery) && !String(m.nr).includes(matchQuery)) return;
+                
+                let actualResultText = '-';
+                if (m.hasResult) {
+                    actualResultText = `${m.goals1} - ${m.goals2}`;
+                }
+                
+                let pointsEarnedText = '-';
+                let rowClass = '';
+                if (m.points !== null) {
+                    pointsEarnedText = `+${m.points} p`;
+                    if (m.points === 6) {
+                        rowClass = 'match-row-correct';
+                    } else if (m.points > 0) {
+                        rowClass = 'match-row-partial';
+                    }
+                }
+                
+                const tr = document.createElement('tr');
+                if (rowClass) tr.className = rowClass;
+                
+                tr.innerHTML = `
+                    <td style="text-align: center; font-weight: 600;">${m.nr}</td>
+                    <td style="text-align: center;">Lohko ${m.group}</td>
+                    <td>${getFlag(m.team1)} ${displayTeam(m.team1)} – ${getFlag(m.team2)} ${displayTeam(m.team2)}</td>
+                    <td style="text-align: center; font-weight: 700;">${actualResultText}</td>
+                    <td style="text-align: center; font-weight: 600;">${m.guess1} - ${m.guess2}</td>
+                    <td style="text-align: center;">
+                        <span class="badge-points-earned">${pointsEarnedText}</span>
+                    </td>
+                    <td class="comment-text">${m.comment}</td>
+                `;
+                predBody.appendChild(tr);
+            });
+            
+            if (predBody.children.length === 0) {
+                predBody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem 0;">Ei hakuehtoja vastaavia otteluita</td></tr>`;
+            }
+        }
+
         // Tab Switching
         function switchTab(tabId) {
             document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -3245,6 +3882,10 @@
 
             if (tabId === 'progress') {
                 setTimeout(renderProgressChart, 50);
+            }
+
+            if (tabId === 'botmanen') {
+                setTimeout(renderBeatBotmanen, 50);
             }
 
             if (tabId === 'simulation') {

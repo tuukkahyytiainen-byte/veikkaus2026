@@ -15,7 +15,8 @@ if (!fs.existsSync(publicDir)) {
 const filesToCopy = [
     'index.html',
     'MM2026_pistelaskenta.xlsx',
-    'tulokset.txt'
+    'tulokset.txt',
+    'botmanen.jpg'
 ];
 
 filesToCopy.forEach(file => {
