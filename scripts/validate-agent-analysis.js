@@ -50,8 +50,9 @@ if (!Array.isArray(latestMatches)) {
     process.exit(1);
 }
 
-if (latestMatches.length < 1 || latestMatches.length > 6) {
-    console.error(`Error: emailDigest.latestMatches has invalid length: ${latestMatches.length} (expected 1-6)`);
+const minExpectedMatches = summaryCount === 0 ? 0 : 1;
+if (latestMatches.length < minExpectedMatches || latestMatches.length > 6) {
+    console.error(`Error: emailDigest.latestMatches has invalid length: ${latestMatches.length} (expected ${minExpectedMatches}-6)`);
     process.exit(1);
 }
 console.log(`✓ emailDigest.latestMatches contains ${latestMatches.length} matches`);
@@ -62,7 +63,7 @@ if (!Array.isArray(topPerformers)) {
     console.error('Error: emailDigest.topPerformers is not an array!');
     process.exit(1);
 }
-if (topPerformers.length === 0) {
+if (topPerformers.length === 0 && summaryCount > 0) {
     console.error('Error: emailDigest.topPerformers is empty!');
     process.exit(1);
 }
@@ -87,7 +88,7 @@ if (!data.latestWindows || !data.latestWindows.last3Matches || !Array.isArray(da
     process.exit(1);
 }
 const windowPoints = data.latestWindows.last3Matches.participantPoints;
-if (windowPoints.length === 0) {
+if (windowPoints.length === 0 && summaryCount > 0) {
     console.error('Error: latestWindows.last3Matches.participantPoints is empty!');
     process.exit(1);
 }
