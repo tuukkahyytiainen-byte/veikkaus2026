@@ -373,20 +373,33 @@ function getLeaderboardAtState(upToMatchNr, matches, textResults, workbook) {
 
 function parseScorers(scorersVal) {
     if (!scorersVal || scorersVal === 'null' || scorersVal === 'undefined') return [];
-    if (Array.isArray(scorersVal)) return scorersVal;
+    if (Array.isArray(scorersVal)) return scorersVal.map(cleanScorerName);
     if (typeof scorersVal === 'string') {
-        const trimmed = scorersVal.trim();
+        let trimmed = scorersVal.trim();
+        if (trimmed.startsWith('{') && trimmed.endsWith('}')) {
+            trimmed = trimmed.slice(1, -1).trim();
+        }
         if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
             try {
                 const parsed = JSON.parse(trimmed);
-                if (Array.isArray(parsed)) return parsed;
+                if (Array.isArray(parsed)) return parsed.map(cleanScorerName);
             } catch (e) {
                 // ignore
             }
         }
-        return trimmed.split(',').map(s => s.trim()).filter(Boolean);
+        return trimmed.split(',').map(s => cleanScorerName(s)).filter(Boolean);
     }
     return [];
+}
+
+function cleanScorerName(name) {
+    if (!name) return '';
+    let s = name.trim();
+    if (s.startsWith('{')) s = s.slice(1);
+    if (s.endsWith('}')) s = s.slice(0, -1);
+    s = s.trim();
+    s = s.replace(/[“”"]/g, '');
+    return s.trim();
 }
 
 function formatLiveStatus(timeElapsed) {
