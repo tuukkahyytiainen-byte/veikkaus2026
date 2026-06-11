@@ -2587,7 +2587,7 @@
 
             calculatedPlayers.sort((a, b) => b.totalPoints - a.totalPoints || b.exactlyCorrect - a.exactlyCorrect || a.name.localeCompare(b.name));
             calculatedPlayers.forEach((p, i) => {
-                p.rank = (i > 0 && p.totalPoints === calculatedPlayers[i - 1].totalPoints && p.exactlyCorrect === calculatedPlayers[i - 1].exactlyCorrect) ? calculatedPlayers[i - 1].rank : i + 1;
+                p.rank = (i > 0 && p.totalPoints === calculatedPlayers[i - 1].totalPoints) ? calculatedPlayers[i - 1].rank : i + 1;
             });
 
             return calculatedPlayers;
