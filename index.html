@@ -3389,7 +3389,12 @@
                 let statusTextUnder = '';
                 if (m.hasResult) {
                     if (m.status && m.status.startsWith('LIVE')) {
-                        statusTextUnder = `<span class="pulse-dot" style="margin: 0; width: 6px; height: 6px;"></span> <span style="color: var(--primary);">KÄYNNISSÄ • ${m.status.replace('LIVE ', '')}</span>`;
+                        const timeText = m.status.replace('LIVE ', '').trim();
+                        if (timeText === 'LIVE' || !timeText) {
+                            statusTextUnder = `<span class="pulse-dot" style="margin: 0; width: 6px; height: 6px;"></span> <span style="color: var(--primary);">KÄYNNISSÄ</span>`;
+                        } else {
+                            statusTextUnder = `<span class="pulse-dot" style="margin: 0; width: 6px; height: 6px;"></span> <span style="color: var(--primary);">KÄYNNISSÄ • ${timeText}</span>`;
+                        }
                     } else {
                         statusTextUnder = `<i class="fa-solid fa-circle-check" style="color: var(--primary); font-size: 0.75rem;"></i> <span style="color: var(--text-secondary);">Peli päättynyt</span>`;
                     }
@@ -3459,8 +3464,8 @@
                             ${statusTextUnder}
                         </div>
                     </div>
-                    <div class="match-footer">
-                        <span>Veikkauksia: ${guessCount} / ${players.length}</span>
+                    <div class="match-footer" ${m.hasResult ? 'style="justify-content: flex-end;"' : ''}>
+                        ${!m.hasResult ? `<span>Veikkauksia: ${guessCount} / ${players.length}</span>` : ''}
                         ${m.hasResult ? `
                         <div class="match-stats">
                             <span class="stat-item exact" title="Täsmälleen oikea tulos"><i class="fa-solid fa-circle-check"></i> ${exactCount}</span>
