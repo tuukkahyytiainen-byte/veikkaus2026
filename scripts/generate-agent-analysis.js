@@ -398,7 +398,10 @@ function formatLiveStatus(timeElapsed) {
     if (elapsed === 'FT' || elapsed === 'FINISHED') {
         return 'Päättynyt';
     }
-    if (/^d+$/.test(elapsed)) {
+    if (elapsed === 'LIVE') {
+        return 'LIVE';
+    }
+    if (/^\d+$/.test(elapsed)) {
         return `LIVE ${elapsed}'`;
     }
     return `LIVE ${timeElapsed}`;
