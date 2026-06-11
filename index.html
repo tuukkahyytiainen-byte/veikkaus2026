@@ -2896,9 +2896,9 @@
             }
         }
 
-        // Start live scores refresh every 60 seconds (only if served over http/s)
+        // Start live scores refresh every 20 seconds (only if served over http/s)
         if (window.location.protocol.startsWith('http')) {
-            setInterval(fetchLiveScores, 60000);
+            setInterval(fetchLiveScores, 20000);
         }
 
         function fetchLiveScores() {
