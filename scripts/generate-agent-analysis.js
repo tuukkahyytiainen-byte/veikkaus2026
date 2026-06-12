@@ -423,15 +423,21 @@ async function fetchLiveApiData() {
     let apiGroups = [];
     let apiTeams = [];
 
+    const fetchOptions = {
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+    };
+
     async function fetchResource(url, proxyUrl) {
         try {
-            const res = await fetch(url);
+            const res = await fetch(url, fetchOptions);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             return await res.json();
         } catch (err) {
             console.warn(`Direct fetch for ${url} failed. Trying proxy...`, err.message);
             try {
-                const res = await fetch(proxyUrl);
+                const res = await fetch(proxyUrl, fetchOptions);
                 if (!res.ok) throw new Error(`Proxy HTTP ${res.status}`);
                 return await res.json();
             } catch (proxyErr) {
@@ -445,19 +451,28 @@ async function fetchLiveApiData() {
         'https://worldcup26.ir/get/games',
         'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games'
     );
-    if (gamesData && gamesData.games) apiGames = gamesData.games;
+    if (!gamesData || !gamesData.games) {
+        throw new Error('Failed to fetch live games from API and proxy');
+    }
+    apiGames = gamesData.games;
 
     const groupsData = await fetchResource(
         'https://worldcup26.ir/get/groups',
         'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups'
     );
-    if (groupsData && groupsData.groups) apiGroups = groupsData.groups;
+    if (!groupsData || !groupsData.groups) {
+        throw new Error('Failed to fetch live groups from API and proxy');
+    }
+    apiGroups = groupsData.groups;
 
     const teamsData = await fetchResource(
         'https://worldcup26.ir/get/teams',
         'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams'
     );
-    if (teamsData && teamsData.teams) apiTeams = teamsData.teams;
+    if (!teamsData || !teamsData.teams) {
+        throw new Error('Failed to fetch live teams from API and proxy');
+    }
+    apiTeams = teamsData.teams;
 
     return { apiGames, apiGroups, apiTeams };
 }
