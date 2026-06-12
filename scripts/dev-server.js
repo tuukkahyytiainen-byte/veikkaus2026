@@ -48,6 +48,33 @@ const server = http.createServer(async (req, res) => {
         return;
     }
 
+    // Handle agent-analysis-html dynamically (like Vercel)
+    if (pathname === '/agent-analysis-html') {
+        try {
+            console.log('[DevServer] Dynamically generating agent-analysis-html...');
+            const excelPath = path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
+            const txtPath = path.join(__dirname, '..', 'tulokset.txt');
+            
+            const { apiGames, apiGroups, apiTeams } = await fetchLiveApiData();
+            const { finalJson } = await runAnalysisGenerator({
+                excelPath,
+                txtPath,
+                apiGames,
+                apiGroups,
+                apiTeams,
+                writeFiles: false
+            });
+
+            res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+            res.end(`<!DOCTYPE html><html><body><pre id="agent-data">${JSON.stringify(finalJson)}</pre></body></html>`);
+        } catch (err) {
+            console.error('[DevServer] Error generating analysis HTML:', err);
+            res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
+            res.end(`<!DOCTYPE html><html><body><h1>Error</h1><p>${err.message}</p></body></html>`);
+        }
+        return;
+    }
+
     // Handle botmanen-summary.json dynamically (like Vercel)
     if (pathname === '/botmanen-summary.json') {
         try {
