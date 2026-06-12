@@ -29,8 +29,8 @@ module.exports = async (req, res) => {
             writeFiles: false
         });
 
-        // Cache for 10 seconds at edge, do not cache in browser, no stale-while-revalidate
-        res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=10');
+        // Disable caching completely for agent analysis
+        res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0');
         res.status(200).json(finalJson);
     } catch (err) {
         console.error('Serverless error generating analysis:', err);
