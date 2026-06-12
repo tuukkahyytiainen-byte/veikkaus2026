@@ -1,0 +1,3262 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-12T08:05:12.141Z",
+  "summary": {
+    "playedMatchesCount": 2,
+    "totalMatches": 72,
+    "lastPlayedMatchNr": 2,
+    "latestPlayedDate": "12.6. klo 05",
+    "participantCount": 48
+  },
+  "latestPlayedMatches": [
+    {
+      "nr": 2,
+      "date": "12.6. klo 05",
+      "group": "A",
+      "team1": "Etelä-Korea",
+      "team2": "Tshekki",
+      "goals1": 2,
+      "goals2": 1
+    }
+  ],
+  "leaderboardTop": [
+    {
+      "rank": 1,
+      "name": "Agueero",
+      "totalPoints": 12,
+      "matchPoints": 12,
+      "exactlyCorrect": 2
+    },
+    {
+      "rank": 1,
+      "name": "ArtsiKerho",
+      "totalPoints": 12,
+      "matchPoints": 12,
+      "exactlyCorrect": 2
+    },
+    {
+      "rank": 1,
+      "name": "Mike Salmon",
+      "totalPoints": 12,
+      "matchPoints": 12,
+      "exactlyCorrect": 2
+    },
+    {
+      "rank": 1,
+      "name": "Repetti",
+      "totalPoints": 12,
+      "matchPoints": 12,
+      "exactlyCorrect": 2
+    },
+    {
+      "rank": 5,
+      "name": "LegendaryLebu",
+      "totalPoints": 11,
+      "matchPoints": 11,
+      "exactlyCorrect": 1
+    },
+    {
+      "rank": 5,
+      "name": "Minkário de Souza Faria",
+      "totalPoints": 11,
+      "matchPoints": 11,
+      "exactlyCorrect": 1
+    },
+    {
+      "rank": 7,
+      "name": "Pontemon",
+      "totalPoints": 10,
+      "matchPoints": 10,
+      "exactlyCorrect": 1
+    },
+    {
+      "rank": 7,
+      "name": "Ibaldo de Lima",
+      "totalPoints": 10,
+      "matchPoints": 10,
+      "exactlyCorrect": 0
+    },
+    {
+      "rank": 9,
+      "name": "Suomaldinho",
+      "totalPoints": 9,
+      "matchPoints": 9,
+      "exactlyCorrect": 0
+    },
+    {
+      "rank": 9,
+      "name": "Teo ja Noel",
+      "totalPoints": 9,
+      "matchPoints": 9,
+      "exactlyCorrect": 0
+    }
+  ],
+  "last3MatchesAnalysis": {
+    "matches": [
+      {
+        "nr": 1,
+        "date": "11.6. klo 22",
+        "group": "A",
+        "team1": "Meksiko",
+        "team2": "Etelä-Afrikka",
+        "goals1": 2,
+        "goals2": 0,
+        "resultText": "2-0",
+        "hasResult": true
+      },
+      {
+        "nr": 2,
+        "date": "12.6. klo 05",
+        "group": "A",
+        "team1": "Etelä-Korea",
+        "team2": "Tshekki",
+        "goals1": 2,
+        "goals2": 1,
+        "resultText": "2-1",
+        "hasResult": true
+      }
+    ],
+    "participantPoints": [
+      {
+        "name": "Agueero",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "ArtsiKerho",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Mike Salmon",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Repetti",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "LegendaryLebu",
+        "rankNow": 5,
+        "totalPointsNow": 11,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 1,
+        "rankChange": -4,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "rankNow": 5,
+        "totalPointsNow": 11,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 1,
+        "rankChange": -4,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "3-1",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pontemon",
+        "rankNow": 7,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 1,
+        "rankChange": -6,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ibaldo de Lima",
+        "rankNow": 7,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 1,
+        "rankChange": -6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Suomaldinho",
+        "rankNow": 9,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 1,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 9,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 1,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tommy Favorite",
+        "rankNow": 9,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 1,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Chica",
+        "rankNow": 12,
+        "totalPointsNow": 7,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 1,
+        "rankChange": -11,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "4-1",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "3-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Carey Lily",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Drent",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Johnny Rotten",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Joni",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Jossu",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "PoHan Pullistus",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Profeetta Möttönen",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rosaldo",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sanukka",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sedu",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temez",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temezotti",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tero H",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "The Moka",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tomas Brolin",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuurilla",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "werner strandhügel",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Xhakku",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Eski66",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Heinomar",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ian Rush",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ice Cold",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "IlkkuPro75",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Max",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Neyney",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pauli Koponen",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pora",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Shampoo",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sipolovic",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuna",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "3-1",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Keto Armstrong",
+        "rankNow": 46,
+        "totalPointsNow": 4,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 1,
+        "rankChange": -45,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Nipa",
+        "rankNow": 46,
+        "totalPointsNow": 4,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 1,
+        "rankChange": -45,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "SKA Hänninen",
+        "rankNow": 48,
+        "totalPointsNow": 3,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 1,
+        "rankChange": -47,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      }
+    ],
+    "topPerformers": [
+      {
+        "name": "Agueero",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "ArtsiKerho",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "Mike Salmon",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "Repetti",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "LegendaryLebu",
+        "pointsInWindow": 11,
+        "exactResultsInWindow": 1
+      }
+    ],
+    "perfectScores": [
+      {
+        "name": "Agueero",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Agueero",
+        "matchNr": 2,
+        "match": "Etelä-Korea–Tshekki",
+        "guess": "2-1",
+        "actual": "2-1"
+      },
+      {
+        "name": "ArtsiKerho",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "ArtsiKerho",
+        "matchNr": 2,
+        "match": "Etelä-Korea–Tshekki",
+        "guess": "2-1",
+        "actual": "2-1"
+      },
+      {
+        "name": "Mike Salmon",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Mike Salmon",
+        "matchNr": 2,
+        "match": "Etelä-Korea–Tshekki",
+        "guess": "2-1",
+        "actual": "2-1"
+      },
+      {
+        "name": "Repetti",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Repetti",
+        "matchNr": 2,
+        "match": "Etelä-Korea–Tshekki",
+        "guess": "2-1",
+        "actual": "2-1"
+      },
+      {
+        "name": "LegendaryLebu",
+        "matchNr": 2,
+        "match": "Etelä-Korea–Tshekki",
+        "guess": "2-1",
+        "actual": "2-1"
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Pontemon",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Carey Lily",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Drent",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Johnny Rotten",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Joni",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Jossu",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Kiiskiministeri",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "PoHan Pullistus",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Profeetta Möttönen",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Rosaldo",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Sanukka",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Sedu",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Temez",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Temezotti",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Tero H",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "The Moka",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Tomas Brolin",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Tuurilla",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "werner strandhügel",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      },
+      {
+        "name": "Xhakku",
+        "matchNr": 1,
+        "match": "Meksiko–Etelä-Afrikka",
+        "guess": "2-0",
+        "actual": "2-0"
+      }
+    ],
+    "biggestRisers": [],
+    "biggestFallers": [
+      {
+        "name": "SKA Hänninen",
+        "rankBeforeWindow": 1,
+        "rankNow": 48,
+        "rankChange": -47,
+        "pointsInWindow": 3
+      },
+      {
+        "name": "Keto Armstrong",
+        "rankBeforeWindow": 1,
+        "rankNow": 46,
+        "rankChange": -45,
+        "pointsInWindow": 4
+      },
+      {
+        "name": "Nipa",
+        "rankBeforeWindow": 1,
+        "rankNow": 46,
+        "rankChange": -45,
+        "pointsInWindow": 4
+      },
+      {
+        "name": "Eski66",
+        "rankBeforeWindow": 1,
+        "rankNow": 33,
+        "rankChange": -32,
+        "pointsInWindow": 5
+      },
+      {
+        "name": "Esko",
+        "rankBeforeWindow": 1,
+        "rankNow": 33,
+        "rankChange": -32,
+        "pointsInWindow": 5
+      }
+    ],
+    "zeroPointers": []
+  },
+  "last5MatchesAnalysis": {
+    "participantPoints": [
+      {
+        "name": "Agueero",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "ArtsiKerho",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Mike Salmon",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Repetti",
+        "rankNow": 1,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "LegendaryLebu",
+        "rankNow": 5,
+        "totalPointsNow": 11,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 1,
+        "rankChange": -4,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "rankNow": 5,
+        "totalPointsNow": 11,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 1,
+        "rankChange": -4,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "3-1",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pontemon",
+        "rankNow": 7,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 1,
+        "rankChange": -6,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ibaldo de Lima",
+        "rankNow": 7,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 1,
+        "rankChange": -6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Suomaldinho",
+        "rankNow": 9,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 1,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 9,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 1,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tommy Favorite",
+        "rankNow": 9,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 1,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Chica",
+        "rankNow": 12,
+        "totalPointsNow": 7,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 1,
+        "rankChange": -11,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "4-1",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "3-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Carey Lily",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Drent",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Johnny Rotten",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Joni",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Jossu",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "PoHan Pullistus",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Profeetta Möttönen",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rosaldo",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sanukka",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sedu",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temez",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temezotti",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tero H",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "The Moka",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tomas Brolin",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuurilla",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "werner strandhügel",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Xhakku",
+        "rankNow": 13,
+        "totalPointsNow": 6,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Eski66",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Heinomar",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ian Rush",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ice Cold",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "IlkkuPro75",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Max",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Neyney",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pauli Koponen",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pora",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Shampoo",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sipolovic",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuna",
+        "rankNow": 33,
+        "totalPointsNow": 5,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -32,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "3-1",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Keto Armstrong",
+        "rankNow": 46,
+        "totalPointsNow": 4,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 1,
+        "rankChange": -45,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Nipa",
+        "rankNow": 46,
+        "totalPointsNow": 4,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 1,
+        "rankChange": -45,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "SKA Hänninen",
+        "rankNow": 48,
+        "totalPointsNow": 3,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 1,
+        "rankChange": -47,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      }
+    ],
+    "topPerformers": [
+      {
+        "name": "Agueero",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "ArtsiKerho",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "Mike Salmon",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "Repetti",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "LegendaryLebu",
+        "pointsInWindow": 11,
+        "exactResultsInWindow": 1
+      }
+    ]
+  },
+  "commentaryHints": {
+    "leader": {
+      "name": "Agueero",
+      "points": 12
+    },
+    "closestChasers": [
+      {
+        "name": "ArtsiKerho",
+        "rank": 1,
+        "points": 12,
+        "pointsBehindLeader": 0
+      },
+      {
+        "name": "Mike Salmon",
+        "rank": 1,
+        "points": 12,
+        "pointsBehindLeader": 0
+      },
+      {
+        "name": "Repetti",
+        "rank": 1,
+        "points": 12,
+        "pointsBehindLeader": 0
+      },
+      {
+        "name": "LegendaryLebu",
+        "rank": 5,
+        "points": 11,
+        "pointsBehindLeader": 1
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "rank": 5,
+        "points": 11,
+        "pointsBehindLeader": 1
+      }
+    ],
+    "tightTopComment": "Kärjessä on tasapeli!",
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Agueero (12p). Lähimpänä haastajana on ArtsiKerho (12p, eroa vain 0p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Agueero keräten 12p. Eniten sijoitustaan menetti SKA Hänninen (-47 sijaa). Täydellisiä 6 pisteen osumia saivat: Agueero (Meksiko–Etelä-Afrikka veikkaus 2-0), Agueero (Etelä-Korea–Tshekki veikkaus 2-1), ArtsiKerho (Meksiko–Etelä-Afrikka veikkaus 2-0)."
+  }
+}

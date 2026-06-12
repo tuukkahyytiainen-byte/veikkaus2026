@@ -3,4 +3,6 @@ extracted_script.js
 .gemini/
 brain/
 scratch/
-public/
+public/*
+!public/agent-analysis.json
+!public/botmanen-summary.json
