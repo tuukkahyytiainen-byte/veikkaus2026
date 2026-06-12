@@ -2797,7 +2797,8 @@
         const STORAGE_KEY_LIVE_GAMES = 'veikkaus2026_live_games';
 
         function fetchLiveGames() {
-            return fetch('live-games.json')
+            const cacheBuster = Math.floor(Date.now() / 10000); // 10-second grid cache-buster
+            return fetch('live-games.json?t=' + cacheBuster)
                 .then(res => {
                     if (!res.ok) throw new Error('Status: ' + res.status);
                     return res.json();

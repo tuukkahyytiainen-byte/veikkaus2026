@@ -35,8 +35,8 @@ module.exports = async (req, res) => {
                 }
                 const jsonData = JSON.parse(data);
                 
-                // Cache for 30 seconds at edge, allow stale-while-revalidate for 60 seconds
-                res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=60');
+                // Cache for 10 seconds at edge, do not cache in browser, no stale-while-revalidate
+                res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=10');
                 res.status(200).json(jsonData);
             } catch (err) {
                 console.error('Error parsing live games JSON:', err);

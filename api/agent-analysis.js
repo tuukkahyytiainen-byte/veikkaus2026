@@ -29,8 +29,8 @@ module.exports = async (req, res) => {
             writeFiles: false
         });
 
-        // Set caching headers: cache for 20 seconds, allow stale-while-revalidate for 1 minute
-        res.setHeader('Cache-Control', 's-maxage=20, stale-while-revalidate=60');
+        // Cache for 10 seconds at edge, do not cache in browser, no stale-while-revalidate
+        res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=10');
         res.status(200).json(finalJson);
     } catch (err) {
         console.error('Serverless error generating analysis:', err);
