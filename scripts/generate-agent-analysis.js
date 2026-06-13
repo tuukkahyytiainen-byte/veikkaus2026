@@ -419,6 +419,16 @@ function formatLiveStatus(timeElapsed) {
 }
 
 async function fetchLiveApiData() {
+    const cachePath = path.join(__dirname, 'cached-api-data.json');
+    let cachedData = null;
+    if (fs.existsSync(cachePath)) {
+        try {
+            cachedData = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+        } catch (e) {
+            console.warn('Failed to parse cached-api-data.json:', e.message);
+        }
+    }
+
     let apiGames = [];
     let apiGroups = [];
     let apiTeams = [];
@@ -447,32 +457,49 @@ async function fetchLiveApiData() {
         }
     }
 
-    const gamesData = await fetchResource(
-        'https://worldcup26.ir/get/games',
-        'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games'
-    );
-    if (!gamesData || !gamesData.games) {
-        throw new Error('Failed to fetch live games from API and proxy');
-    }
-    apiGames = gamesData.games;
+    try {
+        console.log('Fetching live games from API...');
+        const gamesData = await fetchResource(
+            'https://worldcup26.ir/get/games',
+            'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games'
+        );
+        if (!gamesData || !gamesData.games) {
+            throw new Error('Failed to fetch live games from API and proxy');
+        }
+        apiGames = gamesData.games;
 
-    const groupsData = await fetchResource(
-        'https://worldcup26.ir/get/groups',
-        'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups'
-    );
-    if (!groupsData || !groupsData.groups) {
-        throw new Error('Failed to fetch live groups from API and proxy');
-    }
-    apiGroups = groupsData.groups;
+        console.log('Fetching live groups from API...');
+        const groupsData = await fetchResource(
+            'https://worldcup26.ir/get/groups',
+            'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups'
+        );
+        if (!groupsData || !groupsData.groups) {
+            throw new Error('Failed to fetch live groups from API and proxy');
+        }
+        apiGroups = groupsData.groups;
 
-    const teamsData = await fetchResource(
-        'https://worldcup26.ir/get/teams',
-        'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams'
-    );
-    if (!teamsData || !teamsData.teams) {
-        throw new Error('Failed to fetch live teams from API and proxy');
+        console.log('Fetching live teams from API...');
+        const teamsData = await fetchResource(
+            'https://worldcup26.ir/get/teams',
+            'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams'
+        );
+        if (!teamsData || !teamsData.teams) {
+            throw new Error('Failed to fetch live teams from API and proxy');
+        }
+        apiTeams = teamsData.teams;
+
+        // Save to cache
+        fs.writeFileSync(cachePath, JSON.stringify({ apiGames, apiGroups, apiTeams }, null, 2));
+        console.log('Live API data cached successfully to cached-api-data.json');
+    } catch (err) {
+        console.warn('Could not fetch live API data, attempting to use cached data...', err.message);
+        if (cachedData && cachedData.apiGames && cachedData.apiGroups && cachedData.apiTeams) {
+            console.log('Successfully loaded cached API data.');
+            return cachedData;
+        } else {
+            throw new Error('Failed to fetch live API data and no valid cache exists: ' + err.message);
+        }
     }
-    apiTeams = teamsData.teams;
 
     return { apiGames, apiGroups, apiTeams };
 }

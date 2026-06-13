@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-13T18:52:27.234Z",
+  "generatedAt": "2026-06-13T19:37:43.804Z",
   "summary": {
-    "playedMatchesCount": 4,
+    "playedMatchesCount": 5,
     "totalMatches": 72,
-    "lastPlayedMatchNr": 4,
-    "latestPlayedDate": "13.6. klo 04",
+    "lastPlayedMatchNr": 8,
+    "latestPlayedDate": "13.6. klo 22",
     "participantCount": 48
   },
   "latestPlayedMatches": [
@@ -17,93 +17,91 @@
       "team2": "Paraguay",
       "goals1": 4,
       "goals2": 1
+    },
+    {
+      "nr": 8,
+      "date": "13.6. klo 22",
+      "group": "B",
+      "team1": "Qatar",
+      "team2": "Sveitsi",
+      "goals1": 0,
+      "goals2": 1
     }
   ],
   "leaderboardTop": [
     {
       "rank": 1,
       "name": "Mike Salmon",
-      "totalPoints": 22,
-      "matchPoints": 22,
+      "totalPoints": 26,
+      "matchPoints": 26,
       "exactlyCorrect": 3
     },
     {
       "rank": 2,
+      "name": "Joni",
+      "totalPoints": 21,
+      "matchPoints": 21,
+      "exactlyCorrect": 2
+    },
+    {
+      "rank": 2,
+      "name": "Kiiskiministeri",
+      "totalPoints": 21,
+      "matchPoints": 21,
+      "exactlyCorrect": 2
+    },
+    {
+      "rank": 2,
       "name": "Minkário de Souza Faria",
-      "totalPoints": 17,
-      "matchPoints": 17,
+      "totalPoints": 21,
+      "matchPoints": 21,
       "exactlyCorrect": 2
     },
     {
       "rank": 2,
       "name": "Chica",
-      "totalPoints": 17,
-      "matchPoints": 17,
+      "totalPoints": 21,
+      "matchPoints": 21,
       "exactlyCorrect": 1
-    },
-    {
-      "rank": 4,
-      "name": "Joni",
-      "totalPoints": 16,
-      "matchPoints": 16,
-      "exactlyCorrect": 2
-    },
-    {
-      "rank": 4,
-      "name": "Kiiskiministeri",
-      "totalPoints": 16,
-      "matchPoints": 16,
-      "exactlyCorrect": 2
     },
     {
       "rank": 6,
-      "name": "LegendaryLebu",
-      "totalPoints": 15,
-      "matchPoints": 15,
-      "exactlyCorrect": 1
-    },
-    {
-      "rank": 7,
       "name": "Max",
-      "totalPoints": 14,
-      "matchPoints": 14,
+      "totalPoints": 19,
+      "matchPoints": 19,
       "exactlyCorrect": 1
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Pontemon",
-      "totalPoints": 14,
-      "matchPoints": 14,
+      "totalPoints": 19,
+      "matchPoints": 19,
       "exactlyCorrect": 1
     },
     {
-      "rank": 9,
-      "name": "Sedu",
-      "totalPoints": 13,
-      "matchPoints": 13,
-      "exactlyCorrect": 1
+      "rank": 8,
+      "name": "ArtsiKerho",
+      "totalPoints": 18,
+      "matchPoints": 18,
+      "exactlyCorrect": 3
     },
     {
-      "rank": 9,
-      "name": "Ibaldo de Lima",
-      "totalPoints": 13,
-      "matchPoints": 13,
-      "exactlyCorrect": 0
+      "rank": 8,
+      "name": "Carey Lily",
+      "totalPoints": 18,
+      "matchPoints": 18,
+      "exactlyCorrect": 3
+    },
+    {
+      "rank": 10,
+      "name": "Agueero",
+      "totalPoints": 17,
+      "matchPoints": 17,
+      "exactlyCorrect": 2
     }
   ],
   "last3MatchesAnalysis": {
     "matches": [
-      {
-        "nr": 2,
-        "date": "12.6. klo 05",
-        "group": "A",
-        "team1": "Etelä-Korea",
-        "team2": "Tshekki",
-        "goals1": 2,
-        "goals2": 1,
-        "resultText": "2-1",
-        "hasResult": true
-      },
       {
         "nr": 3,
         "date": "12.6. klo 22",
@@ -125,27 +123,29 @@
         "goals2": 1,
         "resultText": "4-1",
         "hasResult": true
+      },
+      {
+        "nr": 8,
+        "date": "13.6. klo 22",
+        "group": "B",
+        "team1": "Qatar",
+        "team2": "Sveitsi",
+        "goals1": 0,
+        "goals2": 1,
+        "resultText": "0-1",
+        "hasResult": true
       }
     ],
     "participantPoints": [
       {
-        "name": "Mike Salmon",
-        "rankNow": 1,
-        "totalPointsNow": 22,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 1,
-        "rankChange": 0,
-        "exactResultsInWindow": 2,
+        "name": "Joni",
+        "rankNow": 2,
+        "totalPointsNow": 21,
+        "pointsInWindow": 15,
+        "rankBeforeWindow": 13,
+        "rankChange": 11,
+        "exactResultsInWindow": 1,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-1",
-            "points": 6,
-            "exactResult": true
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -161,6 +161,91 @@
             "team2": "Paraguay",
             "resultText": "4-1",
             "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rankNow": 2,
+        "totalPointsNow": 21,
+        "pointsInWindow": 15,
+        "rankBeforeWindow": 13,
+        "rankChange": 11,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Mike Salmon",
+        "rankNow": 1,
+        "totalPointsNow": 26,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 1,
+        "rankChange": 0,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
             "points": 4,
             "exactResult": false
           }
@@ -169,21 +254,12 @@
       {
         "name": "Chica",
         "rankNow": 2,
-        "totalPointsNow": 17,
+        "totalPointsNow": 21,
         "pointsInWindow": 14,
-        "rankBeforeWindow": 45,
-        "rankChange": 43,
+        "rankBeforeWindow": 12,
+        "rankChange": 10,
         "exactResultsInWindow": 1,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "3-0",
-            "points": 4,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -201,217 +277,27 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Minkário de Souza Faria",
-        "rankNow": 2,
-        "totalPointsNow": 17,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 1,
-        "rankChange": -1,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "3-1",
-            "points": 5,
-            "exactResult": false
           },
           {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Joni",
-        "rankNow": 4,
-        "totalPointsNow": 16,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 1,
-        "rankChange": -3,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
             "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Kiiskiministeri",
-        "rankNow": 4,
-        "totalPointsNow": 16,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 1,
-        "rankChange": -3,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "LegendaryLebu",
-        "rankNow": 6,
-        "totalPointsNow": 15,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 27,
-        "rankChange": 21,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Nipa",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 47,
-        "rankChange": 28,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-2",
-            "points": 0,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Max",
-        "rankNow": 7,
-        "totalPointsNow": 14,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 27,
-        "rankChange": 20,
+        "rankNow": 6,
+        "totalPointsNow": 19,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 33,
+        "rankChange": 27,
         "exactResultsInWindow": 1,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -429,331 +315,27 @@
             "predictedResultText": "2-0",
             "points": 3,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pontemon",
-        "rankNow": 7,
-        "totalPointsNow": 14,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 1,
-        "rankChange": -6,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
           },
           {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "3-0",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Ibaldo de Lima",
-        "rankNow": 9,
-        "totalPointsNow": 13,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 27,
-        "rankChange": 18,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-0",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
             "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sedu",
-        "rankNow": 9,
-        "totalPointsNow": 13,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 1,
-        "rankChange": -8,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-2",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Suomaldinho",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 27,
-        "rankChange": 16,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Teo ja Noel",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 27,
-        "rankChange": 16,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tommy Favorite",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 27,
-        "rankChange": 16,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "0-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Agueero",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "ArtsiKerho",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-3",
-            "points": 0,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Carey Lily",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
+        "rankNow": 8,
+        "totalPointsNow": 18,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 13,
+        "rankChange": 5,
+        "exactResultsInWindow": 2,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -771,346 +353,51 @@
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Repetti",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
+          },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-1",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
             "points": 6,
             "exactResult": true
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
       {
-        "name": "Tomas Brolin",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tuna",
-        "rankNow": 44,
-        "totalPointsNow": 5,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 47,
+        "name": "Minkário de Souza Faria",
+        "rankNow": 2,
+        "totalPointsNow": 21,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 5,
         "rankChange": 3,
-        "exactResultsInWindow": 0,
+        "exactResultsInWindow": 1,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "3-1",
-            "points": 5,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
             "team2": "Bosnia ja Hertsegovina",
             "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "0-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Johnny Rotten",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sanukka",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "3-0",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Temez",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
             "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 4,
             "team1": "USA",
             "team2": "Paraguay",
             "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Temezotti",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
+            "predictedResultText": "2-2",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tero H",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
             "points": 4,
             "exactResult": false
           }
@@ -1118,22 +405,13 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 0,
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 13,
+        "rankChange": 0,
+        "exactResultsInWindow": 1,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1151,27 +429,103 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
           }
         ]
       },
       {
-        "name": "Ice Cold",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 27,
+        "name": "Sedu",
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 13,
         "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-2",
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-3",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tomas Brolin",
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 13,
+        "rankChange": -4,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-3",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pontemon",
+        "rankNow": 6,
+        "totalPointsNow": 19,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 7,
+        "rankChange": 1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1189,27 +543,27 @@
             "predictedResultText": "3-0",
             "points": 4,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "IlkkuPro75",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 27,
-        "rankChange": 0,
+        "name": "Johnny Rotten",
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 13,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1227,27 +581,255 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "Shampoo",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 27,
-        "rankChange": 0,
+        "name": "Tero H",
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 13,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "IlkkuPro75",
+        "rankNow": 21,
+        "totalPointsNow": 14,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 33,
+        "rankChange": 12,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Neyney",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 33,
+        "rankChange": 9,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 10,
+        "totalPointsNow": 17,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 9,
+        "rankChange": -1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sanukka",
+        "rankNow": 21,
+        "totalPointsNow": 14,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 13,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "3-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temezotti",
+        "rankNow": 21,
+        "totalPointsNow": 14,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 13,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Eski66",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 33,
+        "rankChange": 9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1262,7 +844,92 @@
             "team1": "USA",
             "team2": "Paraguay",
             "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 33,
+        "rankChange": 9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ice Cold",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 33,
+        "rankChange": 9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "3-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
             "points": 4,
             "exactResult": false
           }
@@ -1270,22 +937,13 @@
       },
       {
         "name": "Sipolovic",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 27,
-        "rankChange": 0,
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 33,
+        "rankChange": 9,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1303,33 +961,33 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "Drent",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 1,
-        "rankChange": -26,
+        "name": "Suomaldinho",
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 9,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
             "team2": "Bosnia ja Hertsegovina",
             "resultText": "1-1",
-            "predictedResultText": "2-1",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           },
@@ -1341,33 +999,33 @@
             "predictedResultText": "2-0",
             "points": 3,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "Jossu",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 1,
-        "rankChange": -26,
+        "name": "PoHan Pullistus",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 13,
+        "rankChange": -11,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
             "team2": "Bosnia ja Hertsegovina",
             "resultText": "1-1",
-            "predictedResultText": "2-1",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
@@ -1376,7 +1034,54 @@
             "team1": "USA",
             "team2": "Paraguay",
             "resultText": "4-1",
-            "predictedResultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temez",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 13,
+        "rankChange": -11,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-4",
             "points": 3,
             "exactResult": false
           }
@@ -1384,213 +1089,14 @@
       },
       {
         "name": "Tuurilla",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 1,
-        "rankChange": -26,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Eski66",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 27,
-        "rankChange": -7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Esko",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 27,
-        "rankChange": -7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Heinomar",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 27,
-        "rankChange": -7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "PoHan Pullistus",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 2,
-        "rankBeforeWindow": 1,
-        "rankChange": -33,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-0",
-            "points": 2,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Neyney",
-        "rankNow": 38,
-        "totalPointsNow": 7,
-        "pointsInWindow": 2,
-        "rankBeforeWindow": 27,
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 13,
         "rankChange": -11,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 3,
             "team1": "Kanada",
             "team2": "Bosnia ja Hertsegovina",
@@ -1604,30 +1110,30 @@
             "team1": "USA",
             "team2": "Paraguay",
             "resultText": "4-1",
-            "predictedResultText": "1-0",
-            "points": 2,
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Pauli Koponen",
-        "rankNow": 38,
-        "totalPointsNow": 7,
-        "pointsInWindow": 2,
-        "rankBeforeWindow": 27,
-        "rankChange": -11,
+        "rankNow": 32,
+        "totalPointsNow": 12,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 33,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1645,27 +1151,255 @@
             "predictedResultText": "1-0",
             "points": 2,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "ArtsiKerho",
+        "rankNow": 8,
+        "totalPointsNow": 18,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -7,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Nipa",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 46,
+        "rankChange": 8,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ibaldo de Lima",
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 7,
+        "rankChange": -6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-4",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Drent",
+        "rankNow": 32,
+        "totalPointsNow": 12,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 13,
+        "rankChange": -19,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-4",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Agueero",
+        "rankNow": 10,
+        "totalPointsNow": 17,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Repetti",
+        "rankNow": 10,
+        "totalPointsNow": 17,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 1,
+        "rankChange": -9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "rankNow": 35,
+        "totalPointsNow": 11,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 13,
+        "rankChange": -22,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1683,27 +1417,27 @@
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Rosaldo",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "rankNow": 35,
+        "totalPointsNow": 11,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 13,
+        "rankChange": -22,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1719,6 +1453,205 @@
             "team2": "Paraguay",
             "resultText": "4-1",
             "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "werner strandhügel",
+        "rankNow": 35,
+        "totalPointsNow": 11,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 13,
+        "rankChange": -22,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ian Rush",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 33,
+        "rankChange": -5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pora",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 33,
+        "rankChange": -5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "LegendaryLebu",
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 5,
+        "rankChange": -12,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 13,
+        "rankChange": -25,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-0",
             "points": 0,
             "exactResult": false
           }
@@ -1726,22 +1659,13 @@
       },
       {
         "name": "The Moka",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 13,
+        "rankChange": -25,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1759,71 +1683,71 @@
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "werner strandhügel",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "name": "Shampoo",
+        "rankNow": 43,
+        "totalPointsNow": 9,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 33,
+        "rankChange": -10,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
             "team2": "Bosnia ja Hertsegovina",
             "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 4,
             "exactResult": false
           },
           {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-2",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Ian Rush",
-        "rankNow": 44,
-        "totalPointsNow": 5,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 27,
-        "rankChange": -17,
+        "name": "Tuna",
+        "rankNow": 43,
+        "totalPointsNow": 9,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 33,
+        "rankChange": -10,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
             "team2": "Bosnia ja Hertsegovina",
             "resultText": "1-1",
-            "predictedResultText": "1-0",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
@@ -1832,68 +1756,30 @@
             "team1": "USA",
             "team2": "Paraguay",
             "resultText": "4-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pora",
-        "rankNow": 44,
-        "totalPointsNow": 5,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 27,
-        "rankChange": -17,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
+            "predictedResultText": "0-0",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "0-2",
-            "points": 0,
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 47,
-        "totalPointsNow": 4,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 44,
-        "rankChange": -3,
+        "rankNow": 46,
+        "totalPointsNow": 8,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 46,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1910,6 +1796,15 @@
             "resultText": "4-1",
             "predictedResultText": "0-1",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
             "exactResult": false
           }
         ]
@@ -1917,21 +1812,12 @@
       {
         "name": "SKA Hänninen",
         "rankNow": 48,
-        "totalPointsNow": 3,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 45,
-        "rankChange": -3,
+        "totalPointsNow": 7,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 48,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 3,
             "team1": "Kanada",
@@ -1947,6 +1833,129 @@
             "team2": "Paraguay",
             "resultText": "4-1",
             "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tommy Favorite",
+        "rankNow": 32,
+        "totalPointsNow": 12,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 9,
+        "rankChange": -23,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Jossu",
+        "rankNow": 43,
+        "totalPointsNow": 9,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 13,
+        "rankChange": -30,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Heinomar",
+        "rankNow": 46,
+        "totalPointsNow": 8,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 33,
+        "rankChange": -13,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           }
@@ -1955,9 +1964,19 @@
     ],
     "topPerformers": [
       {
+        "name": "Joni",
+        "pointsInWindow": 15,
+        "exactResultsInWindow": 1
+      },
+      {
+        "name": "Kiiskiministeri",
+        "pointsInWindow": 15,
+        "exactResultsInWindow": 1
+      },
+      {
         "name": "Mike Salmon",
-        "pointsInWindow": 16,
-        "exactResultsInWindow": 2
+        "pointsInWindow": 14,
+        "exactResultsInWindow": 1
       },
       {
         "name": "Chica",
@@ -1965,28 +1984,25 @@
         "exactResultsInWindow": 1
       },
       {
-        "name": "Minkário de Souza Faria",
-        "pointsInWindow": 11,
-        "exactResultsInWindow": 1
-      },
-      {
-        "name": "Joni",
-        "pointsInWindow": 10,
-        "exactResultsInWindow": 1
-      },
-      {
-        "name": "Kiiskiministeri",
-        "pointsInWindow": 10,
+        "name": "Max",
+        "pointsInWindow": 14,
         "exactResultsInWindow": 1
       }
     ],
     "perfectScores": [
       {
-        "name": "Mike Salmon",
-        "matchNr": 2,
-        "match": "Etelä-Korea–Tshekki",
-        "guess": "2-1",
-        "actual": "2-1"
+        "name": "Joni",
+        "matchNr": 3,
+        "match": "Kanada–Bosnia ja Hertsegovina",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Kiiskiministeri",
+        "matchNr": 3,
+        "match": "Kanada–Bosnia ja Hertsegovina",
+        "guess": "1-1",
+        "actual": "1-1"
       },
       {
         "name": "Mike Salmon",
@@ -1997,41 +2013,6 @@
       },
       {
         "name": "Chica",
-        "matchNr": 3,
-        "match": "Kanada–Bosnia ja Hertsegovina",
-        "guess": "1-1",
-        "actual": "1-1"
-      },
-      {
-        "name": "Minkário de Souza Faria",
-        "matchNr": 3,
-        "match": "Kanada–Bosnia ja Hertsegovina",
-        "guess": "1-1",
-        "actual": "1-1"
-      },
-      {
-        "name": "Joni",
-        "matchNr": 3,
-        "match": "Kanada–Bosnia ja Hertsegovina",
-        "guess": "1-1",
-        "actual": "1-1"
-      },
-      {
-        "name": "Kiiskiministeri",
-        "matchNr": 3,
-        "match": "Kanada–Bosnia ja Hertsegovina",
-        "guess": "1-1",
-        "actual": "1-1"
-      },
-      {
-        "name": "LegendaryLebu",
-        "matchNr": 2,
-        "match": "Etelä-Korea–Tshekki",
-        "guess": "2-1",
-        "actual": "2-1"
-      },
-      {
-        "name": "Nipa",
         "matchNr": 3,
         "match": "Kanada–Bosnia ja Hertsegovina",
         "guess": "1-1",
@@ -2043,20 +2024,6 @@
         "match": "Kanada–Bosnia ja Hertsegovina",
         "guess": "1-1",
         "actual": "1-1"
-      },
-      {
-        "name": "Agueero",
-        "matchNr": 2,
-        "match": "Etelä-Korea–Tshekki",
-        "guess": "2-1",
-        "actual": "2-1"
-      },
-      {
-        "name": "ArtsiKerho",
-        "matchNr": 2,
-        "match": "Etelä-Korea–Tshekki",
-        "guess": "2-1",
-        "actual": "2-1"
       },
       {
         "name": "Carey Lily",
@@ -2066,14 +2033,49 @@
         "actual": "1-1"
       },
       {
-        "name": "Repetti",
-        "matchNr": 2,
-        "match": "Etelä-Korea–Tshekki",
-        "guess": "2-1",
-        "actual": "2-1"
+        "name": "Carey Lily",
+        "matchNr": 8,
+        "match": "Qatar–Sveitsi",
+        "guess": "0-1",
+        "actual": "0-1"
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "matchNr": 3,
+        "match": "Kanada–Bosnia ja Hertsegovina",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Xhakku",
+        "matchNr": 8,
+        "match": "Qatar–Sveitsi",
+        "guess": "0-1",
+        "actual": "0-1"
       },
       {
         "name": "Tomas Brolin",
+        "matchNr": 3,
+        "match": "Kanada–Bosnia ja Hertsegovina",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Neyney",
+        "matchNr": 8,
+        "match": "Qatar–Sveitsi",
+        "guess": "0-1",
+        "actual": "0-1"
+      },
+      {
+        "name": "ArtsiKerho",
+        "matchNr": 8,
+        "match": "Qatar–Sveitsi",
+        "guess": "0-1",
+        "actual": "0-1"
+      },
+      {
+        "name": "Nipa",
         "matchNr": 3,
         "match": "Kanada–Bosnia ja Hertsegovina",
         "guess": "1-1",
@@ -2082,128 +2084,87 @@
     ],
     "biggestRisers": [
       {
-        "name": "Chica",
-        "rankBeforeWindow": 45,
-        "rankNow": 2,
-        "rankChange": 43,
+        "name": "Max",
+        "rankBeforeWindow": 33,
+        "rankNow": 6,
+        "rankChange": 27,
         "pointsInWindow": 14
       },
       {
-        "name": "Nipa",
-        "rankBeforeWindow": 47,
-        "rankNow": 19,
-        "rankChange": 28,
-        "pointsInWindow": 10
-      },
-      {
-        "name": "LegendaryLebu",
-        "rankBeforeWindow": 27,
-        "rankNow": 6,
-        "rankChange": 21,
-        "pointsInWindow": 10
-      },
-      {
-        "name": "Max",
-        "rankBeforeWindow": 27,
-        "rankNow": 7,
-        "rankChange": 20,
+        "name": "IlkkuPro75",
+        "rankBeforeWindow": 33,
+        "rankNow": 21,
+        "rankChange": 12,
         "pointsInWindow": 9
       },
       {
-        "name": "Ibaldo de Lima",
-        "rankBeforeWindow": 27,
-        "rankNow": 9,
-        "rankChange": 18,
-        "pointsInWindow": 8
+        "name": "Joni",
+        "rankBeforeWindow": 13,
+        "rankNow": 2,
+        "rankChange": 11,
+        "pointsInWindow": 15
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rankBeforeWindow": 13,
+        "rankNow": 2,
+        "rankChange": 11,
+        "pointsInWindow": 15
+      },
+      {
+        "name": "Chica",
+        "rankBeforeWindow": 12,
+        "rankNow": 2,
+        "rankChange": 10,
+        "pointsInWindow": 14
       }
     ],
     "biggestFallers": [
       {
-        "name": "Profeetta Möttönen",
-        "rankBeforeWindow": 1,
-        "rankNow": 40,
-        "rankChange": -39,
-        "pointsInWindow": 0
+        "name": "Jossu",
+        "rankBeforeWindow": 13,
+        "rankNow": 43,
+        "rankChange": -30,
+        "pointsInWindow": 3
       },
       {
-        "name": "Rosaldo",
-        "rankBeforeWindow": 1,
-        "rankNow": 40,
-        "rankChange": -39,
-        "pointsInWindow": 0
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankBeforeWindow": 13,
+        "rankNow": 38,
+        "rankChange": -25,
+        "pointsInWindow": 4
       },
       {
         "name": "The Moka",
-        "rankBeforeWindow": 1,
-        "rankNow": 40,
-        "rankChange": -39,
-        "pointsInWindow": 0
+        "rankBeforeWindow": 13,
+        "rankNow": 38,
+        "rankChange": -25,
+        "pointsInWindow": 4
       },
       {
-        "name": "werner strandhügel",
-        "rankBeforeWindow": 1,
-        "rankNow": 40,
-        "rankChange": -39,
-        "pointsInWindow": 0
+        "name": "Tommy Favorite",
+        "rankBeforeWindow": 9,
+        "rankNow": 32,
+        "rankChange": -23,
+        "pointsInWindow": 3
       },
       {
-        "name": "PoHan Pullistus",
-        "rankBeforeWindow": 1,
-        "rankNow": 34,
-        "rankChange": -33,
-        "pointsInWindow": 2
+        "name": "Profeetta Möttönen",
+        "rankBeforeWindow": 13,
+        "rankNow": 35,
+        "rankChange": -22,
+        "pointsInWindow": 5
       }
     ],
-    "zeroPointers": [
-      {
-        "name": "Profeetta Möttönen",
-        "rankNow": 40,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Rosaldo",
-        "rankNow": 40,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "The Moka",
-        "rankNow": 40,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "werner strandhügel",
-        "rankNow": 40,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Ian Rush",
-        "rankNow": 44,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Pora",
-        "rankNow": 44,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Keto Armstrong",
-        "rankNow": 47,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "SKA Hänninen",
-        "rankNow": 48,
-        "pointsInWindow": 0
-      }
-    ]
+    "zeroPointers": []
   },
   "last5MatchesAnalysis": {
     "participantPoints": [
       {
         "name": "Mike Salmon",
         "rankNow": 1,
-        "totalPointsNow": 22,
-        "pointsInWindow": 22,
+        "totalPointsNow": 26,
+        "pointsInWindow": 26,
         "rankBeforeWindow": 1,
         "rankChange": 0,
         "exactResultsInWindow": 3,
@@ -2243,14 +2204,135 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Joni",
+        "rankNow": 2,
+        "totalPointsNow": 21,
+        "pointsInWindow": 21,
+        "rankBeforeWindow": 1,
+        "rankChange": -1,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rankNow": 2,
+        "totalPointsNow": 21,
+        "pointsInWindow": 21,
+        "rankBeforeWindow": 1,
+        "rankChange": -1,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Minkário de Souza Faria",
         "rankNow": 2,
-        "totalPointsNow": 17,
-        "pointsInWindow": 17,
+        "totalPointsNow": 21,
+        "pointsInWindow": 21,
         "rankBeforeWindow": 1,
         "rankChange": -1,
         "exactResultsInWindow": 2,
@@ -2290,14 +2372,23 @@
             "predictedResultText": "2-2",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Chica",
         "rankNow": 2,
-        "totalPointsNow": 17,
-        "pointsInWindow": 17,
+        "totalPointsNow": 21,
+        "pointsInWindow": 21,
         "rankBeforeWindow": 1,
         "rankChange": -1,
         "exactResultsInWindow": 1,
@@ -2337,108 +2428,23 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Joni",
-        "rankNow": 4,
-        "totalPointsNow": 16,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 1,
-        "rankChange": -3,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
             "points": 4,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Kiiskiministeri",
-        "rankNow": 4,
-        "totalPointsNow": 16,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 1,
-        "rankChange": -3,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "LegendaryLebu",
+        "name": "Max",
         "rankNow": 6,
-        "totalPointsNow": 15,
-        "pointsInWindow": 15,
+        "totalPointsNow": 19,
+        "pointsInWindow": 19,
         "rankBeforeWindow": 1,
         "rankChange": -5,
         "exactResultsInWindow": 1,
@@ -2457,53 +2463,6 @@
             "team1": "Etelä-Korea",
             "team2": "Tshekki",
             "resultText": "2-1",
-            "predictedResultText": "2-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Max",
-        "rankNow": 7,
-        "totalPointsNow": 14,
-        "pointsInWindow": 14,
-        "rankBeforeWindow": 1,
-        "rankChange": -6,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
@@ -2524,17 +2483,26 @@
             "resultText": "4-1",
             "predictedResultText": "2-0",
             "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Pontemon",
-        "rankNow": 7,
-        "totalPointsNow": 14,
-        "pointsInWindow": 14,
+        "rankNow": 6,
+        "totalPointsNow": 19,
+        "pointsInWindow": 19,
         "rankBeforeWindow": 1,
-        "rankChange": -6,
+        "rankChange": -5,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2572,158 +2540,26 @@
             "predictedResultText": "3-0",
             "points": 4,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sedu",
-        "rankNow": 9,
-        "totalPointsNow": 13,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 1,
-        "rankChange": -8,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-2",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Ibaldo de Lima",
-        "rankNow": 9,
-        "totalPointsNow": 13,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 1,
-        "rankChange": -8,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "3-0",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
             "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Agueero",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "2-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-1",
-            "points": 0,
             "exactResult": false
           }
         ]
       },
       {
         "name": "ArtsiKerho",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
+        "rankNow": 8,
+        "totalPointsNow": 18,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 2,
+        "rankChange": -7,
+        "exactResultsInWindow": 3,
         "matchPoints": [
           {
             "matchNr": 1,
@@ -2760,17 +2596,26 @@
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
           }
         ]
       },
       {
         "name": "Carey Lily",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
+        "rankNow": 8,
+        "totalPointsNow": 18,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 2,
+        "rankChange": -7,
+        "exactResultsInWindow": 3,
         "matchPoints": [
           {
             "matchNr": 1,
@@ -2807,16 +2652,81 @@
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Agueero",
+        "rankNow": 10,
+        "totalPointsNow": 17,
+        "pointsInWindow": 17,
+        "rankBeforeWindow": 1,
+        "rankChange": -9,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Repetti",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
+        "rankNow": 10,
+        "totalPointsNow": 17,
+        "pointsInWindow": 17,
         "rankBeforeWindow": 1,
-        "rankChange": -10,
+        "rankChange": -9,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -2854,16 +2764,305 @@
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 10,
+        "totalPointsNow": 17,
+        "pointsInWindow": 17,
+        "rankBeforeWindow": 1,
+        "rankChange": -9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Xhakku",
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Sedu",
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-3",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ibaldo de Lima",
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-4",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Suomaldinho",
+        "rankNow": 13,
+        "totalPointsNow": 16,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 1,
+        "rankChange": -12,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Tomas Brolin",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 1,
-        "rankChange": -10,
+        "rankChange": -16,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -2901,157 +3100,25 @@
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Suomaldinho",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "3-0",
-            "points": 5,
-            "exactResult": false
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-3",
             "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Teo ja Noel",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tommy Favorite",
-        "rankNow": 11,
-        "totalPointsNow": 12,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 1,
-        "rankChange": -10,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "1-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "0-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "0-1",
-            "points": 0,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Johnny Rotten",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 1,
-        "rankChange": -18,
+        "rankChange": -16,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3089,16 +3156,25 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "Nipa",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
+        "name": "LegendaryLebu",
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 1,
-        "rankChange": -18,
+        "rankChange": -16,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3106,8 +3182,8 @@
             "team1": "Meksiko",
             "team2": "Etelä-Afrikka",
             "resultText": "2-0",
-            "predictedResultText": "0-1",
-            "points": 0,
+            "predictedResultText": "2-1",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -3115,37 +3191,46 @@
             "team1": "Etelä-Korea",
             "team2": "Tshekki",
             "resultText": "2-1",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
+            "predictedResultText": "2-1",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 3,
             "team1": "Kanada",
             "team2": "Bosnia ja Hertsegovina",
             "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
             "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
+        "name": "Tero H",
+        "rankNow": 17,
+        "totalPointsNow": 15,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 1,
-        "rankChange": -18,
+        "rankChange": -16,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3162,7 +3247,7 @@
             "team1": "Etelä-Korea",
             "team2": "Tshekki",
             "resultText": "2-1",
-            "predictedResultText": "0-1",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           },
@@ -3182,17 +3267,26 @@
             "resultText": "4-1",
             "predictedResultText": "2-1",
             "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Sanukka",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
+        "rankNow": 21,
+        "totalPointsNow": 14,
+        "pointsInWindow": 14,
         "rankBeforeWindow": 1,
-        "rankChange": -18,
+        "rankChange": -20,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3230,51 +3324,13 @@
             "predictedResultText": "3-0",
             "points": 4,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Temez",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
             "points": 4,
             "exactResult": false
           }
@@ -3282,11 +3338,235 @@
       },
       {
         "name": "Temezotti",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
+        "rankNow": 21,
+        "totalPointsNow": 14,
+        "pointsInWindow": 14,
         "rankBeforeWindow": 1,
-        "rankChange": -18,
+        "rankChange": -20,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "IlkkuPro75",
+        "rankNow": 21,
+        "totalPointsNow": 14,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 1,
+        "rankChange": -20,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Neyney",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 1,
+        "rankChange": -23,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "PoHan Pullistus",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 1,
+        "rankChange": -23,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temez",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 1,
+        "rankChange": -23,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3324,192 +3604,13 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tero H",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Xhakku",
-        "rankNow": 19,
-        "totalPointsNow": 10,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 1,
-        "rankChange": -18,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Drent",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 1,
-        "rankChange": -26,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Jossu",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 1,
-        "rankChange": -26,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-4",
             "points": 3,
             "exactResult": false
           }
@@ -3517,11 +3618,11 @@
       },
       {
         "name": "Tuurilla",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 9,
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
         "rankBeforeWindow": 1,
-        "rankChange": -26,
+        "rankChange": -23,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3559,16 +3660,137 @@
             "predictedResultText": "2-0",
             "points": 3,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Eski66",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 1,
+        "rankChange": -23,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 1,
+        "rankChange": -23,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Ice Cold",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 9,
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
         "rankBeforeWindow": 1,
-        "rankChange": -26,
+        "rankChange": -23,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3606,98 +3828,13 @@
             "predictedResultText": "3-0",
             "points": 4,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "IlkkuPro75",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 1,
-        "rankChange": -26,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Shampoo",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 1,
-        "rankChange": -26,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-1",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
             "points": 4,
             "exactResult": false
           }
@@ -3705,11 +3842,11 @@
       },
       {
         "name": "Sipolovic",
-        "rankNow": 27,
-        "totalPointsNow": 9,
-        "pointsInWindow": 9,
+        "rankNow": 24,
+        "totalPointsNow": 13,
+        "pointsInWindow": 13,
         "rankBeforeWindow": 1,
-        "rankChange": -26,
+        "rankChange": -23,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3747,16 +3884,25 @@
             "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "PoHan Pullistus",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 8,
+        "name": "Drent",
+        "rankNow": 32,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
         "rankBeforeWindow": 1,
-        "rankChange": -33,
+        "rankChange": -31,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3773,100 +3919,6 @@
             "team1": "Etelä-Korea",
             "team2": "Tshekki",
             "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-0",
-            "points": 2,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Eski66",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 1,
-        "rankChange": -33,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Esko",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 1,
-        "rankChange": -33,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
@@ -3888,110 +3940,25 @@
             "predictedResultText": "2-0",
             "points": 3,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Heinomar",
-        "rankNow": 34,
-        "totalPointsNow": 8,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 1,
-        "rankChange": -33,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "2-0",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-4",
             "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Neyney",
-        "rankNow": 38,
-        "totalPointsNow": 7,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 1,
-        "rankChange": -37,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "1-0",
-            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Pauli Koponen",
-        "rankNow": 38,
-        "totalPointsNow": 7,
-        "pointsInWindow": 7,
+        "rankNow": 32,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
         "rankBeforeWindow": 1,
-        "rankChange": -37,
+        "rankChange": -31,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4029,16 +3996,81 @@
             "predictedResultText": "1-0",
             "points": 2,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tommy Favorite",
+        "rankNow": 32,
+        "totalPointsNow": 12,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 1,
+        "rankChange": -31,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 6,
+        "rankNow": 35,
+        "totalPointsNow": 11,
+        "pointsInWindow": 11,
         "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "rankChange": -34,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -4076,16 +4108,25 @@
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Rosaldo",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 6,
+        "rankNow": 35,
+        "totalPointsNow": 11,
+        "pointsInWindow": 11,
         "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "rankChange": -34,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -4121,6 +4162,183 @@
             "team2": "Paraguay",
             "resultText": "4-1",
             "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "werner strandhügel",
+        "rankNow": 35,
+        "totalPointsNow": 11,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 1,
+        "rankChange": -34,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Nipa",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 1,
+        "rankChange": -37,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 1,
+        "rankChange": -37,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-0",
             "points": 0,
             "exactResult": false
           }
@@ -4128,11 +4346,11 @@
       },
       {
         "name": "The Moka",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 6,
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
         "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "rankChange": -37,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -4170,16 +4388,137 @@
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "werner strandhügel",
-        "rankNow": 40,
-        "totalPointsNow": 6,
-        "pointsInWindow": 6,
+        "name": "Ian Rush",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
         "rankBeforeWindow": 1,
-        "rankChange": -39,
+        "rankChange": -37,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pora",
+        "rankNow": 38,
+        "totalPointsNow": 10,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 1,
+        "rankChange": -37,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Jossu",
+        "rankNow": 43,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 1,
+        "rankChange": -42,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -4214,19 +4553,28 @@
             "team1": "USA",
             "team2": "Paraguay",
             "resultText": "4-1",
-            "predictedResultText": "1-2",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Ian Rush",
-        "rankNow": 44,
-        "totalPointsNow": 5,
-        "pointsInWindow": 5,
+        "name": "Shampoo",
+        "rankNow": 43,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
         "rankBeforeWindow": 1,
-        "rankChange": -43,
+        "rankChange": -42,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4234,7 +4582,7 @@
             "team1": "Meksiko",
             "team2": "Etelä-Afrikka",
             "resultText": "2-0",
-            "predictedResultText": "1-0",
+            "predictedResultText": "2-1",
             "points": 5,
             "exactResult": false
           },
@@ -4243,7 +4591,7 @@
             "team1": "Etelä-Korea",
             "team2": "Tshekki",
             "resultText": "2-1",
-            "predictedResultText": "0-1",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           },
@@ -4261,54 +4609,16 @@
             "team1": "USA",
             "team2": "Paraguay",
             "resultText": "4-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pora",
-        "rankNow": 44,
-        "totalPointsNow": 5,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 1,
-        "rankChange": -43,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 1,
-            "team1": "Meksiko",
-            "team2": "Etelä-Afrikka",
-            "resultText": "2-0",
-            "predictedResultText": "1-0",
-            "points": 5,
+            "predictedResultText": "2-1",
+            "points": 4,
             "exactResult": false
           },
           {
-            "matchNr": 2,
-            "team1": "Etelä-Korea",
-            "team2": "Tshekki",
-            "resultText": "2-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 3,
-            "team1": "Kanada",
-            "team2": "Bosnia ja Hertsegovina",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 4,
-            "team1": "USA",
-            "team2": "Paraguay",
-            "resultText": "4-1",
-            "predictedResultText": "0-2",
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           }
@@ -4316,11 +4626,11 @@
       },
       {
         "name": "Tuna",
-        "rankNow": 44,
-        "totalPointsNow": 5,
-        "pointsInWindow": 5,
+        "rankNow": 43,
+        "totalPointsNow": 9,
+        "pointsInWindow": 9,
         "rankBeforeWindow": 1,
-        "rankChange": -43,
+        "rankChange": -42,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4358,16 +4668,81 @@
             "predictedResultText": "0-0",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Heinomar",
+        "rankNow": 46,
+        "totalPointsNow": 8,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 1,
+        "rankChange": -45,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 1,
+            "team1": "Meksiko",
+            "team2": "Etelä-Afrikka",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 2,
+            "team1": "Etelä-Korea",
+            "team2": "Tshekki",
+            "resultText": "2-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 3,
+            "team1": "Kanada",
+            "team2": "Bosnia ja Hertsegovina",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 4,
+            "team1": "USA",
+            "team2": "Paraguay",
+            "resultText": "4-1",
+            "predictedResultText": "2-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 47,
-        "totalPointsNow": 4,
-        "pointsInWindow": 4,
+        "rankNow": 46,
+        "totalPointsNow": 8,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 1,
-        "rankChange": -46,
+        "rankChange": -45,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4405,14 +4780,23 @@
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "SKA Hänninen",
         "rankNow": 48,
-        "totalPointsNow": 3,
-        "pointsInWindow": 3,
+        "totalPointsNow": 7,
+        "pointsInWindow": 7,
         "rankBeforeWindow": 1,
         "rankChange": -47,
         "exactResultsInWindow": 0,
@@ -4452,6 +4836,15 @@
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
           }
         ]
       }
@@ -4459,69 +4852,69 @@
     "topPerformers": [
       {
         "name": "Mike Salmon",
-        "pointsInWindow": 22,
+        "pointsInWindow": 26,
         "exactResultsInWindow": 3
       },
       {
-        "name": "Minkário de Souza Faria",
-        "pointsInWindow": 17,
-        "exactResultsInWindow": 2
-      },
-      {
-        "name": "Chica",
-        "pointsInWindow": 17,
-        "exactResultsInWindow": 1
-      },
-      {
         "name": "Joni",
-        "pointsInWindow": 16,
+        "pointsInWindow": 21,
         "exactResultsInWindow": 2
       },
       {
         "name": "Kiiskiministeri",
-        "pointsInWindow": 16,
+        "pointsInWindow": 21,
         "exactResultsInWindow": 2
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "pointsInWindow": 21,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "Chica",
+        "pointsInWindow": 21,
+        "exactResultsInWindow": 1
       }
     ]
   },
   "commentaryHints": {
     "leader": {
       "name": "Mike Salmon",
-      "points": 22
+      "points": 26
     },
     "closestChasers": [
       {
+        "name": "Joni",
+        "rank": 2,
+        "points": 21,
+        "pointsBehindLeader": 5
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rank": 2,
+        "points": 21,
+        "pointsBehindLeader": 5
+      },
+      {
         "name": "Minkário de Souza Faria",
         "rank": 2,
-        "points": 17,
+        "points": 21,
         "pointsBehindLeader": 5
       },
       {
         "name": "Chica",
         "rank": 2,
-        "points": 17,
+        "points": 21,
         "pointsBehindLeader": 5
       },
       {
-        "name": "Joni",
-        "rank": 4,
-        "points": 16,
-        "pointsBehindLeader": 6
-      },
-      {
-        "name": "Kiiskiministeri",
-        "rank": 4,
-        "points": 16,
-        "pointsBehindLeader": 6
-      },
-      {
-        "name": "LegendaryLebu",
+        "name": "Max",
         "rank": 6,
-        "points": 15,
+        "points": 19,
         "pointsBehindLeader": 7
       }
     ],
     "tightTopComment": "Johtaja pitää 5 pisteen eron seuraavaan.",
-    "suggestedFinnishSummary": "Koko kisan kärjessä on Mike Salmon (22p). Lähimpänä haastajana on Minkário de Souza Faria (17p, eroa vain 5p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Mike Salmon keräten 16p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Chica (+43 sijaa). Eniten sijoitustaan menetti Profeetta Möttönen (-39 sijaa). Täydellisiä 6 pisteen osumia saivat: Mike Salmon (Etelä-Korea–Tshekki veikkaus 2-1), Mike Salmon (Kanada–Bosnia ja Hertsegovina veikkaus 1-1), Chica (Kanada–Bosnia ja Hertsegovina veikkaus 1-1)."
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Mike Salmon (26p). Lähimpänä haastajana on Joni (21p, eroa vain 5p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Joni keräten 15p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Max (+27 sijaa). Eniten sijoitustaan menetti Jossu (-30 sijaa). Täydellisiä 6 pisteen osumia saivat: Joni (Kanada–Bosnia ja Hertsegovina veikkaus 1-1), Kiiskiministeri (Kanada–Bosnia ja Hertsegovina veikkaus 1-1), Mike Salmon (Kanada–Bosnia ja Hertsegovina veikkaus 1-1)."
   }
 }
