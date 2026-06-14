@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-14T21:21:05.674Z",
+  "generatedAt": "2026-06-14T22:39:33.400Z",
   "summary": {
     "playedMatchesCount": 10,
     "totalMatches": 72,
@@ -51,31 +51,31 @@
       "group": "F",
       "team1": "Hollanti",
       "team2": "Japani",
-      "goals1": 1,
-      "goals2": 1
+      "goals1": 2,
+      "goals2": 2
     }
   ],
   "leaderboardTop": [
     {
       "rank": 1,
-      "name": "Shampoo",
-      "totalPoints": 32,
-      "matchPoints": 32,
+      "name": "Kiiskiministeri",
+      "totalPoints": 29,
+      "matchPoints": 29,
       "exactlyCorrect": 3
     },
     {
-      "rank": 2,
+      "rank": 1,
       "name": "Mike Salmon",
       "totalPoints": 29,
       "matchPoints": 29,
       "exactlyCorrect": 3
     },
     {
-      "rank": 2,
-      "name": "Pontemon",
+      "rank": 1,
+      "name": "Shampoo",
       "totalPoints": 29,
       "matchPoints": 29,
-      "exactlyCorrect": 3
+      "exactlyCorrect": 2
     },
     {
       "rank": 4,
@@ -86,7 +86,7 @@
     },
     {
       "rank": 5,
-      "name": "Kiiskiministeri",
+      "name": "Pontemon",
       "totalPoints": 26,
       "matchPoints": 26,
       "exactlyCorrect": 2
@@ -157,9 +157,9 @@
         "group": "F",
         "team1": "Hollanti",
         "team2": "Japani",
-        "goals1": 1,
-        "goals2": 1,
-        "resultText": "1-1",
+        "goals1": 2,
+        "goals2": 2,
+        "resultText": "2-2",
         "hasResult": true
       }
     ],
@@ -167,11 +167,11 @@
       {
         "name": "Shampoo",
         "rankNow": 1,
-        "totalPointsNow": 32,
-        "pointsInWindow": 13,
+        "totalPointsNow": 29,
+        "pointsInWindow": 10,
         "rankBeforeWindow": 10,
         "rankChange": 9,
-        "exactResultsInWindow": 2,
+        "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 8,
@@ -195,48 +195,10 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Pontemon",
-        "rankNow": 2,
-        "totalPointsNow": 29,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 7,
-        "rankChange": 5,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 8,
-            "team1": "Qatar",
-            "team2": "Sveitsi",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 10,
-            "team1": "Saksa",
-            "team2": "Curaçao",
-            "resultText": "7-1",
-            "predictedResultText": "5-0",
             "points": 3,
             "exactResult": false
-          },
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
@@ -271,7 +233,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
@@ -279,12 +241,50 @@
         ]
       },
       {
-        "name": "Esko",
-        "rankNow": 12,
-        "totalPointsNow": 21,
+        "name": "SKA Hänninen",
+        "rankNow": 29,
+        "totalPointsNow": 16,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 47,
+        "rankChange": 18,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 10,
+            "team1": "Saksa",
+            "team2": "Curaçao",
+            "resultText": "7-1",
+            "predictedResultText": "4-1",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "2-2",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rankNow": 1,
+        "totalPointsNow": 29,
         "pointsInWindow": 8,
-        "rankBeforeWindow": 31,
-        "rankChange": 19,
+        "rankBeforeWindow": 2,
+        "rankChange": 1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -309,8 +309,8 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
+            "resultText": "2-2",
+            "predictedResultText": "2-2",
             "points": 6,
             "exactResult": true
           }
@@ -347,7 +347,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -356,11 +356,11 @@
       },
       {
         "name": "Heinomar",
-        "rankNow": 16,
+        "rankNow": 15,
         "totalPointsNow": 20,
         "pointsInWindow": 7,
         "rankBeforeWindow": 31,
-        "rankChange": 15,
+        "rankChange": 16,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -385,7 +385,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -393,50 +393,12 @@
         ]
       },
       {
-        "name": "SKA Hänninen",
-        "rankNow": 37,
-        "totalPointsNow": 13,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 47,
-        "rankChange": 10,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 8,
-            "team1": "Qatar",
-            "team2": "Sveitsi",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 10,
-            "team1": "Saksa",
-            "team2": "Curaçao",
-            "resultText": "7-1",
-            "predictedResultText": "4-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "1-1",
-            "predictedResultText": "2-2",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Kiiskiministeri",
+        "name": "Pontemon",
         "rankNow": 5,
         "totalPointsNow": 26,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 2,
-        "rankChange": -3,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 7,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -453,16 +415,16 @@
             "team1": "Saksa",
             "team2": "Curaçao",
             "resultText": "7-1",
-            "predictedResultText": "4-0",
-            "points": 2,
+            "predictedResultText": "5-0",
+            "points": 3,
             "exactResult": false
           },
           {
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
-            "predictedResultText": "2-2",
+            "resultText": "2-2",
+            "predictedResultText": "1-1",
             "points": 3,
             "exactResult": false
           }
@@ -470,11 +432,11 @@
       },
       {
         "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 16,
+        "rankNow": 15,
         "totalPointsNow": 20,
         "pointsInWindow": 5,
         "rankBeforeWindow": 21,
-        "rankChange": 5,
+        "rankChange": 6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -499,9 +461,47 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 18,
+        "totalPointsNow": 18,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 31,
+        "rankChange": 13,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 10,
+            "team1": "Saksa",
+            "team2": "Curaçao",
+            "resultText": "7-1",
+            "predictedResultText": "4-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "1-1",
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -537,7 +537,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-2",
             "points": 0,
             "exactResult": false
@@ -575,7 +575,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -584,11 +584,11 @@
       },
       {
         "name": "Drent",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 4,
         "rankBeforeWindow": 25,
-        "rankChange": 6,
+        "rankChange": 7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -613,7 +613,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -622,11 +622,11 @@
       },
       {
         "name": "Temez",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 4,
         "rankBeforeWindow": 25,
-        "rankChange": 6,
+        "rankChange": 7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -651,7 +651,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -660,11 +660,11 @@
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 4,
         "rankBeforeWindow": 41,
-        "rankChange": 9,
+        "rankChange": 8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -689,7 +689,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -727,7 +727,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-3",
             "points": 0,
             "exactResult": false
@@ -736,11 +736,11 @@
       },
       {
         "name": "Ibaldo de Lima",
-        "rankNow": 16,
+        "rankNow": 15,
         "totalPointsNow": 20,
         "pointsInWindow": 3,
         "rankBeforeWindow": 13,
-        "rankChange": -3,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -765,7 +765,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -774,11 +774,11 @@
       },
       {
         "name": "Sanukka",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 3,
         "rankBeforeWindow": 21,
-        "rankChange": 2,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -803,7 +803,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -812,11 +812,11 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 3,
         "rankBeforeWindow": 21,
-        "rankChange": 2,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -841,7 +841,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -850,11 +850,11 @@
       },
       {
         "name": "The Moka",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 3,
         "rankBeforeWindow": 41,
-        "rankChange": 4,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -879,7 +879,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -888,11 +888,11 @@
       },
       {
         "name": "Mike Salmon",
-        "rankNow": 2,
+        "rankNow": 1,
         "totalPointsNow": 29,
         "pointsInWindow": 2,
         "rankBeforeWindow": 1,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -917,7 +917,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -955,7 +955,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
@@ -993,7 +993,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-3",
             "points": 0,
             "exactResult": false
@@ -1002,11 +1002,11 @@
       },
       {
         "name": "Tero H",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 2,
         "rankBeforeWindow": 18,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1031,7 +1031,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -1040,11 +1040,11 @@
       },
       {
         "name": "Tomas Brolin",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 2,
         "rankBeforeWindow": 18,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1069,7 +1069,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
@@ -1078,11 +1078,11 @@
       },
       {
         "name": "Suomaldinho",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 2,
         "rankBeforeWindow": 18,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1107,7 +1107,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -1145,7 +1145,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -1183,7 +1183,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1192,11 +1192,11 @@
       },
       {
         "name": "Pauli Koponen",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 2,
         "rankBeforeWindow": 35,
-        "rankChange": 3,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1221,7 +1221,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -1230,11 +1230,11 @@
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 2,
         "rankBeforeWindow": 38,
-        "rankChange": 1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1259,7 +1259,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1268,11 +1268,11 @@
       },
       {
         "name": "Rosaldo",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 2,
         "rankBeforeWindow": 38,
-        "rankChange": 1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1297,7 +1297,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1335,7 +1335,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
@@ -1373,7 +1373,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1411,7 +1411,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1449,7 +1449,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -1458,11 +1458,11 @@
       },
       {
         "name": "ArtsiKerho",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 1,
         "rankBeforeWindow": 13,
-        "rankChange": -6,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1487,7 +1487,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -1496,11 +1496,11 @@
       },
       {
         "name": "Johnny Rotten",
-        "rankNow": 30,
+        "rankNow": 31,
         "totalPointsNow": 15,
         "pointsInWindow": 1,
         "rankBeforeWindow": 25,
-        "rankChange": -5,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1525,7 +1525,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1534,11 +1534,11 @@
       },
       {
         "name": "Jossu",
-        "rankNow": 30,
+        "rankNow": 31,
         "totalPointsNow": 15,
         "pointsInWindow": 1,
         "rankBeforeWindow": 25,
-        "rankChange": -5,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1563,7 +1563,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1572,11 +1572,11 @@
       },
       {
         "name": "Eski66",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 1,
         "rankBeforeWindow": 31,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1601,7 +1601,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -1610,11 +1610,11 @@
       },
       {
         "name": "Ice Cold",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 1,
         "rankBeforeWindow": 31,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1639,7 +1639,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1648,11 +1648,11 @@
       },
       {
         "name": "PoHan Pullistus",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 1,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1677,7 +1677,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -1686,11 +1686,11 @@
       },
       {
         "name": "Neyney",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 1,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1715,7 +1715,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1753,7 +1753,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1791,7 +1791,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
@@ -1829,7 +1829,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1867,7 +1867,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1905,7 +1905,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -1943,7 +1943,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -1952,11 +1952,11 @@
       },
       {
         "name": "Sipolovic",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 0,
         "rankBeforeWindow": 25,
-        "rankChange": -7,
+        "rankChange": -8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1981,7 +1981,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1992,12 +1992,7 @@
     "topPerformers": [
       {
         "name": "Shampoo",
-        "pointsInWindow": 13,
-        "exactResultsInWindow": 2
-      },
-      {
-        "name": "Pontemon",
-        "pointsInWindow": 9,
+        "pointsInWindow": 10,
         "exactResultsInWindow": 1
       },
       {
@@ -2006,7 +2001,12 @@
         "exactResultsInWindow": 1
       },
       {
-        "name": "Esko",
+        "name": "SKA Hänninen",
+        "pointsInWindow": 9,
+        "exactResultsInWindow": 1
+      },
+      {
+        "name": "Kiiskiministeri",
         "pointsInWindow": 8,
         "exactResultsInWindow": 1
       },
@@ -2025,20 +2025,6 @@
         "actual": "1-1"
       },
       {
-        "name": "Shampoo",
-        "matchNr": 11,
-        "match": "Hollanti–Japani",
-        "guess": "1-1",
-        "actual": "1-1"
-      },
-      {
-        "name": "Pontemon",
-        "matchNr": 11,
-        "match": "Hollanti–Japani",
-        "guess": "1-1",
-        "actual": "1-1"
-      },
-      {
         "name": "LegendaryLebu",
         "matchNr": 8,
         "match": "Qatar–Sveitsi",
@@ -2046,11 +2032,18 @@
         "actual": "1-1"
       },
       {
-        "name": "Esko",
+        "name": "SKA Hänninen",
         "matchNr": 11,
         "match": "Hollanti–Japani",
-        "guess": "1-1",
-        "actual": "1-1"
+        "guess": "2-2",
+        "actual": "2-2"
+      },
+      {
+        "name": "Kiiskiministeri",
+        "matchNr": 11,
+        "match": "Hollanti–Japani",
+        "guess": "2-2",
+        "actual": "2-2"
       },
       {
         "name": "Tommy Favorite",
@@ -2069,38 +2062,38 @@
     ],
     "biggestRisers": [
       {
-        "name": "Esko",
-        "rankBeforeWindow": 31,
-        "rankNow": 12,
-        "rankChange": 19,
-        "pointsInWindow": 8
+        "name": "SKA Hänninen",
+        "rankBeforeWindow": 47,
+        "rankNow": 29,
+        "rankChange": 18,
+        "pointsInWindow": 9
       },
       {
         "name": "Heinomar",
         "rankBeforeWindow": 31,
-        "rankNow": 16,
-        "rankChange": 15,
+        "rankNow": 15,
+        "rankChange": 16,
         "pointsInWindow": 7
       },
       {
-        "name": "SKA Hänninen",
-        "rankBeforeWindow": 47,
-        "rankNow": 37,
-        "rankChange": 10,
-        "pointsInWindow": 6
+        "name": "Esko",
+        "rankBeforeWindow": 31,
+        "rankNow": 18,
+        "rankChange": 13,
+        "pointsInWindow": 5
       },
       {
         "name": "Shampoo",
         "rankBeforeWindow": 10,
         "rankNow": 1,
         "rankChange": 9,
-        "pointsInWindow": 13
+        "pointsInWindow": 10
       },
       {
         "name": "Keto Armstrong",
         "rankBeforeWindow": 41,
-        "rankNow": 32,
-        "rankChange": 9,
+        "rankNow": 33,
+        "rankChange": 8,
         "pointsInWindow": 4
       }
     ],
@@ -2122,8 +2115,8 @@
       {
         "name": "Sipolovic",
         "rankBeforeWindow": 25,
-        "rankNow": 32,
-        "rankChange": -7,
+        "rankNow": 33,
+        "rankChange": -8,
         "pointsInWindow": 0
       },
       {
@@ -2154,7 +2147,7 @@
       },
       {
         "name": "Sipolovic",
-        "rankNow": 32,
+        "rankNow": 33,
         "pointsInWindow": 0
       }
     ]
@@ -2164,11 +2157,11 @@
       {
         "name": "Shampoo",
         "rankNow": 1,
-        "totalPointsNow": 32,
-        "pointsInWindow": 19,
+        "totalPointsNow": 29,
+        "pointsInWindow": 16,
         "rankBeforeWindow": 29,
         "rankChange": 28,
-        "exactResultsInWindow": 3,
+        "exactResultsInWindow": 2,
         "matchPoints": [
           {
             "matchNr": 6,
@@ -2210,77 +2203,21 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Pontemon",
-        "rankNow": 2,
-        "totalPointsNow": 29,
-        "pointsInWindow": 15,
-        "rankBeforeWindow": 22,
-        "rankChange": 20,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 6,
-            "team1": "Australia",
-            "team2": "Turkki",
-            "resultText": "2-0",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 7,
-            "team1": "Brasilia",
-            "team2": "Marokko",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 8,
-            "team1": "Qatar",
-            "team2": "Sveitsi",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 10,
-            "team1": "Saksa",
-            "team2": "Curaçao",
-            "resultText": "7-1",
-            "predictedResultText": "5-0",
             "points": 3,
             "exactResult": false
-          },
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
       {
         "name": "SKA Hänninen",
-        "rankNow": 37,
-        "totalPointsNow": 13,
-        "pointsInWindow": 10,
+        "rankNow": 29,
+        "totalPointsNow": 16,
+        "pointsInWindow": 13,
         "rankBeforeWindow": 48,
-        "rankChange": 11,
-        "exactResultsInWindow": 0,
+        "rankChange": 19,
+        "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 6,
@@ -2322,8 +2259,64 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-2",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Pontemon",
+        "rankNow": 5,
+        "totalPointsNow": 26,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 22,
+        "rankChange": 17,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 6,
+            "team1": "Australia",
+            "team2": "Turkki",
+            "resultText": "2-0",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 7,
+            "team1": "Brasilia",
+            "team2": "Marokko",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 10,
+            "team1": "Saksa",
+            "team2": "Curaçao",
+            "resultText": "7-1",
+            "predictedResultText": "5-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "1-1",
             "points": 3,
             "exactResult": false
           }
@@ -2378,10 +2371,66 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rankNow": 1,
+        "totalPointsNow": 29,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 2,
+        "rankChange": 1,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 6,
+            "team1": "Australia",
+            "team2": "Turkki",
+            "resultText": "2-0",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 7,
+            "team1": "Brasilia",
+            "team2": "Marokko",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 10,
+            "team1": "Saksa",
+            "team2": "Curaçao",
+            "resultText": "7-1",
+            "predictedResultText": "4-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "2-2",
+            "points": 6,
+            "exactResult": true
           }
         ]
       },
@@ -2434,66 +2483,10 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-3",
             "points": 0,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Esko",
-        "rankNow": 12,
-        "totalPointsNow": 21,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 29,
-        "rankChange": 17,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 6,
-            "team1": "Australia",
-            "team2": "Turkki",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 7,
-            "team1": "Brasilia",
-            "team2": "Marokko",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 8,
-            "team1": "Qatar",
-            "team2": "Sveitsi",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 10,
-            "team1": "Saksa",
-            "team2": "Curaçao",
-            "resultText": "7-1",
-            "predictedResultText": "4-0",
-            "points": 2,
-            "exactResult": false
-          },
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
@@ -2546,7 +2539,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -2602,7 +2595,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -2611,11 +2604,11 @@
       },
       {
         "name": "Heinomar",
-        "rankNow": 16,
+        "rankNow": 15,
         "totalPointsNow": 20,
         "pointsInWindow": 7,
         "rankBeforeWindow": 29,
-        "rankChange": 13,
+        "rankChange": 14,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2658,7 +2651,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -2714,65 +2707,9 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-3",
             "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Kiiskiministeri",
-        "rankNow": 5,
-        "totalPointsNow": 26,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 2,
-        "rankChange": -3,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 6,
-            "team1": "Australia",
-            "team2": "Turkki",
-            "resultText": "2-0",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 7,
-            "team1": "Brasilia",
-            "team2": "Marokko",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 8,
-            "team1": "Qatar",
-            "team2": "Sveitsi",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 10,
-            "team1": "Saksa",
-            "team2": "Curaçao",
-            "resultText": "7-1",
-            "predictedResultText": "4-0",
-            "points": 2,
-            "exactResult": false
-          },
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "1-1",
-            "predictedResultText": "2-2",
-            "points": 3,
             "exactResult": false
           }
         ]
@@ -2826,7 +2763,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -2835,11 +2772,11 @@
       },
       {
         "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 16,
+        "rankNow": 15,
         "totalPointsNow": 20,
         "pointsInWindow": 5,
         "rankBeforeWindow": 17,
-        "rankChange": 1,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2882,9 +2819,65 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 18,
+        "totalPointsNow": 18,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 29,
+        "rankChange": 11,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 6,
+            "team1": "Australia",
+            "team2": "Turkki",
+            "resultText": "2-0",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 7,
+            "team1": "Brasilia",
+            "team2": "Marokko",
             "resultText": "1-1",
             "predictedResultText": "2-1",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 8,
+            "team1": "Qatar",
+            "team2": "Sveitsi",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 10,
+            "team1": "Saksa",
+            "team2": "Curaçao",
+            "resultText": "7-1",
+            "predictedResultText": "4-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "1-1",
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -2938,7 +2931,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-2",
             "points": 0,
             "exactResult": false
@@ -2994,7 +2987,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -3003,11 +2996,11 @@
       },
       {
         "name": "Drent",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 4,
         "rankBeforeWindow": 22,
-        "rankChange": 3,
+        "rankChange": 4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3050,7 +3043,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -3059,11 +3052,11 @@
       },
       {
         "name": "Temez",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 4,
         "rankBeforeWindow": 22,
-        "rankChange": 3,
+        "rankChange": 4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3106,7 +3099,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -3115,11 +3108,11 @@
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 4,
         "rankBeforeWindow": 41,
-        "rankChange": 9,
+        "rankChange": 8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3162,7 +3155,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -3171,11 +3164,11 @@
       },
       {
         "name": "Ibaldo de Lima",
-        "rankNow": 16,
+        "rankNow": 15,
         "totalPointsNow": 20,
         "pointsInWindow": 3,
         "rankBeforeWindow": 7,
-        "rankChange": -9,
+        "rankChange": -8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3218,7 +3211,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -3227,11 +3220,11 @@
       },
       {
         "name": "Sanukka",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 3,
         "rankBeforeWindow": 17,
-        "rankChange": -2,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3274,7 +3267,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -3283,11 +3276,11 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 3,
         "rankBeforeWindow": 17,
-        "rankChange": -2,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3330,7 +3323,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -3339,11 +3332,11 @@
       },
       {
         "name": "The Moka",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 3,
         "rankBeforeWindow": 41,
-        "rankChange": 4,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3386,7 +3379,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -3395,11 +3388,11 @@
       },
       {
         "name": "Mike Salmon",
-        "rankNow": 2,
+        "rankNow": 1,
         "totalPointsNow": 29,
         "pointsInWindow": 2,
         "rankBeforeWindow": 1,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3442,7 +3435,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -3498,7 +3491,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
@@ -3507,11 +3500,11 @@
       },
       {
         "name": "Tero H",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 2,
         "rankBeforeWindow": 13,
-        "rankChange": -6,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3554,7 +3547,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -3563,11 +3556,11 @@
       },
       {
         "name": "Tomas Brolin",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 2,
         "rankBeforeWindow": 13,
-        "rankChange": -6,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3610,7 +3603,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
@@ -3619,11 +3612,11 @@
       },
       {
         "name": "Suomaldinho",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 2,
         "rankBeforeWindow": 13,
-        "rankChange": -6,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3666,7 +3659,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -3722,7 +3715,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -3778,7 +3771,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -3787,11 +3780,11 @@
       },
       {
         "name": "Pauli Koponen",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 2,
         "rankBeforeWindow": 35,
-        "rankChange": 3,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3834,7 +3827,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -3843,11 +3836,11 @@
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 2,
         "rankBeforeWindow": 38,
-        "rankChange": 1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3890,7 +3883,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -3899,11 +3892,11 @@
       },
       {
         "name": "Rosaldo",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 2,
         "rankBeforeWindow": 38,
-        "rankChange": 1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3946,7 +3939,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4002,7 +3995,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
@@ -4058,7 +4051,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4114,7 +4107,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -4123,11 +4116,11 @@
       },
       {
         "name": "ArtsiKerho",
-        "rankNow": 19,
+        "rankNow": 18,
         "totalPointsNow": 18,
         "pointsInWindow": 1,
         "rankBeforeWindow": 7,
-        "rankChange": -12,
+        "rankChange": -11,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4170,7 +4163,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -4179,11 +4172,11 @@
       },
       {
         "name": "Johnny Rotten",
-        "rankNow": 30,
+        "rankNow": 31,
         "totalPointsNow": 15,
         "pointsInWindow": 1,
         "rankBeforeWindow": 22,
-        "rankChange": -8,
+        "rankChange": -9,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4226,7 +4219,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4235,11 +4228,11 @@
       },
       {
         "name": "Jossu",
-        "rankNow": 30,
+        "rankNow": 31,
         "totalPointsNow": 15,
         "pointsInWindow": 1,
         "rankBeforeWindow": 22,
-        "rankChange": -8,
+        "rankChange": -9,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4282,7 +4275,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4291,11 +4284,11 @@
       },
       {
         "name": "Eski66",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 1,
         "rankBeforeWindow": 29,
-        "rankChange": -3,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4338,7 +4331,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -4347,11 +4340,11 @@
       },
       {
         "name": "Ice Cold",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 1,
         "rankBeforeWindow": 29,
-        "rankChange": -3,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4394,7 +4387,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4403,11 +4396,11 @@
       },
       {
         "name": "PoHan Pullistus",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 1,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4450,7 +4443,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -4459,11 +4452,11 @@
       },
       {
         "name": "Neyney",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 13,
         "pointsInWindow": 1,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4506,7 +4499,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4562,7 +4555,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4618,7 +4611,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
@@ -4674,7 +4667,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4730,7 +4723,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4786,7 +4779,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -4795,11 +4788,11 @@
       },
       {
         "name": "Sipolovic",
-        "rankNow": 32,
+        "rankNow": 33,
         "totalPointsNow": 14,
         "pointsInWindow": 0,
         "rankBeforeWindow": 22,
-        "rankChange": -10,
+        "rankChange": -11,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4842,7 +4835,7 @@
             "matchNr": 11,
             "team1": "Hollanti",
             "team2": "Japani",
-            "resultText": "1-1",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4853,18 +4846,18 @@
     "topPerformers": [
       {
         "name": "Shampoo",
-        "pointsInWindow": 19,
-        "exactResultsInWindow": 3
-      },
-      {
-        "name": "Pontemon",
-        "pointsInWindow": 15,
+        "pointsInWindow": 16,
         "exactResultsInWindow": 2
       },
       {
         "name": "SKA Hänninen",
-        "pointsInWindow": 10,
-        "exactResultsInWindow": 0
+        "pointsInWindow": 13,
+        "exactResultsInWindow": 1
+      },
+      {
+        "name": "Pontemon",
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 1
       },
       {
         "name": "LegendaryLebu",
@@ -4872,7 +4865,7 @@
         "exactResultsInWindow": 1
       },
       {
-        "name": "Sedu",
+        "name": "Kiiskiministeri",
         "pointsInWindow": 8,
         "exactResultsInWindow": 1
       }
@@ -4880,42 +4873,42 @@
   },
   "commentaryHints": {
     "leader": {
-      "name": "Shampoo",
-      "points": 32
+      "name": "Kiiskiministeri",
+      "points": 29
     },
     "closestChasers": [
       {
         "name": "Mike Salmon",
-        "rank": 2,
+        "rank": 1,
         "points": 29,
-        "pointsBehindLeader": 3
+        "pointsBehindLeader": 0
       },
       {
-        "name": "Pontemon",
-        "rank": 2,
+        "name": "Shampoo",
+        "rank": 1,
         "points": 29,
-        "pointsBehindLeader": 3
+        "pointsBehindLeader": 0
       },
       {
         "name": "LegendaryLebu",
         "rank": 4,
         "points": 28,
-        "pointsBehindLeader": 4
+        "pointsBehindLeader": 1
       },
       {
-        "name": "Kiiskiministeri",
+        "name": "Pontemon",
         "rank": 5,
         "points": 26,
-        "pointsBehindLeader": 6
+        "pointsBehindLeader": 3
       },
       {
         "name": "Tommy Favorite",
         "rank": 6,
         "points": 24,
-        "pointsBehindLeader": 8
+        "pointsBehindLeader": 5
       }
     ],
-    "tightTopComment": "Kärki on erittäin tiukka, eroa vain 3 pistettä.",
-    "suggestedFinnishSummary": "Koko kisan kärjessä on Shampoo (32p). Lähimpänä haastajana on Mike Salmon (29p, eroa vain 3p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Shampoo keräten 13p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Esko (+19 sijaa). Eniten sijoitustaan menetti Max (-14 sijaa). Täydellisiä 6 pisteen osumia saivat: Shampoo (Qatar–Sveitsi veikkaus 1-1), Shampoo (Hollanti–Japani veikkaus 1-1), Pontemon (Hollanti–Japani veikkaus 1-1)."
+    "tightTopComment": "Kärjessä on tasapeli!",
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (29p). Lähimpänä haastajana on Mike Salmon (29p, eroa vain 0p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Shampoo keräten 10p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut SKA Hänninen (+18 sijaa). Eniten sijoitustaan menetti Max (-14 sijaa). Täydellisiä 6 pisteen osumia saivat: Shampoo (Qatar–Sveitsi veikkaus 1-1), LegendaryLebu (Qatar–Sveitsi veikkaus 1-1), SKA Hänninen (Hollanti–Japani veikkaus 2-2)."
   }
 }
