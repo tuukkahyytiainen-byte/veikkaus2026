@@ -155,13 +155,29 @@
         /* Tab Navigation */
         .tabs {
             display: flex;
-            flex-wrap: wrap;
             gap: 0.5rem;
             background: rgba(15, 23, 42, 0.4);
-            padding: 0.35rem;
+            padding: 0.35rem 0.35rem 0.6rem 0.35rem;
             border-radius: 12px;
             border: 1px solid var(--border-color);
             margin-bottom: 2rem;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: thin; /* Thin scrollbar Firefox */
+            scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+        }
+        .tabs::-webkit-scrollbar {
+            height: 4px;
+        }
+        .tabs::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .tabs::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 2px;
+        }
+        .tabs::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .tab-btn {
@@ -1541,7 +1557,7 @@
             }
             .tabs {
                 margin-bottom: 1.25rem;
-                padding: 0.25rem;
+                padding: 0.25rem 0.25rem 0.5rem 0.25rem;
             }
             .tab-btn {
                 padding: 0.45rem 0.75rem !important;
@@ -1634,6 +1650,37 @@
             }
             .modal-player-name {
                 font-size: 0.8rem !important;
+            }
+
+            /* Left-align Botmanen, progress, and simulation elements on mobile to look better than centered layout */
+            .botmanen-layout, .progress-layout, .simulation-layout {
+                text-align: left !important;
+            }
+            .botmanen-card {
+                align-items: flex-start !important;
+                text-align: left !important;
+            }
+            .botmanen-avatar-container {
+                margin-left: 0 !important;
+                margin-right: auto !important;
+            }
+            .sim-header-controls, .player-selector-container, .legend-header {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                text-align: left !important;
+                gap: 0.75rem !important;
+            }
+            .sim-toggle-label {
+                align-self: flex-start !important;
+            }
+            .sim-header-controls h2, .sim-header-controls label {
+                text-align: left !important;
+            }
+            .player-selector-container button {
+                align-self: flex-start !important;
+            }
+            .botmanen-promo {
+                text-align: left !important;
             }
         }
 
