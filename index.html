@@ -2,7 +2,7 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1080">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MM 2026 Veikkaussovellus</title>
     <meta name="description" content="Jalkapallon MM-kisojen 2026 veikkauksen virallinen pistelaskenta ja tulospalvelu. Seuraa sijoituksia ja vertaile veikkauksia reaaliajassa.">
     <!-- Google Fonts -->
@@ -155,18 +155,13 @@
         /* Tab Navigation */
         .tabs {
             display: flex;
+            flex-wrap: wrap;
             gap: 0.5rem;
             background: rgba(15, 23, 42, 0.4);
             padding: 0.35rem;
             border-radius: 12px;
             border: 1px solid var(--border-color);
             margin-bottom: 2rem;
-            overflow-x: auto;
-            white-space: nowrap;
-            scrollbar-width: none; /* Hide scrollbar Firefox */
-        }
-        .tabs::-webkit-scrollbar {
-            display: none; /* Hide scrollbar Chrome/Safari */
         }
 
         .tab-btn {
@@ -1945,7 +1940,7 @@
                     <i class="fa-solid fa-wand-magic-sparkles"></i> Simulaatio
                 </button>
                 <button class="tab-btn" onclick="switchTab('rules')">
-                    <i class="fa-solid fa-circle-info"></i> Säännöt
+                    <i class="fa-solid fa-circle-info"></i> Säännöt & Ohjeet
                 </button>
             </nav>
 
