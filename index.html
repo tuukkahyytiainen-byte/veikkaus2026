@@ -2,7 +2,7 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1080">
     <title>MM 2026 Veikkaussovellus</title>
     <meta name="description" content="Jalkapallon MM-kisojen 2026 veikkauksen virallinen pistelaskenta ja tulospalvelu. Seuraa sijoituksia ja vertaile veikkauksia reaaliajassa.">
     <!-- Google Fonts -->
@@ -84,7 +84,7 @@
 
         /* Container Layout */
         .app-container {
-            max-width: 1400px;
+            max-width: 1080px;
             margin: 0 auto;
             padding: 2rem 1.5rem;
         }
@@ -1986,8 +1986,14 @@
             <!-- 2. Matches View -->
             <section class="tab-view" id="view-matches">
                 <div class="glass-card">
-                    <div class="filter-tabs" id="match-group-filters">
-                        <!-- Group filters populated dynamically -->
+                    <div class="matches-filter-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                        <div class="filter-tabs" id="match-group-filters" style="margin-bottom: 0; padding-bottom: 0;">
+                            <!-- Group filters populated dynamically -->
+                        </div>
+                        <label class="sim-toggle-label" style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 8px; margin: 0;">
+                            <input type="checkbox" id="match-show-old-checkbox" onchange="toggleShowOldMatches(this.checked)">
+                            <span>Näytä yli 2 päivää sitten pelatut ottelut</span>
+                        </label>
                     </div>
                     <div class="matches-grid" id="matches-grid">
                         <!-- Match cards populated dynamically -->
@@ -2563,6 +2569,7 @@
         let apiGroups = [];
         let apiTeams = [];
         let activeMatchFilter = 'Kaikki';
+        let showOldMatches = false;
         let simulatedScores = {};
         let simShowAllMatches = false;
 
@@ -2663,6 +2670,38 @@
                 return `LIVE ${elapsed}'`;
             }
             return `LIVE ${timeElapsed}`;
+        }
+
+        function isMatchOld(dateStr) {
+            if (!dateStr) return false;
+            // Format: "11.6. klo 22"
+            const parts = dateStr.split(' klo ');
+            if (parts.length < 2) return false;
+            const dateParts = parts[0].split('.');
+            if (dateParts.length < 2) return false;
+            const day = parseInt(dateParts[0], 10);
+            const month = parseInt(dateParts[1], 10) - 1; // 0-indexed in JS Date
+            
+            const currentYear = new Date().getFullYear();
+            const year = currentYear >= 2026 ? currentYear : 2026;
+            
+            // Create Date objects (noon to avoid timezone shift issues)
+            const matchDate = new Date(year, month, day, 12, 0, 0);
+            const now = new Date();
+            
+            // Compare midnight to midnight for calendar days
+            const nowMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const matchMidnight = new Date(matchDate.getFullYear(), matchDate.getMonth(), matchDate.getDate());
+            
+            const diffTime = nowMidnight - matchMidnight;
+            const diffDays = diffTime / (1000 * 60 * 60 * 24);
+            
+            return diffDays >= 2;
+        }
+
+        function toggleShowOldMatches(checked) {
+            showOldMatches = checked;
+            renderMatches(activeMatchFilter);
         }
 
         // Spelling Normalization Function to correct human typos
@@ -3411,6 +3450,9 @@
 
             matches.forEach(m => {
                 if (groupFilter !== 'Kaikki' && m.group !== groupFilter) return;
+
+                // Hide played matches that are 2+ days old if the user hasn't toggled them to show
+                if (!showOldMatches && m.hasResult && isMatchOld(m.date)) return;
 
                 // Calculate statistics for this match across all players
                 let exactCount = 0;
