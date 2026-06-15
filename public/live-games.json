@@ -46,7 +46,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e031",
-      "id": "31",
+      "id": "32",
       "home_team_id": "13",
       "away_team_id": "15",
       "home_score": "0",
@@ -112,7 +112,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e041",
-      "id": "41",
+      "id": "42",
       "home_team_id": "33",
       "away_team_id": "35",
       "home_score": "0",
@@ -134,7 +134,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e042",
-      "id": "42",
+      "id": "41",
       "home_team_id": "36",
       "away_team_id": "34",
       "home_score": "0",
@@ -156,7 +156,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e059",
-      "id": "59",
+      "id": "57",
       "home_team_id": "22",
       "away_team_id": "23",
       "home_score": "0",
@@ -282,7 +282,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e039",
-      "id": "39",
+      "id": "38",
       "home_team_id": "29",
       "away_team_id": "31",
       "home_score": "0",
@@ -326,7 +326,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e045",
-      "id": "45",
+      "id": "47",
       "home_team_id": "41",
       "away_team_id": "43",
       "home_score": "0",
@@ -370,7 +370,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e052",
-      "id": "52",
+      "id": "53",
       "home_team_id": "4",
       "away_team_id": "1",
       "home_score": "0",
@@ -392,7 +392,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e060",
-      "id": "60",
+      "id": "58",
       "home_team_id": "24",
       "away_team_id": "21",
       "home_score": "0",
@@ -414,7 +414,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e061",
-      "id": "61",
+      "id": "62",
       "home_team_id": "34",
       "away_team_id": "35",
       "home_score": "0",
@@ -628,7 +628,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e021",
-      "id": "21",
+      "id": "23",
       "home_team_id": "41",
       "away_team_id": "42",
       "home_score": "0",
@@ -650,7 +650,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e037",
-      "id": "37",
+      "id": "39",
       "home_team_id": "25",
       "away_team_id": "27",
       "home_score": "0",
@@ -694,7 +694,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e051",
-      "id": "51",
+      "id": "54",
       "home_team_id": "2",
       "away_team_id": "3",
       "home_score": "0",
@@ -822,7 +822,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e025",
-      "id": "25",
+      "id": "28",
       "home_team_id": "1",
       "away_team_id": "3",
       "home_score": "0",
@@ -888,7 +888,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e032",
-      "id": "32",
+      "id": "31",
       "home_team_id": "16",
       "away_team_id": "14",
       "home_score": "0",
@@ -954,7 +954,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e053",
-      "id": "53",
+      "id": "52",
       "home_team_id": "6",
       "away_team_id": "7",
       "home_score": "0",
@@ -976,7 +976,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e058",
-      "id": "58",
+      "id": "59",
       "home_team_id": "16",
       "away_team_id": "13",
       "home_score": "0",
@@ -998,7 +998,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e062",
-      "id": "62",
+      "id": "61",
       "home_team_id": "36",
       "away_team_id": "33",
       "home_score": "0",
@@ -1340,7 +1340,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e038",
-      "id": "38",
+      "id": "40",
       "home_team_id": "28",
       "away_team_id": "26",
       "home_score": "0",
@@ -1362,7 +1362,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e040",
-      "id": "40",
+      "id": "37",
       "home_team_id": "32",
       "away_team_id": "30",
       "home_score": "0",
@@ -1384,7 +1384,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e047",
-      "id": "47",
+      "id": "48",
       "home_team_id": "44",
       "away_team_id": "42",
       "home_score": "0",
@@ -1570,7 +1570,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e016",
-      "id": "16",
+      "id": "13",
       "home_team_id": "31",
       "away_team_id": "32",
       "home_score": "0",
@@ -1614,7 +1614,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e023",
-      "id": "23",
+      "id": "24",
       "home_team_id": "43",
       "away_team_id": "44",
       "home_score": "0",
@@ -1718,7 +1718,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e013",
-      "id": "13",
+      "id": "15",
       "home_team_id": "27",
       "away_team_id": "28",
       "home_score": "0",
@@ -1762,7 +1762,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e024",
-      "id": "24",
+      "id": "21",
       "home_team_id": "47",
       "away_team_id": "48",
       "home_score": "0",
@@ -1784,7 +1784,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e028",
-      "id": "28",
+      "id": "25",
       "home_team_id": "4",
       "away_team_id": "2",
       "home_score": "0",
@@ -1806,7 +1806,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e048",
-      "id": "48",
+      "id": "45",
       "home_team_id": "45",
       "away_team_id": "47",
       "home_score": "0",
@@ -1976,7 +1976,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e015",
-      "id": "15",
+      "id": "16",
       "home_team_id": "25",
       "away_team_id": "26",
       "home_score": "0",
@@ -1989,7 +1989,7 @@
       "persian_date": "1405-03-25 12:00",
       "stadium_id": "14",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "group",
       "home_team_name_en": "Belgium",
       "home_team_name_fa": "بلژیک",
@@ -2020,7 +2020,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e054",
-      "id": "54",
+      "id": "51",
       "home_team_id": "8",
       "away_team_id": "5",
       "home_score": "0",
@@ -2042,7 +2042,7 @@
     },
     {
       "_id": "679c9c8a5749c4077500e057",
-      "id": "57",
+      "id": "60",
       "home_team_id": "14",
       "away_team_id": "15",
       "home_score": "0",
