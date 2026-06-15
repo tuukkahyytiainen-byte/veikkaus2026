@@ -11,6 +11,7 @@ const apiTeamNameToFinnish = {
     "ivory coast": "Norsunluurannikko",
     "netherlands": "Hollanti",
     "cape verde": "Kap Verde",
+    "cape verde islands": "Kap Verde",
     "france": "Ranska",
     "tunisia": "Tunisia",
     "egypt": "Egypti",
@@ -31,6 +32,7 @@ const apiTeamNameToFinnish = {
     "democratic republic of the congo": "Kongon DR",
     "england": "Englanti",
     "czech republic": "Tshekki",
+    "czechia": "Tshekki",
     "canada": "Kanada",
     "qatar": "Qatar",
     "switzerland": "Sveitsi",
@@ -92,6 +94,8 @@ function normalizeTeamName(name) {
         "jordania": "Jordania",
         "kanada": "Kanada",
         "kap verde": "Kap Verde",
+        "cape verde": "Kap Verde",
+        "cape verde islands": "Kap Verde",
         "kolumbia": "Kolumbia",
         "kongo": "Kongon DR", "kongon dr": "Kongon DR",
         "kroatia": "Kroatia",
@@ -110,6 +114,8 @@ function normalizeTeamName(name) {
         "senegal": "Senegal", "senegas": "Senegal",
         "skotlanti": "Skotlanti",
         "sveitsi": "Sveitsi",
+        "czechia": "Tshekki",
+        "czech republic": "Tshekki",
         "tsekki": "Tshekki", "tshekki": "Tshekki", "tšekki": "Tshekki",
         "tunisia": "Tunisia",
         "turkki": "Turkki",
@@ -516,6 +522,7 @@ async function fetchLiveApiData() {
             'bosnia herzegovina': 'bosnia and herzegovina',
             'bosnia ja hertsegovina': 'bosnia and herzegovina',
             'czech republic': 'czech republic',
+            'czechia': 'czech republic',
             'tsekki': 'czech republic',
             'tsekin tasavalta': 'czech republic',
             'south africa': 'south africa',
@@ -523,12 +530,21 @@ async function fetchLiveApiData() {
             'new zealand': 'new zealand',
             'uusi seelanti': 'new zealand',
             'cape verde': 'cape verde',
+            'cape verde islands': 'cape verde',
             'kap verde': 'cape verde'
         };
         if (aliases[s]) {
             return aliases[s];
         }
         return s;
+    }
+
+    function mapTeamToCacheName(fdName) {
+        if (!fdName) return 'null';
+        const norm = normalizeTeamName(fdName);
+        if (norm === 'czech republic') return 'Czech Republic';
+        if (norm === 'cape verde') return 'Cape Verde';
+        return fdName;
     }
 
     function formatDateString(utcDateStr) {
@@ -734,8 +750,8 @@ async function fetchLiveApiData() {
                         finished: isFinished ? 'TRUE' : 'FALSE',
                         time_elapsed: timeElapsed,
                         type: m.stage ? m.stage.toLowerCase() : 'group',
-                        home_team_name_en: m.homeTeam ? m.homeTeam.name : 'null',
-                        away_team_name_en: m.awayTeam ? m.awayTeam.name : 'null'
+                        home_team_name_en: m.homeTeam ? mapTeamToCacheName(m.homeTeam.name) : 'null',
+                        away_team_name_en: m.awayTeam ? mapTeamToCacheName(m.awayTeam.name) : 'null'
                     });
                 }
             });
