@@ -425,6 +425,35 @@ function formatLiveStatus(timeElapsed) {
     return `LIVE ${timeElapsed}`;
 }
 
+function isMatchFinishedByTime(dateStr, groupStr) {
+    if (!dateStr) return false;
+    const parts = dateStr.split(' klo ');
+    if (parts.length < 2) return false;
+    const dateParts = parts[0].split('.');
+    if (dateParts.length < 2) return false;
+    const day = parseInt(dateParts[0], 10);
+    const month = parseInt(dateParts[1], 10); // 1-indexed for padding
+    const hour = parseInt(parts[1], 10);
+
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const year = currentYear >= 2026 ? currentYear : 2026;
+
+    // Construct ISO string with Helsinki offset (+03:00) since World Cup is in June/July (Daylight Saving Time)
+    const isoStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}T${String(hour).padStart(2, '0')}:00:00+03:00`;
+    const startDate = new Date(isoStr);
+    
+    if (isNaN(startDate.getTime())) return false;
+
+    const elapsedMinutes = (now - startDate) / (1000 * 60);
+    
+    // 150 minutes (2.5h) for group stage, 210 minutes (3.5h) for playoffs
+    const isGroup = !groupStr || groupStr.trim().length === 1;
+    const threshold = isGroup ? 150 : 210;
+    
+    return elapsedMinutes > threshold;
+}
+
 async function fetchLiveApiData() {
     const cachePath = process.env.VERCEL 
         ? path.join('/tmp', 'cached-api-data.json') 
@@ -827,7 +856,11 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
             g1 = Number(apiGame.home_score);
             g2 = Number(apiGame.away_score);
             hasResult = true;
-            status = apiGame.finished === 'TRUE' ? 'Päättynyt' : formatLiveStatus(apiGame.time_elapsed);
+            if (apiGame.finished === 'TRUE' || isMatchFinishedByTime(date, group)) {
+                status = 'Päättynyt';
+            } else {
+                status = formatLiveStatus(apiGame.time_elapsed);
+            }
         }
         
         if (textResults && textResults.matches && textResults.matches[m]) {
