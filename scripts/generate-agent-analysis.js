@@ -483,6 +483,34 @@ async function fetchLiveApiData() {
     let apiGroups = [];
     let apiTeams = [];
 
+    // Load Excel sheet matches (1 to 72) as the source of truth for group stage team names
+    const excelPath = fs.existsSync(path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx'))
+        ? path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx')
+        : path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
+    
+    const excelMatches = [];
+    try {
+        if (fs.existsSync(excelPath)) {
+            const workbook = XLSX.readFile(excelPath);
+            const tuloksetSheet = workbook.Sheets['Tulokset'];
+            const getTValue = (addr) => tuloksetSheet[addr] ? tuloksetSheet[addr].v : undefined;
+            for (let m = 1; m <= 72; m++) {
+                const row = 5 + m;
+                const t1 = getTValue(`D${row}`);
+                const t2 = getTValue(`F${row}`);
+                if (t1 && t2) {
+                    excelMatches.push({
+                        id: m,
+                        team1: String(t1).trim(),
+                        team2: String(t2).trim()
+                    });
+                }
+            }
+        }
+    } catch (err) {
+        console.warn('Could not read Excel for team names:', err.message);
+    }
+
     const fetchOptions = {
         headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -556,7 +584,35 @@ async function fetchLiveApiData() {
         if (!gamesData || !gamesData.games) {
             throw new Error('Failed to fetch live games from primary API and proxy');
         }
-        apiGames = gamesData.games;
+        
+        // Map primary API game IDs to Excel match IDs
+        const mappedGames = [];
+        gamesData.games.forEach(g => {
+            let matchId = g.id;
+            
+            // For group stage, map by team names to Excel match numbers
+            if (g.type === 'group') {
+                const homeNorm = normalizeTeamName(g.home_team_name_en);
+                const awayNorm = normalizeTeamName(g.away_team_name_en);
+                
+                if (homeNorm && awayNorm) {
+                    const foundGame = excelMatches.find(em => {
+                        const emHomeNorm = normalizeTeamName(em.team1);
+                        const emAwayNorm = normalizeTeamName(em.team2);
+                        return (emHomeNorm === homeNorm && emAwayNorm === awayNorm) || 
+                               (emHomeNorm === awayNorm && emAwayNorm === homeNorm);
+                    });
+                    if (foundGame) {
+                        matchId = String(foundGame.id);
+                    }
+                }
+            }
+            mappedGames.push({
+                ...g,
+                id: matchId
+            });
+        });
+        apiGames = mappedGames;
 
         console.log('Fetching live groups from primary API...');
         const groupsData = await fetchResource(
@@ -669,33 +725,7 @@ async function fetchLiveApiData() {
                 'FINAL': [104]
             };
 
-            // Load Excel sheet matches (1 to 72) as the source of truth for group stage team names
-            const excelPath = fs.existsSync(path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx'))
-                ? path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx')
-                : path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
-            
-            const excelMatches = [];
-            try {
-                if (fs.existsSync(excelPath)) {
-                    const workbook = XLSX.readFile(excelPath);
-                    const tuloksetSheet = workbook.Sheets['Tulokset'];
-                    const getTValue = (addr) => tuloksetSheet[addr] ? tuloksetSheet[addr].v : undefined;
-                    for (let m = 1; m <= 72; m++) {
-                        const row = 5 + m;
-                        const t1 = getTValue(`D${row}`);
-                        const t2 = getTValue(`F${row}`);
-                        if (t1 && t2) {
-                            excelMatches.push({
-                                id: m,
-                                team1: String(t1).trim(),
-                                team2: String(t2).trim()
-                            });
-                        }
-                    }
-                }
-            } catch (err) {
-                console.warn('Could not read Excel for team names in fallback:', err.message);
-            }
+            // excelMatches is already loaded at the parent scope
 
             // Process matches
             fdData.matches.forEach(m => {
