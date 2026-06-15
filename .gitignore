@@ -6,3 +6,5 @@ scratch/
 public/*
 !public/agent-analysis.json
 !public/botmanen-summary.json
+!public/agent-analysis-html.html
+!public/live-games.json

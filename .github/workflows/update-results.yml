@@ -34,6 +34,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/agent-analysis.json public/botmanen-summary.json
-          # Commit only if there are changes to the JSON files
+          git add public/agent-analysis.json public/botmanen-summary.json public/agent-analysis-html.html public/live-games.json scripts/cached-api-data.json
+          # Commit only if there are changes to the files
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update live match results [skip ci]" && git push)

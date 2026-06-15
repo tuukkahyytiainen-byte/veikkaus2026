@@ -1441,12 +1441,32 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
         const botmanenOutputPath = path.join(outputDir, 'botmanen-summary.json');
         fs.writeFileSync(botmanenOutputPath, JSON.stringify(botmanenJson, null, 2));
 
+        // Write HTML wrapper for agent analysis
+        const htmlOutputPath = path.join(outputDir, 'agent-analysis-html.html');
+        const htmlContent = `<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Veikkaus 2026 Agent Data</title>
+</head>
+<body>
+    <pre id="agent-data" style="word-wrap: break-word; white-space: pre-wrap;">${JSON.stringify(finalJson)}</pre>
+</body>
+</html>`;
+        fs.writeFileSync(htmlOutputPath, htmlContent);
+
+        // Write static live-games.json
+        const liveGamesOutputPath = path.join(outputDir, 'live-games.json');
+        fs.writeFileSync(liveGamesOutputPath, JSON.stringify({ games: apiGames }, null, 2));
+
         console.log(`\n=== Agent Analysis Generation Successful ===`);
         console.log(`Matches read: 72`);
         console.log(`Played matches found: ${playedCount}`);
         console.log(`Participants found: ${currentLeaderboard.length}`);
         console.log(`Output written to: ${outputPath}`);
-        console.log(`Output written to: ${botmanenOutputPath}\n`);
+        console.log(`Output written to: ${botmanenOutputPath}`);
+        console.log(`Output written to: ${htmlOutputPath}`);
+        console.log(`Output written to: ${liveGamesOutputPath}\n`);
     }
 
     return { finalJson, botmanenJson, playedCount, currentLeaderboardLength: currentLeaderboard.length };

@@ -1,20 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/agent-analysis.json",
-      "destination": "/api/agent-analysis"
-    },
-    {
       "source": "/agent-analysis-html",
-      "destination": "/api/agent-analysis-html"
-    },
-    {
-      "source": "/botmanen-summary.json",
-      "destination": "/api/botmanen-summary"
-    },
-    {
-      "source": "/live-games.json",
-      "destination": "/api/live-games"
+      "destination": "/agent-analysis-html.html"
     }
   ],
   "headers": [
