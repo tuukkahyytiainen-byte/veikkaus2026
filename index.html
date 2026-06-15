@@ -2915,7 +2915,9 @@
 
         function fetchLiveGames() {
             const cacheBuster = Math.floor(Date.now() / 10000); // 10-second grid cache-buster
-            return fetch('live-games.json?t=' + cacheBuster)
+            const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+            const url = isLocal ? 'live-games.json?t=' + cacheBuster : '/api/live-games?t=' + cacheBuster;
+            return fetch(url)
                 .then(res => {
                     if (!res.ok) throw new Error('Status: ' + res.status);
                     return res.json();

@@ -103,7 +103,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     // Handle live-games.json dynamically by proxying to the live API
-    if (pathname === '/live-games.json') {
+    if (pathname === '/live-games.json' || pathname === '/api/live-games') {
         try {
             console.log('[DevServer] Fetching live games dynamically...');
             const { fetchLiveApiData } = require('./generate-agent-analysis');
