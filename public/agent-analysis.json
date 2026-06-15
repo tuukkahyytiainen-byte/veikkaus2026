@@ -1,7 +1,7 @@
 {
   "emailDigest": {
     "window": "16.6.",
-    "generatedAt": "2026-06-15T16:48:23.901Z",
+    "generatedAt": "2026-06-15T17:02:36.818Z",
     "summary": {
       "playedMatchesCount": 13,
       "totalMatches": 72,
@@ -1121,7 +1121,7 @@
     ]
   },
   "schemaVersion": 1,
-  "generatedAt": "2026-06-15T16:48:23.901Z",
+  "generatedAt": "2026-06-15T17:02:36.818Z",
   "source": {
     "excelFile": "MM2026_pistelaskenta.xlsx",
     "resultsFile": "tulokset.txt",
@@ -1146,7 +1146,7 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{“J. Quiñones 9'”,”R. Jiménez 67'”}",
+      "homeScorers": "null",
       "awayScorers": "null"
     },
     {
@@ -1160,8 +1160,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"I.B. Hwang 67'\",\"H.G. Oh 80'\"}",
-      "awayScorers": "{\"L. Krejčí 59'\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 3,
@@ -1174,8 +1174,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"C. Larin 11'\"}",
-      "awayScorers": "{\"Jovo Lukić 21'\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 4,
@@ -1188,8 +1188,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"D. Bobadilla 7'(OG)\",\"F. Balogun 31'\",\"F. Balogun 45'+5'\",\"G. Reyna 90'+8'\"}",
-      "awayScorers": "{\"Maurício 73'\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 5,
@@ -1203,7 +1203,7 @@
       "status": "Päättynyt",
       "originallyHadResult": true,
       "homeScorers": "null",
-      "awayScorers": "{\"J. McGinn 28'\"}"
+      "awayScorers": "null"
     },
     {
       "nr": 6,
@@ -1216,7 +1216,7 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"Nestory Irankunda 27'\",\"C. Metcalfe 75'\"}",
+      "homeScorers": "null",
       "awayScorers": "null"
     },
     {
@@ -1230,8 +1230,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"V. Júnior 32'\"}",
-      "awayScorers": "{\"I. Saibari 21'\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 8,
@@ -1244,8 +1244,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"B. Khoukhi 90'+5'\"}",
-      "awayScorers": "{\"Breel Embolo 17' (p)\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 9,
@@ -1258,7 +1258,7 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"A. Diallo 90'\"}",
+      "homeScorers": "null",
       "awayScorers": "null"
     },
     {
@@ -1272,8 +1272,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"Felix Nmecha 7'\",\"N. Schlotterbeck 38'\",\"K. Havertz 45'+5'(p)\",\"J. Musiala 47'\",\"N. Brown 68'\",\"D. Undav 78'\",\"K. Havertz 88'\"}",
-      "awayScorers": "{\"L. Comenencia 21'\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 11,
@@ -1286,8 +1286,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"Virgil van Dijk 51'\",\"C. Summerville 64'\"}",
-      "awayScorers": "{\"K. Nakamura 57'\",\"K. Ogawa 89'\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 12,
@@ -1300,8 +1300,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "{\"Y.Ayari 7'\",\"A. Isak 30'\",\"V. Gyökeres 59'\",\"M. Svanberg 84'\",\"Y.Ayari 90'+6'\"}",
-      "awayScorers": "{\"O. Rekik 43'\"}"
+      "homeScorers": "null",
+      "awayScorers": "null"
     },
     {
       "nr": 13,

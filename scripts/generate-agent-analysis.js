@@ -30,6 +30,7 @@ const apiTeamNameToFinnish = {
     "norway": "Norja",
     "argentina": "Argentiina",
     "democratic republic of the congo": "Kongon DR",
+    "congo dr": "Kongon DR",
     "england": "Englanti",
     "czech republic": "Tshekki",
     "czechia": "Tshekki",
@@ -491,59 +492,11 @@ async function fetchLiveApiData() {
         }
     }
 
-    function normalizeTeamName(name) {
-        if (!name) return '';
-        let s = name.toLowerCase().trim();
-        s = s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        s = s.replace(/[^a-z0-9]/g, ' ');
-        s = s.replace(/\s+/g, ' ').trim();
-        
-        const aliases = {
-            'usa': 'united states',
-            'us': 'united states',
-            'yhdysvallat': 'united states',
-            'korea republic': 'south korea',
-            'republic of korea': 'south korea',
-            'etela korea': 'south korea',
-            'cote d ivoire': 'ivory coast',
-            'cote divoire': 'ivory coast',
-            'norsunluurannikko': 'ivory coast',
-            'drc': 'democratic republic of the congo',
-            'dr congo': 'democratic republic of the congo',
-            'congo dr': 'democratic republic of the congo',
-            'kongo': 'democratic republic of the congo',
-            'kongon demokraattinen tasavalta': 'democratic republic of the congo',
-            'saudi arabia': 'saudi arabia',
-            'saudi-arabia': 'saudi arabia',
-            'korea dpr': 'north korea',
-            'pohjois korea': 'north korea',
-            'bosnia and herzegovina': 'bosnia and herzegovina',
-            'bosnia': 'bosnia and herzegovina',
-            'bosnia herzegovina': 'bosnia and herzegovina',
-            'bosnia ja hertsegovina': 'bosnia and herzegovina',
-            'czech republic': 'czech republic',
-            'czechia': 'czech republic',
-            'tsekki': 'czech republic',
-            'tsekin tasavalta': 'czech republic',
-            'south africa': 'south africa',
-            'etela afrikka': 'south africa',
-            'new zealand': 'new zealand',
-            'uusi seelanti': 'new zealand',
-            'cape verde': 'cape verde',
-            'cape verde islands': 'cape verde',
-            'kap verde': 'cape verde'
-        };
-        if (aliases[s]) {
-            return aliases[s];
-        }
-        return s;
-    }
-
     function mapTeamToCacheName(fdName) {
         if (!fdName) return 'null';
         const norm = normalizeTeamName(fdName);
-        if (norm === 'czech republic') return 'Czech Republic';
-        if (norm === 'cape verde') return 'Cape Verde';
+        if (norm === 'Tshekki') return 'Czech Republic';
+        if (norm === 'Kap Verde') return 'Cape Verde';
         return fdName;
     }
 
@@ -687,22 +640,58 @@ async function fetchLiveApiData() {
                 'FINAL': [104]
             };
 
+            // Load Excel sheet matches (1 to 72) as the source of truth for group stage team names
+            const excelPath = fs.existsSync(path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx'))
+                ? path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx')
+                : path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
+            
+            const excelMatches = [];
+            try {
+                if (fs.existsSync(excelPath)) {
+                    const workbook = XLSX.readFile(excelPath);
+                    const tuloksetSheet = workbook.Sheets['Tulokset'];
+                    const getTValue = (addr) => tuloksetSheet[addr] ? tuloksetSheet[addr].v : undefined;
+                    for (let m = 1; m <= 72; m++) {
+                        const row = 5 + m;
+                        const t1 = getTValue(`D${row}`);
+                        const t2 = getTValue(`F${row}`);
+                        if (t1 && t2) {
+                            excelMatches.push({
+                                id: m,
+                                team1: String(t1).trim(),
+                                team2: String(t2).trim()
+                            });
+                        }
+                    }
+                }
+            } catch (err) {
+                console.warn('Could not read Excel for team names in fallback:', err.message);
+            }
+
             // Process matches
             fdData.matches.forEach(m => {
                 let matchId = null;
                 
                 if (m.stage === 'GROUP_STAGE') {
-                    // Match by team names
+                    // Match by team names against Excel matches
                     const homeNorm = normalizeTeamName(m.homeTeam && m.homeTeam.name);
                     const awayNorm = normalizeTeamName(m.awayTeam && m.awayTeam.name);
                     
                     if (homeNorm && awayNorm) {
-                        const foundGame = cachedGamesList.find(cg => {
-                            const cgHomeNorm = normalizeTeamName(cg.home_team_name_en);
-                            const cgAwayNorm = normalizeTeamName(cg.away_team_name_en);
-                            return (cgHomeNorm === homeNorm && cgAwayNorm === awayNorm) || 
-                                   (cgHomeNorm === awayNorm && cgAwayNorm === homeNorm);
-                        });
+                        const foundGame = excelMatches.length > 0 
+                            ? excelMatches.find(em => {
+                                const emHomeNorm = normalizeTeamName(em.team1);
+                                const emAwayNorm = normalizeTeamName(em.team2);
+                                return (emHomeNorm === homeNorm && emAwayNorm === awayNorm) || 
+                                       (emHomeNorm === awayNorm && emAwayNorm === homeNorm);
+                              })
+                            : cachedGamesList.find(cg => {
+                                const cgHomeNorm = normalizeTeamName(cg.home_team_name_en);
+                                const cgAwayNorm = normalizeTeamName(cg.away_team_name_en);
+                                return (cgHomeNorm === homeNorm && cgAwayNorm === awayNorm) || 
+                                       (cgHomeNorm === awayNorm && cgAwayNorm === homeNorm);
+                              });
+                              
                         if (foundGame) {
                             matchId = Number(foundGame.id);
                         }
