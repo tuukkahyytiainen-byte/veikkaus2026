@@ -517,15 +517,31 @@ async function fetchLiveApiData() {
         }
     };
 
+    async function fetchWithTimeout(url, options = {}, timeoutMs = 3000) {
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), timeoutMs);
+        try {
+            const res = await fetch(url, {
+                ...options,
+                signal: controller.signal
+            });
+            clearTimeout(id);
+            return res;
+        } catch (err) {
+            clearTimeout(id);
+            throw err;
+        }
+    }
+
     async function fetchResource(url, proxyUrl) {
         try {
-            const res = await fetch(url, fetchOptions);
+            const res = await fetchWithTimeout(url, fetchOptions, 3000);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             return await res.json();
         } catch (err) {
             console.warn(`Direct fetch for ${url} failed. Trying proxy...`, err.message);
             try {
-                const res = await fetch(proxyUrl, fetchOptions);
+                const res = await fetchWithTimeout(proxyUrl, fetchOptions, 3000);
                 if (!res.ok) throw new Error(`Proxy HTTP ${res.status}`);
                 return await res.json();
             } catch (proxyErr) {
@@ -596,12 +612,12 @@ async function fetchLiveApiData() {
     if (token) {
         try {
             console.log('Fetching live matches from football-data.org...');
-            const fdRes = await fetch('https://api.football-data.org/v4/competitions/WC/matches', {
+            const fdRes = await fetchWithTimeout('https://api.football-data.org/v4/competitions/WC/matches', {
                 headers: {
                     'X-Auth-Token': token,
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
                 }
-            });
+            }, 3000);
             if (!fdRes.ok) {
                 throw new Error(`football-data.org HTTP ${fdRes.status}`);
             }

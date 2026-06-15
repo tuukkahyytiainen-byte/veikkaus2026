@@ -2,7 +2,19 @@
   "rewrites": [
     {
       "source": "/agent-analysis-html",
-      "destination": "/agent-analysis-html.html"
+      "destination": "/api/agent-analysis-html"
+    },
+    {
+      "source": "/agent-analysis.json",
+      "destination": "/api/agent-analysis"
+    },
+    {
+      "source": "/botmanen-summary.json",
+      "destination": "/api/botmanen-summary"
+    },
+    {
+      "source": "/live-games.json",
+      "destination": "/api/live-games"
     }
   ],
   "headers": [
@@ -55,7 +67,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, s-maxage=10"
+          "value": "public, max-age=0, s-maxage=60"
         }
       ]
     }
