@@ -105,13 +105,12 @@ const server = http.createServer(async (req, res) => {
     // Handle live-games.json dynamically by proxying to the live API
     if (pathname === '/live-games.json') {
         try {
-            console.log('[DevServer] Fetching live games from API...');
-            const apiRes = await fetch('https://worldcup26.ir/get/games');
-            if (!apiRes.ok) throw new Error(`API HTTP ${apiRes.status}`);
-            const data = await apiRes.json();
+            console.log('[DevServer] Fetching live games dynamically...');
+            const { fetchLiveApiData } = require('./generate-agent-analysis');
+            const { apiGames } = await fetchLiveApiData();
 
             res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0' });
-            res.end(JSON.stringify(data));
+            res.end(JSON.stringify({ games: apiGames }));
         } catch (err) {
             console.error('[DevServer] Error fetching live games:', err);
             res.writeHead(500, { 'Content-Type': 'application/json' });

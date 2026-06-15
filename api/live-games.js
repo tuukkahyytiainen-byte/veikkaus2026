@@ -1,4 +1,4 @@
-const https = require('https');
+const { fetchLiveApiData } = require('../scripts/generate-agent-analysis');
 
 module.exports = async (req, res) => {
     // Enable CORS
@@ -12,39 +12,14 @@ module.exports = async (req, res) => {
         return;
     }
 
-    const options = {
-        hostname: 'worldcup26.ir',
-        path: '/get/games',
-        method: 'GET',
-        headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        }
-    };
-
-    https.get(options, (apiRes) => {
-        let data = '';
-
-        apiRes.on('data', (chunk) => {
-            data += chunk;
-        });
-
-        apiRes.on('end', () => {
-            try {
-                if (apiRes.statusCode !== 200) {
-                    throw new Error(`API HTTP ${apiRes.statusCode}`);
-                }
-                const jsonData = JSON.parse(data);
-                
-                // Cache for 10 seconds at edge, do not cache in browser, no stale-while-revalidate
-                res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=10');
-                res.status(200).json(jsonData);
-            } catch (err) {
-                console.error('Error parsing live games JSON:', err);
-                res.status(500).json({ error: err.message });
-            }
-        });
-    }).on('error', (err) => {
+    try {
+        const { apiGames } = await fetchLiveApiData();
+        
+        // Cache for 10 seconds at edge, do not cache in browser
+        res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=10');
+        res.status(200).json({ games: apiGames });
+    } catch (err) {
         console.error('Error fetching live games serverless:', err);
         res.status(500).json({ error: err.message });
-    });
+    }
 };
