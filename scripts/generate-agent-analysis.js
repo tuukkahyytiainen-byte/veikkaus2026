@@ -573,113 +573,27 @@ async function fetchLiveApiData() {
         }
     }
 
-    // Try primary API first
+    // Try primary API (football-data.org) first
     let primarySuccess = false;
-    try {
-        console.log('Fetching live games from primary API (worldcup26.ir)...');
-        const gamesData = await fetchResource(
-            'https://worldcup26.ir/get/games',
-            'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games'
-        );
-        if (!gamesData || !gamesData.games) {
-            throw new Error('Failed to fetch live games from primary API and proxy');
+    
+    // Check 1-minute caching threshold for football-data.org to avoid rate limits
+    const now = Date.now();
+    let useCache = false;
+    if (cachedData && cachedData.footballDataLastFetched) {
+        const elapsedMs = now - cachedData.footballDataLastFetched;
+        if (elapsedMs < 60000) {
+            console.log(`[Cache] Using cached football-data.org results (fetched ${Math.round(elapsedMs / 1000)}s ago).`);
+            useCache = true;
         }
-        
-        // Map primary API game IDs to Excel match IDs
-        const mappedGames = [];
-        gamesData.games.forEach(g => {
-            let matchId = g.id;
-            
-            // For group stage, map by team names to Excel match numbers
-            if (g.type === 'group') {
-                const homeNorm = normalizeTeamName(g.home_team_name_en);
-                const awayNorm = normalizeTeamName(g.away_team_name_en);
-                
-                if (homeNorm && awayNorm) {
-                    const foundGame = excelMatches.find(em => {
-                        const emHomeNorm = normalizeTeamName(em.team1);
-                        const emAwayNorm = normalizeTeamName(em.team2);
-                        return (emHomeNorm === homeNorm && emAwayNorm === awayNorm) || 
-                               (emHomeNorm === awayNorm && emAwayNorm === homeNorm);
-                    });
-                    if (foundGame) {
-                        matchId = String(foundGame.id);
-                    }
-                }
-            }
-            mappedGames.push({
-                ...g,
-                id: matchId
-            });
-        });
-        apiGames = mappedGames;
-
-        console.log('Fetching live groups from primary API...');
-        const groupsData = await fetchResource(
-            'https://worldcup26.ir/get/groups',
-            'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups'
-        );
-        if (groupsData && groupsData.groups) {
-            apiGroups = groupsData.groups;
-        }
-
-        console.log('Fetching live teams from primary API...');
-        const teamsData = await fetchResource(
-            'https://worldcup26.ir/get/teams',
-            'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams'
-        );
-        if (teamsData && teamsData.teams) {
-            apiTeams = teamsData.teams;
-        }
-
-        primarySuccess = true;
-        
-        // Save to cache
-        try {
-            fs.writeFileSync(cachePath, JSON.stringify({ apiGames, apiGroups, apiTeams }, null, 2));
-            console.log('Live API data cached successfully to', cachePath);
-        } catch (writeErr) {
-            console.warn('Could not write cache (expected in read-only Vercel serverless):', writeErr.message);
-        }
-    } catch (err) {
-        console.warn('Primary API fetch failed. Reason:', err.message);
     }
 
-    // Fall back to football-data.org if primary API failed
-    if (!primarySuccess) {
-        console.log('Attempting fallback to football-data.org API...');
-        
-        // Check timezone-aware hours (19:00 - 09:00 Helsinki time)
-        if (!isAllowedFetchTime()) {
-            console.log('Current time is outside the active match window (19:00 - 09:00 Helsinki time). Skipping fallback API call and using cache.');
-            if (cachedData && cachedData.apiGames) {
-                return cachedData;
-            } else {
-                throw new Error('Fallback skipped (outside active hours) and no valid cache exists.');
-            }
-        }
+    if (useCache) {
+        return cachedData;
+    }
 
-        // Check 1-minute caching threshold
-        const now = Date.now();
-        if (cachedData && cachedData.footballDataLastFetched) {
-            const elapsedMs = now - cachedData.footballDataLastFetched;
-            if (elapsedMs < 60000) {
-                console.log(`[Cache] Using cached football-data.org results (fetched ${Math.round(elapsedMs / 1000)}s ago).`);
-                return cachedData;
-            }
-        }
-
-        // Retrieve token
-        const token = process.env.FOOTBALL_DATA_API_KEY || process.env.FOOTBALL_DATA_TOKEN || process.env.FOOTBALL_DATA_API_TOKEN || "a07d5072049f468aa1425c0e32451068";
-        if (!token) {
-            console.warn('FOOTBALL_DATA_API_KEY environment variable is not defined. Cannot fetch from fallback API. Using cache...');
-            if (cachedData && cachedData.apiGames) {
-                return cachedData;
-            } else {
-                throw new Error('Fallback failed (no API token) and no valid cache exists.');
-            }
-        }
-
+    // Retrieve token
+    const token = process.env.FOOTBALL_DATA_API_KEY || process.env.FOOTBALL_DATA_TOKEN || process.env.FOOTBALL_DATA_API_TOKEN || "a07d5072049f468aa1425c0e32451068";
+    if (token) {
         try {
             console.log('Fetching live matches from football-data.org...');
             const fdRes = await fetch('https://api.football-data.org/v4/competitions/WC/matches', {
@@ -725,8 +639,6 @@ async function fetchLiveApiData() {
                 'FINAL': [104]
             };
 
-            // excelMatches is already loaded at the parent scope
-
             // Process matches
             fdData.matches.forEach(m => {
                 let matchId = null;
@@ -766,7 +678,6 @@ async function fetchLiveApiData() {
                 }
                 
                 if (matchId) {
-                    // Map Football-Data.org status to local format
                     const status = m.status; // FINISHED, IN_PLAY, PAUSED, SCHEDULED, TIMED
                     const isFinished = status === 'FINISHED';
                     const isLive = status === 'IN_PLAY' || status === 'PAUSED';
@@ -807,6 +718,7 @@ async function fetchLiveApiData() {
             apiGames = mappedGames;
             apiGroups = cachedData ? cachedData.apiGroups : [];
             apiTeams = cachedData ? cachedData.apiTeams : [];
+            primarySuccess = true;
             
             // Save to cache
             try {
@@ -821,12 +733,132 @@ async function fetchLiveApiData() {
                 console.warn('Could not write cache (expected in read-only Vercel serverless):', writeErr.message);
             }
         } catch (fdErr) {
-            console.error('Failed to fetch/map from football-data.org:', fdErr.message);
-            if (cachedData && cachedData.apiGames && cachedData.apiGroups && cachedData.apiTeams) {
+            console.error('Primary API (football-data.org) fetch failed:', fdErr.message);
+        }
+    }
+
+    // Fall back to worldcup26.ir if football-data.org failed
+    if (!primarySuccess) {
+        console.log('Attempting fallback to worldcup26.ir API...');
+        try {
+            const gamesData = await fetchResource(
+                'https://worldcup26.ir/get/games',
+                'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games'
+            );
+            if (!gamesData || !gamesData.games) {
+                throw new Error('Failed to fetch live games from worldcup26.ir');
+            }
+            
+            // Group playoff matches by type for chronological sorting
+            const irPlayoffsByType = {};
+            gamesData.games.forEach(g => {
+                if (g.type && g.type !== 'group') {
+                    if (!irPlayoffsByType[g.type]) irPlayoffsByType[g.type] = [];
+                    irPlayoffsByType[g.type].push(g);
+                }
+            });
+            
+            // Sort each playoff type chronologically by local_date
+            Object.keys(irPlayoffsByType).forEach(type => {
+                irPlayoffsByType[type].sort((a, b) => new Date(a.local_date) - new Date(b.local_date));
+            });
+
+            const IR_PLAYOFF_TYPE_MAP = {
+                'r32': 'LAST_32',
+                'r16': 'LAST_16',
+                'qf': 'QUARTER_FINALS',
+                'sf': 'SEMI_FINALS',
+                'third': 'THIRD_PLACE',
+                'f': 'FINAL'
+            };
+
+            const PLAYOFF_CHRONO_MAP = {
+                'LAST_32': [73, 76, 74, 75, 78, 77, 79, 80, 82, 81, 84, 83, 85, 88, 86, 87],
+                'LAST_16': [90, 89, 91, 92, 93, 94, 95, 96],
+                'QUARTER_FINALS': [97, 98, 99, 100],
+                'SEMI_FINALS': [101, 102],
+                'THIRD_PLACE': [103],
+                'FINAL': [104]
+            };
+
+            // Map worldcup26.ir game IDs to Excel match IDs
+            const mappedGames = [];
+            gamesData.games.forEach(g => {
+                let matchId = g.id;
+                
+                if (g.type === 'group') {
+                    // Group stage mapping by team names
+                    const homeNorm = normalizeTeamName(g.home_team_name_en);
+                    const awayNorm = normalizeTeamName(g.away_team_name_en);
+                    
+                    if (homeNorm && awayNorm) {
+                        const foundGame = excelMatches.find(em => {
+                            const emHomeNorm = normalizeTeamName(em.team1);
+                            const emAwayNorm = normalizeTeamName(em.team2);
+                            return (emHomeNorm === homeNorm && emAwayNorm === awayNorm) || 
+                                   (emHomeNorm === awayNorm && emAwayNorm === homeNorm);
+                        });
+                        if (foundGame) {
+                            matchId = String(foundGame.id);
+                        }
+                    }
+                } else {
+                    // Playoff stage mapping chronologically
+                    const mappedStage = IR_PLAYOFF_TYPE_MAP[g.type];
+                    if (mappedStage) {
+                        const typeList = irPlayoffsByType[g.type] || [];
+                        const index = typeList.indexOf(g);
+                        const mapIds = PLAYOFF_CHRONO_MAP[mappedStage];
+                        if (index !== -1 && mapIds && mapIds[index]) {
+                            matchId = String(mapIds[index]);
+                        }
+                    }
+                }
+                
+                mappedGames.push({
+                    ...g,
+                    id: matchId
+                });
+            });
+
+            apiGames = mappedGames;
+
+            console.log('Fetching live groups from worldcup26.ir...');
+            const groupsData = await fetchResource(
+                'https://worldcup26.ir/get/groups',
+                'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups'
+            );
+            if (groupsData && groupsData.groups) {
+                apiGroups = groupsData.groups;
+            } else {
+                apiGroups = cachedData ? cachedData.apiGroups : [];
+            }
+
+            console.log('Fetching live teams from worldcup26.ir...');
+            const teamsData = await fetchResource(
+                'https://worldcup26.ir/get/teams',
+                'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams'
+            );
+            if (teamsData && teamsData.teams) {
+                apiTeams = teamsData.teams;
+            } else {
+                apiTeams = cachedData ? cachedData.apiTeams : [];
+            }
+
+            // Save to cache
+            try {
+                fs.writeFileSync(cachePath, JSON.stringify({ apiGames, apiGroups, apiTeams }, null, 2));
+                console.log('Live API data cached successfully to', cachePath);
+            } catch (writeErr) {
+                console.warn('Could not write cache (expected in read-only Vercel serverless):', writeErr.message);
+            }
+        } catch (err) {
+            console.error('Fallback API (worldcup26.ir) fetch failed:', err.message);
+            if (cachedData && cachedData.apiGames) {
                 console.log('Successfully loaded cached API data.');
                 return cachedData;
             } else {
-                throw new Error('Failed to fetch live API data and no valid cache exists: ' + fdErr.message);
+                throw new Error('Failed to fetch live API data and no valid cache exists: ' + err.message);
             }
         }
     }
