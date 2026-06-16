@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1781568623996,
+  "footballDataLastFetched": 1781587961325,
   "apiGames": [
     {
       "id": "1",
@@ -260,15 +260,15 @@
       "id": "15",
       "home_team_id": "840",
       "away_team_id": "783",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "2",
+      "away_score": "2",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "G",
       "matchday": "1",
       "local_date": "06/16/2026 01:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Iran",
       "away_team_name_en": "New Zealand"
