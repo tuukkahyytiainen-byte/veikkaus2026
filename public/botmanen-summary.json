@@ -1,32 +1,14 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-16T05:32:41.834Z",
+  "generatedAt": "2026-06-16T09:32:47.153Z",
   "summary": {
     "playedMatchesCount": 16,
     "totalMatches": 72,
-    "lastPlayedMatchNr": 16,
-    "latestPlayedDate": "15.6. klo 22",
+    "lastPlayedMatchNr": 15,
+    "latestPlayedDate": "16.6. klo 04",
     "participantCount": 48
   },
   "latestPlayedMatches": [
-    {
-      "nr": 9,
-      "date": "15.6. klo 02",
-      "group": "E",
-      "team1": "Norsunluurannikko",
-      "team2": "Ecuador",
-      "goals1": 1,
-      "goals2": 0
-    },
-    {
-      "nr": 12,
-      "date": "15.6. klo 05",
-      "group": "F",
-      "team1": "Ruotsi",
-      "team2": "Tunisia",
-      "goals1": 5,
-      "goals2": 1
-    },
     {
       "nr": 14,
       "date": "15.6. klo 19",
@@ -44,6 +26,24 @@
       "team2": "Egypti",
       "goals1": 1,
       "goals2": 1
+    },
+    {
+      "nr": 13,
+      "date": "16.6. klo 01",
+      "group": "H",
+      "team1": "Saudi-Arabia",
+      "team2": "Uruguay",
+      "goals1": 1,
+      "goals2": 1
+    },
+    {
+      "nr": 15,
+      "date": "16.6. klo 04",
+      "group": "G",
+      "team1": "Iran",
+      "team2": "Uusi-Seelanti",
+      "goals1": 2,
+      "goals2": 2
     }
   ],
   "leaderboardTop": [
@@ -121,14 +121,25 @@
   "last3MatchesAnalysis": {
     "matches": [
       {
-        "nr": 14,
-        "date": "15.6. klo 19",
+        "nr": 16,
+        "date": "15.6. klo 22",
+        "group": "G",
+        "team1": "Belgia",
+        "team2": "Egypti",
+        "goals1": 1,
+        "goals2": 1,
+        "resultText": "1-1",
+        "hasResult": true
+      },
+      {
+        "nr": 13,
+        "date": "16.6. klo 01",
         "group": "H",
-        "team1": "Espanja",
-        "team2": "Kap Verde",
-        "goals1": 0,
-        "goals2": 0,
-        "resultText": "0-0",
+        "team1": "Saudi-Arabia",
+        "team2": "Uruguay",
+        "goals1": 1,
+        "goals2": 1,
+        "resultText": "1-1",
         "hasResult": true
       },
       {
@@ -141,17 +152,6 @@
         "goals2": 2,
         "resultText": "2-2",
         "hasResult": true
-      },
-      {
-        "nr": 16,
-        "date": "15.6. klo 22",
-        "group": "G",
-        "team1": "Belgia",
-        "team2": "Egypti",
-        "goals1": 1,
-        "goals2": 1,
-        "resultText": "1-1",
-        "hasResult": true
       }
     ],
     "participantPoints": [
@@ -159,19 +159,28 @@
         "name": "Kiiskiministeri",
         "rankNow": 1,
         "totalPointsNow": 41,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 2,
-        "rankChange": 1,
-        "exactResultsInWindow": 1,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 3,
+        "rankChange": 2,
+        "exactResultsInWindow": 2,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 15,
@@ -181,15 +190,6 @@
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
@@ -197,19 +197,28 @@
         "name": "Minkário de Souza Faria",
         "rankNow": 2,
         "totalPointsNow": 37,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 3,
-        "rankChange": 1,
-        "exactResultsInWindow": 1,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 8,
+        "rankChange": 6,
+        "exactResultsInWindow": 2,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "4-0",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 15,
@@ -219,13 +228,118 @@
             "predictedResultText": "2-2",
             "points": 6,
             "exactResult": true
-          },
+          }
+        ]
+      },
+      {
+        "name": "Sedu",
+        "rankNow": 8,
+        "totalPointsNow": 30,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 18,
+        "rankChange": 10,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
           {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
-            "predictedResultText": "4-0",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Nipa",
+        "rankNow": 22,
+        "totalPointsNow": 21,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 46,
+        "rankChange": 24,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Mike Salmon",
+        "rankNow": 3,
+        "totalPointsNow": 36,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -2,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           }
@@ -236,16 +350,25 @@
         "rankNow": 3,
         "totalPointsNow": 36,
         "pointsInWindow": 6,
-        "rankBeforeWindow": 4,
-        "rankChange": 1,
+        "rankBeforeWindow": 1,
+        "rankChange": -2,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "6-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-4",
             "points": 0,
             "exactResult": false
           },
@@ -257,15 +380,6 @@
             "predictedResultText": "2-2",
             "points": 6,
             "exactResult": true
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -274,16 +388,25 @@
         "rankNow": 5,
         "totalPointsNow": 35,
         "pointsInWindow": 6,
-        "rankBeforeWindow": 5,
-        "rankChange": 0,
+        "rankBeforeWindow": 3,
+        "rankChange": -2,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-1",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -295,15 +418,6 @@
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
@@ -312,16 +426,25 @@
         "rankNow": 6,
         "totalPointsNow": 33,
         "pointsInWindow": 6,
-        "rankBeforeWindow": 8,
-        "rankChange": 2,
+        "rankBeforeWindow": 6,
+        "rankChange": 0,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "5-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -333,53 +456,6 @@
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Sedu",
-        "rankNow": 8,
-        "totalPointsNow": 30,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 12,
-        "rankChange": 4,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
@@ -388,16 +464,25 @@
         "rankNow": 8,
         "totalPointsNow": 30,
         "pointsInWindow": 6,
-        "rankBeforeWindow": 12,
-        "rankChange": 4,
+        "rankBeforeWindow": 11,
+        "rankChange": 3,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "6-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
           },
@@ -409,15 +494,82 @@
             "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
-          },
+          }
+        ]
+      },
+      {
+        "name": "Sanukka",
+        "rankNow": 12,
+        "totalPointsNow": 25,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 27,
+        "rankChange": 15,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
           {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
             "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Neyney",
+        "rankNow": 22,
+        "totalPointsNow": 21,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 35,
+        "rankChange": 13,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
@@ -426,16 +578,25 @@
         "rankNow": 7,
         "totalPointsNow": 31,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 6,
-        "rankChange": -1,
+        "rankBeforeWindow": 5,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "6-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
           },
@@ -447,15 +608,6 @@
             "predictedResultText": "1-1",
             "points": 3,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -464,16 +616,25 @@
         "rankNow": 10,
         "totalPointsNow": 29,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 9,
-        "rankChange": -1,
+        "rankBeforeWindow": 7,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-1",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -485,13 +646,42 @@
             "predictedResultText": "0-0",
             "points": 3,
             "exactResult": false
-          },
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 11,
+        "totalPointsNow": 28,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 8,
+        "rankChange": -3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
           {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
-            "predictedResultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -502,16 +692,25 @@
         "rankNow": 15,
         "totalPointsNow": 23,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 23,
-        "rankChange": 8,
+        "rankBeforeWindow": 21,
+        "rankChange": 6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -522,15 +721,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -540,54 +730,25 @@
         "rankNow": 17,
         "totalPointsNow": 22,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 29,
-        "rankChange": 12,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Nipa",
-        "rankNow": 22,
-        "totalPointsNow": 21,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 32,
+        "rankBeforeWindow": 27,
         "rankChange": 10,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "2-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -598,15 +759,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -616,16 +768,25 @@
         "rankNow": 33,
         "totalPointsNow": 18,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 38,
-        "rankChange": 5,
+        "rankBeforeWindow": 35,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -636,15 +797,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -654,16 +806,25 @@
         "rankNow": 36,
         "totalPointsNow": 17,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 41,
-        "rankChange": 5,
+        "rankBeforeWindow": 39,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -675,13 +836,42 @@
             "predictedResultText": "1-1",
             "points": 3,
             "exactResult": false
-          },
+          }
+        ]
+      },
+      {
+        "name": "Sipolovic",
+        "rankNow": 36,
+        "totalPointsNow": 17,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 39,
+        "rankChange": 3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
           {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
-            "predictedResultText": "2-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -692,16 +882,25 @@
         "rankNow": 40,
         "totalPointsNow": 15,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 47,
-        "rankChange": 7,
+        "rankBeforeWindow": 46,
+        "rankChange": 6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "6-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -713,91 +912,6 @@
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-2",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Mike Salmon",
-        "rankNow": 3,
-        "totalPointsNow": 36,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 1,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Teo ja Noel",
-        "rankNow": 11,
-        "totalPointsNow": 28,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 6,
-        "rankChange": -5,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -806,16 +920,25 @@
         "rankNow": 12,
         "totalPointsNow": 25,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 10,
-        "rankChange": -2,
+        "rankBeforeWindow": 8,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -825,53 +948,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sanukka",
-        "rankNow": 12,
-        "totalPointsNow": 25,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 10,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -882,16 +958,25 @@
         "rankNow": 14,
         "totalPointsNow": 24,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 12,
-        "rankChange": -2,
+        "rankBeforeWindow": 11,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -901,15 +986,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           }
@@ -920,16 +996,25 @@
         "rankNow": 15,
         "totalPointsNow": 23,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 15,
-        "rankChange": 0,
+        "rankBeforeWindow": 13,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -941,15 +1026,6 @@
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -958,16 +1034,25 @@
         "rankNow": 17,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 16,
-        "rankChange": -1,
+        "rankBeforeWindow": 14,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -977,15 +1062,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -996,16 +1072,25 @@
         "rankNow": 17,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 16,
-        "rankChange": -1,
+        "rankBeforeWindow": 14,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -1017,15 +1102,6 @@
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1034,16 +1110,25 @@
         "rankNow": 17,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 16,
-        "rankChange": -1,
+        "rankBeforeWindow": 14,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1053,15 +1138,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -1072,28 +1148,10 @@
         "rankNow": 17,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 16,
-        "rankChange": -1,
+        "rankBeforeWindow": 14,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "6-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
           {
             "matchNr": 16,
             "team1": "Belgia",
@@ -1102,24 +1160,13 @@
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Neyney",
-        "rankNow": 22,
-        "totalPointsNow": 21,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 20,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
+          },
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-4",
             "points": 0,
             "exactResult": false
           },
@@ -1128,15 +1175,6 @@
             "team1": "Iran",
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1148,16 +1186,25 @@
         "rankNow": 22,
         "totalPointsNow": 21,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 20,
-        "rankChange": -2,
+        "rankBeforeWindow": 18,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -1167,15 +1214,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -1186,16 +1224,25 @@
         "rankNow": 22,
         "totalPointsNow": 21,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 20,
-        "rankChange": -2,
+        "rankBeforeWindow": 18,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "5-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1207,15 +1254,6 @@
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-2",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1224,16 +1262,25 @@
         "rankNow": 26,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 23,
-        "rankChange": -3,
+        "rankBeforeWindow": 21,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -1243,15 +1290,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -1262,16 +1300,25 @@
         "rankNow": 26,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 23,
-        "rankChange": -3,
+        "rankBeforeWindow": 21,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "5-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -1283,15 +1330,6 @@
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1300,16 +1338,25 @@
         "rankNow": 26,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 23,
-        "rankChange": -3,
+        "rankBeforeWindow": 21,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -1321,15 +1368,6 @@
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1338,16 +1376,25 @@
         "rankNow": 26,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 23,
-        "rankChange": -3,
+        "rankBeforeWindow": 21,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1357,15 +1404,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -1376,16 +1414,25 @@
         "rankNow": 26,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 23,
-        "rankChange": -3,
+        "rankBeforeWindow": 21,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "6-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1395,15 +1442,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -1414,16 +1452,25 @@
         "rankNow": 31,
         "totalPointsNow": 19,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 29,
-        "rankChange": -2,
+        "rankBeforeWindow": 27,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1435,15 +1482,6 @@
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1452,16 +1490,25 @@
         "rankNow": 31,
         "totalPointsNow": 19,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 29,
-        "rankChange": -2,
+        "rankBeforeWindow": 27,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-1",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -1471,15 +1518,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           }
@@ -1490,16 +1528,25 @@
         "rankNow": 33,
         "totalPointsNow": 18,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 32,
-        "rankChange": -1,
+        "rankBeforeWindow": 31,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
           },
@@ -1508,15 +1555,6 @@
             "team1": "Iran",
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -1528,16 +1566,25 @@
         "rankNow": 33,
         "totalPointsNow": 18,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 32,
-        "rankChange": -1,
+        "rankBeforeWindow": 31,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1547,15 +1594,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -1566,16 +1604,25 @@
         "rankNow": 36,
         "totalPointsNow": 17,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 35,
-        "rankChange": -1,
+        "rankBeforeWindow": 33,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -1584,15 +1631,6 @@
             "team1": "Iran",
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -1604,16 +1642,25 @@
         "rankNow": 36,
         "totalPointsNow": 17,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 35,
-        "rankChange": -1,
+        "rankBeforeWindow": 33,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -1623,53 +1670,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sipolovic",
-        "rankNow": 36,
-        "totalPointsNow": 17,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 35,
-        "rankChange": -1,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -1680,16 +1680,25 @@
         "rankNow": 40,
         "totalPointsNow": 15,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 38,
-        "rankChange": -2,
+        "rankBeforeWindow": 35,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1701,15 +1710,6 @@
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1718,16 +1718,25 @@
         "rankNow": 40,
         "totalPointsNow": 15,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 38,
-        "rankChange": -2,
+        "rankBeforeWindow": 35,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1739,15 +1748,6 @@
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1756,16 +1756,25 @@
         "rankNow": 43,
         "totalPointsNow": 14,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 41,
-        "rankChange": -2,
+        "rankBeforeWindow": 39,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "2-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -1777,15 +1786,6 @@
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -1794,16 +1794,25 @@
         "rankNow": 43,
         "totalPointsNow": 14,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 41,
-        "rankChange": -2,
+        "rankBeforeWindow": 39,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "5-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -1813,15 +1822,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
           }
@@ -1832,16 +1832,25 @@
         "rankNow": 43,
         "totalPointsNow": 14,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 41,
-        "rankChange": -2,
+        "rankBeforeWindow": 39,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
           },
@@ -1851,15 +1860,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
           }
@@ -1870,16 +1870,25 @@
         "rankNow": 43,
         "totalPointsNow": 14,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 41,
-        "rankChange": -2,
+        "rankBeforeWindow": 39,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           },
@@ -1889,15 +1898,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-2",
             "points": 0,
             "exactResult": false
           }
@@ -1908,16 +1908,25 @@
         "rankNow": 43,
         "totalPointsNow": 14,
         "pointsInWindow": 0,
-        "rankBeforeWindow": 41,
-        "rankChange": -2,
+        "rankBeforeWindow": 39,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
           },
@@ -1927,15 +1936,6 @@
             "team2": "Uusi-Seelanti",
             "resultText": "2-2",
             "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -1951,11 +1951,20 @@
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -1967,15 +1976,6 @@
             "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
           }
         ]
       }
@@ -1983,26 +1983,26 @@
     "topPerformers": [
       {
         "name": "Kiiskiministeri",
-        "pointsInWindow": 6,
-        "exactResultsInWindow": 1
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
       },
       {
         "name": "Minkário de Souza Faria",
-        "pointsInWindow": 6,
+        "pointsInWindow": 12,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "Sedu",
+        "pointsInWindow": 9,
         "exactResultsInWindow": 1
       },
       {
-        "name": "LegendaryLebu",
-        "pointsInWindow": 6,
+        "name": "Nipa",
+        "pointsInWindow": 9,
         "exactResultsInWindow": 1
       },
       {
-        "name": "Shampoo",
-        "pointsInWindow": 6,
-        "exactResultsInWindow": 1
-      },
-      {
-        "name": "Drent",
+        "name": "Mike Salmon",
         "pointsInWindow": 6,
         "exactResultsInWindow": 1
       }
@@ -2016,11 +2016,46 @@
         "actual": "1-1"
       },
       {
+        "name": "Kiiskiministeri",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
         "name": "Minkário de Souza Faria",
         "matchNr": 15,
         "match": "Iran–Uusi-Seelanti",
         "guess": "2-2",
         "actual": "2-2"
+      },
+      {
+        "name": "Sedu",
+        "matchNr": 16,
+        "match": "Belgia–Egypti",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Nipa",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Mike Salmon",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
+        "guess": "1-1",
+        "actual": "1-1"
       },
       {
         "name": "LegendaryLebu",
@@ -2044,112 +2079,104 @@
         "actual": "1-1"
       },
       {
-        "name": "Sedu",
+        "name": "Chica",
         "matchNr": 16,
         "match": "Belgia–Egypti",
         "guess": "1-1",
         "actual": "1-1"
       },
       {
-        "name": "Chica",
-        "matchNr": 16,
-        "match": "Belgia–Egypti",
+        "name": "Sanukka",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Neyney",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
         "guess": "1-1",
         "actual": "1-1"
       }
     ],
     "biggestRisers": [
       {
-        "name": "ArtsiKerho",
-        "rankBeforeWindow": 29,
-        "rankNow": 17,
-        "rankChange": 12,
-        "pointsInWindow": 3
-      },
-      {
         "name": "Nipa",
-        "rankBeforeWindow": 32,
+        "rankBeforeWindow": 46,
         "rankNow": 22,
+        "rankChange": 24,
+        "pointsInWindow": 9
+      },
+      {
+        "name": "Sanukka",
+        "rankBeforeWindow": 27,
+        "rankNow": 12,
+        "rankChange": 15,
+        "pointsInWindow": 6
+      },
+      {
+        "name": "Neyney",
+        "rankBeforeWindow": 35,
+        "rankNow": 22,
+        "rankChange": 13,
+        "pointsInWindow": 6
+      },
+      {
+        "name": "Sedu",
+        "rankBeforeWindow": 18,
+        "rankNow": 8,
         "rankChange": 10,
-        "pointsInWindow": 3
+        "pointsInWindow": 9
       },
       {
-        "name": "Carey Lily",
-        "rankBeforeWindow": 23,
-        "rankNow": 15,
-        "rankChange": 8,
-        "pointsInWindow": 3
-      },
-      {
-        "name": "Tuna",
-        "rankBeforeWindow": 47,
-        "rankNow": 40,
-        "rankChange": 7,
-        "pointsInWindow": 3
-      },
-      {
-        "name": "Ian Rush",
-        "rankBeforeWindow": 38,
-        "rankNow": 33,
-        "rankChange": 5,
+        "name": "ArtsiKerho",
+        "rankBeforeWindow": 27,
+        "rankNow": 17,
+        "rankChange": 10,
         "pointsInWindow": 3
       }
     ],
     "biggestFallers": [
       {
-        "name": "Teo ja Noel",
-        "rankBeforeWindow": 6,
-        "rankNow": 11,
+        "name": "Tero H",
+        "rankBeforeWindow": 21,
+        "rankNow": 26,
         "rankChange": -5,
         "pointsInWindow": 0
       },
       {
-        "name": "Tero H",
-        "rankBeforeWindow": 23,
-        "rankNow": 26,
-        "rankChange": -3,
-        "pointsInWindow": 0
-      },
-      {
         "name": "Tomas Brolin",
-        "rankBeforeWindow": 23,
+        "rankBeforeWindow": 21,
         "rankNow": 26,
-        "rankChange": -3,
+        "rankChange": -5,
         "pointsInWindow": 0
       },
       {
         "name": "Heinomar",
-        "rankBeforeWindow": 23,
+        "rankBeforeWindow": 21,
         "rankNow": 26,
-        "rankChange": -3,
+        "rankChange": -5,
         "pointsInWindow": 0
       },
       {
         "name": "Esko",
-        "rankBeforeWindow": 23,
+        "rankBeforeWindow": 21,
         "rankNow": 26,
-        "rankChange": -3,
+        "rankChange": -5,
+        "pointsInWindow": 0
+      },
+      {
+        "name": "Ibaldo de Lima",
+        "rankBeforeWindow": 21,
+        "rankNow": 26,
+        "rankChange": -5,
         "pointsInWindow": 0
       }
     ],
     "zeroPointers": [
       {
-        "name": "Mike Salmon",
-        "rankNow": 3,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Teo ja Noel",
-        "rankNow": 11,
-        "pointsInWindow": 0
-      },
-      {
         "name": "Joni",
-        "rankNow": 12,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Sanukka",
         "rankNow": 12,
         "pointsInWindow": 0
       },
@@ -2181,11 +2208,6 @@
       {
         "name": "Xhakku",
         "rankNow": 17,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Neyney",
-        "rankNow": 22,
         "pointsInWindow": 0
       },
       {
@@ -2250,11 +2272,6 @@
       },
       {
         "name": "Ice Cold",
-        "rankNow": 36,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Sipolovic",
         "rankNow": 36,
         "pointsInWindow": 0
       },
@@ -2321,15 +2338,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -2339,15 +2347,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-2",
-            "points": 6,
-            "exactResult": true
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
@@ -2355,6 +2354,24 @@
             "predictedResultText": "4-0",
             "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-2",
+            "points": 6,
+            "exactResult": true
           }
         ]
       },
@@ -2377,29 +2394,11 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -2411,6 +2410,24 @@
             "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
@@ -2433,15 +2450,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -2451,21 +2459,30 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-1",
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -2489,29 +2506,11 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "5-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           },
@@ -2523,6 +2522,24 @@
             "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
@@ -2545,29 +2562,11 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "4-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
@@ -2579,6 +2578,24 @@
             "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
@@ -2601,20 +2618,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-4",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "6-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-4",
             "points": 0,
             "exactResult": false
           },
@@ -2626,15 +2652,6 @@
             "predictedResultText": "2-2",
             "points": 6,
             "exactResult": true
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
@@ -2657,29 +2674,11 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "6-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
           },
@@ -2691,6 +2690,24 @@
             "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
@@ -2713,15 +2730,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -2731,20 +2739,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -2769,15 +2786,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -2787,20 +2795,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           }
@@ -2825,15 +2842,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -2843,20 +2851,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -2881,29 +2898,11 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           },
@@ -2915,6 +2914,24 @@
             "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
           }
         ]
       },
@@ -2937,20 +2954,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -2961,15 +2987,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -2993,20 +3010,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -3017,15 +3043,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -3049,15 +3066,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3067,19 +3075,28 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
             "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -3105,20 +3122,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "6-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
           },
@@ -3129,15 +3155,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -3161,20 +3178,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -3185,15 +3211,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -3217,20 +3234,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "4-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           },
@@ -3241,15 +3267,6 @@
             "resultText": "2-2",
             "predictedResultText": "0-0",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -3273,15 +3290,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3291,20 +3299,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -3329,15 +3346,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3347,20 +3355,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "3-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -3385,15 +3402,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3403,20 +3411,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -3441,20 +3458,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -3465,15 +3491,6 @@
             "resultText": "2-2",
             "predictedResultText": "1-1",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -3497,15 +3514,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3515,19 +3523,28 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
             "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -3553,15 +3570,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3571,19 +3579,28 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
             "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -3609,29 +3626,11 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "6-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
           },
@@ -3642,6 +3641,24 @@
             "resultText": "1-1",
             "predictedResultText": "2-2",
             "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "0-2",
+            "points": 0,
             "exactResult": false
           }
         ]
@@ -3665,15 +3682,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3683,20 +3691,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -3721,15 +3738,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3739,20 +3747,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           }
@@ -3777,15 +3794,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3795,20 +3803,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -3833,15 +3850,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3851,20 +3859,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -3889,15 +3906,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3907,20 +3915,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -3945,15 +3962,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -3963,20 +3971,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -4001,15 +4018,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4019,20 +4027,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -4057,15 +4074,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4075,20 +4083,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -4113,15 +4130,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4131,20 +4139,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -4169,15 +4186,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4187,20 +4195,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           }
@@ -4225,15 +4242,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4243,20 +4251,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -4281,15 +4298,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4299,20 +4307,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -4337,15 +4354,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4355,20 +4363,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -4393,15 +4410,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-4",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4411,19 +4419,28 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
             "resultText": "1-1",
+            "predictedResultText": "0-4",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4449,15 +4466,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4467,20 +4475,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
           }
@@ -4505,15 +4522,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4523,20 +4531,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -4561,28 +4578,10 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
             "resultText": "0-0",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
@@ -4593,6 +4592,24 @@
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
           }
@@ -4617,15 +4634,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4635,19 +4643,28 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
             "resultText": "1-1",
+            "predictedResultText": "0-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
             "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
@@ -4673,15 +4690,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4691,20 +4699,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -4729,15 +4746,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4747,19 +4755,28 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
           {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
             "resultText": "1-1",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
             "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
@@ -4785,15 +4802,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4803,20 +4811,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -4841,15 +4858,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4859,20 +4867,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "3-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -4897,15 +4914,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4915,20 +4923,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           }
@@ -4953,15 +4970,6 @@
             "exactResult": false
           },
           {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "1-1",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 14,
             "team1": "Espanja",
             "team2": "Kap Verde",
@@ -4971,20 +4979,29 @@
             "exactResult": false
           },
           {
-            "matchNr": 15,
-            "team1": "Iran",
-            "team2": "Uusi-Seelanti",
-            "resultText": "2-2",
-            "predictedResultText": "0-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
             "matchNr": 16,
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 15,
+            "team1": "Iran",
+            "team2": "Uusi-Seelanti",
+            "resultText": "2-2",
+            "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
           }
@@ -5057,6 +5074,6 @@
       }
     ],
     "tightTopComment": "Johtaja pitää 4 pisteen eron seuraavaan.",
-    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (41p). Lähimpänä haastajana on Minkário de Souza Faria (37p, eroa vain 4p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Kiiskiministeri keräten 6p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut ArtsiKerho (+12 sijaa). Eniten sijoitustaan menetti Teo ja Noel (-5 sijaa). Täydellisiä 6 pisteen osumia saivat: Kiiskiministeri (Belgia–Egypti veikkaus 1-1), Minkário de Souza Faria (Iran–Uusi-Seelanti veikkaus 2-2), LegendaryLebu (Iran–Uusi-Seelanti veikkaus 2-2)."
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (41p). Lähimpänä haastajana on Minkário de Souza Faria (37p, eroa vain 4p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Kiiskiministeri keräten 12p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Nipa (+24 sijaa). Eniten sijoitustaan menetti Tero H (-5 sijaa). Täydellisiä 6 pisteen osumia saivat: Kiiskiministeri (Belgia–Egypti veikkaus 1-1), Kiiskiministeri (Saudi-Arabia–Uruguay veikkaus 1-1), Minkário de Souza Faria (Saudi-Arabia–Uruguay veikkaus 1-1)."
   }
 }

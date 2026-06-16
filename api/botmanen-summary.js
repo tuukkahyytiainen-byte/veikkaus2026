@@ -29,8 +29,8 @@ module.exports = async (req, res) => {
             writeFiles: false
         });
 
-        // Disable caching completely for botmanen summary
-        res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0');
+        // Enable Vercel Edge caching for botmanen summary
+        res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=300, stale-while-revalidate=60');
         res.status(200).json(botmanenJson);
     } catch (err) {
         console.error('Serverless error generating Botmanen summary:', err);

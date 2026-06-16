@@ -29,8 +29,8 @@ module.exports = async (req, res) => {
             writeFiles: false
         });
 
-        // Set caching headers to disable caching completely
-        res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0');
+        // Set caching headers to enable Vercel Edge caching
+        res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=300, stale-while-revalidate=60');
         res.setHeader('Content-Type', 'text/html; charset=utf-8');
         res.status(200).send(`<!DOCTYPE html>
 <html>

@@ -57,6 +57,52 @@ const apiTeamNameToFinnish = {
     "croatia": "Kroatia"
 };
 
+function parseMatchDate(dateStr) {
+    if (!dateStr) return 0;
+    
+    // Check if it is in MM/DD/YYYY HH:MM format
+    if (dateStr.includes('/')) {
+        const d = new Date(dateStr);
+        if (!isNaN(d.getTime())) return d.getTime();
+    }
+    
+    // Check if it is in D.M. klo HH format
+    if (dateStr.includes(' klo ')) {
+        const parts = dateStr.split(' klo ');
+        const dateParts = parts[0].split('.');
+        if (dateParts.length >= 2) {
+            const day = parseInt(dateParts[0], 10);
+            const month = parseInt(dateParts[1], 10);
+            const hour = parseInt(parts[1], 10);
+            return new Date(2026, month - 1, day, hour).getTime();
+        }
+    }
+    
+    // Fallback standard Date parsing
+    const d = new Date(dateStr);
+    return isNaN(d.getTime()) ? 0 : d.getTime();
+}
+
+function getLogicalDatePrefix(dateStr) {
+    if (!dateStr) return "";
+    const parts = dateStr.split(' klo ');
+    if (parts.length < 2) return dateStr.split(' ')[0] || "";
+    const dateParts = parts[0].split('.');
+    if (dateParts.length < 2) return dateStr.split(' ')[0] || "";
+    let day = parseInt(dateParts[0], 10);
+    let month = parseInt(dateParts[1], 10);
+    const hour = parseInt(parts[1], 10);
+    
+    // Shift early morning hours (0-6) to the previous day
+    if (hour < 7) {
+        const d = new Date(2026, month - 1, day);
+        d.setDate(d.getDate() - 1);
+        day = d.getDate();
+        month = d.getMonth() + 1;
+    }
+    return `${day}.${month}.`;
+}
+
 function normalizeTeamName(name) {
     if (!name) return "";
     let clean = name.trim().toLowerCase()
@@ -591,11 +637,34 @@ async function fetchLiveApiData() {
 
     // Try primary API (football-data.org) first
     let primarySuccess = false;
+
+    // If running on GitHub Actions, try to fetch from the live Vercel deployment first
+    // to leverage Vercel's geoblocking bypass and caching!
+    if (process.env.GITHUB_ACTIONS === 'true') {
+        try {
+            console.log('[GitHub Actions] Fetching latest live games from production endpoint...');
+            const res = await fetchWithTimeout('https://veikkaus2026.vercel.app/api/live-games', {}, 5000);
+            if (res.ok) {
+                const data = await res.json();
+                if (data && Array.isArray(data.games) && data.games.length > 0) {
+                    console.log(`[GitHub Actions] Successfully retrieved ${data.games.length} games from production.`);
+                    apiGames = data.games;
+                    apiGroups = cachedData ? cachedData.apiGroups : [];
+                    apiTeams = cachedData ? cachedData.apiTeams : [];
+                    primarySuccess = true;
+                }
+            } else {
+                console.warn(`[GitHub Actions] Production endpoint returned HTTP ${res.status}`);
+            }
+        } catch (e) {
+            console.warn('[GitHub Actions] Production endpoint fetch failed, falling back to direct APIs:', e.message);
+        }
+    }
     
     // Check 1-minute caching threshold for football-data.org to avoid rate limits
     const now = Date.now();
     let useCache = false;
-    if (cachedData && cachedData.footballDataLastFetched) {
+    if (!primarySuccess && cachedData && cachedData.footballDataLastFetched) {
         const elapsedMs = now - cachedData.footballDataLastFetched;
         if (elapsedMs < 60000) {
             console.log(`[Cache] Using cached football-data.org results (fetched ${Math.round(elapsedMs / 1000)}s ago).`);
@@ -609,7 +678,7 @@ async function fetchLiveApiData() {
 
     // Retrieve token
     const token = process.env.FOOTBALL_DATA_API_KEY || process.env.FOOTBALL_DATA_TOKEN || process.env.FOOTBALL_DATA_API_TOKEN || "a07d5072049f468aa1425c0e32451068";
-    if (token) {
+    if (!primarySuccess && token) {
         try {
             console.log('Fetching live matches from football-data.org...');
             const fdRes = await fetchWithTimeout('https://api.football-data.org/v4/competitions/WC/matches', {
@@ -1040,7 +1109,7 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
     const currentLeaderboard = calculateLeaderboard(matches, actualStandings, actualFinalists, actual34, workbook);
 
     // 5. Calculate Windows (V2 schema)
-    const playedMatches = matches.filter(m => m.hasResult).sort((a, b) => a.nr - b.nr);
+    const playedMatches = matches.filter(m => m.hasResult).sort((a, b) => parseMatchDate(a.date) - parseMatchDate(b.date) || a.nr - b.nr);
     let lastMatchWindow = { matches: [], participantPoints: [] };
     let last3MatchesWindow = { matches: [], participantPoints: [] };
     let last5MatchesWindow = { matches: [], participantPoints: [] };
@@ -1059,8 +1128,8 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
 
         const startIdx = Math.max(0, playedMatches.length - windowSize);
         const subMatchesInWindow = playedMatches.slice(startIdx);
-        const startMatch = subMatchesInWindow[0];
-        const leaderboardBefore = getLeaderboardAtState(startMatch.nr - 1, matches, textResults, workbook);
+        const minMatchNr = Math.min(...subMatchesInWindow.map(m => m.nr));
+        const leaderboardBefore = getLeaderboardAtState(minMatchNr - 1, matches, textResults, workbook);
 
         const matchesSummary = subMatchesInWindow.map(m => ({
             nr: m.nr,
@@ -1134,8 +1203,8 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
     const buildV2WindowForDate = (dateMatches) => {
         if (dateMatches.length === 0) return { matches: [], participantPoints: [] };
         
-        const startMatch = dateMatches[0];
-        const leaderboardBefore = getLeaderboardAtState(startMatch.nr - 1, matches, textResults, workbook);
+        const minMatchNr = Math.min(...dateMatches.map(m => m.nr));
+        const leaderboardBefore = getLeaderboardAtState(minMatchNr - 1, matches, textResults, workbook);
 
         const matchesSummary = dateMatches.map(m => ({
             nr: m.nr,
@@ -1324,8 +1393,14 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
         last3MatchesWindow = buildV2Window(3);
         last5MatchesWindow = buildV2Window(5);
 
-        const latestDatePrefix = L.date.split(' ')[0];
-        const dateMatches = playedMatches.filter(m => m.date.startsWith(latestDatePrefix));
+        let dateMatches = [];
+        const latestDayConfig = reportingDays.find(d => d.matches.includes(summaryLastMatchNr));
+        if (latestDayConfig) {
+            dateMatches = playedMatches.filter(m => latestDayConfig.matches.includes(m.nr));
+        } else {
+            const latestDatePrefix = L.date.split(' ')[0];
+            dateMatches = playedMatches.filter(m => m.date.startsWith(latestDatePrefix));
+        }
         latestDateWindow = buildV2WindowForDate(dateMatches);
 
         currentReportingDay = reportingDays.find(d => d.matches.includes(summaryLastMatchNr));
@@ -1710,20 +1785,27 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
     const latestPlayedMatches = [];
     if (playedMatches.length > 0) {
         const L = playedMatches[playedMatches.length - 1];
-        const latestDatePrefix = L.date.split(' ')[0];
-        playedMatches
-            .filter(m => m.date.startsWith(latestDatePrefix))
-            .forEach(m => {
-                latestPlayedMatches.push({
-                    nr: m.nr,
-                    date: m.date,
-                    group: m.group,
-                    team1: m.team1,
-                    team2: m.team2,
-                    goals1: m.goals1,
-                    goals2: m.goals2
-                });
+        const latestDayConfig = reportingDays.find(d => d.matches.includes(L.nr));
+        
+        let filteredMatches = [];
+        if (latestDayConfig) {
+            filteredMatches = playedMatches.filter(m => latestDayConfig.matches.includes(m.nr));
+        } else {
+            const latestDatePrefix = L.date.split(' ')[0];
+            filteredMatches = playedMatches.filter(m => m.date.startsWith(latestDatePrefix));
+        }
+        
+        filteredMatches.forEach(m => {
+            latestPlayedMatches.push({
+                nr: m.nr,
+                date: m.date,
+                group: m.group,
+                team1: m.team1,
+                team2: m.team2,
+                goals1: m.goals1,
+                goals2: m.goals2
             });
+        });
     }
 
     const leaderboardTop = currentLeaderboard.slice(0, 10).map(p => ({
