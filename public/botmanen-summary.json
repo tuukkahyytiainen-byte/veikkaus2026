@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-15T22:19:58.252Z",
+  "generatedAt": "2026-06-16T00:10:24.501Z",
   "summary": {
     "playedMatchesCount": 15,
     "totalMatches": 72,
@@ -50,54 +50,54 @@
     {
       "rank": 1,
       "name": "Kiiskiministeri",
-      "totalPoints": 38,
-      "matchPoints": 38,
-      "exactlyCorrect": 4
+      "totalPoints": 41,
+      "matchPoints": 41,
+      "exactlyCorrect": 5
     },
     {
       "rank": 2,
+      "name": "Mike Salmon",
+      "totalPoints": 36,
+      "matchPoints": 36,
+      "exactlyCorrect": 4
+    },
+    {
+      "rank": 3,
       "name": "Shampoo",
       "totalPoints": 35,
       "matchPoints": 35,
       "exactlyCorrect": 3
     },
     {
-      "rank": 3,
-      "name": "Sedu",
-      "totalPoints": 33,
-      "matchPoints": 33,
-      "exactlyCorrect": 4
-    },
-    {
-      "rank": 3,
+      "rank": 4,
       "name": "Drent",
       "totalPoints": 33,
       "matchPoints": 33,
       "exactlyCorrect": 3
     },
     {
-      "rank": 3,
-      "name": "Mike Salmon",
-      "totalPoints": 33,
-      "matchPoints": 33,
+      "rank": 5,
+      "name": "Minkário de Souza Faria",
+      "totalPoints": 31,
+      "matchPoints": 31,
       "exactlyCorrect": 3
     },
     {
       "rank": 6,
-      "name": "Teo ja Noel",
-      "totalPoints": 31,
-      "matchPoints": 31,
-      "exactlyCorrect": 1
+      "name": "Sedu",
+      "totalPoints": 30,
+      "matchPoints": 30,
+      "exactlyCorrect": 3
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "Chica",
       "totalPoints": 30,
       "matchPoints": 30,
       "exactlyCorrect": 2
     },
     {
-      "rank": 7,
+      "rank": 6,
       "name": "LegendaryLebu",
       "totalPoints": 30,
       "matchPoints": 30,
@@ -112,10 +112,10 @@
     },
     {
       "rank": 9,
-      "name": "Minkário de Souza Faria",
+      "name": "Teo ja Noel",
       "totalPoints": 28,
       "matchPoints": 28,
-      "exactlyCorrect": 2
+      "exactlyCorrect": 0
     }
   ],
   "last3MatchesAnalysis": {
@@ -126,9 +126,9 @@
         "group": "H",
         "team1": "Saudi-Arabia",
         "team2": "Uruguay",
-        "goals1": 0,
-        "goals2": 0,
-        "resultText": "0-0",
+        "goals1": 1,
+        "goals2": 1,
+        "resultText": "1-1",
         "hasResult": true
       },
       {
@@ -156,60 +156,22 @@
     ],
     "participantPoints": [
       {
-        "name": "Sedu",
-        "rankNow": 3,
-        "totalPointsNow": 33,
+        "name": "Kiiskiministeri",
+        "rankNow": 1,
+        "totalPointsNow": 41,
         "pointsInWindow": 12,
-        "rankBeforeWindow": 18,
-        "rankChange": 15,
+        "rankBeforeWindow": 3,
+        "rankChange": 2,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "0-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
             "resultText": "1-1",
             "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Kiiskiministeri",
-        "rankNow": 1,
-        "totalPointsNow": 38,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 3,
-        "rankChange": 2,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
           },
           {
             "matchNr": 14,
@@ -232,19 +194,95 @@
         ]
       },
       {
-        "name": "Shampoo",
-        "rankNow": 2,
-        "totalPointsNow": 35,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 3,
-        "rankChange": 1,
+        "name": "Sedu",
+        "rankNow": 6,
+        "totalPointsNow": 30,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 18,
+        "rankChange": 12,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
             "resultText": "0-0",
+            "predictedResultText": "4-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Mike Salmon",
+        "rankNow": 2,
+        "totalPointsNow": 36,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 1,
+        "rankChange": -1,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
+            "resultText": "0-0",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Shampoo",
+        "rankNow": 3,
+        "totalPointsNow": 35,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 3,
+        "rankChange": 0,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -271,18 +309,18 @@
       },
       {
         "name": "Drent",
-        "rankNow": 3,
+        "rankNow": 4,
         "totalPointsNow": 33,
         "pointsInWindow": 6,
         "rankBeforeWindow": 6,
-        "rankChange": 3,
+        "rankChange": 2,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -308,20 +346,20 @@
         ]
       },
       {
-        "name": "Teo ja Noel",
-        "rankNow": 6,
+        "name": "Minkário de Souza Faria",
+        "rankNow": 5,
         "totalPointsNow": 31,
         "pointsInWindow": 6,
         "rankBeforeWindow": 8,
-        "rankChange": 2,
+        "rankChange": 3,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "0-0",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
           },
@@ -339,7 +377,7 @@
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
-            "predictedResultText": "1-0",
+            "predictedResultText": "4-0",
             "points": 0,
             "exactResult": false
           }
@@ -347,18 +385,18 @@
       },
       {
         "name": "Chica",
-        "rankNow": 7,
+        "rankNow": 6,
         "totalPointsNow": 30,
         "pointsInWindow": 6,
         "rankBeforeWindow": 11,
-        "rankChange": 4,
+        "rankChange": 5,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
@@ -384,136 +422,22 @@
         ]
       },
       {
-        "name": "Sipolovic",
-        "rankNow": 22,
-        "totalPointsNow": 20,
+        "name": "Sanukka",
+        "rankNow": 12,
+        "totalPointsNow": 25,
         "pointsInWindow": 6,
-        "rankBeforeWindow": 39,
-        "rankChange": 17,
+        "rankBeforeWindow": 27,
+        "rankChange": 15,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "0-0",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Mike Salmon",
-        "rankNow": 3,
-        "totalPointsNow": 33,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 1,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Minkário de Souza Faria",
-        "rankNow": 9,
-        "totalPointsNow": 28,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 8,
-        "rankChange": -1,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sanukka",
-        "rankNow": 15,
-        "totalPointsNow": 22,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 27,
-        "rankChange": 12,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
           },
           {
             "matchNr": 14,
@@ -537,21 +461,21 @@
       },
       {
         "name": "Neyney",
-        "rankNow": 32,
-        "totalPointsNow": 18,
-        "pointsInWindow": 3,
+        "rankNow": 20,
+        "totalPointsNow": 21,
+        "pointsInWindow": 6,
         "rankBeforeWindow": 35,
-        "rankChange": 3,
-        "exactResultsInWindow": 0,
+        "rankChange": 15,
+        "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 14,
@@ -575,21 +499,21 @@
       },
       {
         "name": "Nipa",
-        "rankNow": 37,
-        "totalPointsNow": 15,
-        "pointsInWindow": 3,
+        "rankNow": 32,
+        "totalPointsNow": 18,
+        "pointsInWindow": 6,
         "rankBeforeWindow": 46,
-        "rankChange": 9,
-        "exactResultsInWindow": 0,
+        "rankChange": 14,
+        "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 14,
@@ -612,19 +536,95 @@
         ]
       },
       {
-        "name": "Tuna",
-        "rankNow": 37,
-        "totalPointsNow": 15,
+        "name": "Teo ja Noel",
+        "rankNow": 9,
+        "totalPointsNow": 28,
         "pointsInWindow": 3,
-        "rankBeforeWindow": 46,
-        "rankChange": 9,
+        "rankBeforeWindow": 8,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
             "resultText": "0-0",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sipolovic",
+        "rankNow": 35,
+        "totalPointsNow": 17,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 39,
+        "rankChange": 4,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
+            "resultText": "0-0",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuna",
+        "rankNow": 38,
+        "totalPointsNow": 15,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 46,
+        "rankChange": 8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -651,18 +651,18 @@
       },
       {
         "name": "LegendaryLebu",
-        "rankNow": 7,
+        "rankNow": 6,
         "totalPointsNow": 30,
         "pointsInWindow": 0,
         "rankBeforeWindow": 1,
-        "rankChange": -6,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-4",
             "points": 0,
             "exactResult": false
@@ -700,7 +700,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
@@ -738,7 +738,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -776,7 +776,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -803,18 +803,18 @@
       },
       {
         "name": "Tommy Favorite",
-        "rankNow": 13,
+        "rankNow": 14,
         "totalPointsNow": 24,
         "pointsInWindow": 0,
         "rankBeforeWindow": 11,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -841,18 +841,18 @@
       },
       {
         "name": "Repetti",
-        "rankNow": 14,
+        "rankNow": 15,
         "totalPointsNow": 23,
         "pointsInWindow": 0,
         "rankBeforeWindow": 13,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -879,18 +879,18 @@
       },
       {
         "name": "IlkkuPro75",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
         "rankBeforeWindow": 14,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -917,18 +917,18 @@
       },
       {
         "name": "Johnny Rotten",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
         "rankBeforeWindow": 14,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -955,18 +955,18 @@
       },
       {
         "name": "Temezotti",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
         "rankBeforeWindow": 14,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -993,18 +993,18 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
         "rankBeforeWindow": 14,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-4",
             "points": 0,
             "exactResult": false
@@ -1042,7 +1042,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -1080,7 +1080,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1107,18 +1107,18 @@
       },
       {
         "name": "Carey Lily",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1145,18 +1145,18 @@
       },
       {
         "name": "Tero H",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -1183,18 +1183,18 @@
       },
       {
         "name": "Tomas Brolin",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -1221,18 +1221,18 @@
       },
       {
         "name": "Heinomar",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1259,18 +1259,18 @@
       },
       {
         "name": "Esko",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1297,18 +1297,18 @@
       },
       {
         "name": "Ibaldo de Lima",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1346,7 +1346,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1384,7 +1384,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1422,7 +1422,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1460,7 +1460,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
@@ -1498,7 +1498,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1536,7 +1536,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -1574,7 +1574,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1601,18 +1601,18 @@
       },
       {
         "name": "Jossu",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 15,
         "pointsInWindow": 0,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1639,18 +1639,18 @@
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 15,
         "pointsInWindow": 0,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1677,18 +1677,18 @@
       },
       {
         "name": "Ian Rush",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 15,
         "pointsInWindow": 0,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1726,7 +1726,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1764,7 +1764,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1802,7 +1802,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1840,7 +1840,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
@@ -1878,7 +1878,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1916,7 +1916,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
@@ -1954,7 +1954,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -1982,13 +1982,18 @@
     ],
     "topPerformers": [
       {
-        "name": "Sedu",
+        "name": "Kiiskiministeri",
         "pointsInWindow": 12,
         "exactResultsInWindow": 2
       },
       {
-        "name": "Kiiskiministeri",
+        "name": "Sedu",
         "pointsInWindow": 9,
+        "exactResultsInWindow": 1
+      },
+      {
+        "name": "Mike Salmon",
+        "pointsInWindow": 6,
         "exactResultsInWindow": 1
       },
       {
@@ -1998,22 +2003,24 @@
       },
       {
         "name": "Drent",
-        "pointsInWindow": 6,
-        "exactResultsInWindow": 1
-      },
-      {
-        "name": "Teo ja Noel",
         "pointsInWindow": 6,
         "exactResultsInWindow": 1
       }
     ],
     "perfectScores": [
       {
-        "name": "Sedu",
+        "name": "Kiiskiministeri",
         "matchNr": 13,
         "match": "Saudi-Arabia–Uruguay",
-        "guess": "0-0",
-        "actual": "0-0"
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Kiiskiministeri",
+        "matchNr": 16,
+        "match": "Belgia–Egypti",
+        "guess": "1-1",
+        "actual": "1-1"
       },
       {
         "name": "Sedu",
@@ -2023,9 +2030,9 @@
         "actual": "1-1"
       },
       {
-        "name": "Kiiskiministeri",
-        "matchNr": 16,
-        "match": "Belgia–Egypti",
+        "name": "Mike Salmon",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
         "guess": "1-1",
         "actual": "1-1"
       },
@@ -2044,11 +2051,11 @@
         "actual": "1-1"
       },
       {
-        "name": "Teo ja Noel",
+        "name": "Minkário de Souza Faria",
         "matchNr": 13,
         "match": "Saudi-Arabia–Uruguay",
-        "guess": "0-0",
-        "actual": "0-0"
+        "guess": "1-1",
+        "actual": "1-1"
       },
       {
         "name": "Chica",
@@ -2058,47 +2065,61 @@
         "actual": "1-1"
       },
       {
-        "name": "Sipolovic",
+        "name": "Sanukka",
         "matchNr": 13,
         "match": "Saudi-Arabia–Uruguay",
-        "guess": "0-0",
-        "actual": "0-0"
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Neyney",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
+        "guess": "1-1",
+        "actual": "1-1"
+      },
+      {
+        "name": "Nipa",
+        "matchNr": 13,
+        "match": "Saudi-Arabia–Uruguay",
+        "guess": "1-1",
+        "actual": "1-1"
       }
     ],
     "biggestRisers": [
       {
-        "name": "Sipolovic",
-        "rankBeforeWindow": 39,
-        "rankNow": 22,
-        "rankChange": 17,
+        "name": "Sanukka",
+        "rankBeforeWindow": 27,
+        "rankNow": 12,
+        "rankChange": 15,
+        "pointsInWindow": 6
+      },
+      {
+        "name": "Neyney",
+        "rankBeforeWindow": 35,
+        "rankNow": 20,
+        "rankChange": 15,
+        "pointsInWindow": 6
+      },
+      {
+        "name": "Nipa",
+        "rankBeforeWindow": 46,
+        "rankNow": 32,
+        "rankChange": 14,
         "pointsInWindow": 6
       },
       {
         "name": "Sedu",
         "rankBeforeWindow": 18,
-        "rankNow": 3,
-        "rankChange": 15,
-        "pointsInWindow": 12
-      },
-      {
-        "name": "Sanukka",
-        "rankBeforeWindow": 27,
-        "rankNow": 15,
+        "rankNow": 6,
         "rankChange": 12,
-        "pointsInWindow": 3
-      },
-      {
-        "name": "Nipa",
-        "rankBeforeWindow": 46,
-        "rankNow": 37,
-        "rankChange": 9,
-        "pointsInWindow": 3
+        "pointsInWindow": 9
       },
       {
         "name": "Tuna",
         "rankBeforeWindow": 46,
-        "rankNow": 37,
-        "rankChange": 9,
+        "rankNow": 38,
+        "rankChange": 8,
         "pointsInWindow": 3
       }
     ],
@@ -2106,8 +2127,8 @@
       {
         "name": "LegendaryLebu",
         "rankBeforeWindow": 1,
-        "rankNow": 7,
-        "rankChange": -6,
+        "rankNow": 6,
+        "rankChange": -5,
         "pointsInWindow": 0
       },
       {
@@ -2132,9 +2153,9 @@
         "pointsInWindow": 0
       },
       {
-        "name": "Keto Armstrong",
-        "rankBeforeWindow": 39,
-        "rankNow": 42,
+        "name": "Tommy Favorite",
+        "rankBeforeWindow": 11,
+        "rankNow": 14,
         "rankChange": -3,
         "pointsInWindow": 0
       }
@@ -2142,7 +2163,7 @@
     "zeroPointers": [
       {
         "name": "LegendaryLebu",
-        "rankNow": 7,
+        "rankNow": 6,
         "pointsInWindow": 0
       },
       {
@@ -2162,32 +2183,32 @@
       },
       {
         "name": "Tommy Favorite",
-        "rankNow": 13,
-        "pointsInWindow": 0
-      },
-      {
-        "name": "Repetti",
         "rankNow": 14,
         "pointsInWindow": 0
       },
       {
-        "name": "IlkkuPro75",
+        "name": "Repetti",
         "rankNow": 15,
+        "pointsInWindow": 0
+      },
+      {
+        "name": "IlkkuPro75",
+        "rankNow": 16,
         "pointsInWindow": 0
       },
       {
         "name": "Johnny Rotten",
-        "rankNow": 15,
+        "rankNow": 16,
         "pointsInWindow": 0
       },
       {
         "name": "Temezotti",
-        "rankNow": 15,
+        "rankNow": 16,
         "pointsInWindow": 0
       },
       {
         "name": "Xhakku",
-        "rankNow": 15,
+        "rankNow": 16,
         "pointsInWindow": 0
       },
       {
@@ -2202,32 +2223,32 @@
       },
       {
         "name": "Carey Lily",
-        "rankNow": 22,
+        "rankNow": 23,
         "pointsInWindow": 0
       },
       {
         "name": "Tero H",
-        "rankNow": 22,
+        "rankNow": 23,
         "pointsInWindow": 0
       },
       {
         "name": "Tomas Brolin",
-        "rankNow": 22,
+        "rankNow": 23,
         "pointsInWindow": 0
       },
       {
         "name": "Heinomar",
-        "rankNow": 22,
+        "rankNow": 23,
         "pointsInWindow": 0
       },
       {
         "name": "Esko",
-        "rankNow": 22,
+        "rankNow": 23,
         "pointsInWindow": 0
       },
       {
         "name": "Ibaldo de Lima",
-        "rankNow": 22,
+        "rankNow": 23,
         "pointsInWindow": 0
       },
       {
@@ -2267,17 +2288,17 @@
       },
       {
         "name": "Jossu",
-        "rankNow": 37,
+        "rankNow": 38,
         "pointsInWindow": 0
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 37,
+        "rankNow": 38,
         "pointsInWindow": 0
       },
       {
         "name": "Ian Rush",
-        "rankNow": 37,
+        "rankNow": 38,
         "pointsInWindow": 0
       },
       {
@@ -2322,11 +2343,11 @@
       {
         "name": "Kiiskiministeri",
         "rankNow": 1,
-        "totalPointsNow": 38,
-        "pointsInWindow": 15,
+        "totalPointsNow": 41,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 7,
         "rankChange": 6,
-        "exactResultsInWindow": 2,
+        "exactResultsInWindow": 3,
         "matchPoints": [
           {
             "matchNr": 11,
@@ -2350,10 +2371,10 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 14,
@@ -2376,68 +2397,12 @@
         ]
       },
       {
-        "name": "Sedu",
-        "rankNow": 3,
-        "totalPointsNow": 33,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 15,
-        "rankChange": 12,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "2-2",
-            "predictedResultText": "2-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 12,
-            "team1": "Ruotsi",
-            "team2": "Tunisia",
-            "resultText": "5-1",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "0-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
         "name": "Shampoo",
-        "rankNow": 2,
+        "rankNow": 3,
         "totalPointsNow": 35,
         "pointsInWindow": 9,
         "rankBeforeWindow": 4,
-        "rankChange": 2,
+        "rankChange": 1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2462,7 +2427,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -2489,11 +2454,11 @@
       },
       {
         "name": "Drent",
-        "rankNow": 3,
+        "rankNow": 4,
         "totalPointsNow": 33,
         "pointsInWindow": 9,
         "rankBeforeWindow": 5,
-        "rankChange": 2,
+        "rankChange": 1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2518,7 +2483,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -2544,12 +2509,12 @@
         ]
       },
       {
-        "name": "Teo ja Noel",
-        "rankNow": 6,
+        "name": "Minkário de Souza Faria",
+        "rankNow": 5,
         "totalPointsNow": 31,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 7,
-        "rankChange": 1,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 10,
+        "rankChange": 5,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2557,7 +2522,7 @@
             "team1": "Hollanti",
             "team2": "Japani",
             "resultText": "2-2",
-            "predictedResultText": "2-3",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           },
@@ -2566,16 +2531,16 @@
             "team1": "Ruotsi",
             "team2": "Tunisia",
             "resultText": "5-1",
-            "predictedResultText": "2-0",
-            "points": 2,
+            "predictedResultText": "2-1",
+            "points": 3,
             "exactResult": false
           },
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "0-0",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
           },
@@ -2593,19 +2558,75 @@
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
-            "predictedResultText": "1-0",
+            "predictedResultText": "4-0",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
+        "name": "Sedu",
+        "rankNow": 6,
+        "totalPointsNow": 30,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 15,
+        "rankChange": 9,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "2-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 12,
+            "team1": "Ruotsi",
+            "team2": "Tunisia",
+            "resultText": "5-1",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
+            "resultText": "0-0",
+            "predictedResultText": "4-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
         "name": "Chica",
-        "rankNow": 7,
+        "rankNow": 6,
         "totalPointsNow": 30,
         "pointsInWindow": 8,
         "rankBeforeWindow": 10,
-        "rankChange": 3,
+        "rankChange": 4,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2630,7 +2651,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
@@ -2656,12 +2677,12 @@
         ]
       },
       {
-        "name": "Sipolovic",
-        "rankNow": 22,
-        "totalPointsNow": 20,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 34,
-        "rankChange": 12,
+        "name": "Neyney",
+        "rankNow": 20,
+        "totalPointsNow": 21,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 39,
+        "rankChange": 19,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2678,16 +2699,72 @@
             "team1": "Ruotsi",
             "team2": "Tunisia",
             "resultText": "5-1",
-            "predictedResultText": "0-0",
-            "points": 0,
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           },
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
             "resultText": "0-0",
-            "predictedResultText": "0-0",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Mike Salmon",
+        "rankNow": 2,
+        "totalPointsNow": 36,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 1,
+        "rankChange": -1,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 12,
+            "team1": "Ruotsi",
+            "team2": "Tunisia",
+            "resultText": "5-1",
+            "predictedResultText": "1-0",
+            "points": 1,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
             "points": 6,
             "exactResult": true
           },
@@ -2705,7 +2782,119 @@
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sanukka",
+        "rankNow": 12,
+        "totalPointsNow": 25,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 22,
+        "rankChange": 10,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 12,
+            "team1": "Ruotsi",
+            "team2": "Tunisia",
+            "resultText": "5-1",
             "predictedResultText": "1-0",
+            "points": 1,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
+            "resultText": "0-0",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Nipa",
+        "rankNow": 32,
+        "totalPointsNow": 18,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 46,
+        "rankChange": 14,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 12,
+            "team1": "Ruotsi",
+            "team2": "Tunisia",
+            "resultText": "5-1",
+            "predictedResultText": "1-0",
+            "points": 1,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
+            "resultText": "0-0",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           }
@@ -2742,7 +2931,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -2768,12 +2957,12 @@
         ]
       },
       {
-        "name": "Minkário de Souza Faria",
+        "name": "Teo ja Noel",
         "rankNow": 9,
         "totalPointsNow": 28,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 10,
-        "rankChange": 1,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 7,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2781,7 +2970,7 @@
             "team1": "Hollanti",
             "team2": "Japani",
             "resultText": "2-2",
-            "predictedResultText": "1-0",
+            "predictedResultText": "2-3",
             "points": 0,
             "exactResult": false
           },
@@ -2790,16 +2979,16 @@
             "team1": "Ruotsi",
             "team2": "Tunisia",
             "resultText": "5-1",
-            "predictedResultText": "2-1",
-            "points": 3,
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           },
           {
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
             "points": 3,
             "exactResult": false
           },
@@ -2817,7 +3006,7 @@
             "team1": "Belgia",
             "team2": "Egypti",
             "resultText": "1-1",
-            "predictedResultText": "4-0",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -2825,11 +3014,11 @@
       },
       {
         "name": "Esko",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 5,
         "rankBeforeWindow": 32,
-        "rankChange": 10,
+        "rankChange": 9,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2854,7 +3043,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -2865,230 +3054,6 @@
             "team2": "Kap Verde",
             "resultText": "0-0",
             "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Neyney",
-        "rankNow": 32,
-        "totalPointsNow": 18,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 39,
-        "rankChange": 7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 12,
-            "team1": "Ruotsi",
-            "team2": "Tunisia",
-            "resultText": "5-1",
-            "predictedResultText": "2-0",
-            "points": 2,
-            "exactResult": false
-          },
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Mike Salmon",
-        "rankNow": 3,
-        "totalPointsNow": 33,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 1,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 12,
-            "team1": "Ruotsi",
-            "team2": "Tunisia",
-            "resultText": "5-1",
-            "predictedResultText": "1-0",
-            "points": 1,
-            "exactResult": false
-          },
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sanukka",
-        "rankNow": 15,
-        "totalPointsNow": 22,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 22,
-        "rankChange": 7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 12,
-            "team1": "Ruotsi",
-            "team2": "Tunisia",
-            "resultText": "5-1",
-            "predictedResultText": "1-0",
-            "points": 1,
-            "exactResult": false
-          },
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 16,
-            "team1": "Belgia",
-            "team2": "Egypti",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Nipa",
-        "rankNow": 37,
-        "totalPointsNow": 15,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 46,
-        "rankChange": 9,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 11,
-            "team1": "Hollanti",
-            "team2": "Japani",
-            "resultText": "2-2",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 12,
-            "team1": "Ruotsi",
-            "team2": "Tunisia",
-            "resultText": "5-1",
-            "predictedResultText": "1-0",
-            "points": 1,
-            "exactResult": false
-          },
-          {
-            "matchNr": 13,
-            "team1": "Saudi-Arabia",
-            "team2": "Uruguay",
-            "resultText": "0-0",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 14,
-            "team1": "Espanja",
-            "team2": "Kap Verde",
-            "resultText": "0-0",
-            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
@@ -3134,7 +3099,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -3190,7 +3155,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3246,7 +3211,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3273,11 +3238,11 @@
       },
       {
         "name": "Carey Lily",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 3,
         "rankBeforeWindow": 29,
-        "rankChange": 7,
+        "rankChange": 6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3302,7 +3267,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3358,7 +3323,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3414,7 +3379,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -3440,12 +3405,68 @@
         ]
       },
       {
+        "name": "Sipolovic",
+        "rankNow": 35,
+        "totalPointsNow": 17,
+        "pointsInWindow": 3,
+        "rankBeforeWindow": 34,
+        "rankChange": -1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 11,
+            "team1": "Hollanti",
+            "team2": "Japani",
+            "resultText": "2-2",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 12,
+            "team1": "Ruotsi",
+            "team2": "Tunisia",
+            "resultText": "5-1",
+            "predictedResultText": "0-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 13,
+            "team1": "Saudi-Arabia",
+            "team2": "Uruguay",
+            "resultText": "1-1",
+            "predictedResultText": "0-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 14,
+            "team1": "Espanja",
+            "team2": "Kap Verde",
+            "resultText": "0-0",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 16,
+            "team1": "Belgia",
+            "team2": "Egypti",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
         "name": "Ian Rush",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 15,
         "pointsInWindow": 3,
         "rankBeforeWindow": 44,
-        "rankChange": 7,
+        "rankChange": 6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3470,7 +3491,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3497,11 +3518,11 @@
       },
       {
         "name": "Tuna",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 15,
         "pointsInWindow": 3,
         "rankBeforeWindow": 44,
-        "rankChange": 7,
+        "rankChange": 6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3526,7 +3547,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3582,7 +3603,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
@@ -3609,11 +3630,11 @@
       },
       {
         "name": "LegendaryLebu",
-        "rankNow": 7,
+        "rankNow": 6,
         "totalPointsNow": 30,
         "pointsInWindow": 2,
         "rankBeforeWindow": 2,
-        "rankChange": -5,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3638,7 +3659,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-4",
             "points": 0,
             "exactResult": false
@@ -3665,11 +3686,11 @@
       },
       {
         "name": "Repetti",
-        "rankNow": 14,
+        "rankNow": 15,
         "totalPointsNow": 23,
         "pointsInWindow": 2,
         "rankBeforeWindow": 15,
-        "rankChange": 1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3694,7 +3715,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -3721,11 +3742,11 @@
       },
       {
         "name": "Temezotti",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 2,
         "rankBeforeWindow": 18,
-        "rankChange": 3,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3750,7 +3771,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3777,11 +3798,11 @@
       },
       {
         "name": "Tero H",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 2,
         "rankBeforeWindow": 22,
-        "rankChange": 0,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3806,7 +3827,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -3833,11 +3854,11 @@
       },
       {
         "name": "Tomas Brolin",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 2,
         "rankBeforeWindow": 22,
-        "rankChange": 0,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3862,7 +3883,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -3889,11 +3910,11 @@
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 15,
         "pointsInWindow": 2,
         "rankBeforeWindow": 39,
-        "rankChange": 2,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3918,7 +3939,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -3974,7 +3995,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
@@ -4001,11 +4022,11 @@
       },
       {
         "name": "Johnny Rotten",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 1,
         "rankBeforeWindow": 15,
-        "rankChange": 0,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4030,7 +4051,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4086,7 +4107,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -4142,7 +4163,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -4198,7 +4219,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4254,7 +4275,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4281,11 +4302,11 @@
       },
       {
         "name": "Tommy Favorite",
-        "rankNow": 13,
+        "rankNow": 14,
         "totalPointsNow": 24,
         "pointsInWindow": 0,
         "rankBeforeWindow": 5,
-        "rankChange": -8,
+        "rankChange": -9,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4310,7 +4331,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4337,11 +4358,11 @@
       },
       {
         "name": "IlkkuPro75",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
         "rankBeforeWindow": 10,
-        "rankChange": -5,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4366,7 +4387,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4393,11 +4414,11 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 15,
+        "rankNow": 16,
         "totalPointsNow": 22,
         "pointsInWindow": 0,
         "rankBeforeWindow": 10,
-        "rankChange": -5,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4422,7 +4443,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-4",
             "points": 0,
             "exactResult": false
@@ -4449,11 +4470,11 @@
       },
       {
         "name": "Heinomar",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 18,
-        "rankChange": -4,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4478,7 +4499,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4505,11 +4526,11 @@
       },
       {
         "name": "Ibaldo de Lima",
-        "rankNow": 22,
+        "rankNow": 23,
         "totalPointsNow": 20,
         "pointsInWindow": 0,
         "rankBeforeWindow": 18,
-        "rankChange": -4,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4534,7 +4555,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -4590,7 +4611,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-3",
             "points": 0,
             "exactResult": false
@@ -4646,7 +4667,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -4702,7 +4723,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-1",
             "points": 0,
             "exactResult": false
@@ -4729,11 +4750,11 @@
       },
       {
         "name": "Jossu",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 15,
         "pointsInWindow": 0,
         "rankBeforeWindow": 32,
-        "rankChange": -5,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4758,7 +4779,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -4814,7 +4835,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -4870,7 +4891,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4926,7 +4947,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "1-3",
             "points": 0,
             "exactResult": false
@@ -4982,7 +5003,7 @@
             "matchNr": 13,
             "team1": "Saudi-Arabia",
             "team2": "Uruguay",
-            "resultText": "0-0",
+            "resultText": "1-1",
             "predictedResultText": "0-2",
             "points": 0,
             "exactResult": false
@@ -5011,13 +5032,8 @@
     "topPerformers": [
       {
         "name": "Kiiskiministeri",
-        "pointsInWindow": 15,
-        "exactResultsInWindow": 2
-      },
-      {
-        "name": "Sedu",
-        "pointsInWindow": 12,
-        "exactResultsInWindow": 2
+        "pointsInWindow": 18,
+        "exactResultsInWindow": 3
       },
       {
         "name": "Shampoo",
@@ -5030,8 +5046,13 @@
         "exactResultsInWindow": 1
       },
       {
-        "name": "Teo ja Noel",
-        "pointsInWindow": 8,
+        "name": "Minkário de Souza Faria",
+        "pointsInWindow": 9,
+        "exactResultsInWindow": 1
+      },
+      {
+        "name": "Sedu",
+        "pointsInWindow": 9,
         "exactResultsInWindow": 1
       }
     ]
@@ -5039,41 +5060,41 @@
   "commentaryHints": {
     "leader": {
       "name": "Kiiskiministeri",
-      "points": 38
+      "points": 41
     },
     "closestChasers": [
       {
-        "name": "Shampoo",
+        "name": "Mike Salmon",
         "rank": 2,
-        "points": 35,
-        "pointsBehindLeader": 3
+        "points": 36,
+        "pointsBehindLeader": 5
       },
       {
-        "name": "Sedu",
+        "name": "Shampoo",
         "rank": 3,
-        "points": 33,
-        "pointsBehindLeader": 5
+        "points": 35,
+        "pointsBehindLeader": 6
       },
       {
         "name": "Drent",
-        "rank": 3,
+        "rank": 4,
         "points": 33,
-        "pointsBehindLeader": 5
+        "pointsBehindLeader": 8
       },
       {
-        "name": "Mike Salmon",
-        "rank": 3,
-        "points": 33,
-        "pointsBehindLeader": 5
-      },
-      {
-        "name": "Teo ja Noel",
-        "rank": 6,
+        "name": "Minkário de Souza Faria",
+        "rank": 5,
         "points": 31,
-        "pointsBehindLeader": 7
+        "pointsBehindLeader": 10
+      },
+      {
+        "name": "Sedu",
+        "rank": 6,
+        "points": 30,
+        "pointsBehindLeader": 11
       }
     ],
-    "tightTopComment": "Kärki on erittäin tiukka, eroa vain 3 pistettä.",
-    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (38p). Lähimpänä haastajana on Shampoo (35p, eroa vain 3p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Sedu keräten 12p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Sipolovic (+17 sijaa). Eniten sijoitustaan menetti LegendaryLebu (-6 sijaa). Täydellisiä 6 pisteen osumia saivat: Sedu (Saudi-Arabia–Uruguay veikkaus 0-0), Sedu (Belgia–Egypti veikkaus 1-1), Kiiskiministeri (Belgia–Egypti veikkaus 1-1)."
+    "tightTopComment": "Johtaja pitää 5 pisteen eron seuraavaan.",
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (41p). Lähimpänä haastajana on Mike Salmon (36p, eroa vain 5p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Kiiskiministeri keräten 12p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Sanukka (+15 sijaa). Eniten sijoitustaan menetti LegendaryLebu (-5 sijaa). Täydellisiä 6 pisteen osumia saivat: Kiiskiministeri (Saudi-Arabia–Uruguay veikkaus 1-1), Kiiskiministeri (Belgia–Egypti veikkaus 1-1), Sedu (Belgia–Egypti veikkaus 1-1)."
   }
 }
