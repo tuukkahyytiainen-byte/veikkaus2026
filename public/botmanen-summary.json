@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-17T20:56:05.576Z",
+  "generatedAt": "2026-06-17T22:45:13.892Z",
   "summary": {
     "playedMatchesCount": 22,
     "totalMatches": 72,
@@ -24,7 +24,7 @@
       "group": "L",
       "team1": "Englanti",
       "team2": "Kroatia",
-      "goals1": 2,
+      "goals1": 4,
       "goals2": 2
     }
   ],
@@ -32,72 +32,72 @@
     {
       "rank": 1,
       "name": "Kiiskiministeri",
-      "totalPoints": 60,
-      "matchPoints": 60,
+      "totalPoints": 63,
+      "matchPoints": 63,
       "exactlyCorrect": 6
     },
     {
       "rank": 2,
-      "name": "Sedu",
-      "totalPoints": 56,
-      "matchPoints": 56,
-      "exactlyCorrect": 6
+      "name": "Drent",
+      "totalPoints": 55,
+      "matchPoints": 55,
+      "exactlyCorrect": 3
     },
     {
       "rank": 3,
       "name": "Mike Salmon",
-      "totalPoints": 51,
-      "matchPoints": 51,
+      "totalPoints": 54,
+      "matchPoints": 54,
       "exactlyCorrect": 4
     },
     {
-      "rank": 3,
-      "name": "Chica",
-      "totalPoints": 51,
-      "matchPoints": 51,
-      "exactlyCorrect": 3
+      "rank": 4,
+      "name": "Agueero",
+      "totalPoints": 53,
+      "matchPoints": 53,
+      "exactlyCorrect": 4
     },
     {
-      "rank": 3,
-      "name": "Drent",
-      "totalPoints": 51,
-      "matchPoints": 51,
+      "rank": 4,
+      "name": "LegendaryLebu",
+      "totalPoints": 53,
+      "matchPoints": 53,
       "exactlyCorrect": 3
     },
     {
       "rank": 6,
+      "name": "Sedu",
+      "totalPoints": 50,
+      "matchPoints": 50,
+      "exactlyCorrect": 5
+    },
+    {
+      "rank": 6,
+      "name": "Teo ja Noel",
+      "totalPoints": 50,
+      "matchPoints": 50,
+      "exactlyCorrect": 1
+    },
+    {
+      "rank": 8,
       "name": "Minkário de Souza Faria",
       "totalPoints": 49,
       "matchPoints": 49,
       "exactlyCorrect": 4
     },
     {
-      "rank": 6,
-      "name": "LegendaryLebu",
+      "rank": 8,
+      "name": "Shampoo",
       "totalPoints": 49,
       "matchPoints": 49,
       "exactlyCorrect": 3
     },
     {
-      "rank": 8,
-      "name": "Agueero",
-      "totalPoints": 48,
-      "matchPoints": 48,
-      "exactlyCorrect": 4
-    },
-    {
-      "rank": 8,
-      "name": "Shampoo",
-      "totalPoints": 48,
-      "matchPoints": 48,
-      "exactlyCorrect": 3
-    },
-    {
       "rank": 10,
-      "name": "Teo ja Noel",
+      "name": "Pontemon",
       "totalPoints": 47,
       "matchPoints": 47,
-      "exactlyCorrect": 1
+      "exactlyCorrect": 2
     }
   ],
   "last3MatchesAnalysis": {
@@ -130,96 +130,20 @@
         "group": "L",
         "team1": "Englanti",
         "team2": "Kroatia",
-        "goals1": 2,
+        "goals1": 4,
         "goals2": 2,
-        "resultText": "2-2",
+        "resultText": "4-2",
         "hasResult": true
       }
     ],
     "participantPoints": [
       {
-        "name": "Sedu",
-        "rankNow": 2,
-        "totalPointsNow": 56,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 8,
-        "rankChange": 6,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "5-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-2",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "SKA Hänninen",
-        "rankNow": 17,
+        "name": "Ibaldo de Lima",
+        "rankNow": 21,
         "totalPointsNow": 40,
         "pointsInWindow": 11,
         "rankBeforeWindow": 36,
-        "rankChange": 19,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-2",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Ibaldo de Lima",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 36,
-        "rankChange": 14,
+        "rankChange": 15,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -244,248 +168,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-0",
-            "points": 0,
+            "points": 2,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Carey Lily",
-        "rankNow": 12,
-        "totalPointsNow": 44,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 15,
-        "rankChange": 3,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "The Moka",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 36,
-        "rankChange": 10,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Joni",
-        "rankNow": 11,
-        "totalPointsNow": 46,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 12,
-        "rankChange": 1,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pora",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 33,
-        "rankChange": 7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tuurilla",
-        "rankNow": 45,
-        "totalPointsNow": 30,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 48,
-        "rankChange": 3,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Chica",
-        "rankNow": 3,
-        "totalPointsNow": 51,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 6,
-        "rankChange": 3,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-2",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
       {
         "name": "Drent",
-        "rankNow": 3,
-        "totalPointsNow": 51,
-        "pointsInWindow": 5,
+        "rankNow": 2,
+        "totalPointsNow": 55,
+        "pointsInWindow": 9,
         "rankBeforeWindow": 5,
-        "rankChange": 2,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -510,20 +206,134 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Agueero",
+        "rankNow": 4,
+        "totalPointsNow": 53,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 8,
+        "rankChange": 4,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "4-1",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sipolovic",
+        "rankNow": 27,
+        "totalPointsNow": 39,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 33,
+        "rankChange": 6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuna",
+        "rankNow": 32,
+        "totalPointsNow": 37,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 40,
+        "rankChange": 8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "3-2",
+            "points": 5,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Repetti",
-        "rankNow": 14,
-        "totalPointsNow": 42,
-        "pointsInWindow": 5,
+        "rankNow": 11,
+        "totalPointsNow": 45,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 13,
-        "rankChange": -1,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -548,20 +358,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "3-0",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Temez",
-        "rankNow": 15,
-        "totalPointsNow": 41,
-        "pointsInWindow": 5,
+        "rankNow": 13,
+        "totalPointsNow": 44,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 15,
-        "rankChange": 0,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -586,58 +396,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tomas Brolin",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 24,
-        "rankChange": 2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 5,
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 28,
-        "rankChange": 2,
+        "rankChange": 7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -662,20 +434,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Ice Cold",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 5,
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 28,
-        "rankChange": 2,
+        "rankChange": 7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -700,96 +472,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Nipa",
-        "rankNow": 33,
-        "totalPointsNow": 36,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 31,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sipolovic",
-        "rankNow": 36,
-        "totalPointsNow": 35,
-        "pointsInWindow": 5,
-        "rankBeforeWindow": 33,
-        "rankChange": -3,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "3-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Max",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 5,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 45,
-        "rankChange": 5,
+        "rankChange": 10,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -814,9 +510,9 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -824,8 +520,8 @@
       {
         "name": "Kiiskiministeri",
         "rankNow": 1,
-        "totalPointsNow": 60,
-        "pointsInWindow": 4,
+        "totalPointsNow": 63,
+        "pointsInWindow": 7,
         "rankBeforeWindow": 1,
         "rankChange": 0,
         "exactResultsInWindow": 0,
@@ -852,9 +548,9 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -862,8 +558,8 @@
       {
         "name": "Mike Salmon",
         "rankNow": 3,
-        "totalPointsNow": 51,
-        "pointsInWindow": 4,
+        "totalPointsNow": 54,
+        "pointsInWindow": 7,
         "rankBeforeWindow": 4,
         "rankChange": 1,
         "exactResultsInWindow": 0,
@@ -890,96 +586,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Agueero",
-        "rankNow": 8,
-        "totalPointsNow": 48,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 8,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "4-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Xhakku",
-        "rankNow": 15,
-        "totalPointsNow": 41,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 13,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-2",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Sanukka",
-        "rankNow": 17,
-        "totalPointsNow": 40,
-        "pointsInWindow": 4,
+        "rankNow": 14,
+        "totalPointsNow": 43,
+        "pointsInWindow": 7,
         "rankBeforeWindow": 15,
-        "rankChange": -2,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1004,20 +624,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Temezotti",
-        "rankNow": 17,
-        "totalPointsNow": 40,
-        "pointsInWindow": 4,
+        "rankNow": 14,
+        "totalPointsNow": 43,
+        "pointsInWindow": 7,
         "rankBeforeWindow": 15,
-        "rankChange": -2,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1042,20 +662,210 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Johnny Rotten",
-        "rankNow": 20,
+        "name": "Heinomar",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 23,
+        "rankChange": 6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tomas Brolin",
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 24,
+        "rankChange": 3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 24,
+        "rankChange": 3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tero H",
+        "rankNow": 27,
         "totalPointsNow": 39,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 20,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 28,
+        "rankChange": 1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Nipa",
+        "rankNow": 31,
+        "totalPointsNow": 38,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 31,
         "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rosaldo",
+        "rankNow": 33,
+        "totalPointsNow": 36,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 36,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1080,20 +890,286 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "werner strandhügel",
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 40,
+        "rankChange": 5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
             "predictedResultText": "2-0",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Jossu",
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 40,
+        "rankChange": 5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Profeetta Möttönen",
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 40,
+        "rankChange": 5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Sedu",
+        "rankNow": 6,
+        "totalPointsNow": 50,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 8,
+        "rankChange": 2,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "3-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "5-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 6,
+        "totalPointsNow": 50,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 8,
+        "rankChange": 2,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pontemon",
+        "rankNow": 10,
+        "totalPointsNow": 47,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 11,
+        "rankChange": 1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Johnny Rotten",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 20,
+        "rankChange": 3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Neyney",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 4,
+        "rankNow": 27,
+        "totalPointsNow": 39,
+        "pointsInWindow": 6,
         "rankBeforeWindow": 24,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1118,20 +1194,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-0",
-            "points": 0,
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Esko",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 4,
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankNow": 27,
+        "totalPointsNow": 39,
+        "pointsInWindow": 6,
         "rankBeforeWindow": 24,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1139,8 +1215,8 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
+            "predictedResultText": "1-0",
+            "points": 3,
             "exactResult": false
           },
           {
@@ -1156,20 +1232,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Tero H",
-        "rankNow": 33,
-        "totalPointsNow": 36,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 28,
-        "rankChange": -5,
+        "name": "Carey Lily",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 15,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1177,8 +1253,46 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
             "predictedResultText": "2-0",
-            "points": 4,
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "IlkkuPro75",
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 20,
+        "rankChange": -1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
             "exactResult": false
           },
           {
@@ -1194,20 +1308,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Suomaldinho",
-        "rankNow": 37,
-        "totalPointsNow": 34,
-        "pointsInWindow": 4,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 5,
         "rankBeforeWindow": 33,
-        "rankChange": -4,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1232,20 +1346,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-0",
-            "points": 0,
+            "points": 1,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Rosaldo",
-        "rankNow": 39,
-        "totalPointsNow": 33,
-        "pointsInWindow": 4,
+        "name": "The Moka",
+        "rankNow": 42,
+        "totalPointsNow": 34,
+        "pointsInWindow": 5,
         "rankBeforeWindow": 36,
-        "rankChange": -3,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1253,8 +1367,8 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
+            "predictedResultText": "3-0",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -1270,20 +1384,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "werner strandhügel",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 40,
-        "rankChange": 0,
+        "name": "SKA Hänninen",
+        "rankNow": 42,
+        "totalPointsNow": 34,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 36,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1291,46 +1405,8 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Jossu",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 40,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
+            "points": 5,
             "exactResult": false
           },
           {
@@ -1338,93 +1414,93 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Profeetta Möttönen",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 40,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tuna",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 40,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
             "predictedResultText": "3-2",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pauli Koponen",
+        "rankNow": 45,
+        "totalPointsNow": 30,
+        "pointsInWindow": 5,
+        "rankBeforeWindow": 47,
+        "rankChange": 2,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "LegendaryLebu",
+        "rankNow": 4,
+        "totalPointsNow": 53,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 2,
+        "rankChange": -2,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "3-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "5-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "3-1",
+            "points": 4,
             "exactResult": false
           }
         ]
@@ -1432,8 +1508,8 @@
       {
         "name": "Shampoo",
         "rankNow": 8,
-        "totalPointsNow": 48,
-        "pointsInWindow": 3,
+        "totalPointsNow": 49,
+        "pointsInWindow": 4,
         "rankBeforeWindow": 6,
         "rankChange": -2,
         "exactResultsInWindow": 0,
@@ -1460,19 +1536,19 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-0",
-            "points": 0,
+            "points": 1,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Teo ja Noel",
-        "rankNow": 10,
-        "totalPointsNow": 47,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 8,
+        "name": "Joni",
+        "rankNow": 14,
+        "totalPointsNow": 43,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 12,
         "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
@@ -1481,8 +1557,46 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Xhakku",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 13,
+        "rankChange": -4,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
             "exactResult": false
           },
           {
@@ -1498,20 +1612,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
+            "resultText": "4-2",
+            "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Pontemon",
-        "rankNow": 12,
-        "totalPointsNow": 44,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 11,
-        "rankChange": -1,
+        "name": "Ian Rush",
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 31,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1528,7 +1642,7 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "3-1",
+            "predictedResultText": "3-0",
             "points": 0,
             "exactResult": false
           },
@@ -1536,19 +1650,209 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
+            "resultText": "4-2",
+            "predictedResultText": "1-0",
+            "points": 1,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pora",
+        "rankNow": 42,
+        "totalPointsNow": 34,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 33,
+        "rankChange": -9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Tommy Favorite",
-        "rankNow": 20,
-        "totalPointsNow": 39,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 15,
+        "name": "Eski66",
+        "rankNow": 45,
+        "totalPointsNow": 30,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 46,
+        "rankChange": 1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-0",
+            "points": 1,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuurilla",
+        "rankNow": 48,
+        "totalPointsNow": 27,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 48,
+        "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "PoHan Pullistus",
+        "rankNow": 47,
+        "totalPointsNow": 29,
+        "pointsInWindow": 1,
+        "rankBeforeWindow": 40,
+        "rankChange": -7,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-0",
+            "points": 1,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "rankNow": 8,
+        "totalPointsNow": 49,
+        "pointsInWindow": 0,
+        "rankBeforeWindow": 2,
+        "rankChange": -6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Chica",
+        "rankNow": 11,
+        "totalPointsNow": 45,
+        "pointsInWindow": 0,
+        "rankBeforeWindow": 6,
         "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
@@ -1566,6 +1870,44 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
+            "predictedResultText": "4-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tommy Favorite",
+        "rankNow": 33,
+        "totalPointsNow": 36,
+        "pointsInWindow": 0,
+        "rankBeforeWindow": 15,
+        "rankChange": -18,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
             "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
@@ -1574,20 +1916,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-1",
-            "points": 3,
+            "points": 0,
             "exactResult": false
           }
         ]
       },
       {
         "name": "ArtsiKerho",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 3,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 0,
         "rankBeforeWindow": 20,
-        "rankChange": -2,
+        "rankChange": -15,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1612,350 +1954,8 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "IlkkuPro75",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 20,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Heinomar",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 23,
-        "rankChange": -3,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 33,
-        "totalPointsNow": 36,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 24,
-        "rankChange": -9,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Ian Rush",
-        "rankNow": 37,
-        "totalPointsNow": 34,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 31,
-        "rankChange": -6,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Eski66",
-        "rankNow": 46,
-        "totalPointsNow": 29,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 46,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pauli Koponen",
-        "rankNow": 47,
-        "totalPointsNow": 28,
-        "pointsInWindow": 3,
-        "rankBeforeWindow": 47,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Minkário de Souza Faria",
-        "rankNow": 6,
-        "totalPointsNow": 49,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 2,
-        "rankChange": -4,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "LegendaryLebu",
-        "rankNow": 6,
-        "totalPointsNow": 49,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 2,
-        "rankChange": -4,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "5-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "PoHan Pullistus",
-        "rankNow": 47,
-        "totalPointsNow": 28,
-        "pointsInWindow": 0,
-        "rankBeforeWindow": 40,
-        "rankChange": -7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           }
@@ -1964,53 +1964,32 @@
     ],
     "topPerformers": [
       {
-        "name": "Sedu",
-        "pointsInWindow": 12,
-        "exactResultsInWindow": 2
-      },
-      {
-        "name": "SKA Hänninen",
+        "name": "Ibaldo de Lima",
         "pointsInWindow": 11,
         "exactResultsInWindow": 1
       },
       {
-        "name": "Ibaldo de Lima",
+        "name": "Drent",
         "pointsInWindow": 9,
-        "exactResultsInWindow": 1
-      },
-      {
-        "name": "Carey Lily",
-        "pointsInWindow": 8,
         "exactResultsInWindow": 0
       },
       {
-        "name": "The Moka",
-        "pointsInWindow": 8,
+        "name": "Agueero",
+        "pointsInWindow": 9,
+        "exactResultsInWindow": 0
+      },
+      {
+        "name": "Sipolovic",
+        "pointsInWindow": 9,
+        "exactResultsInWindow": 0
+      },
+      {
+        "name": "Tuna",
+        "pointsInWindow": 9,
         "exactResultsInWindow": 0
       }
     ],
     "perfectScores": [
-      {
-        "name": "Sedu",
-        "matchNr": 20,
-        "match": "Itävalta–Jordania",
-        "guess": "3-1",
-        "actual": "3-1"
-      },
-      {
-        "name": "Sedu",
-        "matchNr": 22,
-        "match": "Englanti–Kroatia",
-        "guess": "2-2",
-        "actual": "2-2"
-      },
-      {
-        "name": "SKA Hänninen",
-        "matchNr": 22,
-        "match": "Englanti–Kroatia",
-        "guess": "2-2",
-        "actual": "2-2"
-      },
       {
         "name": "Ibaldo de Lima",
         "matchNr": 23,
@@ -2019,101 +1998,106 @@
         "actual": "1-1"
       },
       {
-        "name": "Chica",
-        "matchNr": 22,
-        "match": "Englanti–Kroatia",
-        "guess": "2-2",
-        "actual": "2-2"
+        "name": "Sedu",
+        "matchNr": 20,
+        "match": "Itävalta–Jordania",
+        "guess": "3-1",
+        "actual": "3-1"
       }
     ],
     "biggestRisers": [
       {
-        "name": "SKA Hänninen",
+        "name": "Ibaldo de Lima",
         "rankBeforeWindow": 36,
-        "rankNow": 17,
-        "rankChange": 19,
+        "rankNow": 21,
+        "rankChange": 15,
         "pointsInWindow": 11
       },
       {
-        "name": "Ibaldo de Lima",
-        "rankBeforeWindow": 36,
-        "rankNow": 22,
-        "rankChange": 14,
-        "pointsInWindow": 9
-      },
-      {
-        "name": "The Moka",
-        "rankBeforeWindow": 36,
-        "rankNow": 26,
+        "name": "Max",
+        "rankBeforeWindow": 45,
+        "rankNow": 35,
         "rankChange": 10,
         "pointsInWindow": 8
       },
       {
-        "name": "Pora",
-        "rankBeforeWindow": 33,
-        "rankNow": 26,
-        "rankChange": 7,
-        "pointsInWindow": 7
+        "name": "Tuna",
+        "rankBeforeWindow": 40,
+        "rankNow": 32,
+        "rankChange": 8,
+        "pointsInWindow": 9
       },
       {
-        "name": "Sedu",
-        "rankBeforeWindow": 8,
-        "rankNow": 2,
-        "rankChange": 6,
-        "pointsInWindow": 12
+        "name": "Keto Armstrong",
+        "rankBeforeWindow": 28,
+        "rankNow": 21,
+        "rankChange": 7,
+        "pointsInWindow": 8
+      },
+      {
+        "name": "Ice Cold",
+        "rankBeforeWindow": 28,
+        "rankNow": 21,
+        "rankChange": 7,
+        "pointsInWindow": 8
       }
     ],
     "biggestFallers": [
       {
-        "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankBeforeWindow": 24,
+        "name": "Tommy Favorite",
+        "rankBeforeWindow": 15,
         "rankNow": 33,
+        "rankChange": -18,
+        "pointsInWindow": 0
+      },
+      {
+        "name": "ArtsiKerho",
+        "rankBeforeWindow": 20,
+        "rankNow": 35,
+        "rankChange": -15,
+        "pointsInWindow": 0
+      },
+      {
+        "name": "Pora",
+        "rankBeforeWindow": 33,
+        "rankNow": 42,
         "rankChange": -9,
-        "pointsInWindow": 3
+        "pointsInWindow": 4
       },
       {
         "name": "PoHan Pullistus",
         "rankBeforeWindow": 40,
         "rankNow": 47,
         "rankChange": -7,
-        "pointsInWindow": 0
+        "pointsInWindow": 1
       },
       {
-        "name": "Ian Rush",
-        "rankBeforeWindow": 31,
-        "rankNow": 37,
+        "name": "Minkário de Souza Faria",
+        "rankBeforeWindow": 2,
+        "rankNow": 8,
         "rankChange": -6,
-        "pointsInWindow": 3
-      },
-      {
-        "name": "Tommy Favorite",
-        "rankBeforeWindow": 15,
-        "rankNow": 20,
-        "rankChange": -5,
-        "pointsInWindow": 3
-      },
-      {
-        "name": "Tero H",
-        "rankBeforeWindow": 28,
-        "rankNow": 33,
-        "rankChange": -5,
-        "pointsInWindow": 4
+        "pointsInWindow": 0
       }
     ],
     "zeroPointers": [
       {
         "name": "Minkário de Souza Faria",
-        "rankNow": 6,
+        "rankNow": 8,
         "pointsInWindow": 0
       },
       {
-        "name": "LegendaryLebu",
-        "rankNow": 6,
+        "name": "Chica",
+        "rankNow": 11,
         "pointsInWindow": 0
       },
       {
-        "name": "PoHan Pullistus",
-        "rankNow": 47,
+        "name": "Tommy Favorite",
+        "rankNow": 33,
+        "pointsInWindow": 0
+      },
+      {
+        "name": "ArtsiKerho",
+        "rankNow": 35,
         "pointsInWindow": 0
       }
     ]
@@ -2121,180 +2105,12 @@
   "last5MatchesAnalysis": {
     "participantPoints": [
       {
-        "name": "Sedu",
-        "rankNow": 2,
-        "totalPointsNow": 56,
-        "pointsInWindow": 20,
-        "rankBeforeWindow": 7,
-        "rankChange": 5,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "3-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "5-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-2",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "The Moka",
-        "rankNow": 26,
-        "totalPointsNow": 37,
+        "name": "Agueero",
+        "rankNow": 4,
+        "totalPointsNow": 53,
         "pointsInWindow": 18,
-        "rankBeforeWindow": 44,
-        "rankChange": 18,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Chica",
-        "rankNow": 3,
-        "totalPointsNow": 51,
-        "pointsInWindow": 16,
         "rankBeforeWindow": 8,
-        "rankChange": 5,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "1-3",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-2",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Joni",
-        "rankNow": 11,
-        "totalPointsNow": 46,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 12,
-        "rankChange": 1,
+        "rankChange": 4,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2337,188 +2153,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "SKA Hänninen",
-        "rankNow": 17,
-        "totalPointsNow": 40,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 28,
-        "rankChange": 11,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "3-1",
+            "resultText": "4-2",
+            "predictedResultText": "4-1",
             "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-2",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Carey Lily",
-        "rankNow": 12,
-        "totalPointsNow": 44,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 14,
-        "rankChange": 2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "0-2",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tuurilla",
-        "rankNow": 45,
-        "totalPointsNow": 30,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 48,
-        "rankChange": 3,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Ice Cold",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 15,
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 37,
-        "rankChange": 11,
+        "rankChange": 16,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2561,20 +2209,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Temez",
-        "rankNow": 15,
-        "totalPointsNow": 41,
-        "pointsInWindow": 15,
+        "rankNow": 13,
+        "totalPointsNow": 44,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 21,
-        "rankChange": 6,
+        "rankChange": 8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2617,76 +2265,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Ibaldo de Lima",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 14,
-        "rankBeforeWindow": 28,
-        "rankChange": 6,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
             "points": 3,
             "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "1-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
           }
         ]
       },
       {
-        "name": "Tomas Brolin",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 14,
-        "rankBeforeWindow": 28,
-        "rankChange": 6,
+        "name": "Drent",
+        "rankNow": 2,
+        "totalPointsNow": 55,
+        "pointsInWindow": 17,
+        "rankBeforeWindow": 6,
+        "rankChange": 4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2703,8 +2295,8 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "3-1",
-            "points": 5,
+            "predictedResultText": "2-1",
+            "points": 4,
             "exactResult": false
           },
           {
@@ -2721,7 +2313,7 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "2-0",
+            "predictedResultText": "4-1",
             "points": 0,
             "exactResult": false
           },
@@ -2729,20 +2321,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
+            "resultText": "4-2",
+            "predictedResultText": "3-1",
+            "points": 4,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 14,
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 17,
         "rankBeforeWindow": 34,
-        "rankChange": 8,
+        "rankChange": 13,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2785,21 +2377,21 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Agueero",
-        "rankNow": 8,
-        "totalPointsNow": 48,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 8,
-        "rankChange": 0,
-        "exactResultsInWindow": 1,
+        "name": "Sipolovic",
+        "rankNow": 27,
+        "totalPointsNow": 39,
+        "pointsInWindow": 17,
+        "rankBeforeWindow": 37,
+        "rankChange": 10,
+        "exactResultsInWindow": 0,
         "matchPoints": [
           {
             "matchNr": 18,
@@ -2815,17 +2407,17 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
           },
           {
             "matchNr": 20,
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
+            "predictedResultText": "2-1",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -2833,7 +2425,7 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "3-0",
+            "predictedResultText": "4-0",
             "points": 0,
             "exactResult": false
           },
@@ -2841,55 +2433,55 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "4-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Xhakku",
-        "rankNow": 15,
-        "totalPointsNow": 41,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 14,
-        "rankChange": -1,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "0-2",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
+            "resultText": "4-2",
             "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuna",
+        "rankNow": 32,
+        "totalPointsNow": 37,
+        "pointsInWindow": 17,
+        "rankBeforeWindow": 40,
+        "rankChange": 8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "4-0",
             "points": 0,
             "exactResult": false
           },
@@ -2897,20 +2489,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-2",
-            "points": 0,
+            "resultText": "4-2",
+            "predictedResultText": "3-2",
+            "points": 5,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Temezotti",
-        "rankNow": 17,
-        "totalPointsNow": 40,
-        "pointsInWindow": 13,
+        "rankNow": 14,
+        "totalPointsNow": 43,
+        "pointsInWindow": 16,
         "rankBeforeWindow": 18,
-        "rankChange": 1,
+        "rankChange": 4,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2953,9 +2545,65 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ibaldo de Lima",
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 28,
+        "rankChange": 7,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "1-1",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "1-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           }
         ]
@@ -2963,8 +2611,8 @@
       {
         "name": "Kiiskiministeri",
         "rankNow": 1,
-        "totalPointsNow": 60,
-        "pointsInWindow": 13,
+        "totalPointsNow": 63,
+        "pointsInWindow": 16,
         "rankBeforeWindow": 1,
         "rankChange": 0,
         "exactResultsInWindow": 0,
@@ -3009,76 +2657,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Drent",
-        "rankNow": 3,
-        "totalPointsNow": 51,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 6,
-        "rankChange": 3,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "0-3",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "4-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "3-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Teo ja Noel",
-        "rankNow": 10,
-        "totalPointsNow": 47,
-        "pointsInWindow": 13,
+        "rankNow": 6,
+        "totalPointsNow": 50,
+        "pointsInWindow": 16,
         "rankBeforeWindow": 10,
-        "rankChange": 0,
+        "rankChange": 4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3121,20 +2713,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Repetti",
-        "rankNow": 14,
-        "totalPointsNow": 42,
-        "pointsInWindow": 13,
+        "rankNow": 11,
+        "totalPointsNow": 45,
+        "pointsInWindow": 16,
         "rankBeforeWindow": 13,
-        "rankChange": -1,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3177,20 +2769,76 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "3-0",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Johnny Rotten",
-        "rankNow": 20,
-        "totalPointsNow": 39,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 21,
-        "rankChange": 1,
+        "name": "Heinomar",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 24,
+        "rankChange": 7,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tomas Brolin",
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 28,
+        "rankChange": 7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3216,8 +2864,8 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
+            "predictedResultText": "3-0",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -3225,7 +2873,7 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "3-1",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
@@ -3233,20 +2881,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-0",
-            "points": 0,
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Esko",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 13,
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 16,
         "rankBeforeWindow": 28,
-        "rankChange": 2,
+        "rankChange": 7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3289,120 +2937,8 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Sipolovic",
-        "rankNow": 36,
-        "totalPointsNow": 35,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 37,
-        "rankChange": 1,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "0-2",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "4-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "ArtsiKerho",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 21,
-        "rankChange": -1,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "0-2",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "0-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
             "points": 3,
             "exactResult": false
           }
@@ -3410,11 +2946,11 @@
       },
       {
         "name": "werner strandhügel",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 12,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 40,
-        "rankChange": 0,
+        "rankChange": 5,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3457,8 +2993,64 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "The Moka",
+        "rankNow": 42,
+        "totalPointsNow": 34,
+        "pointsInWindow": 15,
+        "rankBeforeWindow": 44,
+        "rankChange": 2,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "3-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           }
@@ -3466,11 +3058,11 @@
       },
       {
         "name": "Sanukka",
-        "rankNow": 17,
-        "totalPointsNow": 40,
-        "pointsInWindow": 12,
+        "rankNow": 14,
+        "totalPointsNow": 43,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 14,
-        "rankChange": -3,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3513,20 +3105,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Pora",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 24,
-        "rankChange": -2,
+        "name": "Johnny Rotten",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 15,
+        "rankBeforeWindow": 21,
+        "rankChange": 4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3534,8 +3126,8 @@
             "team1": "Irak",
             "team2": "Norja",
             "resultText": "1-4",
-            "predictedResultText": "1-0",
-            "points": 0,
+            "predictedResultText": "0-3",
+            "points": 4,
             "exactResult": false
           },
           {
@@ -3543,7 +3135,7 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "2-0",
+            "predictedResultText": "3-1",
             "points": 5,
             "exactResult": false
           },
@@ -3561,140 +3153,28 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Heinomar",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 24,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
             "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Neyney",
-        "rankNow": 26,
-        "totalPointsNow": 37,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 24,
-        "rankChange": -2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
           },
           {
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-0",
-            "points": 0,
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Tero H",
-        "rankNow": 33,
-        "totalPointsNow": 36,
-        "pointsInWindow": 12,
+        "rankNow": 27,
+        "totalPointsNow": 39,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 28,
-        "rankChange": -5,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3737,20 +3217,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Jossu",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 12,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 40,
-        "rankChange": 0,
+        "rankChange": 5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3793,20 +3273,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 12,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 15,
         "rankBeforeWindow": 40,
-        "rankChange": 0,
+        "rankChange": 5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3849,29 +3329,29 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Tuna",
-        "rankNow": 40,
-        "totalPointsNow": 32,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 40,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
+        "name": "Sedu",
+        "rankNow": 6,
+        "totalPointsNow": 50,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 7,
+        "rankChange": 1,
+        "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 18,
             "team1": "Irak",
             "team2": "Norja",
             "resultText": "1-4",
-            "predictedResultText": "0-2",
-            "points": 3,
+            "predictedResultText": "1-2",
+            "points": 4,
             "exactResult": false
           },
           {
@@ -3879,8 +3359,8 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
+            "predictedResultText": "3-2",
+            "points": 4,
             "exactResult": false
           },
           {
@@ -3888,16 +3368,16 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-0",
-            "points": 4,
-            "exactResult": false
+            "predictedResultText": "3-1",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 23,
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "4-0",
+            "predictedResultText": "5-1",
             "points": 0,
             "exactResult": false
           },
@@ -3905,8 +3385,8 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "3-2",
+            "resultText": "4-2",
+            "predictedResultText": "2-2",
             "points": 0,
             "exactResult": false
           }
@@ -3915,8 +3395,8 @@
       {
         "name": "Mike Salmon",
         "rankNow": 3,
-        "totalPointsNow": 51,
-        "pointsInWindow": 11,
+        "totalPointsNow": 54,
+        "pointsInWindow": 14,
         "rankBeforeWindow": 2,
         "rankChange": -1,
         "exactResultsInWindow": 0,
@@ -3961,20 +3441,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Tommy Favorite",
-        "rankNow": 20,
+        "name": "Neyney",
+        "rankNow": 27,
         "totalPointsNow": 39,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 14,
-        "rankChange": -6,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 24,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3982,7 +3462,7 @@
             "team1": "Irak",
             "team2": "Norja",
             "resultText": "1-4",
-            "predictedResultText": "0-3",
+            "predictedResultText": "1-2",
             "points": 4,
             "exactResult": false
           },
@@ -3991,7 +3471,7 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "4-1",
+            "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
           },
@@ -4000,8 +3480,8 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
+            "predictedResultText": "2-0",
+            "points": 4,
             "exactResult": false
           },
           {
@@ -4009,7 +3489,7 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "1-0",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
@@ -4017,76 +3497,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-1",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "IlkkuPro75",
-        "rankNow": 22,
-        "totalPointsNow": 38,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 18,
-        "rankChange": -4,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "0-2",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
+            "resultText": "4-2",
             "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 33,
-        "totalPointsNow": 36,
-        "pointsInWindow": 11,
+        "rankNow": 27,
+        "totalPointsNow": 39,
+        "pointsInWindow": 14,
         "rankBeforeWindow": 24,
-        "rankChange": -9,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4129,20 +3553,524 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Max",
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 39,
+        "rankChange": 4,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-1",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
             "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Joni",
+        "rankNow": 14,
+        "totalPointsNow": 43,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 12,
+        "rankChange": -2,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Xhakku",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 14,
+        "rankChange": -3,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "LegendaryLebu",
+        "rankNow": 4,
+        "totalPointsNow": 53,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 2,
+        "rankChange": -2,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "2-5",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "3-3",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "5-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pontemon",
+        "rankNow": 10,
+        "totalPointsNow": 47,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 10,
+        "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "1-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Carey Lily",
+        "rankNow": 17,
+        "totalPointsNow": 41,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 14,
+        "rankChange": -3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "IlkkuPro75",
+        "rankNow": 21,
+        "totalPointsNow": 40,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 18,
+        "rankChange": -3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-0",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tuurilla",
+        "rankNow": 48,
+        "totalPointsNow": 27,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 48,
+        "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rosaldo",
+        "rankNow": 33,
+        "totalPointsNow": 36,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 28,
+        "rankChange": -5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-1",
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Ian Rush",
-        "rankNow": 37,
-        "totalPointsNow": 34,
-        "pointsInWindow": 11,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 12,
         "rankBeforeWindow": 34,
-        "rankChange": -3,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4185,20 +4113,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-0",
-            "points": 0,
+            "points": 1,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Suomaldinho",
-        "rankNow": 37,
-        "totalPointsNow": 34,
-        "pointsInWindow": 11,
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 12,
         "rankBeforeWindow": 34,
-        "rankChange": -3,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4241,29 +4169,29 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-0",
-            "points": 0,
+            "points": 1,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Max",
-        "rankNow": 40,
-        "totalPointsNow": 32,
+        "name": "Pauli Koponen",
+        "rankNow": 45,
+        "totalPointsNow": 30,
         "pointsInWindow": 11,
-        "rankBeforeWindow": 39,
+        "rankBeforeWindow": 44,
         "rankChange": -1,
-        "exactResultsInWindow": 0,
+        "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 18,
             "team1": "Irak",
             "team2": "Norja",
             "resultText": "1-4",
-            "predictedResultText": "0-1",
-            "points": 2,
+            "predictedResultText": "2-2",
+            "points": 0,
             "exactResult": false
           },
           {
@@ -4271,17 +4199,17 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "1-0",
-            "points": 4,
-            "exactResult": false
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 20,
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
+            "predictedResultText": "1-0",
+            "points": 3,
             "exactResult": false
           },
           {
@@ -4297,9 +4225,9 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           }
         ]
@@ -4307,8 +4235,8 @@
       {
         "name": "PoHan Pullistus",
         "rankNow": 47,
-        "totalPointsNow": 28,
-        "pointsInWindow": 10,
+        "totalPointsNow": 29,
+        "pointsInWindow": 11,
         "rankBeforeWindow": 47,
         "rankChange": 0,
         "exactResultsInWindow": 1,
@@ -4353,20 +4281,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-0",
-            "points": 0,
+            "points": 1,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Pontemon",
-        "rankNow": 12,
-        "totalPointsNow": 44,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 10,
-        "rankChange": -2,
+        "name": "Nipa",
+        "rankNow": 31,
+        "totalPointsNow": 38,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 18,
+        "rankChange": -13,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4374,8 +4302,8 @@
             "team1": "Irak",
             "team2": "Norja",
             "resultText": "1-4",
-            "predictedResultText": "0-2",
-            "points": 3,
+            "predictedResultText": "1-1",
+            "points": 0,
             "exactResult": false
           },
           {
@@ -4383,7 +4311,7 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "1-0",
+            "predictedResultText": "2-1",
             "points": 4,
             "exactResult": false
           },
@@ -4392,8 +4320,8 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
+            "predictedResultText": "2-1",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -4401,7 +4329,7 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "3-1",
+            "predictedResultText": "4-0",
             "points": 0,
             "exactResult": false
           },
@@ -4409,20 +4337,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
-            "points": 0,
+            "resultText": "4-2",
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Eski66",
-        "rankNow": 46,
-        "totalPointsNow": 29,
-        "pointsInWindow": 10,
+        "rankNow": 45,
+        "totalPointsNow": 30,
+        "pointsInWindow": 11,
         "rankBeforeWindow": 44,
-        "rankChange": -2,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4465,177 +4393,9 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pauli Koponen",
-        "rankNow": 47,
-        "totalPointsNow": 28,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 44,
-        "rankChange": -3,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-0",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Minkário de Souza Faria",
-        "rankNow": 6,
-        "totalPointsNow": 49,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 2,
-        "rankChange": -4,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "2-3",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "3-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "1-3",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "LegendaryLebu",
-        "rankNow": 6,
-        "totalPointsNow": 49,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 2,
-        "rankChange": -4,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 18,
-            "team1": "Irak",
-            "team2": "Norja",
-            "resultText": "1-4",
-            "predictedResultText": "2-5",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 19,
-            "team1": "Argentiina",
-            "team2": "Algeria",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 20,
-            "team1": "Itävalta",
-            "team2": "Jordania",
-            "resultText": "3-1",
-            "predictedResultText": "3-3",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 23,
-            "team1": "Portugali",
-            "team2": "Kongon DR",
-            "resultText": "1-1",
-            "predictedResultText": "5-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 22,
-            "team1": "Englanti",
-            "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "3-1",
-            "points": 0,
+            "points": 1,
             "exactResult": false
           }
         ]
@@ -4643,8 +4403,8 @@
       {
         "name": "Shampoo",
         "rankNow": 8,
-        "totalPointsNow": 48,
-        "pointsInWindow": 9,
+        "totalPointsNow": 49,
+        "pointsInWindow": 10,
         "rankBeforeWindow": 5,
         "rankChange": -3,
         "exactResultsInWindow": 0,
@@ -4689,20 +4449,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
+            "resultText": "4-2",
             "predictedResultText": "1-0",
-            "points": 0,
+            "points": 1,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Nipa",
-        "rankNow": 33,
-        "totalPointsNow": 36,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 18,
-        "rankChange": -15,
+        "name": "Chica",
+        "rankNow": 11,
+        "totalPointsNow": 45,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 8,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4710,8 +4470,8 @@
             "team1": "Irak",
             "team2": "Norja",
             "resultText": "1-4",
-            "predictedResultText": "1-1",
-            "points": 0,
+            "predictedResultText": "1-3",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -4719,8 +4479,8 @@
             "team1": "Argentiina",
             "team2": "Algeria",
             "resultText": "3-0",
-            "predictedResultText": "2-1",
-            "points": 4,
+            "predictedResultText": "4-0",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -4728,8 +4488,8 @@
             "team1": "Itävalta",
             "team2": "Jordania",
             "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
+            "predictedResultText": "1-1",
+            "points": 0,
             "exactResult": false
           },
           {
@@ -4745,20 +4505,20 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-0",
+            "resultText": "4-2",
+            "predictedResultText": "2-2",
             "points": 0,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Rosaldo",
-        "rankNow": 39,
-        "totalPointsNow": 33,
-        "pointsInWindow": 9,
+        "name": "SKA Hänninen",
+        "rankNow": 42,
+        "totalPointsNow": 34,
+        "pointsInWindow": 10,
         "rankBeforeWindow": 28,
-        "rankChange": -11,
+        "rankChange": -14,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4766,7 +4526,175 @@
             "team1": "Irak",
             "team2": "Norja",
             "resultText": "1-4",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "3-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "ArtsiKerho",
+        "rankNow": 35,
+        "totalPointsNow": 35,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 21,
+        "rankChange": -14,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-2",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "0-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
             "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "rankNow": 8,
+        "totalPointsNow": 49,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 2,
+        "rankChange": -6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "2-3",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "3-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-3",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pora",
+        "rankNow": 42,
+        "totalPointsNow": 34,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 24,
+        "rankChange": -18,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           },
@@ -4793,7 +4721,7 @@
             "team1": "Portugali",
             "team2": "Kongon DR",
             "resultText": "1-1",
-            "predictedResultText": "3-1",
+            "predictedResultText": "2-0",
             "points": 0,
             "exactResult": false
           },
@@ -4801,8 +4729,64 @@
             "matchNr": 22,
             "team1": "Englanti",
             "team2": "Kroatia",
-            "resultText": "2-2",
-            "predictedResultText": "2-1",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tommy Favorite",
+        "rankNow": 33,
+        "totalPointsNow": 36,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 14,
+        "rankChange": -19,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 18,
+            "team1": "Irak",
+            "team2": "Norja",
+            "resultText": "1-4",
+            "predictedResultText": "0-3",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 19,
+            "team1": "Argentiina",
+            "team2": "Algeria",
+            "resultText": "3-0",
+            "predictedResultText": "4-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 20,
+            "team1": "Itävalta",
+            "team2": "Jordania",
+            "resultText": "3-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 23,
+            "team1": "Portugali",
+            "team2": "Kongon DR",
+            "resultText": "1-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 22,
+            "team1": "Englanti",
+            "team2": "Kroatia",
+            "resultText": "4-2",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           }
@@ -4811,70 +4795,70 @@
     ],
     "topPerformers": [
       {
-        "name": "Sedu",
-        "pointsInWindow": 20,
-        "exactResultsInWindow": 2
-      },
-      {
-        "name": "The Moka",
+        "name": "Agueero",
         "pointsInWindow": 18,
         "exactResultsInWindow": 1
       },
       {
-        "name": "Chica",
-        "pointsInWindow": 16,
+        "name": "Ice Cold",
+        "pointsInWindow": 18,
         "exactResultsInWindow": 1
       },
       {
-        "name": "Joni",
-        "pointsInWindow": 16,
-        "exactResultsInWindow": 1
+        "name": "Temez",
+        "pointsInWindow": 18,
+        "exactResultsInWindow": 0
       },
       {
-        "name": "SKA Hänninen",
-        "pointsInWindow": 16,
-        "exactResultsInWindow": 1
+        "name": "Drent",
+        "pointsInWindow": 17,
+        "exactResultsInWindow": 0
+      },
+      {
+        "name": "Keto Armstrong",
+        "pointsInWindow": 17,
+        "exactResultsInWindow": 0
       }
     ]
   },
   "commentaryHints": {
     "leader": {
       "name": "Kiiskiministeri",
-      "points": 60
+      "points": 63
     },
     "closestChasers": [
       {
-        "name": "Sedu",
+        "name": "Drent",
         "rank": 2,
-        "points": 56,
-        "pointsBehindLeader": 4
+        "points": 55,
+        "pointsBehindLeader": 8
       },
       {
         "name": "Mike Salmon",
         "rank": 3,
-        "points": 51,
+        "points": 54,
         "pointsBehindLeader": 9
       },
       {
-        "name": "Chica",
-        "rank": 3,
-        "points": 51,
-        "pointsBehindLeader": 9
+        "name": "Agueero",
+        "rank": 4,
+        "points": 53,
+        "pointsBehindLeader": 10
       },
       {
-        "name": "Drent",
-        "rank": 3,
-        "points": 51,
-        "pointsBehindLeader": 9
+        "name": "LegendaryLebu",
+        "rank": 4,
+        "points": 53,
+        "pointsBehindLeader": 10
       },
       {
-        "name": "Minkário de Souza Faria",
+        "name": "Sedu",
         "rank": 6,
-        "points": 49,
-        "pointsBehindLeader": 11
+        "points": 50,
+        "pointsBehindLeader": 13
       }
     ],
-    "tightTopComment": "Johtaja pitää 4 pisteen eron seuraavaan.",
-    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (60p). Lähimpänä haastajana on Sedu (56p, eroa vain 4p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Sedu keräten 12p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut SKA Hänninen (+19 sijaa). Eniten sijoitustaan menetti Rikhard Moeller-Kalanmaksaoeljy (-9 sijaa). Täydellisiä 6 pisteen osumia saivat: Sedu (Itävalta–Jordania veikkaus 3-1), Sedu (Englanti–Kroatia veikkaus 2-2), SKA Hänninen (Englanti–Kroatia veikkaus 2-2)."
+    "tightTopComment": "Johtaja pitää 8 pisteen eron seuraavaan.",
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (63p). Lähimpänä haastajana on Drent (55p, eroa vain 8p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Ibaldo de Lima keräten 11p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Ibaldo de Lima (+15 sijaa). Eniten sijoitustaan menetti Tommy Favorite (-18 sijaa). Täydellisiä 6 pisteen osumia saivat: Ibaldo de Lima (Portugali–Kongon DR veikkaus 1-1), Sedu (Itävalta–Jordania veikkaus 3-1)."
   }
 }
