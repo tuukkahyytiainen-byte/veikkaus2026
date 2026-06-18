@@ -774,6 +774,17 @@ async function fetchLiveApiData() {
                         }
                     }
 
+                    // Check if match should have finished but is still marked as live (IN_PLAY or PAUSED)
+                    if ((status === 'IN_PLAY' || status === 'PAUSED') && m.utcDate) {
+                        const matchTime = new Date(m.utcDate);
+                        const isPlayoff = m.stage && m.stage !== 'GROUP_STAGE';
+                        const durationThreshold = isPlayoff ? 200 * 60 * 1000 : 110 * 60 * 1000;
+                        if (Date.now() - matchTime.getTime() > durationThreshold) {
+                            console.log(`[Stale Check] Match ${matchId} should be finished (started at ${m.utcDate}, stage ${m.stage}) but status is still ${status}. Marking primary API as stale.`);
+                            hasStaleMatches = true;
+                        }
+                    }
+
                     const isFinished = status === 'FINISHED';
                     const isLive = status === 'IN_PLAY' || status === 'PAUSED';
                     
@@ -851,7 +862,16 @@ async function fetchLiveApiData() {
             if ((!gamesData || !gamesData.games) && process.platform === 'win32') {
                 try {
                     console.log('Node fetch failed. Trying curl.exe fallback for games...');
-                    const stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/games', { maxBuffer: 10 * 1024 * 1024 });
+                    let stdout;
+                    try {
+                        stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/games', { maxBuffer: 10 * 1024 * 1024 });
+                    } catch (execErr) {
+                        if (execErr.stdout && execErr.stdout.length > 0) {
+                            stdout = execErr.stdout;
+                        } else {
+                            throw execErr;
+                        }
+                    }
                     gamesData = JSON.parse(stdout.toString());
                 } catch (curlErr) {
                     console.warn('curl.exe fallback failed for games:', curlErr.message);
@@ -944,7 +964,16 @@ async function fetchLiveApiData() {
             if ((!groupsData || !groupsData.groups) && process.platform === 'win32') {
                 try {
                     console.log('Node fetch failed. Trying curl.exe fallback for groups...');
-                    const stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/groups', { maxBuffer: 10 * 1024 * 1024 });
+                    let stdout;
+                    try {
+                        stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/groups', { maxBuffer: 10 * 1024 * 1024 });
+                    } catch (execErr) {
+                        if (execErr.stdout && execErr.stdout.length > 0) {
+                            stdout = execErr.stdout;
+                        } else {
+                            throw execErr;
+                        }
+                    }
                     groupsData = JSON.parse(stdout.toString());
                 } catch (e) {}
             }
@@ -962,7 +991,16 @@ async function fetchLiveApiData() {
             if ((!teamsData || !teamsData.teams) && process.platform === 'win32') {
                 try {
                     console.log('Node fetch failed. Trying curl.exe fallback for teams...');
-                    const stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/teams', { maxBuffer: 10 * 1024 * 1024 });
+                    let stdout;
+                    try {
+                        stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/teams', { maxBuffer: 10 * 1024 * 1024 });
+                    } catch (execErr) {
+                        if (execErr.stdout && execErr.stdout.length > 0) {
+                            stdout = execErr.stdout;
+                        } else {
+                            throw execErr;
+                        }
+                    }
                     teamsData = JSON.parse(stdout.toString());
                 } catch (e) {}
             }
