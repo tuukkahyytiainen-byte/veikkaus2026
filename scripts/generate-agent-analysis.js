@@ -725,6 +725,7 @@ async function fetchLiveApiData() {
             };
 
             // Process matches
+            let hasStaleMatches = false;
             fdData.matches.forEach(m => {
                 let matchId = null;
                 
@@ -764,6 +765,17 @@ async function fetchLiveApiData() {
                 
                 if (matchId) {
                     const status = m.status; // FINISHED, IN_PLAY, PAUSED, SCHEDULED, TIMED
+                    
+                    // Check if match should have started but is still marked as TIMED/SCHEDULED
+                    if ((status === 'TIMED' || status === 'SCHEDULED') && m.utcDate) {
+                        const matchTime = new Date(m.utcDate);
+                        // If current time is > matchTime + 15 minutes
+                        if (Date.now() - matchTime.getTime() > 15 * 60 * 1000) {
+                            console.log(`[Stale Check] Match ${matchId} should have started at ${m.utcDate} but status is still ${status}. Marking primary API as stale.`);
+                            hasStaleMatches = true;
+                        }
+                    }
+
                     const isFinished = status === 'FINISHED';
                     const isLive = status === 'IN_PLAY' || status === 'PAUSED';
                     
@@ -800,10 +812,15 @@ async function fetchLiveApiData() {
                 }
             });
 
-            apiGames = mappedGames;
-            apiGroups = cachedData ? cachedData.apiGroups : [];
-            apiTeams = cachedData ? cachedData.apiTeams : [];
-            primarySuccess = true;
+            if (hasStaleMatches) {
+                console.warn('[Stale Check] Primary API data has stale matches (scheduled start time has passed but status is scheduled/timed). Setting primarySuccess = false to trigger fallback to worldcup26.ir...');
+                primarySuccess = false;
+            } else {
+                apiGames = mappedGames;
+                apiGroups = cachedData ? cachedData.apiGroups : [];
+                apiTeams = cachedData ? cachedData.apiTeams : [];
+                primarySuccess = true;
+            }
             
             // Save to cache
             try {
@@ -826,10 +843,23 @@ async function fetchLiveApiData() {
     if (!primarySuccess) {
         console.log('Attempting fallback to worldcup26.ir API...');
         try {
-            const gamesData = await fetchResource(
+            const { execSync } = require('child_process');
+            let gamesData = await fetchResource(
                 'https://worldcup26.ir/get/games',
                 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/games'
             );
+            
+            // Local fallback using curl if fetch failed (useful on Windows)
+            if ((!gamesData || !gamesData.games) && process.platform === 'win32') {
+                try {
+                    console.log('Node fetch failed. Trying curl.exe fallback for games...');
+                    const stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/games', { maxBuffer: 10 * 1024 * 1024 });
+                    gamesData = JSON.parse(stdout.toString());
+                } catch (curlErr) {
+                    console.warn('curl.exe fallback failed for games:', curlErr.message);
+                }
+            }
+
             if (!gamesData || !gamesData.games) {
                 throw new Error('Failed to fetch live games from worldcup26.ir');
             }
@@ -909,10 +939,17 @@ async function fetchLiveApiData() {
             apiGames = mappedGames;
 
             console.log('Fetching live groups from worldcup26.ir...');
-            const groupsData = await fetchResource(
+            let groupsData = await fetchResource(
                 'https://worldcup26.ir/get/groups',
                 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/groups'
             );
+            if ((!groupsData || !groupsData.groups) && process.platform === 'win32') {
+                try {
+                    console.log('Node fetch failed. Trying curl.exe fallback for groups...');
+                    const stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/groups', { maxBuffer: 10 * 1024 * 1024 });
+                    groupsData = JSON.parse(stdout.toString());
+                } catch (e) {}
+            }
             if (groupsData && groupsData.groups) {
                 apiGroups = groupsData.groups;
             } else {
@@ -920,10 +957,17 @@ async function fetchLiveApiData() {
             }
 
             console.log('Fetching live teams from worldcup26.ir...');
-            const teamsData = await fetchResource(
+            let teamsData = await fetchResource(
                 'https://worldcup26.ir/get/teams',
                 'https://api.codetabs.com/v1/proxy/?quest=https://worldcup26.ir/get/teams'
             );
+            if ((!teamsData || !teamsData.teams) && process.platform === 'win32') {
+                try {
+                    console.log('Node fetch failed. Trying curl.exe fallback for teams...');
+                    const stdout = execSync('curl.exe -k -s https://worldcup26.ir/get/teams', { maxBuffer: 10 * 1024 * 1024 });
+                    teamsData = JSON.parse(stdout.toString());
+                } catch (e) {}
+            }
             if (teamsData && teamsData.teams) {
                 apiTeams = teamsData.teams;
             } else {
