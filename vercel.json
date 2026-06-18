@@ -1,4 +1,12 @@
 {
+  "functions": {
+    "api/**/*.js": {
+      "includeFiles": [
+        "MM2026_pistelaskenta.xlsx",
+        "tulokset.txt"
+      ]
+    }
+  },
   "rewrites": [
     {
       "source": "/agent-analysis-html",
