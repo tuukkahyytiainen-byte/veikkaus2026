@@ -530,9 +530,7 @@ async function fetchLiveApiData() {
     let apiTeams = [];
 
     // Load Excel sheet matches (1 to 72) as the source of truth for group stage team names
-    const excelPath = fs.existsSync(path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx'))
-        ? path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx')
-        : path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
+    const excelPath = path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
     
     const excelMatches = [];
     try {
@@ -812,8 +810,8 @@ async function fetchLiveApiData() {
                 }
             });
 
-            if (hasStaleMatches) {
-                console.warn('[Stale Check] Primary API data has stale matches (scheduled start time has passed but status is scheduled/timed). Setting primarySuccess = false to trigger fallback to worldcup26.ir...');
+            if (hasStaleMatches || mappedGames.length === 0) {
+                console.warn('[Stale/Mapping Check] Primary API data has stale matches or mapped 0 games (stale: ' + hasStaleMatches + ', mapped: ' + mappedGames.length + '). Setting primarySuccess = false to trigger fallback to worldcup26.ir...');
                 primarySuccess = false;
             } else {
                 apiGames = mappedGames;

@@ -14,8 +14,8 @@ module.exports = async (req, res) => {
     }
 
     try {
-        const excelPath = path.join(process.cwd(), 'MM2026_pistelaskenta.xlsx');
-        const txtPath = path.join(process.cwd(), 'tulokset.txt');
+        const excelPath = path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
+        const txtPath = path.join(__dirname, '..', 'tulokset.txt');
 
         console.log('Fetching live API data for dynamic serverless request...');
         const { apiGames, apiGroups, apiTeams } = await fetchLiveApiData();
