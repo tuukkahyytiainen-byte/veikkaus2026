@@ -487,8 +487,8 @@
       "group": "D",
       "matchday": "2",
       "local_date": "06/19/2026 19:00",
-      "finished": "FALSE",
-      "time_elapsed": "live",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "United States",
       "away_team_name_en": "Australia"
