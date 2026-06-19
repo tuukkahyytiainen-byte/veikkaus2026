@@ -50,6 +50,8 @@ const apiTeamNameToFinnish = {
     "panama": "Panama",
     "mexico": "Meksiko",
     "bosnia and herzegovina": "Bosnia ja Hertsegovina",
+    "bosnia-herzegovina": "Bosnia ja Hertsegovina",
+    "bosnia herzegovina": "Bosnia ja Hertsegovina",
     "united states": "USA",
     "australia": "Australia",
     "belgium": "Belgia",
@@ -511,6 +513,26 @@ async function fetchLiveApiData() {
             cachedData = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
         } catch (e) {
             console.warn('Failed to parse cached-api-data.json:', e.message);
+        }
+    }
+
+    // Load existing live-games.json as a fallback/preserve cache
+    let existingGames = [];
+    const possiblePaths = [
+        path.join(__dirname, '..', 'public', 'live-games.json'),
+        path.join(process.cwd(), 'public', 'live-games.json'),
+        '/var/task/public/live-games.json'
+    ];
+    for (const p of possiblePaths) {
+        if (fs.existsSync(p)) {
+            try {
+                const data = JSON.parse(fs.readFileSync(p, 'utf8'));
+                if (data && Array.isArray(data.games)) {
+                    existingGames = data.games;
+                    console.log(`[Cache Load] Loaded ${existingGames.length} existing games from ${p} as fallback/preserve cache.`);
+                    break;
+                }
+            } catch (e) {}
         }
     }
     
@@ -1026,6 +1048,29 @@ async function fetchLiveApiData() {
                 throw new Error('Failed to fetch live API data and no valid cache exists: ' + err.message);
             }
         }
+    }
+
+    // Post-process apiGames to merge/preserve with existingGames
+    if (existingGames.length > 0 && apiGames && apiGames.length > 0) {
+        // 1. For any game in apiGames, if it's finished but has 0-0, check if existingGames has a non-zero score
+        apiGames.forEach(g => {
+            if (g.finished === 'TRUE' && g.home_score === '0' && g.away_score === '0') {
+                const eg = existingGames.find(x => x.id === g.id);
+                if (eg && eg.finished === 'TRUE' && (eg.home_score !== '0' || eg.away_score !== '0')) {
+                    console.log(`[Preserve Score] Match ${g.id} was reset to 0-0 but was finished as ${eg.home_score}-${eg.away_score} in existing live-games.json. Restoring score.`);
+                    g.home_score = eg.home_score;
+                    g.away_score = eg.away_score;
+                }
+            }
+        });
+
+        // 2. If any game in existingGames is finished but is completely missing from apiGames, add it back!
+        existingGames.forEach(eg => {
+            if (eg.finished === 'TRUE' && !apiGames.some(x => x.id === eg.id)) {
+                console.log(`[Preserve Match] Match ${eg.id} is missing from new API games but was finished in existing live-games.json. Adding it back.`);
+                apiGames.push(eg);
+            }
+        });
     }
 
     return { apiGames, apiGroups, apiTeams };
