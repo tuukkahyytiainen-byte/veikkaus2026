@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-20T18:08:52.890Z",
+  "generatedAt": "2026-06-20T19:56:55.551Z",
   "summary": {
     "playedMatchesCount": 33,
     "totalMatches": 72,
@@ -15,23 +15,23 @@
       "group": "F",
       "team1": "Hollanti",
       "team2": "Ruotsi",
-      "goals1": 2,
-      "goals2": 0
+      "goals1": 5,
+      "goals2": 1
     }
   ],
   "leaderboardTop": [
     {
       "rank": 1,
       "name": "Kiiskiministeri",
-      "totalPoints": 93,
-      "matchPoints": 93,
+      "totalPoints": 91,
+      "matchPoints": 91,
       "exactlyCorrect": 7
     },
     {
       "rank": 2,
       "name": "Mike Salmon",
-      "totalPoints": 91,
-      "matchPoints": 91,
+      "totalPoints": 89,
+      "matchPoints": 89,
       "exactlyCorrect": 6
     },
     {
@@ -44,50 +44,50 @@
     {
       "rank": 4,
       "name": "Johnny Rotten",
-      "totalPoints": 86,
-      "matchPoints": 86,
+      "totalPoints": 84,
+      "matchPoints": 84,
       "exactlyCorrect": 5
     },
     {
       "rank": 5,
       "name": "Pontemon",
-      "totalPoints": 85,
-      "matchPoints": 85,
+      "totalPoints": 83,
+      "matchPoints": 83,
       "exactlyCorrect": 2
     },
     {
       "rank": 6,
       "name": "Repetti",
-      "totalPoints": 84,
-      "matchPoints": 84,
+      "totalPoints": 82,
+      "matchPoints": 82,
       "exactlyCorrect": 6
     },
     {
       "rank": 7,
-      "name": "Neyney",
-      "totalPoints": 81,
-      "matchPoints": 81,
-      "exactlyCorrect": 5
+      "name": "Drent",
+      "totalPoints": 78,
+      "matchPoints": 78,
+      "exactlyCorrect": 3
     },
     {
-      "rank": 8,
-      "name": "Joni",
-      "totalPoints": 80,
-      "matchPoints": 80,
-      "exactlyCorrect": 6
-    },
-    {
-      "rank": 8,
+      "rank": 7,
       "name": "Ice Cold",
-      "totalPoints": 80,
-      "matchPoints": 80,
+      "totalPoints": 78,
+      "matchPoints": 78,
       "exactlyCorrect": 2
     },
     {
-      "rank": 10,
+      "rank": 9,
       "name": "IlkkuPro75",
-      "totalPoints": 79,
-      "matchPoints": 79,
+      "totalPoints": 77,
+      "matchPoints": 77,
+      "exactlyCorrect": 4
+    },
+    {
+      "rank": 9,
+      "name": "Neyney",
+      "totalPoints": 77,
+      "matchPoints": 77,
       "exactlyCorrect": 4
     }
   ],
@@ -121,20 +121,20 @@
         "group": "F",
         "team1": "Hollanti",
         "team2": "Ruotsi",
-        "goals1": 2,
-        "goals2": 0,
-        "resultText": "2-0",
+        "goals1": 5,
+        "goals2": 1,
+        "resultText": "5-1",
         "hasResult": true
       }
     ],
     "participantPoints": [
       {
         "name": "Nipa",
-        "rankNow": 38,
+        "rankNow": 34,
         "totalPointsNow": 63,
         "pointsInWindow": 16,
         "rankBeforeWindow": 48,
-        "rankChange": 10,
+        "rankChange": 14,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -159,7 +159,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -169,8 +169,8 @@
       {
         "name": "Max",
         "rankNow": 11,
-        "totalPointsNow": 78,
-        "pointsInWindow": 16,
+        "totalPointsNow": 76,
+        "pointsInWindow": 14,
         "rankBeforeWindow": 17,
         "rankChange": 6,
         "exactResultsInWindow": 1,
@@ -197,9 +197,9 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -207,8 +207,8 @@
       {
         "name": "Pora",
         "rankNow": 31,
-        "totalPointsNow": 67,
-        "pointsInWindow": 16,
+        "totalPointsNow": 65,
+        "pointsInWindow": 14,
         "rankBeforeWindow": 42,
         "rankChange": 11,
         "exactResultsInWindow": 1,
@@ -235,20 +235,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "ArtsiKerho",
-        "rankNow": 42,
-        "totalPointsNow": 61,
-        "pointsInWindow": 16,
+        "rankNow": 41,
+        "totalPointsNow": 59,
+        "pointsInWindow": 14,
         "rankBeforeWindow": 44,
-        "rankChange": 2,
+        "rankChange": 3,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -273,9 +273,47 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "PoHan Pullistus",
+        "rankNow": 32,
+        "totalPointsNow": 64,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 46,
+        "rankChange": 14,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
             "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "3-1",
+            "points": 4,
             "exactResult": false
           }
         ]
@@ -283,8 +321,8 @@
       {
         "name": "Repetti",
         "rankNow": 6,
-        "totalPointsNow": 84,
-        "pointsInWindow": 14,
+        "totalPointsNow": 82,
+        "pointsInWindow": 12,
         "rankBeforeWindow": 5,
         "rankChange": -1,
         "exactResultsInWindow": 1,
@@ -311,29 +349,29 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "PoHan Pullistus",
-        "rankNow": 35,
-        "totalPointsNow": 64,
-        "pointsInWindow": 13,
-        "rankBeforeWindow": 46,
-        "rankChange": 11,
-        "exactResultsInWindow": 0,
+        "name": "Minkário de Souza Faria",
+        "rankNow": 16,
+        "totalPointsNow": 72,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 11,
+        "rankChange": -5,
+        "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 29,
             "team1": "Brasilia",
             "team2": "Haiti",
             "resultText": "3-0",
-            "predictedResultText": "4-1",
-            "points": 4,
+            "predictedResultText": "4-0",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -341,45 +379,7 @@
             "team1": "Turkki",
             "team2": "Paraguay",
             "resultText": "0-1",
-            "predictedResultText": "0-2",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "3-1",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Joni",
-        "rankNow": 8,
-        "totalPointsNow": 80,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 17,
-        "rankChange": 9,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           },
@@ -387,46 +387,8 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Tero H",
-        "rankNow": 13,
-        "totalPointsNow": 76,
-        "pointsInWindow": 12,
-        "rankBeforeWindow": 25,
-        "rankChange": 12,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
+            "resultText": "5-1",
+            "predictedResultText": "5-1",
             "points": 6,
             "exactResult": true
           }
@@ -435,8 +397,8 @@
       {
         "name": "Kiiskiministeri",
         "rankNow": 1,
-        "totalPointsNow": 93,
-        "pointsInWindow": 11,
+        "totalPointsNow": 91,
+        "pointsInWindow": 9,
         "rankBeforeWindow": 1,
         "rankChange": 0,
         "exactResultsInWindow": 1,
@@ -463,9 +425,9 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -473,8 +435,8 @@
       {
         "name": "Johnny Rotten",
         "rankNow": 4,
-        "totalPointsNow": 86,
-        "pointsInWindow": 11,
+        "totalPointsNow": 84,
+        "pointsInWindow": 9,
         "rankBeforeWindow": 5,
         "rankChange": 1,
         "exactResultsInWindow": 1,
@@ -501,20 +463,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Neyney",
+        "name": "Ice Cold",
         "rankNow": 7,
-        "totalPointsNow": 81,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 14,
-        "rankChange": 7,
+        "totalPointsNow": 78,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 12,
+        "rankChange": 5,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -522,16 +484,16 @@
             "team1": "Brasilia",
             "team2": "Haiti",
             "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 31,
             "team1": "Turkki",
             "team2": "Paraguay",
             "resultText": "0-1",
-            "predictedResultText": "1-0",
+            "predictedResultText": "2-1",
             "points": 0,
             "exactResult": false
           },
@@ -539,19 +501,171 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
           }
         ]
       },
       {
-        "name": "Ice Cold",
-        "rankNow": 8,
-        "totalPointsNow": 80,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 12,
+        "name": "IlkkuPro75",
+        "rankNow": 9,
+        "totalPointsNow": 77,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 19,
+        "rankChange": 10,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Jossu",
+        "rankNow": 14,
+        "totalPointsNow": 73,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 14,
+        "rankChange": 0,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 19,
+        "totalPointsNow": 71,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 21,
+        "rankChange": 2,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "3-2",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Heinomar",
+        "rankNow": 26,
+        "totalPointsNow": 69,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 34,
+        "rankChange": 8,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Profeetta Möttönen",
+        "rankNow": 34,
+        "totalPointsNow": 63,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 38,
         "rankChange": 4,
         "exactResultsInWindow": 1,
         "matchPoints": [
@@ -569,82 +683,6 @@
             "team1": "Turkki",
             "team2": "Paraguay",
             "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "IlkkuPro75",
-        "rankNow": 10,
-        "totalPointsNow": 79,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 19,
-        "rankChange": 9,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Jossu",
-        "rankNow": 15,
-        "totalPointsNow": 75,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 14,
-        "rankChange": -1,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
@@ -653,323 +691,19 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "werner strandhügel",
-        "rankNow": 17,
-        "totalPointsNow": 74,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 19,
-        "rankChange": 2,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Rosaldo",
-        "rankNow": 17,
-        "totalPointsNow": 74,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 25,
-        "rankChange": 8,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Heinomar",
-        "rankNow": 22,
-        "totalPointsNow": 71,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 34,
-        "rankChange": 12,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Profeetta Möttönen",
-        "rankNow": 32,
-        "totalPointsNow": 65,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 38,
-        "rankChange": 6,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 32,
-        "totalPointsNow": 65,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 34,
-        "rankChange": 2,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
       {
         "name": "Sipolovic",
-        "rankNow": 32,
-        "totalPointsNow": 65,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 25,
-        "rankChange": -7,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tommy Favorite",
-        "rankNow": 35,
-        "totalPointsNow": 64,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 38,
-        "rankChange": 3,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pauli Koponen",
-        "rankNow": 38,
+        "rankNow": 34,
         "totalPointsNow": 63,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 41,
-        "rankChange": 3,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Keto Armstrong",
-        "rankNow": 41,
-        "totalPointsNow": 62,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 32,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 25,
         "rankChange": -9,
         "exactResultsInWindow": 1,
         "matchPoints": [
@@ -978,9 +712,47 @@
             "team1": "Brasilia",
             "team2": "Haiti",
             "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
             "predictedResultText": "2-0",
-            "points": 5,
+            "points": 0,
             "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tommy Favorite",
+        "rankNow": 38,
+        "totalPointsNow": 62,
+        "pointsInWindow": 9,
+        "rankBeforeWindow": 38,
+        "rankChange": 0,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 31,
@@ -995,324 +767,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Eski66",
-        "rankNow": 42,
-        "totalPointsNow": 61,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 47,
-        "rankChange": 5,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Ibaldo de Lima",
-        "rankNow": 15,
-        "totalPointsNow": 75,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 25,
-        "rankChange": 10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "5-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Temez",
-        "rankNow": 22,
-        "totalPointsNow": 71,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 21,
-        "rankChange": -1,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "5-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Mike Salmon",
-        "rankNow": 2,
-        "totalPointsNow": 91,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 2,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pontemon",
-        "rankNow": 5,
-        "totalPointsNow": 85,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 5,
-        "rankChange": 0,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Esko",
-        "rankNow": 17,
-        "totalPointsNow": 74,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 24,
-        "rankChange": 7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Temezotti",
-        "rankNow": 21,
-        "totalPointsNow": 72,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 30,
-        "rankChange": 9,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Suomaldinho",
-        "rankNow": 26,
-        "totalPointsNow": 70,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 32,
-        "rankChange": 6,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Teo ja Noel",
-        "rankNow": 22,
-        "totalPointsNow": 71,
+        "rankNow": 41,
+        "totalPointsNow": 59,
         "pointsInWindow": 9,
-        "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankBeforeWindow": 47,
+        "rankChange": 6,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -1329,7 +797,7 @@
             "team1": "Turkki",
             "team2": "Paraguay",
             "resultText": "0-1",
-            "predictedResultText": "2-0",
+            "predictedResultText": "3-1",
             "points": 0,
             "exactResult": false
           },
@@ -1337,8 +805,8 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "3-2",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
             "points": 3,
             "exactResult": false
           }
@@ -1346,11 +814,11 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 20,
+        "rankNow": 14,
         "totalPointsNow": 73,
         "pointsInWindow": 9,
         "rankBeforeWindow": 25,
-        "rankChange": 5,
+        "rankChange": 11,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1375,7 +843,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -1383,50 +851,12 @@
         ]
       },
       {
-        "name": "Tomas Brolin",
-        "rankNow": 26,
-        "totalPointsNow": 70,
-        "pointsInWindow": 9,
-        "rankBeforeWindow": 21,
-        "rankChange": -5,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "5-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
         "name": "Tuurilla",
-        "rankNow": 46,
+        "rankNow": 45,
         "totalPointsNow": 58,
         "pointsInWindow": 9,
         "rankBeforeWindow": 45,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1451,7 +881,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
@@ -1489,9 +919,123 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Joni",
+        "rankNow": 11,
+        "totalPointsNow": 76,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 17,
+        "rankChange": 6,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tero H",
+        "rankNow": 16,
+        "totalPointsNow": 72,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 25,
+        "rankChange": 9,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Mike Salmon",
+        "rankNow": 2,
+        "totalPointsNow": 89,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 2,
+        "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -1527,7 +1071,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -1535,12 +1079,50 @@
         ]
       },
       {
-        "name": "Minkário de Souza Faria",
-        "rankNow": 28,
-        "totalPointsNow": 68,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 11,
-        "rankChange": -17,
+        "name": "Pontemon",
+        "rankNow": 5,
+        "totalPointsNow": 83,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 5,
+        "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Esko",
+        "rankNow": 16,
+        "totalPointsNow": 72,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 24,
+        "rankChange": 8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1565,134 +1147,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "5-1",
-            "points": 2,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "SKA Hänninen",
-        "rankNow": 38,
-        "totalPointsNow": 63,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 30,
-        "rankChange": -8,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-3",
             "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Shampoo",
-        "rankNow": 22,
-        "totalPointsNow": 71,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 12,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Carey Lily",
-        "rankNow": 44,
-        "totalPointsNow": 60,
-        "pointsInWindow": 6,
-        "rankBeforeWindow": 34,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Sanukka",
-        "rankNow": 28,
-        "totalPointsNow": 68,
-        "pointsInWindow": 6,
+        "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 10,
-        "rankChange": -18,
+        "rankChange": -12,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1717,8 +1185,540 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "4-2",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temezotti",
+        "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 30,
+        "rankChange": 8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Suomaldinho",
+        "rankNow": 27,
+        "totalPointsNow": 68,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 32,
+        "rankChange": 5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Neyney",
+        "rankNow": 9,
+        "totalPointsNow": 77,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 14,
+        "rankChange": 5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "werner strandhügel",
+        "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 19,
+        "rankChange": -3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rosaldo",
+        "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 25,
+        "rankChange": 3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Tomas Brolin",
+        "rankNow": 27,
+        "totalPointsNow": 68,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 21,
+        "rankChange": -6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "5-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "SKA Hänninen",
+        "rankNow": 34,
+        "totalPointsNow": 63,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 30,
+        "rankChange": -4,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-3",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankNow": 39,
+        "totalPointsNow": 61,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 34,
+        "rankChange": -5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pauli Koponen",
+        "rankNow": 41,
+        "totalPointsNow": 59,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 41,
+        "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Keto Armstrong",
+        "rankNow": 45,
+        "totalPointsNow": 58,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 32,
+        "rankChange": -13,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Shampoo",
+        "rankNow": 19,
+        "totalPointsNow": 71,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 12,
+        "rankChange": -7,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Carey Lily",
+        "rankNow": 40,
+        "totalPointsNow": 60,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 34,
+        "rankChange": -6,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Ibaldo de Lima",
+        "rankNow": 19,
+        "totalPointsNow": 71,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 25,
+        "rankChange": 6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "5-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temez",
+        "rankNow": 30,
+        "totalPointsNow": 67,
+        "pointsInWindow": 6,
+        "rankBeforeWindow": 21,
+        "rankChange": -9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "5-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
             "points": 2,
             "exactResult": false
           }
@@ -1755,7 +1755,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -1764,11 +1764,11 @@
       },
       {
         "name": "Drent",
-        "rankNow": 11,
+        "rankNow": 7,
         "totalPointsNow": 78,
         "pointsInWindow": 5,
         "rankBeforeWindow": 4,
-        "rankChange": -7,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1793,7 +1793,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-2",
             "points": 3,
             "exactResult": false
@@ -1802,11 +1802,11 @@
       },
       {
         "name": "LegendaryLebu",
-        "rankNow": 13,
+        "rankNow": 11,
         "totalPointsNow": 76,
         "pointsInWindow": 5,
         "rankBeforeWindow": 8,
-        "rankChange": -5,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1831,7 +1831,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -1840,11 +1840,11 @@
       },
       {
         "name": "Sedu",
-        "rankNow": 28,
+        "rankNow": 27,
         "totalPointsNow": 68,
         "pointsInWindow": 5,
         "rankBeforeWindow": 9,
-        "rankChange": -19,
+        "rankChange": -18,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1869,7 +1869,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-2",
             "points": 0,
             "exactResult": false
@@ -1878,11 +1878,11 @@
       },
       {
         "name": "Chica",
-        "rankNow": 35,
+        "rankNow": 32,
         "totalPointsNow": 64,
         "pointsInWindow": 5,
         "rankBeforeWindow": 14,
-        "rankChange": -21,
+        "rankChange": -18,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1907,7 +1907,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -1916,11 +1916,11 @@
       },
       {
         "name": "The Moka",
-        "rankNow": 45,
+        "rankNow": 41,
         "totalPointsNow": 59,
         "pointsInWindow": 5,
         "rankBeforeWindow": 40,
-        "rankChange": -5,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1945,7 +1945,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-2",
             "points": 0,
             "exactResult": false
@@ -1961,23 +1961,23 @@
       },
       {
         "name": "Max",
-        "pointsInWindow": 16,
+        "pointsInWindow": 14,
         "exactResultsInWindow": 1
       },
       {
         "name": "Pora",
-        "pointsInWindow": 16,
+        "pointsInWindow": 14,
         "exactResultsInWindow": 1
       },
       {
         "name": "ArtsiKerho",
-        "pointsInWindow": 16,
+        "pointsInWindow": 14,
         "exactResultsInWindow": 1
       },
       {
-        "name": "Repetti",
-        "pointsInWindow": 14,
-        "exactResultsInWindow": 1
+        "name": "PoHan Pullistus",
+        "pointsInWindow": 13,
+        "exactResultsInWindow": 0
       }
     ],
     "perfectScores": [
@@ -2024,32 +2024,11 @@
         "actual": "3-0"
       },
       {
-        "name": "Joni",
-        "matchNr": 29,
-        "match": "Brasilia–Haiti",
-        "guess": "3-0",
-        "actual": "3-0"
-      },
-      {
-        "name": "Joni",
+        "name": "Minkário de Souza Faria",
         "matchNr": 35,
         "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
-      },
-      {
-        "name": "Tero H",
-        "matchNr": 29,
-        "match": "Brasilia–Haiti",
-        "guess": "3-0",
-        "actual": "3-0"
-      },
-      {
-        "name": "Tero H",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
+        "guess": "5-1",
+        "actual": "5-1"
       },
       {
         "name": "Kiiskiministeri",
@@ -2064,13 +2043,6 @@
         "match": "Brasilia–Haiti",
         "guess": "3-0",
         "actual": "3-0"
-      },
-      {
-        "name": "Neyney",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
       },
       {
         "name": "Ice Cold",
@@ -2094,18 +2066,11 @@
         "actual": "3-0"
       },
       {
-        "name": "werner strandhügel",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
-      },
-      {
-        "name": "Rosaldo",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
+        "name": "Teo ja Noel",
+        "matchNr": 29,
+        "match": "Brasilia–Haiti",
+        "guess": "3-0",
+        "actual": "3-0"
       },
       {
         "name": "Heinomar",
@@ -2122,13 +2087,6 @@
         "actual": "3-0"
       },
       {
-        "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
-      },
-      {
         "name": "Sipolovic",
         "matchNr": 29,
         "match": "Brasilia–Haiti",
@@ -2143,20 +2101,6 @@
         "actual": "3-0"
       },
       {
-        "name": "Pauli Koponen",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
-      },
-      {
-        "name": "Keto Armstrong",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
-      },
-      {
         "name": "Eski66",
         "matchNr": 29,
         "match": "Brasilia–Haiti",
@@ -2164,21 +2108,14 @@
         "actual": "3-0"
       },
       {
-        "name": "Ibaldo de Lima",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
+        "name": "Joni",
+        "matchNr": 29,
+        "match": "Brasilia–Haiti",
+        "guess": "3-0",
+        "actual": "3-0"
       },
       {
-        "name": "Temez",
-        "matchNr": 35,
-        "match": "Hollanti–Ruotsi",
-        "guess": "2-0",
-        "actual": "2-0"
-      },
-      {
-        "name": "Teo ja Noel",
+        "name": "Tero H",
         "matchNr": 29,
         "match": "Brasilia–Haiti",
         "guess": "3-0",
@@ -2201,69 +2138,55 @@
     ],
     "biggestRisers": [
       {
-        "name": "Tero H",
-        "rankBeforeWindow": 25,
-        "rankNow": 13,
-        "rankChange": 12,
-        "pointsInWindow": 12
+        "name": "Nipa",
+        "rankBeforeWindow": 48,
+        "rankNow": 34,
+        "rankChange": 14,
+        "pointsInWindow": 16
       },
       {
-        "name": "Heinomar",
-        "rankBeforeWindow": 34,
-        "rankNow": 22,
-        "rankChange": 12,
-        "pointsInWindow": 11
+        "name": "PoHan Pullistus",
+        "rankBeforeWindow": 46,
+        "rankNow": 32,
+        "rankChange": 14,
+        "pointsInWindow": 13
       },
       {
         "name": "Pora",
         "rankBeforeWindow": 42,
         "rankNow": 31,
         "rankChange": 11,
-        "pointsInWindow": 16
+        "pointsInWindow": 14
       },
       {
-        "name": "PoHan Pullistus",
-        "rankBeforeWindow": 46,
-        "rankNow": 35,
+        "name": "Xhakku",
+        "rankBeforeWindow": 25,
+        "rankNow": 14,
         "rankChange": 11,
-        "pointsInWindow": 13
+        "pointsInWindow": 9
       },
       {
-        "name": "Nipa",
-        "rankBeforeWindow": 48,
-        "rankNow": 38,
+        "name": "IlkkuPro75",
+        "rankBeforeWindow": 19,
+        "rankNow": 9,
         "rankChange": 10,
-        "pointsInWindow": 16
+        "pointsInWindow": 9
       }
     ],
     "biggestFallers": [
       {
-        "name": "Chica",
-        "rankBeforeWindow": 14,
-        "rankNow": 35,
-        "rankChange": -21,
-        "pointsInWindow": 5
-      },
-      {
         "name": "Sedu",
         "rankBeforeWindow": 9,
-        "rankNow": 28,
-        "rankChange": -19,
+        "rankNow": 27,
+        "rankChange": -18,
         "pointsInWindow": 5
       },
       {
-        "name": "Sanukka",
-        "rankBeforeWindow": 10,
-        "rankNow": 28,
+        "name": "Chica",
+        "rankBeforeWindow": 14,
+        "rankNow": 32,
         "rankChange": -18,
-        "pointsInWindow": 6
-      },
-      {
-        "name": "Minkário de Souza Faria",
-        "rankBeforeWindow": 11,
-        "rankNow": 28,
-        "rankChange": -17,
-        "pointsInWindow": 7
+        "pointsInWindow": 5
       },
       {
         "name": "Tuna",
@@ -2271,6 +2194,20 @@
         "rankNow": 47,
         "rankChange": -13,
         "pointsInWindow": 6
+      },
+      {
+        "name": "Keto Armstrong",
+        "rankBeforeWindow": 32,
+        "rankNow": 45,
+        "rankChange": -13,
+        "pointsInWindow": 7
+      },
+      {
+        "name": "Sanukka",
+        "rankBeforeWindow": 10,
+        "rankNow": 22,
+        "rankChange": -12,
+        "pointsInWindow": 8
       }
     ],
     "zeroPointers": []
@@ -2279,11 +2216,11 @@
     "participantPoints": [
       {
         "name": "Nipa",
-        "rankNow": 38,
+        "rankNow": 34,
         "totalPointsNow": 63,
         "pointsInWindow": 25,
         "rankBeforeWindow": 48,
-        "rankChange": 10,
+        "rankChange": 14,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -2326,7 +2263,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -2334,236 +2271,12 @@
         ]
       },
       {
-        "name": "Neyney",
-        "rankNow": 7,
-        "totalPointsNow": 81,
-        "pointsInWindow": 22,
-        "rankBeforeWindow": 14,
-        "rankChange": 7,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "1-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "0-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Joni",
-        "rankNow": 8,
-        "totalPointsNow": 80,
-        "pointsInWindow": 22,
-        "rankBeforeWindow": 17,
-        "rankChange": 9,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "0-2",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "IlkkuPro75",
-        "rankNow": 10,
-        "totalPointsNow": 79,
-        "pointsInWindow": 22,
-        "rankBeforeWindow": 19,
-        "rankChange": 9,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "0-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tero H",
-        "rankNow": 13,
-        "totalPointsNow": 76,
-        "pointsInWindow": 22,
-        "rankBeforeWindow": 25,
-        "rankChange": 12,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "0-2",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
         "name": "PoHan Pullistus",
-        "rankNow": 35,
+        "rankNow": 32,
         "totalPointsNow": 64,
         "pointsInWindow": 22,
         "rankBeforeWindow": 46,
-        "rankChange": 11,
+        "rankChange": 14,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2606,7 +2319,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -2614,10 +2327,66 @@
         ]
       },
       {
+        "name": "IlkkuPro75",
+        "rankNow": 9,
+        "totalPointsNow": 77,
+        "pointsInWindow": 20,
+        "rankBeforeWindow": 19,
+        "rankChange": 10,
+        "exactResultsInWindow": 2,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
         "name": "Johnny Rotten",
         "rankNow": 4,
-        "totalPointsNow": 86,
-        "pointsInWindow": 21,
+        "totalPointsNow": 84,
+        "pointsInWindow": 19,
         "rankBeforeWindow": 5,
         "rankChange": 1,
         "exactResultsInWindow": 2,
@@ -2662,76 +2431,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Ibaldo de Lima",
-        "rankNow": 15,
-        "totalPointsNow": 75,
-        "pointsInWindow": 21,
-        "rankBeforeWindow": 25,
-        "rankChange": 10,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "1-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "0-1",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "5-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
           }
         ]
       },
       {
         "name": "Eski66",
-        "rankNow": 42,
-        "totalPointsNow": 61,
-        "pointsInWindow": 21,
+        "rankNow": 41,
+        "totalPointsNow": 59,
+        "pointsInWindow": 19,
         "rankBeforeWindow": 47,
-        "rankChange": 5,
+        "rankChange": 6,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -2774,20 +2487,76 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Xhakku",
+        "rankNow": 14,
+        "totalPointsNow": 73,
+        "pointsInWindow": 19,
+        "rankBeforeWindow": 25,
+        "rankChange": 11,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
             "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "3-1",
+            "points": 4,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Heinomar",
-        "rankNow": 22,
-        "totalPointsNow": 71,
-        "pointsInWindow": 21,
+        "rankNow": 26,
+        "totalPointsNow": 69,
+        "pointsInWindow": 19,
         "rankBeforeWindow": 34,
-        "rankChange": 12,
+        "rankChange": 8,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2830,9 +2599,9 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -2840,8 +2609,8 @@
       {
         "name": "Pora",
         "rankNow": 31,
-        "totalPointsNow": 67,
-        "pointsInWindow": 21,
+        "totalPointsNow": 65,
+        "pointsInWindow": 19,
         "rankBeforeWindow": 42,
         "rankChange": 11,
         "exactResultsInWindow": 1,
@@ -2886,20 +2655,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Ice Cold",
-        "rankNow": 8,
-        "totalPointsNow": 80,
-        "pointsInWindow": 20,
+        "rankNow": 7,
+        "totalPointsNow": 78,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 12,
-        "rankChange": 4,
+        "rankChange": 5,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2942,9 +2711,121 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Neyney",
+        "rankNow": 9,
+        "totalPointsNow": 77,
+        "pointsInWindow": 18,
+        "rankBeforeWindow": 14,
+        "rankChange": 5,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Joni",
+        "rankNow": 11,
+        "totalPointsNow": 76,
+        "pointsInWindow": 18,
+        "rankBeforeWindow": 17,
+        "rankChange": 6,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
             "resultText": "2-0",
             "predictedResultText": "2-1",
             "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           }
         ]
@@ -2952,8 +2833,8 @@
       {
         "name": "Max",
         "rankNow": 11,
-        "totalPointsNow": 78,
-        "pointsInWindow": 20,
+        "totalPointsNow": 76,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 17,
         "rankChange": 6,
         "exactResultsInWindow": 1,
@@ -2998,20 +2879,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Rosaldo",
-        "rankNow": 17,
-        "totalPointsNow": 74,
-        "pointsInWindow": 20,
+        "name": "Tero H",
+        "rankNow": 16,
+        "totalPointsNow": 72,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 25,
-        "rankChange": 8,
+        "rankChange": 9,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3028,8 +2909,8 @@
             "team1": "Skotlanti",
             "team2": "Marokko",
             "resultText": "0-1",
-            "predictedResultText": "1-2",
-            "points": 4,
+            "predictedResultText": "0-2",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -3037,9 +2918,9 @@
             "team1": "Brasilia",
             "team2": "Haiti",
             "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 31,
@@ -3054,18 +2935,18 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
+            "points": 2,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Pontemon",
         "rankNow": 5,
-        "totalPointsNow": 85,
-        "pointsInWindow": 20,
+        "totalPointsNow": 83,
+        "pointsInWindow": 18,
         "rankBeforeWindow": 5,
         "rankChange": 0,
         "exactResultsInWindow": 0,
@@ -3110,9 +2991,9 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -3120,8 +3001,8 @@
       {
         "name": "Repetti",
         "rankNow": 6,
-        "totalPointsNow": 84,
-        "pointsInWindow": 19,
+        "totalPointsNow": 82,
+        "pointsInWindow": 17,
         "rankBeforeWindow": 5,
         "rankChange": -1,
         "exactResultsInWindow": 1,
@@ -3166,20 +3047,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
-        "name": "Xhakku",
-        "rankNow": 20,
-        "totalPointsNow": 73,
-        "pointsInWindow": 19,
+        "name": "Ibaldo de Lima",
+        "rankNow": 19,
+        "totalPointsNow": 71,
+        "pointsInWindow": 17,
         "rankBeforeWindow": 25,
-        "rankChange": 5,
+        "rankChange": 6,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3187,26 +3068,26 @@
             "team1": "USA",
             "team2": "Australia",
             "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
           },
           {
             "matchNr": 30,
             "team1": "Skotlanti",
             "team2": "Marokko",
             "resultText": "0-1",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
+            "predictedResultText": "0-1",
+            "points": 6,
+            "exactResult": true
           },
           {
             "matchNr": 29,
             "team1": "Brasilia",
             "team2": "Haiti",
             "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
+            "predictedResultText": "5-0",
+            "points": 4,
             "exactResult": false
           },
           {
@@ -3214,7 +3095,7 @@
             "team1": "Turkki",
             "team2": "Paraguay",
             "resultText": "0-1",
-            "predictedResultText": "3-1",
+            "predictedResultText": "1-0",
             "points": 0,
             "exactResult": false
           },
@@ -3222,20 +3103,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "3-1",
-            "points": 4,
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Esko",
-        "rankNow": 17,
-        "totalPointsNow": 74,
-        "pointsInWindow": 19,
+        "rankNow": 16,
+        "totalPointsNow": 72,
+        "pointsInWindow": 17,
         "rankBeforeWindow": 24,
-        "rankChange": 7,
+        "rankChange": 8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3278,20 +3159,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Temezotti",
-        "rankNow": 21,
-        "totalPointsNow": 72,
-        "pointsInWindow": 19,
+        "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 17,
         "rankBeforeWindow": 30,
-        "rankChange": 9,
+        "rankChange": 8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3334,20 +3215,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Suomaldinho",
-        "rankNow": 26,
-        "totalPointsNow": 70,
-        "pointsInWindow": 19,
+        "rankNow": 27,
+        "totalPointsNow": 68,
+        "pointsInWindow": 17,
         "rankBeforeWindow": 32,
-        "rankChange": 6,
+        "rankChange": 5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3390,289 +3271,9 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "werner strandhügel",
-        "rankNow": 17,
-        "totalPointsNow": 74,
-        "pointsInWindow": 17,
-        "rankBeforeWindow": 19,
-        "rankChange": 2,
-        "exactResultsInWindow": 2,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Jossu",
-        "rankNow": 15,
-        "totalPointsNow": 75,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 14,
-        "rankChange": -1,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Profeetta Möttönen",
-        "rankNow": 32,
-        "totalPointsNow": 65,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 38,
-        "rankChange": 6,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Pauli Koponen",
-        "rankNow": 38,
-        "totalPointsNow": 63,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 41,
-        "rankChange": 3,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "ArtsiKerho",
-        "rankNow": 42,
-        "totalPointsNow": 61,
-        "pointsInWindow": 16,
-        "rankBeforeWindow": 44,
-        "rankChange": 2,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "0-2",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -3726,7 +3327,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -3734,12 +3335,68 @@
         ]
       },
       {
-        "name": "Teo ja Noel",
+        "name": "Rosaldo",
         "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 16,
+        "rankBeforeWindow": 25,
+        "rankChange": 3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Teo ja Noel",
+        "rankNow": 19,
         "totalPointsNow": 71,
         "pointsInWindow": 15,
         "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankChange": 2,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -3782,7 +3439,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-2",
             "points": 3,
             "exactResult": false
@@ -3790,85 +3447,29 @@
         ]
       },
       {
-        "name": "Temez",
-        "rankNow": 22,
-        "totalPointsNow": 71,
+        "name": "Tuurilla",
+        "rankNow": 45,
+        "totalPointsNow": 58,
         "pointsInWindow": 15,
-        "rankBeforeWindow": 21,
-        "rankChange": -1,
+        "rankBeforeWindow": 45,
+        "rankChange": 0,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
             "matchNr": 32,
             "team1": "USA",
             "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "5-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
             "resultText": "2-0",
             "predictedResultText": "2-0",
             "points": 6,
             "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "Rikhard Moeller-Kalanmaksaoeljy",
-        "rankNow": 32,
-        "totalPointsNow": 65,
-        "pointsInWindow": 15,
-        "rankBeforeWindow": 34,
-        "rankChange": 2,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "3-1",
-            "points": 4,
-            "exactResult": false
           },
           {
             "matchNr": 30,
             "team1": "Skotlanti",
             "team2": "Marokko",
             "resultText": "0-1",
-            "predictedResultText": "0-0",
+            "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
           },
@@ -3886,6 +3487,62 @@
             "team1": "Turkki",
             "team2": "Paraguay",
             "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Jossu",
+        "rankNow": 14,
+        "totalPointsNow": 73,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 14,
+        "rankChange": 0,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
             "predictedResultText": "1-1",
             "points": 0,
             "exactResult": false
@@ -3894,20 +3551,188 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Profeetta Möttönen",
+        "rankNow": 34,
+        "totalPointsNow": 63,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 38,
+        "rankChange": 4,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "ArtsiKerho",
+        "rankNow": 41,
+        "totalPointsNow": 59,
+        "pointsInWindow": 14,
+        "rankBeforeWindow": 44,
+        "rankChange": 3,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "0-2",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "werner strandhügel",
+        "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 13,
+        "rankBeforeWindow": 19,
+        "rankChange": -3,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
             "resultText": "2-0",
             "predictedResultText": "2-0",
             "points": 6,
             "exactResult": true
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
           }
         ]
       },
       {
         "name": "Tommy Favorite",
-        "rankNow": 35,
-        "totalPointsNow": 64,
-        "pointsInWindow": 15,
+        "rankNow": 38,
+        "totalPointsNow": 62,
+        "pointsInWindow": 13,
         "rankBeforeWindow": 38,
-        "rankChange": 3,
+        "rankChange": 0,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3950,65 +3775,9 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tuurilla",
-        "rankNow": 46,
-        "totalPointsNow": 58,
-        "pointsInWindow": 15,
-        "rankBeforeWindow": 45,
-        "rankChange": -1,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
@@ -4016,8 +3785,8 @@
       {
         "name": "Mike Salmon",
         "rankNow": 2,
-        "totalPointsNow": 91,
-        "pointsInWindow": 15,
+        "totalPointsNow": 89,
+        "pointsInWindow": 13,
         "rankBeforeWindow": 2,
         "rankChange": 0,
         "exactResultsInWindow": 0,
@@ -4062,76 +3831,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Tomas Brolin",
-        "rankNow": 26,
-        "totalPointsNow": 70,
-        "pointsInWindow": 14,
-        "rankBeforeWindow": 21,
-        "rankChange": -5,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "5-0",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "LegendaryLebu",
-        "rankNow": 13,
+        "rankNow": 11,
         "totalPointsNow": 76,
         "pointsInWindow": 12,
         "rankBeforeWindow": 8,
-        "rankChange": -5,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4174,7 +3887,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -4182,10 +3895,570 @@
         ]
       },
       {
+        "name": "Tomas Brolin",
+        "rankNow": 27,
+        "totalPointsNow": 68,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 21,
+        "rankChange": -6,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "5-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-1",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Pauli Koponen",
+        "rankNow": 41,
+        "totalPointsNow": 59,
+        "pointsInWindow": 12,
+        "rankBeforeWindow": 41,
+        "rankChange": 0,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "rankNow": 16,
+        "totalPointsNow": 72,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 11,
+        "rankChange": -5,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "0-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "5-1",
+            "points": 6,
+            "exactResult": true
+          }
+        ]
+      },
+      {
+        "name": "Shampoo",
+        "rankNow": 19,
+        "totalPointsNow": 71,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 12,
+        "rankChange": -7,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "1-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "0-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "The Moka",
+        "rankNow": 41,
+        "totalPointsNow": 59,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 40,
+        "rankChange": -1,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Temez",
+        "rankNow": 30,
+        "totalPointsNow": 67,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 21,
+        "rankChange": -9,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "5-0",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Rikhard Moeller-Kalanmaksaoeljy",
+        "rankNow": 39,
+        "totalPointsNow": 61,
+        "pointsInWindow": 11,
+        "rankBeforeWindow": 34,
+        "rankChange": -5,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "3-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "0-0",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "4-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
+            "points": 2,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Carey Lily",
+        "rankNow": 40,
+        "totalPointsNow": 60,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 34,
+        "rankChange": -6,
+        "exactResultsInWindow": 1,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-2",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "3-0",
+            "points": 6,
+            "exactResult": true
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Drent",
+        "rankNow": 7,
+        "totalPointsNow": 78,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 4,
+        "rankChange": -3,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "7-0",
+            "points": 2,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "3-2",
+            "points": 3,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "SKA Hänninen",
+        "rankNow": 34,
+        "totalPointsNow": 63,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 30,
+        "rankChange": -4,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "2-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-3",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "2-1",
+            "points": 4,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "1-3",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          }
+        ]
+      },
+      {
         "name": "Kiiskiministeri",
         "rankNow": 1,
-        "totalPointsNow": 93,
-        "pointsInWindow": 11,
+        "totalPointsNow": 91,
+        "pointsInWindow": 9,
         "rankBeforeWindow": 1,
         "rankChange": 0,
         "exactResultsInWindow": 1,
@@ -4230,76 +4503,20 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Shampoo",
-        "rankNow": 22,
-        "totalPointsNow": 71,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 12,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "1-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "0-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-2",
-            "points": 0,
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "Sipolovic",
-        "rankNow": 32,
-        "totalPointsNow": 65,
-        "pointsInWindow": 11,
+        "rankNow": 34,
+        "totalPointsNow": 63,
+        "pointsInWindow": 9,
         "rankBeforeWindow": 25,
-        "rankChange": -7,
+        "rankChange": -9,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -4342,289 +4559,9 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Keto Armstrong",
-        "rankNow": 41,
-        "totalPointsNow": 62,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 32,
-        "rankChange": -9,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "2-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          }
-        ]
-      },
-      {
-        "name": "The Moka",
-        "rankNow": 45,
-        "totalPointsNow": 59,
-        "pointsInWindow": 11,
-        "rankBeforeWindow": 40,
-        "rankChange": -5,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Carey Lily",
-        "rankNow": 44,
-        "totalPointsNow": 60,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 34,
-        "rankChange": -10,
-        "exactResultsInWindow": 1,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-2",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "3-0",
-            "points": 6,
-            "exactResult": true
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "Drent",
-        "rankNow": 11,
-        "totalPointsNow": 78,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 4,
-        "rankChange": -7,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "7-0",
-            "points": 2,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "3-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "3-2",
             "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
-        "name": "SKA Hänninen",
-        "rankNow": 38,
-        "totalPointsNow": 63,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 30,
-        "rankChange": -8,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "2-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "1-3",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "2-1",
-            "points": 4,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "1-3",
-            "points": 3,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
             "exactResult": false
           }
         ]
@@ -4678,7 +4615,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -4686,68 +4623,12 @@
         ]
       },
       {
-        "name": "Minkário de Souza Faria",
-        "rankNow": 28,
-        "totalPointsNow": 68,
-        "pointsInWindow": 7,
-        "rankBeforeWindow": 11,
-        "rankChange": -17,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 32,
-            "team1": "USA",
-            "team2": "Australia",
-            "resultText": "2-0",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 30,
-            "team1": "Skotlanti",
-            "team2": "Marokko",
-            "resultText": "0-1",
-            "predictedResultText": "0-0",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 29,
-            "team1": "Brasilia",
-            "team2": "Haiti",
-            "resultText": "3-0",
-            "predictedResultText": "4-0",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 31,
-            "team1": "Turkki",
-            "team2": "Paraguay",
-            "resultText": "0-1",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 35,
-            "team1": "Hollanti",
-            "team2": "Ruotsi",
-            "resultText": "2-0",
-            "predictedResultText": "5-1",
-            "points": 2,
-            "exactResult": false
-          }
-        ]
-      },
-      {
         "name": "Sanukka",
-        "rankNow": 28,
-        "totalPointsNow": 68,
-        "pointsInWindow": 6,
+        "rankNow": 22,
+        "totalPointsNow": 70,
+        "pointsInWindow": 8,
         "rankBeforeWindow": 10,
-        "rankChange": -18,
+        "rankChange": -12,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4790,8 +4671,64 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "4-2",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
+        "name": "Keto Armstrong",
+        "rankNow": 45,
+        "totalPointsNow": 58,
+        "pointsInWindow": 7,
+        "rankBeforeWindow": 32,
+        "rankChange": -13,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 32,
+            "team1": "USA",
+            "team2": "Australia",
+            "resultText": "2-0",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 30,
+            "team1": "Skotlanti",
+            "team2": "Marokko",
+            "resultText": "0-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 29,
+            "team1": "Brasilia",
+            "team2": "Haiti",
+            "resultText": "3-0",
+            "predictedResultText": "2-0",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 31,
+            "team1": "Turkki",
+            "team2": "Paraguay",
+            "resultText": "0-1",
+            "predictedResultText": "3-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 35,
+            "team1": "Hollanti",
+            "team2": "Ruotsi",
+            "resultText": "5-1",
+            "predictedResultText": "2-0",
             "points": 2,
             "exactResult": false
           }
@@ -4846,7 +4783,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "3-1",
             "points": 4,
             "exactResult": false
@@ -4855,11 +4792,11 @@
       },
       {
         "name": "Sedu",
-        "rankNow": 28,
+        "rankNow": 27,
         "totalPointsNow": 68,
         "pointsInWindow": 5,
         "rankBeforeWindow": 9,
-        "rankChange": -19,
+        "rankChange": -18,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4902,7 +4839,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "2-2",
             "points": 0,
             "exactResult": false
@@ -4911,11 +4848,11 @@
       },
       {
         "name": "Chica",
-        "rankNow": 35,
+        "rankNow": 32,
         "totalPointsNow": 64,
         "pointsInWindow": 5,
         "rankBeforeWindow": 14,
-        "rankChange": -21,
+        "rankChange": -18,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4958,7 +4895,7 @@
             "matchNr": 35,
             "team1": "Hollanti",
             "team2": "Ruotsi",
-            "resultText": "2-0",
+            "resultText": "5-1",
             "predictedResultText": "1-2",
             "points": 0,
             "exactResult": false
@@ -4973,23 +4910,23 @@
         "exactResultsInWindow": 2
       },
       {
-        "name": "Neyney",
+        "name": "PoHan Pullistus",
         "pointsInWindow": 22,
-        "exactResultsInWindow": 2
-      },
-      {
-        "name": "Joni",
-        "pointsInWindow": 22,
-        "exactResultsInWindow": 2
+        "exactResultsInWindow": 0
       },
       {
         "name": "IlkkuPro75",
-        "pointsInWindow": 22,
+        "pointsInWindow": 20,
         "exactResultsInWindow": 2
       },
       {
-        "name": "Tero H",
-        "pointsInWindow": 22,
+        "name": "Johnny Rotten",
+        "pointsInWindow": 19,
+        "exactResultsInWindow": 2
+      },
+      {
+        "name": "Eski66",
+        "pointsInWindow": 19,
         "exactResultsInWindow": 2
       }
     ]
@@ -4997,41 +4934,41 @@
   "commentaryHints": {
     "leader": {
       "name": "Kiiskiministeri",
-      "points": 93
+      "points": 91
     },
     "closestChasers": [
       {
         "name": "Mike Salmon",
         "rank": 2,
-        "points": 91,
+        "points": 89,
         "pointsBehindLeader": 2
       },
       {
         "name": "Agueero",
         "rank": 3,
         "points": 87,
-        "pointsBehindLeader": 6
+        "pointsBehindLeader": 4
       },
       {
         "name": "Johnny Rotten",
         "rank": 4,
-        "points": 86,
+        "points": 84,
         "pointsBehindLeader": 7
       },
       {
         "name": "Pontemon",
         "rank": 5,
-        "points": 85,
+        "points": 83,
         "pointsBehindLeader": 8
       },
       {
         "name": "Repetti",
         "rank": 6,
-        "points": 84,
+        "points": 82,
         "pointsBehindLeader": 9
       }
     ],
     "tightTopComment": "Kärki on erittäin tiukka, eroa vain 2 pistettä.",
-    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (93p). Lähimpänä haastajana on Mike Salmon (91p, eroa vain 2p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Nipa keräten 16p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Tero H (+12 sijaa). Eniten sijoitustaan menetti Chica (-21 sijaa). Täydellisiä 6 pisteen osumia saivat: Nipa (Brasilia–Haiti veikkaus 3-0), Nipa (Turkki–Paraguay veikkaus 0-1), Max (Turkki–Paraguay veikkaus 0-1)."
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Kiiskiministeri (91p). Lähimpänä haastajana on Mike Salmon (89p, eroa vain 2p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt Nipa keräten 16p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Nipa (+14 sijaa). Eniten sijoitustaan menetti Sedu (-18 sijaa). Täydellisiä 6 pisteen osumia saivat: Nipa (Brasilia–Haiti veikkaus 3-0), Nipa (Turkki–Paraguay veikkaus 0-1), Max (Turkki–Paraguay veikkaus 0-1)."
   }
 }
