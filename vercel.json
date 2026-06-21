@@ -1,10 +1,7 @@
 {
   "functions": {
     "api/**/*.js": {
-      "includeFiles": [
-        "MM2026_pistelaskenta.xlsx",
-        "tulokset.txt"
-      ]
+      "includeFiles": "{MM2026_pistelaskenta.xlsx,tulokset.txt}"
     }
   },
   "rewrites": [
