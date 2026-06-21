@@ -551,7 +551,7 @@ async function fetchLiveApiData() {
     let apiGroups = [];
     let apiTeams = [];
 
-    // Load Excel sheet matches (1 to 72) as the source of truth for group stage team names
+    // Load Excel sheet matches (1 to 72) as the source of truth for group stage team names and manual scores
     const excelPath = path.join(__dirname, '..', 'MM2026_pistelaskenta.xlsx');
     
     const excelMatches = [];
@@ -564,17 +564,23 @@ async function fetchLiveApiData() {
                 const row = 5 + m;
                 const t1 = getTValue(`D${row}`);
                 const t2 = getTValue(`F${row}`);
+                const g1 = getTValue(`G${row}`);
+                const g2 = getTValue(`I${row}`);
+                const hasScore = g1 !== undefined && g1 !== null && g1 !== '' && g2 !== undefined && g2 !== null && g2 !== '';
                 if (t1 && t2) {
                     excelMatches.push({
                         id: m,
                         team1: String(t1).trim(),
-                        team2: String(t2).trim()
+                        team2: String(t2).trim(),
+                        goals1: hasScore ? Number(g1) : null,
+                        goals2: hasScore ? Number(g2) : null,
+                        hasScore
                     });
                 }
             }
         }
     } catch (err) {
-        console.warn('Could not read Excel for team names:', err.message);
+        console.warn('Could not read Excel for team names and scores:', err.message);
     }
 
     const fetchOptions = {
@@ -1073,8 +1079,26 @@ async function fetchLiveApiData() {
         });
     }
 
-    // Apply overrides from tulokset.txt if it exists
+    // Apply overrides from Excel and tulokset.txt if they exist
     try {
+        // 1. Overrides from Excel (if filled)
+        if (excelMatches.length > 0 && apiGames && apiGames.length > 0) {
+            apiGames.forEach(g => {
+                const matchId = Number(g.id);
+                const em = excelMatches.find(x => x.id === matchId);
+                if (em && em.hasScore) {
+                    if (g.home_score !== String(em.goals1) || g.away_score !== String(em.goals2) || g.finished !== 'TRUE') {
+                        console.log(`[Override Score] Overriding Match ${matchId} score in apiGames from Excel to ${em.goals1}-${em.goals2}.`);
+                        g.home_score = String(em.goals1);
+                        g.away_score = String(em.goals2);
+                        g.finished = 'TRUE';
+                        g.time_elapsed = 'finished';
+                    }
+                }
+            });
+        }
+
+        // 2. Overrides from tulokset.txt (takes ultimate precedence)
         const rootDir = path.join(__dirname, '..');
         const pathsToTry = [
             path.join(rootDir, 'tulokset.txt'),
@@ -1106,7 +1130,7 @@ async function fetchLiveApiData() {
             }
         }
     } catch (err) {
-        console.warn('Could not apply tulokset.txt overrides to apiGames:', err.message);
+        console.warn('Could not apply overrides to apiGames:', err.message);
     }
 
     return { apiGames, apiGroups, apiTeams };
@@ -1160,7 +1184,7 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
             apiAwayScore = apiGame.away_score !== null && apiGame.away_score !== undefined ? Number(apiGame.away_score) : null;
         }
 
-        if (apiGame && apiGame.time_elapsed !== 'notstarted') {
+        if (apiGame && apiGame.time_elapsed !== 'notstarted' && !hasResult) {
             g1 = Number(apiGame.home_score);
             g2 = Number(apiGame.away_score);
             hasResult = true;

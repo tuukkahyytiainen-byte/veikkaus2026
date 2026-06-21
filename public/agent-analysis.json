@@ -1,7 +1,7 @@
 {
   "emailDigest": {
     "window": "22.6.",
-    "generatedAt": "2026-06-21T18:21:53.718Z",
+    "generatedAt": "2026-06-21T18:24:29.388Z",
     "summary": {
       "playedMatchesCount": 37,
       "totalMatches": 72,
@@ -1308,7 +1308,7 @@
     ]
   },
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T18:21:53.718Z",
+  "generatedAt": "2026-06-21T18:24:29.388Z",
   "source": {
     "excelFile": "MM2026_pistelaskenta.xlsx",
     "resultsFile": "tulokset.txt",
@@ -1851,8 +1851,8 @@
       "hasResult": true,
       "status": "Päättynyt",
       "originallyHadResult": true,
-      "homeScorers": "null",
-      "awayScorers": "null"
+      "homeScorers": null,
+      "awayScorers": null
     },
     {
       "nr": 39,
