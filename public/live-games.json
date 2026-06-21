@@ -641,7 +641,7 @@
       "matchday": "2",
       "local_date": "06/21/2026 19:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "group_stage",
       "home_team_name_en": "Belgium",
       "away_team_name_en": "Iran"
