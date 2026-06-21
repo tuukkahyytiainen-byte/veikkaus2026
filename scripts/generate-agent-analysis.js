@@ -1073,6 +1073,42 @@ async function fetchLiveApiData() {
         });
     }
 
+    // Apply overrides from tulokset.txt if it exists
+    try {
+        const rootDir = path.join(__dirname, '..');
+        const pathsToTry = [
+            path.join(rootDir, 'tulokset.txt'),
+            path.join(process.cwd(), 'tulokset.txt'),
+            '/var/task/tulokset.txt'
+        ];
+        let txtPath = null;
+        for (const p of pathsToTry) {
+            if (fs.existsSync(p)) {
+                txtPath = p;
+                break;
+            }
+        }
+        if (txtPath) {
+            const text = fs.readFileSync(txtPath, 'utf8');
+            const textResults = parseResultsText(text);
+            if (textResults && textResults.matches && apiGames && apiGames.length > 0) {
+                apiGames.forEach(g => {
+                    const matchId = Number(g.id);
+                    if (textResults.matches[matchId] !== undefined) {
+                        const override = textResults.matches[matchId];
+                        console.log(`[Override Score] Overriding Match ${matchId} score in apiGames from tulokset.txt to ${override.goals1}-${override.goals2}.`);
+                        g.home_score = String(override.goals1);
+                        g.away_score = String(override.goals2);
+                        g.finished = 'TRUE';
+                        g.time_elapsed = 'finished';
+                    }
+                });
+            }
+        }
+    } catch (err) {
+        console.warn('Could not apply tulokset.txt overrides to apiGames:', err.message);
+    }
+
     return { apiGames, apiGroups, apiTeams };
 }
 

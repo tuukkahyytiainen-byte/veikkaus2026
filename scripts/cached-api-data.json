@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1782022247034,
+  "footballDataLastFetched": 1782065616106,
   "apiGames": [
     {
       "id": "1",
@@ -617,15 +617,15 @@
       "id": "38",
       "home_team_id": "760",
       "away_team_id": "801",
-      "home_score": "0",
+      "home_score": "5",
       "away_score": "0",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "H",
       "matchday": "2",
       "local_date": "06/21/2026 19:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Spain",
       "away_team_name_en": "Saudi Arabia"
