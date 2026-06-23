@@ -776,8 +776,8 @@
       "group": "L",
       "matchday": "2",
       "local_date": "06/23/2026 20:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "England",
       "away_team_name_en": "Ghana"
