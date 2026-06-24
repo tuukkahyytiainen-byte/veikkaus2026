@@ -107,10 +107,10 @@ const server = http.createServer(async (req, res) => {
         try {
             console.log('[DevServer] Fetching live games dynamically...');
             const { fetchLiveApiData } = require('./generate-agent-analysis');
-            const { apiGames } = await fetchLiveApiData();
+            const { apiGames, apiGroups, apiTeams } = await fetchLiveApiData();
 
             res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0' });
-            res.end(JSON.stringify({ games: apiGames }));
+            res.end(JSON.stringify({ games: apiGames, groups: apiGroups, teams: apiTeams }));
         } catch (err) {
             console.error('[DevServer] Error fetching live games:', err);
             res.writeHead(500, { 'Content-Type': 'application/json' });

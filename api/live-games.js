@@ -13,11 +13,11 @@ module.exports = async (req, res) => {
     }
 
     try {
-        const { apiGames } = await fetchLiveApiData();
+        const { apiGames, apiGroups, apiTeams } = await fetchLiveApiData();
         
         // Cache for 60 seconds at edge, do not cache in browser
         res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=60');
-        res.status(200).json({ games: apiGames });
+        res.status(200).json({ games: apiGames, groups: apiGroups, teams: apiTeams });
     } catch (err) {
         console.error('Error fetching live games serverless:', err);
         res.status(500).json({ error: err.message });

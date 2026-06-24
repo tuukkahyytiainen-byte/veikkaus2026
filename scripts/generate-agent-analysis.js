@@ -314,18 +314,37 @@ function calculateLeaderboard(customMatches, customStandings, customFinalists, c
             playerMatches.push({ nr: m, guess1: hasGuess ? Number(g1Val) : null, guess2: hasGuess ? Number(g2Val) : null, points: pts, hasGuess: hasGuess });
         }
 
-        let groupPoints = 0;
+        let totalGroupPoints = 0;
+        let finishedGroupPoints = 0;
+        const finishedGroupsList = [];
+        const unfinishedGroupsList = [];
         const groupGuesses = {};
+
         groups.forEach((g, gIdx) => {
             groupGuesses[g] = [];
             const startRow = gIdx >= 6 ? 14 : 8;
             const colLetter = XLSX.utils.encode_col(15 + (gIdx % 6));
+
+            // A group is completed if all 6 matches belonging to it have a result
+            const isCompleted = customMatches.filter(m => m.group === g).every(m => m.hasResult);
+            if (isCompleted) {
+                finishedGroupsList.push(g);
+            } else {
+                unfinishedGroupsList.push(g);
+            }
+
+            let groupPts = 0;
             for (let pos = 1; pos <= 4; pos++) {
                 const guess = normalizeTeamName(String(getPValue(`${colLetter}${startRow + pos - 1}`) || ''));
                 const actual = customStandings[g][pos - 1];
                 let pts = (actual && guess === actual) ? 2 : 0;
-                groupPoints += pts;
+                groupPts += pts;
                 groupGuesses[g].push({ pos, guess, actual, points: pts });
+            }
+
+            totalGroupPoints += groupPts;
+            if (isCompleted) {
+                finishedGroupPoints += groupPts;
             }
         });
 
@@ -343,11 +362,10 @@ function calculateLeaderboard(customMatches, customStandings, customFinalists, c
             if (t2 && custom34.includes(t2)) thirdFourthPoints += 2;
         }
 
-        const allGroupsPlayed = customMatches.every(m => m.hasResult);
         const finalistsAdded = customFinalists.length === 2;
         const thirdFourthAdded = custom34.length === 2;
 
-        const addedGroupPoints = allGroupsPlayed ? groupPoints : 0;
+        const addedGroupPoints = finishedGroupPoints;
         const addedFinalistPoints = finalistsAdded ? finalistPoints : 0;
         const addedThirdFourthPoints = thirdFourthAdded ? thirdFourthPoints : 0;
 
@@ -357,7 +375,8 @@ function calculateLeaderboard(customMatches, customStandings, customFinalists, c
             sheetName,
             name: participantName,
             matchPoints,
-            groupPoints,
+            groupPoints: totalGroupPoints,
+            finishedGroupPoints,
             finalPoints: finalistPoints + thirdFourthPoints,
             totalPoints: totalPoints,
             exactlyCorrect,
@@ -365,7 +384,10 @@ function calculateLeaderboard(customMatches, customStandings, customFinalists, c
             groupGuesses,
             finalistGuesses: [f1, f2],
             thirdFourthGuesses: [t1, t2],
-            groupPointsAdded: allGroupsPlayed,
+            groupPointsAdded: finishedGroupsList.length > 0, // True if we have added any group points
+            finishedGroupsCount: finishedGroupsList.length,
+            finishedGroups: finishedGroupsList,
+            unfinishedGroups: unfinishedGroupsList,
             finalistsAdded: finalistsAdded,
             thirdFourthAdded: thirdFourthAdded
         });
@@ -856,6 +878,57 @@ async function fetchLiveApiData() {
                 apiGames = mappedGames;
                 apiGroups = cachedData ? cachedData.apiGroups : [];
                 apiTeams = cachedData ? cachedData.apiTeams : [];
+
+                try {
+                    console.log('Fetching live standings from football-data.org...');
+                    const fdStandingsRes = await fetchWithTimeout('https://api.football-data.org/v4/competitions/WC/standings', {
+                        headers: {
+                            'X-Auth-Token': token,
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                        }
+                    }, 3000);
+                    if (fdStandingsRes.ok) {
+                        const fdStandingsData = await fdStandingsRes.json();
+                        if (fdStandingsData && fdStandingsData.standings) {
+                            const mappedGroups = [];
+                            const mappedTeams = [];
+                            const seenTeamIds = new Set();
+                            fdStandingsData.standings.forEach(gObj => {
+                                const groupLetter = gObj.group ? gObj.group.replace('Group ', '') : '';
+                                const groupTeams = [];
+                                if (gObj.table) {
+                                    gObj.table.forEach(row => {
+                                        if (row.team) {
+                                            const tId = String(row.team.id);
+                                            groupTeams.push({ team_id: tId });
+                                            if (!seenTeamIds.has(tId)) {
+                                                seenTeamIds.add(tId);
+                                                mappedTeams.push({
+                                                    id: tId,
+                                                    name_en: row.team.name
+                                                });
+                                            }
+                                        }
+                                    });
+                                }
+                                mappedGroups.push({
+                                    name: groupLetter,
+                                    teams: groupTeams
+                                });
+                            });
+                            if (mappedGroups.length > 0) {
+                                apiGroups = mappedGroups;
+                                apiTeams = mappedTeams;
+                                console.log(`Successfully mapped ${apiGroups.length} groups and ${apiTeams.length} teams from standings API.`);
+                            }
+                        }
+                    } else {
+                        console.warn(`football-data.org standings HTTP error: ${fdStandingsRes.status}`);
+                    }
+                } catch (standingsErr) {
+                    console.warn('Failed to fetch/map standings from football-data.org, using cache fallback:', standingsErr.message);
+                }
+
                 primarySuccess = true;
             }
             
@@ -1235,7 +1308,7 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
             const apiGroup = apiGroups.find(x => x.name === g);
             if (apiGroup && apiGroup.teams && apiTeams.length > 0) {
                 const mappedOrder = apiGroup.teams.map(tInfo => {
-                    const teamObj = apiTeams.find(t => t.id === tInfo.team_id);
+                    const teamObj = apiTeams.find(t => String(t.id) === String(tInfo.team_id));
                     return teamObj ? normalizeTeamName(teamObj.name_en) : null;
                 }).filter(Boolean);
                 if (mappedOrder.length === 4) {
@@ -2106,7 +2179,7 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
 
         // Write static live-games.json
         const liveGamesOutputPath = path.join(outputDir, 'live-games.json');
-        fs.writeFileSync(liveGamesOutputPath, JSON.stringify({ games: apiGames }, null, 2));
+        fs.writeFileSync(liveGamesOutputPath, JSON.stringify({ games: apiGames, groups: apiGroups, teams: apiTeams }, null, 2));
 
         console.log(`\n=== Agent Analysis Generation Successful ===`);
         console.log(`Matches read: 72`);

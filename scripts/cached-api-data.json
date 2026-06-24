@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1782195245055,
+  "footballDataLastFetched": 1782300447772,
   "apiGames": [
     {
       "id": "1",
@@ -753,15 +753,15 @@
       "id": "47",
       "home_team_id": "765",
       "away_team_id": "8070",
-      "home_score": "0",
+      "home_score": "5",
       "away_score": "0",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "K",
       "matchday": "2",
       "local_date": "06/23/2026 20:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Portugal",
       "away_team_name_en": "Uzbekistan"
@@ -777,8 +777,8 @@
       "group": "L",
       "matchday": "2",
       "local_date": "06/23/2026 23:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "England",
       "away_team_name_en": "Ghana"
@@ -788,14 +788,14 @@
       "home_team_id": "1836",
       "away_team_id": "799",
       "home_score": "0",
-      "away_score": "0",
+      "away_score": "1",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "L",
       "matchday": "2",
       "local_date": "06/24/2026 02:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Panama",
       "away_team_name_en": "Croatia"
@@ -804,15 +804,15 @@
       "id": "48",
       "home_team_id": "818",
       "away_team_id": "1934",
-      "home_score": "0",
+      "home_score": "1",
       "away_score": "0",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "K",
       "matchday": "2",
       "local_date": "06/24/2026 05:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Colombia",
       "away_team_name_en": "Congo DR"
@@ -1770,6 +1770,404 @@
       "away_team_name_en": "null"
     }
   ],
-  "apiGroups": [],
-  "apiTeams": []
+  "apiGroups": [
+    {
+      "name": "A",
+      "teams": [
+        {
+          "team_id": "769"
+        },
+        {
+          "team_id": "772"
+        },
+        {
+          "team_id": "798"
+        },
+        {
+          "team_id": "774"
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "teams": [
+        {
+          "team_id": "828"
+        },
+        {
+          "team_id": "788"
+        },
+        {
+          "team_id": "1060"
+        },
+        {
+          "team_id": "8030"
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "teams": [
+        {
+          "team_id": "764"
+        },
+        {
+          "team_id": "815"
+        },
+        {
+          "team_id": "8873"
+        },
+        {
+          "team_id": "836"
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "teams": [
+        {
+          "team_id": "771"
+        },
+        {
+          "team_id": "779"
+        },
+        {
+          "team_id": "761"
+        },
+        {
+          "team_id": "803"
+        }
+      ]
+    },
+    {
+      "name": "E",
+      "teams": [
+        {
+          "team_id": "759"
+        },
+        {
+          "team_id": "1935"
+        },
+        {
+          "team_id": "791"
+        },
+        {
+          "team_id": "9460"
+        }
+      ]
+    },
+    {
+      "name": "F",
+      "teams": [
+        {
+          "team_id": "8601"
+        },
+        {
+          "team_id": "766"
+        },
+        {
+          "team_id": "792"
+        },
+        {
+          "team_id": "802"
+        }
+      ]
+    },
+    {
+      "name": "G",
+      "teams": [
+        {
+          "team_id": "825"
+        },
+        {
+          "team_id": "840"
+        },
+        {
+          "team_id": "805"
+        },
+        {
+          "team_id": "783"
+        }
+      ]
+    },
+    {
+      "name": "H",
+      "teams": [
+        {
+          "team_id": "760"
+        },
+        {
+          "team_id": "758"
+        },
+        {
+          "team_id": "1930"
+        },
+        {
+          "team_id": "801"
+        }
+      ]
+    },
+    {
+      "name": "I",
+      "teams": [
+        {
+          "team_id": "773"
+        },
+        {
+          "team_id": "8872"
+        },
+        {
+          "team_id": "804"
+        },
+        {
+          "team_id": "8062"
+        }
+      ]
+    },
+    {
+      "name": "J",
+      "teams": [
+        {
+          "team_id": "762"
+        },
+        {
+          "team_id": "816"
+        },
+        {
+          "team_id": "778"
+        },
+        {
+          "team_id": "8049"
+        }
+      ]
+    },
+    {
+      "name": "K",
+      "teams": [
+        {
+          "team_id": "818"
+        },
+        {
+          "team_id": "765"
+        },
+        {
+          "team_id": "1934"
+        },
+        {
+          "team_id": "8070"
+        }
+      ]
+    },
+    {
+      "name": "L",
+      "teams": [
+        {
+          "team_id": "770"
+        },
+        {
+          "team_id": "763"
+        },
+        {
+          "team_id": "799"
+        },
+        {
+          "team_id": "1836"
+        }
+      ]
+    }
+  ],
+  "apiTeams": [
+    {
+      "id": "769",
+      "name_en": "Mexico"
+    },
+    {
+      "id": "772",
+      "name_en": "South Korea"
+    },
+    {
+      "id": "798",
+      "name_en": "Czechia"
+    },
+    {
+      "id": "774",
+      "name_en": "South Africa"
+    },
+    {
+      "id": "828",
+      "name_en": "Canada"
+    },
+    {
+      "id": "788",
+      "name_en": "Switzerland"
+    },
+    {
+      "id": "1060",
+      "name_en": "Bosnia-Herzegovina"
+    },
+    {
+      "id": "8030",
+      "name_en": "Qatar"
+    },
+    {
+      "id": "764",
+      "name_en": "Brazil"
+    },
+    {
+      "id": "815",
+      "name_en": "Morocco"
+    },
+    {
+      "id": "8873",
+      "name_en": "Scotland"
+    },
+    {
+      "id": "836",
+      "name_en": "Haiti"
+    },
+    {
+      "id": "771",
+      "name_en": "United States"
+    },
+    {
+      "id": "779",
+      "name_en": "Australia"
+    },
+    {
+      "id": "761",
+      "name_en": "Paraguay"
+    },
+    {
+      "id": "803",
+      "name_en": "Turkey"
+    },
+    {
+      "id": "759",
+      "name_en": "Germany"
+    },
+    {
+      "id": "1935",
+      "name_en": "Ivory Coast"
+    },
+    {
+      "id": "791",
+      "name_en": "Ecuador"
+    },
+    {
+      "id": "9460",
+      "name_en": "Curaçao"
+    },
+    {
+      "id": "8601",
+      "name_en": "Netherlands"
+    },
+    {
+      "id": "766",
+      "name_en": "Japan"
+    },
+    {
+      "id": "792",
+      "name_en": "Sweden"
+    },
+    {
+      "id": "802",
+      "name_en": "Tunisia"
+    },
+    {
+      "id": "825",
+      "name_en": "Egypt"
+    },
+    {
+      "id": "840",
+      "name_en": "Iran"
+    },
+    {
+      "id": "805",
+      "name_en": "Belgium"
+    },
+    {
+      "id": "783",
+      "name_en": "New Zealand"
+    },
+    {
+      "id": "760",
+      "name_en": "Spain"
+    },
+    {
+      "id": "758",
+      "name_en": "Uruguay"
+    },
+    {
+      "id": "1930",
+      "name_en": "Cape Verde Islands"
+    },
+    {
+      "id": "801",
+      "name_en": "Saudi Arabia"
+    },
+    {
+      "id": "773",
+      "name_en": "France"
+    },
+    {
+      "id": "8872",
+      "name_en": "Norway"
+    },
+    {
+      "id": "804",
+      "name_en": "Senegal"
+    },
+    {
+      "id": "8062",
+      "name_en": "Iraq"
+    },
+    {
+      "id": "762",
+      "name_en": "Argentina"
+    },
+    {
+      "id": "816",
+      "name_en": "Austria"
+    },
+    {
+      "id": "778",
+      "name_en": "Algeria"
+    },
+    {
+      "id": "8049",
+      "name_en": "Jordan"
+    },
+    {
+      "id": "818",
+      "name_en": "Colombia"
+    },
+    {
+      "id": "765",
+      "name_en": "Portugal"
+    },
+    {
+      "id": "1934",
+      "name_en": "Congo DR"
+    },
+    {
+      "id": "8070",
+      "name_en": "Uzbekistan"
+    },
+    {
+      "id": "770",
+      "name_en": "England"
+    },
+    {
+      "id": "763",
+      "name_en": "Ghana"
+    },
+    {
+      "id": "799",
+      "name_en": "Croatia"
+    },
+    {
+      "id": "1836",
+      "name_en": "Panama"
+    }
+  ]
 }

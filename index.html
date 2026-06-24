@@ -427,15 +427,22 @@
             font-size: 1.05rem;
         }
 
+        .mobile-only-subtext {
+            display: none;
+            white-space: nowrap;
+        }
+
         .td-points {
             font-family: var(--font-display);
             font-weight: 700;
             font-size: 1.1rem;
             color: var(--primary);
+            white-space: nowrap;
         }
 
         .td-sub-points {
             color: var(--text-secondary);
+            white-space: nowrap;
         }
 
         .badge-exact {
@@ -1569,6 +1576,9 @@
             .hide-mobile {
                 display: none !important;
             }
+            .mobile-only-subtext {
+                display: block !important;
+            }
             
             /* Table sizes on mobile */
             table {
@@ -1944,6 +1954,10 @@
                 <div class="status-badge">
                     <i class="fa-solid fa-futbol"></i>
                     <span id="played-matches-badge">Pelatut ottelut: 0 / 72</span>
+                </div>
+                <div class="status-badge">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span id="completed-groups-badge">Valmistuneet lohkot: 0 / 12</span>
                 </div>
             </div>
         </header>
@@ -2974,6 +2988,8 @@
                     const parsed = JSON.parse(cachedGames);
                     if (parsed && parsed.games) {
                         apiGames = parsed.games;
+                        if (parsed.groups) apiGroups = parsed.groups;
+                        if (parsed.teams) apiTeams = parsed.teams;
                         console.log('Ladattu alustavat live-tulokset välimuistista:', apiGames.length, 'peliä');
                     }
                 }
@@ -2992,6 +3008,8 @@
                 .then(data => {
                     if (data && data.games) {
                         apiGames = data.games;
+                        if (data.groups) apiGroups = data.groups;
+                        if (data.teams) apiTeams = data.teams;
                     }
                 })
                 .catch(err => console.log('Ei voitu ladata live-tuloksia netistä.', err)) : Promise.resolve();
@@ -3030,6 +3048,8 @@
                 .then(data => {
                     if (data && data.games) {
                         apiGames = data.games;
+                        if (data.groups) apiGroups = data.groups;
+                        if (data.teams) apiTeams = data.teams;
                     }
                 })
                 .catch(err => console.log('Virhe ladattaessa live-tuloksia:', err));
@@ -3185,18 +3205,36 @@
                     playerMatches.push({ nr: m, guess1: hasGuess ? Number(g1Val) : null, guess2: hasGuess ? Number(g2Val) : null, points: pts, hasGuess: hasGuess });
                 }
 
-                let groupPoints = 0;
+                let totalGroupPoints = 0;
+                let finishedGroupPoints = 0;
+                const finishedGroupsList = [];
+                const unfinishedGroupsList = [];
                 const groupGuesses = {};
                 groups.forEach((g, gIdx) => {
                     groupGuesses[g] = [];
                     const startRow = gIdx >= 6 ? 14 : 8;
                     const colLetter = XLSX.utils.encode_col(15 + (gIdx % 6));
+
+                    // A group is completed if all 6 matches belonging to it have a result
+                    const isCompleted = customMatches.filter(m => m.group === g).every(m => m.hasResult);
+                    if (isCompleted) {
+                        finishedGroupsList.push(g);
+                    } else {
+                        unfinishedGroupsList.push(g);
+                    }
+
+                    let groupPts = 0;
                     for (let pos = 1; pos <= 4; pos++) {
                         const guess = normalizeTeamName(String(getPValue(`${colLetter}${startRow + pos - 1}`) || ''));
                         const actual = customStandings[g][pos - 1];
                         let pts = (actual && guess === actual) ? 2 : 0;
-                        groupPoints += pts;
+                        groupPts += pts;
                         groupGuesses[g].push({ pos, guess, actual, points: pts });
+                    }
+
+                    totalGroupPoints += groupPts;
+                    if (isCompleted) {
+                        finishedGroupPoints += groupPts;
                     }
                 });
 
@@ -3214,11 +3252,10 @@
                     if (t2 && custom34.includes(t2)) thirdFourthPoints += 2;
                 }
 
-                const allGroupsPlayed = customMatches.every(m => m.hasResult);
                 const finalistsAdded = customFinalists.length === 2;
                 const thirdFourthAdded = custom34.length === 2;
 
-                const addedGroupPoints = allGroupsPlayed ? groupPoints : 0;
+                const addedGroupPoints = finishedGroupPoints;
                 const addedFinalistPoints = finalistsAdded ? finalistPoints : 0;
                 const addedThirdFourthPoints = thirdFourthAdded ? thirdFourthPoints : 0;
 
@@ -3228,7 +3265,8 @@
                     sheetName,
                     name: participantName,
                     matchPoints,
-                    groupPoints,
+                    groupPoints: totalGroupPoints,
+                    finishedGroupPoints,
                     finalPoints: finalistPoints + thirdFourthPoints,
                     totalPoints: totalPoints,
                     exactlyCorrect,
@@ -3236,7 +3274,10 @@
                     groupGuesses,
                     finalistGuesses: [f1, f2],
                     thirdFourthGuesses: [t1, t2],
-                    groupPointsAdded: allGroupsPlayed,
+                    groupPointsAdded: finishedGroupsList.length > 0, // True if any group points are added
+                    finishedGroupsCount: finishedGroupsList.length,
+                    finishedGroups: finishedGroupsList,
+                    unfinishedGroups: unfinishedGroupsList,
                     finalistsAdded: finalistsAdded,
                     thirdFourthAdded: thirdFourthAdded
                 });
@@ -3324,7 +3365,16 @@
                 });
             }
             
+            let finishedGroupsCount = 0;
+            groups.forEach(g => {
+                const groupMatches = matches.filter(m => m.group === g);
+                if (groupMatches.length > 0 && groupMatches.every(m => m.hasResult)) {
+                    finishedGroupsCount++;
+                }
+            });
+
             document.getElementById('played-matches-badge').innerText = `Pelatut ottelut: ${playedCount} / 72`;
+            document.getElementById('completed-groups-badge').innerText = `Valmistuneet lohkot: ${finishedGroupsCount} / 12`;
             document.getElementById('header-stats').style.display = 'flex';
             
             actualStandings = {};
@@ -3336,7 +3386,7 @@
                     const apiGroup = apiGroups.find(x => x.name === g);
                     if (apiGroup && apiGroup.teams && apiTeams.length > 0) {
                         const mappedOrder = apiGroup.teams.map(tInfo => {
-                            const teamObj = apiTeams.find(t => t.id === tInfo.team_id);
+                            const teamObj = apiTeams.find(t => String(t.id) === String(tInfo.team_id));
                             return teamObj ? normalizeTeamName(teamObj.name_en) : null;
                         }).filter(Boolean);
                         if (mappedOrder.length === 4) {
@@ -3446,9 +3496,13 @@
 
                 tr.className = rankClass;
 
-                let groupPointsHtml = `${p.groupPoints} p`;
-                if (!p.groupPointsAdded) {
-                    groupPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Ei vielä mukana yhteispisteissä. Lisätään kun kaikki lohkovaiheen ottelut on pelattu.">${p.groupPoints} p *</span>`;
+                let groupPointsHtml = '';
+                if (p.finishedGroupsCount === 12) {
+                    groupPointsHtml = `${p.finishedGroupPoints} p`;
+                } else if (p.finishedGroupsCount === 0) {
+                    groupPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Lohkopisteet lasketaan mukaan sitä mukaa kun lohkot valmistuvat. Ennuste: ${p.groupPoints} p.">${p.finishedGroupPoints} p (enn. ${p.groupPoints} p)</span>`;
+                } else {
+                    groupPointsHtml = `<span>${p.finishedGroupPoints} p</span> <span style="font-size: 0.75rem; color: var(--text-muted); opacity: 0.8;" title="Valmistuneiden lohkojen pisteet mukana yhteispisteissä. Kaikkien lohkojen ennustetut pisteet: ${p.groupPoints} p.">(enn. ${p.groupPoints} p)</span>`;
                 }
 
                 let finalPointsHtml = `${p.finalPoints} p`;
@@ -3457,9 +3511,19 @@
                     finalPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Ei vielä mukana yhteispisteissä. Lisätään kun finaali- ja pronssiparit ovat selvillä.">${p.finalPoints} p **</span>`;
                 }
 
+                let mobileLohkotText = `Lohkot: ${p.finishedGroupPoints} p`;
+                if (p.finishedGroupsCount < 12) {
+                    mobileLohkotText += ` (enn. ${p.groupPoints} p)`;
+                }
+
                 tr.innerHTML = `
                     <td class="td-rank" style="vertical-align: middle;">${rankContent}<span style="font-size: 0.85rem; font-weight: 500;">#${p.rank}</span></td>
-                    <td class="td-name">${p.name}</td>
+                    <td class="td-name">
+                        <div>${p.name}</div>
+                        <div class="mobile-only-subtext" style="font-size: 0.725rem; color: var(--text-muted); margin-top: 0.15rem;">
+                            ${mobileLohkotText}
+                        </div>
+                    </td>
                     <td style="text-align: center;" class="td-sub-points hide-mobile">${p.matchPoints} p</td>
                     <td style="text-align: center;" class="td-sub-points hide-mobile">${groupPointsHtml}</td>
                     <td style="text-align: center;" class="td-sub-points hide-mobile">${finalPointsHtml}</td>
@@ -3480,10 +3544,16 @@
             
             if (firstPlayer) {
                 if (groupNote) {
-                    groupNote.style.color = firstPlayer.groupPointsAdded ? 'var(--primary)' : 'var(--text-muted)';
-                    groupNote.innerHTML = firstPlayer.groupPointsAdded 
-                        ? '<i class="fa-solid fa-circle-check"></i> Lohkopisteet on laskettu mukaan yhteispisteisiin.' 
-                        : '* Lohkopisteet lasketaan yhteispisteisiin vasta, kun kaikki lohkovaiheen ottelut on pelattu.';
+                    if (firstPlayer.finishedGroupsCount === 12) {
+                        groupNote.style.color = 'var(--primary)';
+                        groupNote.innerHTML = '<i class="fa-solid fa-circle-check"></i> Kaikki lohkot ovat valmistuneet ja lohkopisteet on laskettu mukaan yhteispisteisiin.';
+                    } else if (firstPlayer.finishedGroupsCount > 0) {
+                        groupNote.style.color = 'var(--primary)';
+                        groupNote.innerHTML = `<i class="fa-solid fa-circle-info"></i> Lohkopisteet lasketaan mukaan lohkokohtaisesti sitä mukaa kun lohkot valmistuvat. Valmistuneet lohkot (${firstPlayer.finishedGroupsCount}/12): ${firstPlayer.finishedGroups.join(', ')}.`;
+                    } else {
+                        groupNote.style.color = 'var(--text-muted)';
+                        groupNote.innerHTML = '* Lohkopisteet lasketaan yhteispisteisiin lohkokohtaisesti sitä mukaa kun lohkot valmistuvat (yhtään lohkoa ei ole vielä valmis).';
+                    }
                 }
                 if (finalNote) {
                     const finalMatchupsClear = firstPlayer.finalistsAdded && firstPlayer.thirdFourthAdded;
@@ -3720,10 +3790,15 @@
                     `;
                 });
 
+                const isCompleted = groupMatches.length > 0 && groupMatches.every(m => m.hasResult);
+                const statusIcon = isCompleted 
+                    ? `<i class="fa-solid fa-circle-check" style="font-size: 0.95rem; color: var(--primary);" title="Lohko on valmis"></i>`
+                    : `<i class="fa-solid fa-clock" style="font-size: 0.9rem; color: var(--text-muted);" title="Lohko on kesken"></i>`;
+
                 card.innerHTML = `
-                    <div class="group-title" style="margin-bottom: 0.5rem; padding-bottom: 0.4rem;">
+                    <div class="group-title" style="margin-bottom: 0.5rem; padding-bottom: 0.4rem; display: flex; justify-content: space-between; align-items: center;">
                         <span>Lohko ${g}</span>
-                        <i class="fa-solid fa-shield-halved" style="font-size: 0.9rem; color: var(--text-muted);"></i>
+                        ${statusIcon}
                     </div>
                     <div class="group-table-header" style="display: grid; grid-template-columns: 24px 1fr 30px 45px 30px; gap: 0.25rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); padding: 0.25rem; border-bottom: 1px solid var(--border-color); margin-bottom: 0.25rem;">
                         <span></span>
@@ -3783,12 +3858,16 @@
             document.getElementById('profile-total-points').innerText = `${p.totalPoints} p`;
             document.getElementById('profile-match-points').innerText = `${p.matchPoints} p`;
             
-            if (p.groupPointsAdded) {
-                document.getElementById('profile-group-points').innerText = `${p.groupPoints} p`;
-                document.getElementById('profile-group-points').style.color = '';
+            const groupEl = document.getElementById('profile-group-points');
+            if (p.finishedGroupsCount === 12) {
+                groupEl.innerText = `${p.finishedGroupPoints} p`;
+                groupEl.style.color = '';
+            } else if (p.finishedGroupsCount > 0) {
+                groupEl.innerText = `${p.finishedGroupPoints} p (enn. ${p.groupPoints} p)`;
+                groupEl.style.color = '';
             } else {
-                document.getElementById('profile-group-points').innerText = `${p.groupPoints} p *`;
-                document.getElementById('profile-group-points').style.color = 'var(--text-muted)';
+                groupEl.innerText = `${p.finishedGroupPoints} p (enn. ${p.groupPoints} p)`;
+                groupEl.style.color = 'var(--text-muted)';
             }
             
             const finalMatchupsClear = p.finalistsAdded && p.thirdFourthAdded;
