@@ -434,7 +434,6 @@
 
         .mobile-only-subtext {
             display: none;
-            white-space: nowrap;
         }
 
         .td-points {
@@ -1625,12 +1624,12 @@
             }
             .mobile-only-subtext {
                 display: flex !important;
-                gap: 0.4rem;
+                flex-wrap: wrap;
+                gap: 0.2rem 0.4rem;
                 align-items: center;
                 margin-top: 0.2rem;
                 font-size: 0.725rem;
                 color: var(--text-muted);
-                white-space: nowrap;
             }
             
             /* Table sizes on mobile */
@@ -1673,9 +1672,9 @@
             .sim-score-divider {
                 font-size: 0.9rem !important;
             }
-            .matches-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 0.75rem;
+            .matches-grid, .groups-grid {
+                grid-template-columns: 1fr !important;
+                gap: 0.75rem !important;
             }
             .match-card {
                 padding: 1rem;
@@ -1744,6 +1743,27 @@
             }
             .botmanen-promo {
                 text-align: left !important;
+            }
+            .player-match-row {
+                grid-template-columns: 24px 1.5fr 1fr 1fr 45px !important;
+                gap: 0.35rem !important;
+                padding: 0.6rem 0.4rem !important;
+            }
+            .pm-teams {
+                min-width: 0 !important;
+            }
+            .pm-teams div {
+                white-space: nowrap !important;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
+            }
+            .sim-teams-block {
+                min-width: 0 !important;
+            }
+            .sim-team-line {
+                white-space: nowrap !important;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
             }
         }
 
