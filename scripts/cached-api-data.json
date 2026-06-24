@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1782301484874,
+  "footballDataLastFetched": 1782301828764,
   "apiGames": [
     {
       "id": "1",
@@ -1261,7 +1261,7 @@
     },
     {
       "id": "74",
-      "home_team_id": "null",
+      "home_team_id": "759",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1273,7 +1273,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Germany",
       "away_team_name_en": "null"
     },
     {
@@ -1329,7 +1329,7 @@
     },
     {
       "id": "79",
-      "home_team_id": "null",
+      "home_team_id": "769",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1341,7 +1341,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Mexico",
       "away_team_name_en": "null"
     },
     {
@@ -1380,7 +1380,7 @@
     },
     {
       "id": "81",
-      "home_team_id": "null",
+      "home_team_id": "771",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1392,7 +1392,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "United States",
       "away_team_name_en": "null"
     },
     {
@@ -1465,7 +1465,7 @@
     },
     {
       "id": "86",
-      "home_team_id": "null",
+      "home_team_id": "762",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1477,7 +1477,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Argentina",
       "away_team_name_en": "null"
     },
     {
