@@ -219,7 +219,7 @@
             transform: scale(1.1);
         }
 
-        .tab-text-short {
+        .tab-text-short, .th-text-short {
             display: none;
         }
 
@@ -1550,11 +1550,31 @@
             .tab-btn i {
                 font-size: 0.95rem !important;
             }
-            .tab-text-full {
+            .tab-text-full, .th-text-full {
                 display: none !important;
             }
-            .tab-text-short {
+            .tab-text-short, .th-text-short {
                 display: inline !important;
+            }
+            table {
+                font-size: 0.85rem !important;
+            }
+            th {
+                padding: 0.75rem 0.4rem !important;
+                font-size: 0.75rem !important;
+            }
+            td {
+                padding: 0.7rem 0.4rem !important;
+            }
+            .botmanen-predictions-table th, 
+            .botmanen-predictions-table td {
+                min-width: unset !important;
+            }
+            .botmanen-predictions-table .col-ottelu {
+                min-width: 130px !important;
+            }
+            .botmanen-predictions-table .col-kommentti {
+                min-width: 170px !important;
             }
         }
 
@@ -2053,10 +2073,10 @@
                                 <tr>
                                     <th>Sija</th>
                                     <th>Osallistuja</th>
-                                    <th style="text-align: center;" class="hide-mobile">Ottelupisteet</th>
-                                    <th style="text-align: center;" class="hide-mobile">Lohkopisteet</th>
-                                    <th style="text-align: center;" class="hide-mobile">Finaalipisteet</th>
-                                    <th style="text-align: center;" class="hide-mobile">Täsmälleen oikein</th>
+                                    <th style="text-align: center;" class="hide-mobile"><span class="th-text-full">Ottelupisteet</span><span class="th-text-short">Ottelut</span></th>
+                                    <th style="text-align: center;" class="hide-mobile"><span class="th-text-full">Lohkopisteet</span><span class="th-text-short">Lohkot</span></th>
+                                    <th style="text-align: center;" class="hide-mobile"><span class="th-text-full">Finaalipisteet</span><span class="th-text-short">Finaalit</span></th>
+                                    <th style="text-align: center;" class="hide-mobile"><span class="th-text-full">Täsmälleen oikein</span><span class="th-text-short">Oikein</span></th>
                                     <th style="text-align: center;">Yhteensä</th>
                                 </tr>
                             </thead>
@@ -2306,7 +2326,7 @@
                                     <tr>
                                         <th>Sija</th>
                                         <th>Osallistuja</th>
-                                        <th style="text-align: center;">Ottelupisteet</th>
+                                        <th style="text-align: center;"><span class="th-text-full">Ottelupisteet</span><span class="th-text-short">Ottelut</span></th>
                                         <th style="text-align: center;">Ero</th>
                                         <th style="text-align: center;">Tilanne</th>
                                     </tr>
@@ -2341,16 +2361,16 @@
                     </div>
                     
                     <div class="table-responsive" style="max-height: 600px; overflow-y: auto;">
-                        <table>
+                        <table class="botmanen-predictions-table">
                             <thead>
                                 <tr>
                                     <th style="width: 60px; text-align: center;">Nro</th>
                                     <th style="width: 70px; text-align: center;">Lohko</th>
-                                    <th style="min-width: 180px;">Ottelu</th>
+                                    <th class="col-ottelu" style="min-width: 180px;">Ottelu</th>
                                     <th style="text-align: center; width: 100px;">Tulos</th>
                                     <th style="text-align: center; width: 100px;">Ennuste</th>
                                     <th style="text-align: center; width: 80px;">Pisteet</th>
-                                    <th style="min-width: 250px;">Kommentti</th>
+                                    <th class="col-kommentti" style="min-width: 250px;">Kommentti</th>
                                 </tr>
                             </thead>
                             <tbody id="botmanen-predictions-body">
@@ -2403,7 +2423,7 @@
                                     <tr>
                                         <th>Sija</th>
                                         <th>Osallistuja</th>
-                                        <th style="text-align: center;">Pisteet (Real ➔ Sim)</th>
+                                        <th style="text-align: center;"><span class="th-text-full">Pisteet (Real ➔ Sim)</span><span class="th-text-short">Pisteet (Sim)</span></th>
                                     </tr>
                                 </thead>
                                 <tbody id="sim-leaderboard-body">
@@ -4243,13 +4263,13 @@
                 tr.innerHTML = `
                     <td style="text-align: center; font-weight: 600;">${m.nr}</td>
                     <td style="text-align: center;">Lohko ${m.group}</td>
-                    <td>${getFlag(m.team1)} ${displayTeam(m.team1)} – ${getFlag(m.team2)} ${displayTeam(m.team2)}</td>
+                    <td class="col-ottelu">${getFlag(m.team1)} ${displayTeam(m.team1)} – ${getFlag(m.team2)} ${displayTeam(m.team2)}</td>
                     <td style="text-align: center; font-weight: 700;">${actualResultText}</td>
                     <td style="text-align: center; font-weight: 600;">${m.guess1} - ${m.guess2}</td>
                     <td style="text-align: center;">
                         <span class="badge-points-earned">${pointsEarnedText}</span>
                     </td>
-                    <td class="comment-text">${m.comment}</td>
+                    <td class="comment-text col-kommentti">${m.comment}</td>
                 `;
                 predBody.appendChild(tr);
             });
