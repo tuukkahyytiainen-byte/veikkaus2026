@@ -1577,7 +1577,13 @@
                 display: none !important;
             }
             .mobile-only-subtext {
-                display: block !important;
+                display: flex !important;
+                gap: 0.4rem;
+                align-items: center;
+                margin-top: 0.2rem;
+                font-size: 0.725rem;
+                color: var(--text-muted);
+                white-space: nowrap;
             }
             
             /* Table sizes on mobile */
@@ -3511,17 +3517,18 @@
                     finalPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Ei vielä mukana yhteispisteissä. Lisätään kun finaali- ja pronssiparit ovat selvillä.">${p.finalPoints} p **</span>`;
                 }
 
-                let mobileLohkotText = `Lohkot: ${p.finishedGroupPoints} p`;
-                if (p.finishedGroupsCount < 12) {
-                    mobileLohkotText += ` (enn. ${p.groupPoints} p)`;
-                }
+                const mobileSubtextHtml = `
+                    <span>Ottelut: <strong style="color: var(--text-secondary);">${p.matchPoints} p</strong></span>
+                    <span style="color: var(--border-color); opacity: 0.5;">|</span>
+                    <span>Lohkot: <strong style="color: var(--text-secondary);">${p.finishedGroupPoints} p</strong>${p.finishedGroupsCount < 12 ? ` <span style="font-size: 0.65rem; opacity: 0.85;">(enn. ${p.groupPoints} p)</span>` : ''}</span>
+                `;
 
                 tr.innerHTML = `
                     <td class="td-rank" style="vertical-align: middle;">${rankContent}<span style="font-size: 0.85rem; font-weight: 500;">#${p.rank}</span></td>
                     <td class="td-name">
                         <div>${p.name}</div>
-                        <div class="mobile-only-subtext" style="font-size: 0.725rem; color: var(--text-muted); margin-top: 0.15rem;">
-                            ${mobileLohkotText}
+                        <div class="mobile-only-subtext">
+                            ${mobileSubtextHtml}
                         </div>
                     </td>
                     <td style="text-align: center;" class="td-sub-points hide-mobile">${p.matchPoints} p</td>
