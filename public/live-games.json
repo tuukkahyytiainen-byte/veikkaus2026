@@ -1260,7 +1260,7 @@
     },
     {
       "id": "74",
-      "home_team_id": "759",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1272,7 +1272,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Germany",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1328,7 +1328,7 @@
     },
     {
       "id": "79",
-      "home_team_id": "769",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1340,7 +1340,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Mexico",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1379,7 +1379,7 @@
     },
     {
       "id": "81",
-      "home_team_id": "771",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1391,7 +1391,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "United States",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1464,7 +1464,7 @@
     },
     {
       "id": "86",
-      "home_team_id": "762",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1476,7 +1476,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Argentina",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {

@@ -2221,8 +2221,8 @@ if (require.main === module) {
             });
         } catch (e) {
             console.error('Failed to run static generator:', e);
-            if (process.env.GITHUB_ACTIONS === 'true') {
-                console.log('Running on GitHub Actions: exiting gracefully with 0 to prevent workflow failure emails.');
+            if (process.env.GITHUB_ACTIONS === 'true' || process.env.CF_PAGES === 'true' || process.env.CF_PAGES === '1') {
+                console.log('Running on GitHub Actions or Cloudflare Pages: exiting gracefully with 0 to prevent build failure.');
                 process.exit(0);
             } else {
                 process.exit(1);

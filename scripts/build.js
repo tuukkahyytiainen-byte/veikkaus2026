@@ -31,8 +31,8 @@ filesToCopy.forEach(file => {
 });
 
 // Run generate-agent-analysis.js
-if (process.env.VERCEL) {
-    console.log('Running on Vercel: skipping static generator and validation during build time, as they are served dynamically by serverless functions.');
+if (process.env.VERCEL || process.env.CF_PAGES || process.env.CLOUDFLARE) {
+    console.log('Running on Vercel or Cloudflare: skipping static generator and validation during build time, as they are served dynamically by serverless functions.');
 } else {
     const generatorScript = path.join(__dirname, 'generate-agent-analysis.js');
     console.log('Running generate-agent-analysis.js...');
