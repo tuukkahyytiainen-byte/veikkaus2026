@@ -3006,10 +3006,52 @@
             const cacheBuster = Math.floor(Date.now() / 10000); // 10-second grid cache-buster
             const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
             const url = isLocal ? 'live-games.json?t=' + cacheBuster : '/api/live-games?t=' + cacheBuster;
+            
+            const handleCacheFallback = (originalErr) => {
+                const cached = localStorage.getItem(STORAGE_KEY_LIVE_GAMES);
+                if (cached) {
+                    try {
+                        const parsed = JSON.parse(cached);
+                        console.log('Käytetään välimuistissa olevia live-tuloksia.');
+                        return parsed;
+                    } catch (e) {
+                        console.error('Virhe jäsennettäessä välimuistia:', e);
+                    }
+                }
+                throw originalErr;
+            };
+
             return fetch(url)
                 .then(res => {
-                    if (!res.ok) throw new Error('Status: ' + res.status);
+                    if (!res.ok) {
+                        // Jos /api/live-games palauttaa virheen (kuten 404 Cloudflaressa), yritetään ladata staattinen live-games.json
+                        if (!isLocal && url.startsWith('/api/')) {
+                            console.log('API-palvelu palautti virheen, yritetään ladata staattinen live-games.json...');
+                            return fetch('live-games.json?t=' + cacheBuster)
+                                .then(staticRes => {
+                                    if (!staticRes.ok) throw new Error('Static status: ' + staticRes.status);
+                                    return staticRes.json();
+                                });
+                        }
+                        throw new Error('Status: ' + res.status);
+                    }
                     return res.json();
+                })
+                .catch(err => {
+                    // Jos tapahtui verkkovirhe haettaessa /api/live-games, yritetään vielä ladata staattinen tiedosto
+                    if (!isLocal && url.startsWith('/api/')) {
+                        console.log('Verkkovirhe API-haussa, yritetään ladata staattinen live-games.json...', err);
+                        return fetch('live-games.json?t=' + cacheBuster)
+                            .then(staticRes => {
+                                if (!staticRes.ok) throw new Error('Static status: ' + staticRes.status);
+                                return staticRes.json();
+                            })
+                            .catch(staticErr => {
+                                console.log('Myös staattisen live-games.jsonin lataus epäonnistui, haetaan välimuistista.');
+                                return handleCacheFallback(err);
+                            });
+                    }
+                    return handleCacheFallback(err);
                 })
                 .then(data => {
                     if (data && data.games && data.games.length > 0) {
@@ -3027,20 +3069,6 @@
                         }
                     }
                     return data;
-                })
-                .catch(err => {
-                    console.log('Virhe ladattaessa live-tuloksia netistä, yritetään käyttää välimuistia:', err);
-                    const cached = localStorage.getItem(STORAGE_KEY_LIVE_GAMES);
-                    if (cached) {
-                        try {
-                            const parsed = JSON.parse(cached);
-                            console.log('Käytetään välimuistissa olevia live-tuloksia.');
-                            return parsed;
-                        } catch (e) {
-                            console.error('Virhe jäsennettäessä välimuistia:', e);
-                        }
-                    }
-                    throw err;
                 });
         }
 
