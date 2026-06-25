@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1782302363499,
+  "footballDataLastFetched": 1782364550966,
   "apiGames": [
     {
       "id": "1",
@@ -821,15 +821,15 @@
       "id": "51",
       "home_team_id": "788",
       "away_team_id": "828",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "2",
+      "away_score": "1",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "B",
       "matchday": "3",
       "local_date": "06/24/2026 22:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Switzerland",
       "away_team_name_en": "Canada"
@@ -838,15 +838,15 @@
       "id": "52",
       "home_team_id": "1060",
       "away_team_id": "8030",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "3",
+      "away_score": "1",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "B",
       "matchday": "3",
       "local_date": "06/24/2026 22:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Bosnia-Herzegovina",
       "away_team_name_en": "Qatar"
@@ -855,15 +855,15 @@
       "id": "50",
       "home_team_id": "815",
       "away_team_id": "836",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "4",
+      "away_score": "2",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "C",
       "matchday": "3",
       "local_date": "06/25/2026 01:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Morocco",
       "away_team_name_en": "Haiti"
@@ -873,14 +873,14 @@
       "home_team_id": "8873",
       "away_team_id": "764",
       "home_score": "0",
-      "away_score": "0",
+      "away_score": "3",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "C",
       "matchday": "3",
       "local_date": "06/25/2026 01:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Scotland",
       "away_team_name_en": "Brazil"
@@ -890,14 +890,14 @@
       "home_team_id": "798",
       "away_team_id": "769",
       "home_score": "0",
-      "away_score": "0",
+      "away_score": "3",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "A",
       "matchday": "3",
       "local_date": "06/25/2026 04:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Czech Republic",
       "away_team_name_en": "Mexico"
@@ -906,15 +906,15 @@
       "id": "54",
       "home_team_id": "774",
       "away_team_id": "772",
-      "home_score": "0",
+      "home_score": "1",
       "away_score": "0",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "A",
       "matchday": "3",
       "local_date": "06/25/2026 04:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "South Africa",
       "away_team_name_en": "South Korea"
@@ -1261,7 +1261,7 @@
     },
     {
       "id": "74",
-      "home_team_id": "null",
+      "home_team_id": "759",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1273,7 +1273,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Germany",
       "away_team_name_en": "null"
     },
     {
@@ -1329,7 +1329,7 @@
     },
     {
       "id": "79",
-      "home_team_id": "null",
+      "home_team_id": "769",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1341,7 +1341,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Mexico",
       "away_team_name_en": "null"
     },
     {
@@ -1380,7 +1380,7 @@
     },
     {
       "id": "81",
-      "home_team_id": "null",
+      "home_team_id": "771",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1392,7 +1392,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "United States",
       "away_team_name_en": "null"
     },
     {
@@ -1465,7 +1465,7 @@
     },
     {
       "id": "86",
-      "home_team_id": "null",
+      "home_team_id": "762",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1477,7 +1477,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Argentina",
       "away_team_name_en": "null"
     },
     {
@@ -1778,13 +1778,13 @@
           "team_id": "769"
         },
         {
+          "team_id": "774"
+        },
+        {
           "team_id": "772"
         },
         {
           "team_id": "798"
-        },
-        {
-          "team_id": "774"
         }
       ]
     },
@@ -1792,10 +1792,10 @@
       "name": "B",
       "teams": [
         {
-          "team_id": "828"
+          "team_id": "788"
         },
         {
-          "team_id": "788"
+          "team_id": "828"
         },
         {
           "team_id": "1060"
@@ -1982,6 +1982,10 @@
       "name_en": "Mexico"
     },
     {
+      "id": "774",
+      "name_en": "South Africa"
+    },
+    {
       "id": "772",
       "name_en": "South Korea"
     },
@@ -1990,16 +1994,12 @@
       "name_en": "Czechia"
     },
     {
-      "id": "774",
-      "name_en": "South Africa"
+      "id": "788",
+      "name_en": "Switzerland"
     },
     {
       "id": "828",
       "name_en": "Canada"
-    },
-    {
-      "id": "788",
-      "name_en": "Switzerland"
     },
     {
       "id": "1060",

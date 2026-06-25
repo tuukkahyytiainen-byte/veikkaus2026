@@ -1933,6 +1933,12 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
             name: p.name,
             rankNow: p.rank,
             totalPointsNow: p.totalPoints,
+            matchPointsNow: p.matchPoints,
+            groupPointsNow: p.groupPoints,
+            finishedGroupPointsNow: p.finishedGroupPoints,
+            finalPointsNow: p.finalPoints,
+            exactlyCorrectNow: p.exactlyCorrect,
+            finishedGroupsCountNow: p.finishedGroupsCount,
             pointsInWindow: winInfo ? winInfo.pointsInWindow : 0
         };
     });
@@ -2023,6 +2029,8 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
             totalPoints: p.totalPoints,
             matchPoints: p.matchPoints,
             groupPoints: p.groupPoints,
+            finishedGroupPoints: p.finishedGroupPoints,
+            finishedGroupsCount: p.finishedGroupsCount,
             finalPoints: p.finalPoints,
             exactlyCorrect: p.exactlyCorrect,
             groupPointsAdded: p.groupPointsAdded,
@@ -2071,6 +2079,9 @@ async function runAnalysisGenerator({ excelPath, txtPath, apiGames = [], apiGrou
         name: p.name,
         totalPoints: p.totalPoints,
         matchPoints: p.matchPoints,
+        groupPoints: p.groupPoints,
+        finishedGroupPoints: p.finishedGroupPoints,
+        finishedGroupsCount: p.finishedGroupsCount,
         exactlyCorrect: p.exactlyCorrect
     }));
 
