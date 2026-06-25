@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1782367993632,
+  "footballDataLastFetched": 1782419729693,
   "apiGames": [
     {
       "id": "1",
@@ -923,15 +923,15 @@
       "id": "56",
       "home_team_id": "791",
       "away_team_id": "759",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "1",
+      "away_score": "1",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "E",
       "matchday": "3",
       "local_date": "06/25/2026 23:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "group_stage",
       "home_team_name_en": "Ecuador",
       "away_team_name_en": "Germany"
@@ -941,14 +941,14 @@
       "home_team_id": "9460",
       "away_team_id": "1935",
       "home_score": "0",
-      "away_score": "0",
+      "away_score": "1",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "E",
       "matchday": "3",
       "local_date": "06/25/2026 23:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "group_stage",
       "home_team_name_en": "Curaçao",
       "away_team_name_en": "Ivory Coast"
@@ -1261,7 +1261,7 @@
     },
     {
       "id": "74",
-      "home_team_id": "759",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1273,7 +1273,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Germany",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1329,7 +1329,7 @@
     },
     {
       "id": "79",
-      "home_team_id": "769",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1341,7 +1341,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Mexico",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1380,7 +1380,7 @@
     },
     {
       "id": "81",
-      "home_team_id": "771",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1392,7 +1392,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "United States",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1465,7 +1465,7 @@
     },
     {
       "id": "86",
-      "home_team_id": "762",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1477,7 +1477,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Argentina",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {

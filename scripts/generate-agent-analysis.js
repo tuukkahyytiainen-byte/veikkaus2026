@@ -812,7 +812,7 @@ async function fetchLiveApiData() {
                 }
                 
                 if (matchId) {
-                    const status = m.status; // FINISHED, IN_PLAY, PAUSED, SCHEDULED, TIMED
+                    const status = m.status; // FINISHED, IN_PLAY, PAUSED, LIVE, SCHEDULED, TIMED
                     
                     // Check if match should have started but is still marked as TIMED/SCHEDULED
                     if ((status === 'TIMED' || status === 'SCHEDULED') && m.utcDate) {
@@ -824,8 +824,8 @@ async function fetchLiveApiData() {
                         }
                     }
 
-                    // Check if match should have finished but is still marked as live (IN_PLAY or PAUSED)
-                    if ((status === 'IN_PLAY' || status === 'PAUSED') && m.utcDate) {
+                    // Check if match should have finished but is still marked as live (IN_PLAY, PAUSED, or LIVE)
+                    if ((status === 'IN_PLAY' || status === 'PAUSED' || status === 'LIVE') && m.utcDate) {
                         const matchTime = new Date(m.utcDate);
                         const isPlayoff = m.stage && m.stage !== 'GROUP_STAGE';
                         const durationThreshold = isPlayoff ? 200 * 60 * 1000 : 110 * 60 * 1000;
@@ -836,7 +836,7 @@ async function fetchLiveApiData() {
                     }
 
                     const isFinished = status === 'FINISHED';
-                    const isLive = status === 'IN_PLAY' || status === 'PAUSED';
+                    const isLive = status === 'IN_PLAY' || status === 'PAUSED' || status === 'LIVE';
                     
                     let timeElapsed = 'notstarted';
                     if (isFinished) timeElapsed = 'finished';
