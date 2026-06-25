@@ -957,14 +957,14 @@
       "home_team_id": "802",
       "away_team_id": "8601",
       "home_score": "0",
-      "away_score": "0",
+      "away_score": "2",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "F",
       "matchday": "3",
       "local_date": "06/25/2026 23:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "group_stage",
       "home_team_name_en": "Tunisia",
       "away_team_name_en": "Netherlands"
@@ -981,7 +981,7 @@
       "matchday": "3",
       "local_date": "06/25/2026 23:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "group_stage",
       "home_team_name_en": "Japan",
       "away_team_name_en": "Sweden"
@@ -1260,7 +1260,7 @@
     },
     {
       "id": "74",
-      "home_team_id": "759",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1272,7 +1272,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Germany",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1328,7 +1328,7 @@
     },
     {
       "id": "79",
-      "home_team_id": "769",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1340,7 +1340,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Mexico",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1379,7 +1379,7 @@
     },
     {
       "id": "81",
-      "home_team_id": "771",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1391,7 +1391,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "United States",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
@@ -1464,7 +1464,7 @@
     },
     {
       "id": "86",
-      "home_team_id": "762",
+      "home_team_id": "null",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1476,7 +1476,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "Argentina",
+      "home_team_name_en": "null",
       "away_team_name_en": "null"
     },
     {
