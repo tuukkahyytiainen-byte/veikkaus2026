@@ -1,7 +1,7 @@
 {
   "emailDigest": {
     "window": "27.6.",
-    "generatedAt": "2026-06-27T10:04:54.768Z",
+    "generatedAt": "2026-06-27T11:14:24.175Z",
     "summary": {
       "playedMatchesCount": 66,
       "totalMatches": 72,
@@ -3721,7 +3721,7 @@
     ]
   },
   "schemaVersion": 1,
-  "generatedAt": "2026-06-27T10:04:54.768Z",
+  "generatedAt": "2026-06-27T11:14:24.175Z",
   "source": {
     "excelFile": "MM2026_pistelaskenta.xlsx",
     "resultsFile": "tulokset.txt",
