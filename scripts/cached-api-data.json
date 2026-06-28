@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1782624892179,
+  "footballDataLastFetched": 1782625192355,
   "apiGames": [
     {
       "id": "1",
@@ -1227,8 +1227,8 @@
     },
     {
       "id": "73",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "774",
+      "away_team_id": "828",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1239,13 +1239,13 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "South Africa",
+      "away_team_name_en": "Canada"
     },
     {
       "id": "76",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "764",
+      "away_team_id": "766",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1256,12 +1256,12 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "Brazil",
+      "away_team_name_en": "Japan"
     },
     {
       "id": "74",
-      "home_team_id": "null",
+      "home_team_id": "759",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1273,13 +1273,13 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Germany",
       "away_team_name_en": "null"
     },
     {
       "id": "75",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "8601",
+      "away_team_id": "815",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1290,12 +1290,12 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "Netherlands",
+      "away_team_name_en": "Morocco"
     },
     {
       "id": "78",
-      "home_team_id": "null",
+      "home_team_id": "1935",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1307,7 +1307,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Ivory Coast",
       "away_team_name_en": "null"
     },
     {
@@ -1329,7 +1329,7 @@
     },
     {
       "id": "79",
-      "home_team_id": "null",
+      "home_team_id": "769",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1341,7 +1341,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Mexico",
       "away_team_name_en": "null"
     },
     {
@@ -1380,8 +1380,8 @@
     },
     {
       "id": "81",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "771",
+      "away_team_id": "1060",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1392,8 +1392,8 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "United States",
+      "away_team_name_en": "Bosnia-Herzegovina"
     },
     {
       "id": "84",
@@ -1431,7 +1431,7 @@
     },
     {
       "id": "85",
-      "home_team_id": "null",
+      "home_team_id": "788",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1443,12 +1443,12 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Switzerland",
       "away_team_name_en": "null"
     },
     {
       "id": "88",
-      "home_team_id": "null",
+      "home_team_id": "779",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1460,12 +1460,12 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Australia",
       "away_team_name_en": "null"
     },
     {
       "id": "86",
-      "home_team_id": "null",
+      "home_team_id": "762",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1477,7 +1477,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_32",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Argentina",
       "away_team_name_en": "null"
     },
     {
