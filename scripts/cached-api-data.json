@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1782554671821,
+  "footballDataLastFetched": 1782624892179,
   "apiGames": [
     {
       "id": "1",
@@ -1128,14 +1128,14 @@
       "home_team_id": "1836",
       "away_team_id": "770",
       "home_score": "0",
-      "away_score": "0",
+      "away_score": "2",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "L",
       "matchday": "3",
       "local_date": "06/28/2026 00:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Panama",
       "away_team_name_en": "England"
@@ -1144,15 +1144,15 @@
       "id": "68",
       "home_team_id": "799",
       "away_team_id": "763",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "2",
+      "away_score": "1",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "L",
       "matchday": "3",
       "local_date": "06/28/2026 00:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Croatia",
       "away_team_name_en": "Ghana"
@@ -1168,8 +1168,8 @@
       "group": "K",
       "matchday": "3",
       "local_date": "06/28/2026 02:30",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Colombia",
       "away_team_name_en": "Portugal"
@@ -1178,15 +1178,15 @@
       "id": "72",
       "home_team_id": "1934",
       "away_team_id": "8070",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "3",
+      "away_score": "1",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "K",
       "matchday": "3",
       "local_date": "06/28/2026 02:30",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Congo DR",
       "away_team_name_en": "Uzbekistan"
@@ -1195,15 +1195,15 @@
       "id": "70",
       "home_team_id": "8049",
       "away_team_id": "762",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "1",
+      "away_score": "3",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "J",
       "matchday": "3",
       "local_date": "06/28/2026 05:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Jordan",
       "away_team_name_en": "Argentina"
@@ -1212,15 +1212,15 @@
       "id": "69",
       "home_team_id": "778",
       "away_team_id": "816",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "3",
+      "away_score": "3",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "J",
       "matchday": "3",
       "local_date": "06/28/2026 05:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "group_stage",
       "home_team_name_en": "Algeria",
       "away_team_name_en": "Austria"
@@ -1965,10 +1965,10 @@
           "team_id": "770"
         },
         {
-          "team_id": "763"
+          "team_id": "799"
         },
         {
-          "team_id": "799"
+          "team_id": "763"
         },
         {
           "team_id": "1836"
@@ -2158,12 +2158,12 @@
       "name_en": "England"
     },
     {
-      "id": "763",
-      "name_en": "Ghana"
-    },
-    {
       "id": "799",
       "name_en": "Croatia"
+    },
+    {
+      "id": "763",
+      "name_en": "Ghana"
     },
     {
       "id": "1836",
