@@ -1279,7 +1279,7 @@
       "id": "75",
       "home_team_id": "8601",
       "away_team_id": "815",
-      "home_score": "4",
+      "home_score": "3",
       "away_score": "4",
       "home_scorers": "null",
       "away_scorers": "null",
@@ -1499,7 +1499,7 @@
     {
       "id": "90",
       "home_team_id": "828",
-      "away_team_id": "null",
+      "away_team_id": "815",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1511,11 +1511,11 @@
       "time_elapsed": "notstarted",
       "type": "last_16",
       "home_team_name_en": "Canada",
-      "away_team_name_en": "null"
+      "away_team_name_en": "Morocco"
     },
     {
       "id": "89",
-      "home_team_id": "null",
+      "home_team_id": "761",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1527,12 +1527,12 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_16",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Paraguay",
       "away_team_name_en": "null"
     },
     {
       "id": "91",
-      "home_team_id": "null",
+      "home_team_id": "764",
       "away_team_id": "null",
       "home_score": "0",
       "away_score": "0",
@@ -1544,7 +1544,7 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_16",
-      "home_team_name_en": "null",
+      "home_team_name_en": "Brazil",
       "away_team_name_en": "null"
     },
     {
