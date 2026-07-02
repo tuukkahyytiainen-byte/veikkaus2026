@@ -1549,8 +1549,8 @@
     },
     {
       "id": "92",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "769",
+      "away_team_id": "770",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1561,8 +1561,8 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_16",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "Mexico",
+      "away_team_name_en": "England"
     },
     {
       "id": "93",
@@ -1583,8 +1583,8 @@
     },
     {
       "id": "94",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "771",
+      "away_team_id": "805",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1595,8 +1595,8 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "last_16",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "United States",
+      "away_team_name_en": "Belgium"
     },
     {
       "id": "95",
