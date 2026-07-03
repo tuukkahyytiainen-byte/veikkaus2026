@@ -1457,7 +1457,7 @@
       "matchday": "1",
       "local_date": "07/03/2026 18:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "last_32",
       "home_team_name_en": "Australia",
       "away_team_name_en": "Egypt"
