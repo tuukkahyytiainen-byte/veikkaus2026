@@ -1466,7 +1466,7 @@
       "id": "86",
       "home_team_id": "762",
       "away_team_id": "1930",
-      "home_score": "0",
+      "home_score": "1",
       "away_score": "0",
       "home_scorers": "null",
       "away_scorers": "null",
@@ -1474,7 +1474,7 @@
       "matchday": "1",
       "local_date": "07/03/2026 22:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "last_32",
       "home_team_name_en": "Argentina",
       "away_team_name_en": "Cape Verde"
