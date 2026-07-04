@@ -1508,7 +1508,7 @@
       "matchday": "1",
       "local_date": "07/04/2026 17:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "last_16",
       "home_team_name_en": "Canada",
       "away_team_name_en": "Morocco"
