@@ -1575,8 +1575,8 @@
       "group": "",
       "matchday": "1",
       "local_date": "07/06/2026 19:00",
-      "finished": "FALSE",
-      "time_elapsed": "live",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "last_16",
       "home_team_name_en": "Portugal",
       "away_team_name_en": "Spain"
