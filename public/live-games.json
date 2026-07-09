@@ -1643,8 +1643,8 @@
       "group": "",
       "matchday": "1",
       "local_date": "07/09/2026 20:00",
-      "finished": "FALSE",
-      "time_elapsed": "live",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "quarter_finals",
       "home_team_name_en": "France",
       "away_team_name_en": "Morocco"
