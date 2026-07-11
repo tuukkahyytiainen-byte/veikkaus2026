@@ -1558,8 +1558,8 @@
       "group": "",
       "matchday": "1",
       "local_date": "07/06/2026 01:00",
-      "finished": "TRUE",
-      "time_elapsed": "finished",
+      "finished": "FALSE",
+      "time_elapsed": "notstarted",
       "type": "last_16",
       "home_team_name_en": "Mexico",
       "away_team_name_en": "England"
@@ -1678,7 +1678,7 @@
       "matchday": "1",
       "local_date": "07/11/2026 21:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "quarter_finals",
       "home_team_name_en": "Norway",
       "away_team_name_en": "England"
