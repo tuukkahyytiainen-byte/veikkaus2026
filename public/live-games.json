@@ -1558,8 +1558,8 @@
       "group": "",
       "matchday": "1",
       "local_date": "07/06/2026 01:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "last_16",
       "home_team_name_en": "Mexico",
       "away_team_name_en": "England"
@@ -1719,8 +1719,8 @@
     },
     {
       "id": "102",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "770",
+      "away_team_id": "762",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1731,8 +1731,8 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "semi_finals",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "England",
+      "away_team_name_en": "Argentina"
     },
     {
       "id": "103",
