@@ -2032,6 +2032,10 @@
                     <i class="fa-solid fa-circle-check"></i>
                     <span id="completed-groups-badge">Valmistuneet lohkot: 0 / 12</span>
                 </div>
+                <div class="status-badge">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span id="confirmed-finals-badge">Loppuottelut: 0 / 4</span>
+                </div>
             </div>
         </header>
 
@@ -3652,6 +3656,7 @@
                 renderLeaderboard();
                 renderFinalsView();
                 renderBeatBotmanen();
+                updateConfirmedFinalsBadge();
             }
 
             if (players.length > 0) {
@@ -4638,9 +4643,18 @@
             renderLeaderboard();
             renderFinalsView();
             renderBeatBotmanen();
+            updateConfirmedFinalsBadge();
 
             if (selectedPlayerSheet) {
                 showPlayerProfile(selectedPlayerSheet);
+            }
+        }
+
+        function updateConfirmedFinalsBadge() {
+            const confirmedCount = activeFinalists.length + active34.length;
+            const badge = document.getElementById('confirmed-finals-badge');
+            if (badge) {
+                badge.innerText = `Loppuottelut: ${confirmedCount} / 4`;
             }
         }
 
