@@ -2061,6 +2061,9 @@
                 <button class="tab-btn" onclick="switchTab('groups')">
                     <i class="fa-solid fa-cubes"></i> <span class="tab-text-full">Lohkot</span><span class="tab-text-short">Lohkot</span>
                 </button>
+                <button class="tab-btn" onclick="switchTab('finals')">
+                    <i class="fa-solid fa-trophy"></i> <span class="tab-text-full">Loppuottelut</span><span class="tab-text-short">Loppuottelut</span>
+                </button>
                 <button class="tab-btn" onclick="switchTab('profiles')">
                     <i class="fa-solid fa-user"></i> <span class="tab-text-full">Osallistujaprofiilit</span><span class="tab-text-short">Profiilit</span>
                 </button>
@@ -2134,6 +2137,100 @@
             <section class="tab-view" id="view-groups">
                 <div class="groups-grid" id="groups-grid">
                     <!-- Groups populated dynamically -->
+                </div>
+            </section>
+
+            <!-- 9. Finals View -->
+            <section class="tab-view" id="view-finals">
+                <div class="glass-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div>
+                            <h2 style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; color: #ffffff;">Loppuottelut</h2>
+                            <p style="color: var(--text-secondary); margin-bottom: 0; font-size: 0.95rem;">Kaikkien veikkaajien finaali- ja pronssiotteluveikkaukset sekä loppuottelupisteet.</p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(15, 23, 42, 0.25); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.5rem; line-height: 1.5;">
+                        <div><strong>Pistelaskenta:</strong> Finaali- ja pronssiotteluiden maista saa <strong>2 pistettä</strong> per oikein arvattu maa (yhteensä enintään 8 pistettä).</div>
+                        <div style="color: var(--text-muted);">* Pisteet lasketaan mukaan sarjataulukon yhteispisteisiin sitä mukaa kun otteluparit varmistuvat. Varmistuneet pisteet näkyvät taulukoissa heti.</div>
+                    </div>
+
+                    <!-- Semifinal matches list and simulator -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <!-- Välierät match list -->
+                        <div class="glass-card" style="padding: 1.25rem; background: rgba(15, 23, 42, 0.2); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 0;">
+                            <h3 style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: #ffffff;"><i class="fa-solid fa-code-branch"></i> Välierät</h3>
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                <!-- Semi 1 -->
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.75rem; background: rgba(255,255,255,0.02); border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);">
+                                    <div>
+                                        <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">14.7.2026 klo 22:00</div>
+                                        <div style="font-weight: 600; color: #ffffff;" id="semi-1-match-display">
+                                            Ranska – Espanja
+                                        </div>
+                                    </div>
+                                    <span id="semi-1-badge" class="badge-exact" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-gold);">Pelataan tänään</span>
+                                </div>
+                                <!-- Semi 2 -->
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.75rem; background: rgba(255,255,255,0.02); border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);">
+                                    <div>
+                                        <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">15.7.2026 klo 22:00</div>
+                                        <div style="font-weight: 600; color: #ffffff;" id="semi-2-match-display">
+                                            Englanti – Argentiina
+                                        </div>
+                                    </div>
+                                    <span id="semi-2-badge" class="badge-exact" style="background: rgba(255, 255, 255, 0.05); color: var(--text-secondary);">Huomenna</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Välieräsimulaattori -->
+                        <div class="glass-card" style="padding: 1.25rem; background: rgba(30, 41, 59, 0.4); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 0;">
+                            <h3 style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--primary);"></i> Välieräsimulaattori</h3>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.75rem;">Simuloi välierien voittajia nähdäksesi niiden vaikutuksen veikkaajien pisteisiin.</p>
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                <div>
+                                    <label style="font-size: 0.75rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 0.25rem;">Välierä 1: Ranska – Espanja</label>
+                                    <select id="sim-semi-1" class="player-dropdown" onchange="runFinalsSimulation()" style="width: 100%; background: rgba(15, 23, 42, 0.6); padding: 0.35rem 0.5rem; font-size: 0.85rem; border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff;">
+                                        <option value="none">Ei vielä pelattu (todellinen tilanne)</option>
+                                        <option value="ranska" selected>Ranska finaaliin, Espanja pronssipeliin</option>
+                                        <option value="espanja">Espanja finaaliin, Ranska pronssipeliin</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label style="font-size: 0.75rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 0.25rem;">Välierä 2: Englanti – Argentiina</label>
+                                    <select id="sim-semi-2" class="player-dropdown" onchange="runFinalsSimulation()" style="width: 100%; background: rgba(15, 23, 42, 0.6); padding: 0.35rem 0.5rem; font-size: 0.85rem; border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff;">
+                                        <option value="none" selected>Ei vielä pelattu (todellinen tilanne)</option>
+                                        <option value="englanti">Englanti finaaliin, Argentiina pronssipeliin</option>
+                                        <option value="argentiina">Argentiina finaaliin, Englanti pronssipeliin</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="finals-status-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                        <!-- Populate dynamically -->
+                    </div>
+
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sija</th>
+                                    <th>Osallistuja</th>
+                                    <th>Finaaliveikkaus</th>
+                                    <th>Pronssiotteluveikkaus</th>
+                                    <th style="text-align: center;" class="hide-mobile">Finaalipisteet</th>
+                                    <th style="text-align: center;" class="hide-mobile">Pronssipisteet</th>
+                                    <th style="text-align: center;">Yhteensä</th>
+                                </tr>
+                            </thead>
+                            <tbody id="finals-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 
@@ -2684,6 +2781,8 @@
         let actualStandings = {};
         let actualFinalists = [];
         let actual34 = [];
+        let activeFinalists = [];
+        let active34 = [];
         let selectedPlayerSheet = '';
         let textResults = null;
         let apiGames = [];
@@ -3349,8 +3448,8 @@
                 const thirdFourthAdded = custom34.length === 2;
 
                 const addedGroupPoints = finishedGroupPoints;
-                const addedFinalistPoints = finalistsAdded ? finalistPoints : 0;
-                const addedThirdFourthPoints = thirdFourthAdded ? thirdFourthPoints : 0;
+                const addedFinalistPoints = finalistPoints;
+                const addedThirdFourthPoints = thirdFourthPoints;
 
                 const totalPoints = matchPoints + addedGroupPoints + addedFinalistPoints + addedThirdFourthPoints;
 
@@ -3534,16 +3633,26 @@
             }
             
             // Run calculation engine
-            players = calculateLeaderboard(matches, actualStandings, actualFinalists, actual34);
+            activeFinalists = [...actualFinalists];
+            active34 = [...actual34];
+
             document.getElementById('upload-zone').style.display = 'none';
             document.getElementById('main-content').style.display = 'block';
 
-            renderLeaderboard();
             renderMatchesFilters();
             renderMatches(activeMatchFilter);
             renderGroupsView();
             populatePlayerDropdowns();
-            renderBeatBotmanen();
+
+            // Run simulation (which computes leaderboard and renders final view & leaderboard)
+            if (document.getElementById('sim-semi-1')) {
+                runFinalsSimulation();
+            } else {
+                players = calculateLeaderboard(matches, actualStandings, activeFinalists, active34);
+                renderLeaderboard();
+                renderFinalsView();
+                renderBeatBotmanen();
+            }
 
             if (players.length > 0) {
                 if (!selectedPlayerSheet || !players.some(p => p.sheetName === selectedPlayerSheet)) {
@@ -3599,9 +3708,11 @@
                 }
 
                 let finalPointsHtml = `${p.finalPoints} p`;
-                const finalMatchupsClear = p.finalistsAdded && p.thirdFourthAdded;
-                if (!finalMatchupsClear) {
-                    finalPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Ei vielä mukana yhteispisteissä. Lisätään kun finaali- ja pronssiparit ovat selvillä.">${p.finalPoints} p **</span>`;
+                const finalMatchupsClear = activeFinalists.length === 2 && active34.length === 2;
+                if (p.finalPoints > 0 && !finalMatchupsClear) {
+                    finalPointsHtml = `<span>${p.finalPoints} p</span> <span style="font-size: 0.75rem; color: var(--primary); opacity: 0.95;" title="Osa loppuottelupisteistä on jo varmistunut ja laskettu yhteispisteisiin!">(osa mukana)</span>`;
+                } else if (p.finalPoints === 0 && !finalMatchupsClear) {
+                    finalPointsHtml = `<span style="color: var(--text-muted); opacity: 0.7;" title="Ei vielä varmistuneita loppuottelupisteitä.">${p.finalPoints} p</span>`;
                 }
 
                 const mobileSubtextHtml = `
@@ -3650,11 +3761,21 @@
                     }
                 }
                 if (finalNote) {
-                    const finalMatchupsClear = firstPlayer.finalistsAdded && firstPlayer.thirdFourthAdded;
-                    finalNote.style.color = finalMatchupsClear ? 'var(--primary)' : 'var(--text-muted)';
-                    finalNote.innerHTML = finalMatchupsClear 
-                        ? '<i class="fa-solid fa-circle-check"></i> Finaali- ja pronssipisteet on laskettu mukaan yhteispisteisiin.' 
-                        : '** Finaali- ja pronssipisteet lasketaan yhteispisteisiin vasta, kun otteluparit ovat selvillä.';
+                    const hasSim = activeFinalists.length > actualFinalists.length || active34.length > actual34.length;
+                    const finalMatchupsClear = activeFinalists.length === 2 && active34.length === 2;
+                    if (hasSim) {
+                        finalNote.style.color = 'var(--primary)';
+                        finalNote.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles"></i> <strong>Simulaatiotila:</strong> Loppuottelupisteet on laskettu mukaan yhteispisteisiin simuloitujen tulosten perusteella.';
+                    } else if (finalMatchupsClear) {
+                        finalNote.style.color = 'var(--primary)';
+                        finalNote.innerHTML = '<i class="fa-solid fa-circle-check"></i> Kaikki finaali- ja pronssipisteet on laskettu mukaan yhteispisteisiin.';
+                    } else if (activeFinalists.length > 0 || active34.length > 0) {
+                        finalNote.style.color = 'var(--primary)';
+                        finalNote.innerHTML = '<i class="fa-solid fa-circle-info"></i> Loppuottelupisteet lasketaan mukaan sitä mukaa kun otteluparit varmistuvat. Varmistuneet pisteet ovat mukana yhteispisteissä.';
+                    } else {
+                        finalNote.style.color = 'var(--text-muted)';
+                        finalNote.innerHTML = '* Finaali- ja pronssipisteet lasketaan yhteispisteisiin sitä mukaa kun otteluparit varmistuvat.';
+                    }
                 }
             }
         }
@@ -4021,8 +4142,8 @@
             finalistsDiv.innerHTML = '';
             
             p.finalistGuesses.forEach(guess => {
-                const isCorrect = guess && actualFinalists.includes(guess);
-                const isIncorrect = guess && actualFinalists.length > 0 && !isCorrect;
+                const isCorrect = guess && activeFinalists.includes(guess);
+                const isIncorrect = guess && activeFinalists.length > 0 && !isCorrect;
                 
                 let checkIcon = '';
                 let pointsBadge = '';
@@ -4030,8 +4151,11 @@
                     checkIcon = '<i class="fa-solid fa-circle-check" style="color: var(--primary)"></i>';
                     pointsBadge = '<span class="compare-points correct">+2p</span>';
                 } else if (isIncorrect) {
-                    checkIcon = '<i class="fa-solid fa-circle-xmark" style="color: var(--danger)"></i>';
-                    pointsBadge = '<span class="compare-points incorrect">0p</span>';
+                    const isDefinitelyEliminated = active34.includes(guess) || (activeFinalists.length === 2 && !activeFinalists.includes(guess));
+                    if (isDefinitelyEliminated) {
+                        checkIcon = '<i class="fa-solid fa-circle-xmark" style="color: var(--danger)"></i>';
+                        pointsBadge = '<span class="compare-points incorrect">0p</span>';
+                    }
                 }
 
                 finalistsDiv.innerHTML += `
@@ -4046,8 +4170,8 @@
             thirdFourthDiv.innerHTML = '';
             
             p.thirdFourthGuesses.forEach(guess => {
-                const isCorrect = guess && actual34.includes(guess);
-                const isIncorrect = guess && actual34.length > 0 && !isCorrect;
+                const isCorrect = guess && active34.includes(guess);
+                const isIncorrect = guess && active34.length > 0 && !isCorrect;
                 
                 let checkIcon = '';
                 let pointsBadge = '';
@@ -4055,8 +4179,11 @@
                     checkIcon = '<i class="fa-solid fa-circle-check" style="color: var(--primary)"></i>';
                     pointsBadge = '<span class="compare-points correct">+2p</span>';
                 } else if (isIncorrect) {
-                    checkIcon = '<i class="fa-solid fa-circle-xmark" style="color: var(--danger)"></i>';
-                    pointsBadge = '<span class="compare-points incorrect">0p</span>';
+                    const isDefinitelyEliminated = activeFinalists.includes(guess) || (active34.length === 2 && !active34.includes(guess));
+                    if (isDefinitelyEliminated) {
+                        checkIcon = '<i class="fa-solid fa-circle-xmark" style="color: var(--danger)"></i>';
+                        pointsBadge = '<span class="compare-points incorrect">0p</span>';
+                    }
                 }
 
                 thirdFourthDiv.innerHTML += `
@@ -4319,6 +4446,204 @@
             }
         }
 
+        function renderFinalsView() {
+            if (!workbook || players.length === 0) return;
+
+            // 1. Populate status container
+            const statusContainer = document.getElementById('finals-status-container');
+            if (statusContainer) {
+                const f1 = activeFinalists[0];
+                const f2 = activeFinalists[1];
+                const t1 = active34[0];
+                const t2 = active34[1];
+
+                const finalStatusHtml = f1 || f2 ? 
+                    `<div class="glass-card" style="padding: 1rem; background: rgba(15, 23, 42, 0.3); border: 1px solid var(--border-color); border-radius: 8px;">
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem;"><i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i> Finaali (Simuloitu/Toteutunut)</div>
+                        <div style="font-size: 1rem; font-weight: 700; color: #ffffff; display: flex; flex-direction: column; gap: 0.4rem;">
+                            ${f1 ? `<div>${getFlag(f1)} ${displayTeam(f1)}</div>` : ''}
+                            ${f2 ? `<div>${getFlag(f2)} ${displayTeam(f2)}</div>` : ''}
+                        </div>
+                    </div>` :
+                    `<div class="glass-card" style="padding: 1rem; background: rgba(15, 23, 42, 0.3); border: 1px solid var(--border-color); border-radius: 8px;">
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem;"><i class="fa-solid fa-trophy" style="color: var(--text-muted);"></i> Finaali (Toteutunut)</div>
+                        <div style="font-size: 0.95rem; font-style: italic; color: var(--text-muted);">Ei vielä varmistunut</div>
+                    </div>`;
+
+                const bronzeStatusHtml = t1 || t2 ?
+                    `<div class="glass-card" style="padding: 1rem; background: rgba(15, 23, 42, 0.3); border: 1px solid var(--border-color); border-radius: 8px;">
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem;"><i class="fa-solid fa-medal" style="color: #cd7f32;"></i> Pronssiottelu (Simuloitu/Toteutunut)</div>
+                        <div style="font-size: 1rem; font-weight: 700; color: #ffffff; display: flex; flex-direction: column; gap: 0.4rem;">
+                            ${t1 ? `<div>${getFlag(t1)} ${displayTeam(t1)}</div>` : ''}
+                            ${t2 ? `<div>${getFlag(t2)} ${displayTeam(t2)}</div>` : ''}
+                        </div>
+                    </div>` :
+                    `<div class="glass-card" style="padding: 1rem; background: rgba(15, 23, 42, 0.3); border: 1px solid var(--border-color); border-radius: 8px;">
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem;"><i class="fa-solid fa-medal" style="color: var(--text-muted);"></i> Pronssiottelu (Toteutunut)</div>
+                        <div style="font-size: 0.95rem; font-style: italic; color: var(--text-muted);">Ei vielä varmistunut</div>
+                    </div>`;
+
+                statusContainer.innerHTML = finalStatusHtml + bronzeStatusHtml;
+            }
+
+            // Update semifinal badges and team displays
+            const semi1Badge = document.getElementById('semi-1-badge');
+            const semi1Display = document.getElementById('semi-1-match-display');
+            if (semi1Badge && semi1Display) {
+                const s1 = document.getElementById('sim-semi-1').value;
+                if (s1 === 'ranska') {
+                    semi1Display.innerHTML = `${getFlag('Ranska')} <strong>Ranska</strong> – Espanja ${getFlag('Espanja')}`;
+                    semi1Badge.innerHTML = 'Ranska finaaliin';
+                    semi1Badge.style.background = 'rgba(16, 185, 129, 0.2)';
+                    semi1Badge.style.color = 'var(--primary)';
+                } else if (s1 === 'espanja') {
+                    semi1Display.innerHTML = `${getFlag('Ranska')} Ranska – <strong>Espanja</strong> ${getFlag('Espanja')}`;
+                    semi1Badge.innerHTML = 'Espanja finaaliin';
+                    semi1Badge.style.background = 'rgba(16, 185, 129, 0.2)';
+                    semi1Badge.style.color = 'var(--primary)';
+                } else {
+                    semi1Display.innerHTML = `${getFlag('Ranska')} Ranska – Espanja ${getFlag('Espanja')}`;
+                    semi1Badge.innerHTML = 'Pelataan tänään';
+                    semi1Badge.style.background = 'rgba(245, 158, 11, 0.15)';
+                    semi1Badge.style.color = 'var(--accent-gold)';
+                }
+            }
+
+            const semi2Badge = document.getElementById('semi-2-badge');
+            const semi2Display = document.getElementById('semi-2-match-display');
+            if (semi2Badge && semi2Display) {
+                const s2 = document.getElementById('sim-semi-2').value;
+                if (s2 === 'englanti') {
+                    semi2Display.innerHTML = `${getFlag('Englanti')} <strong>Englanti</strong> – Argentiina ${getFlag('Argentiina')}`;
+                    semi2Badge.innerHTML = 'Englanti finaaliin';
+                    semi2Badge.style.background = 'rgba(16, 185, 129, 0.2)';
+                    semi2Badge.style.color = 'var(--primary)';
+                } else if (s2 === 'argentiina') {
+                    semi2Display.innerHTML = `${getFlag('Englanti')} Englanti – <strong>Argentiina</strong> ${getFlag('Argentiina')}`;
+                    semi2Badge.innerHTML = 'Argentiina finaaliin';
+                    semi2Badge.style.background = 'rgba(16, 185, 129, 0.2)';
+                    semi2Badge.style.color = 'var(--primary)';
+                } else {
+                    semi2Display.innerHTML = `${getFlag('Englanti')} Englanti – Argentiina ${getFlag('Argentiina')}`;
+                    semi2Badge.innerHTML = 'Huomenna';
+                    semi2Badge.style.background = 'rgba(255, 255, 255, 0.05)';
+                    semi2Badge.style.color = 'var(--text-secondary)';
+                }
+            }
+
+            // 2. Populate table body
+            const body = document.getElementById('finals-table-body');
+            if (body) {
+                body.innerHTML = '';
+                
+                const sortedPlayers = [...players].sort((a, b) => b.totalPoints - a.totalPoints || b.exactlyCorrect - a.exactlyCorrect || a.name.localeCompare(b.name));
+
+                sortedPlayers.forEach(p => {
+                    let finalistPoints = 0;
+                    const finalGuessesHtml = p.finalistGuesses.map(guess => {
+                        if (!guess) return '<span style="color: var(--text-muted); font-style: italic;">Ei veikkausta</span>';
+                        const isCorrect = activeFinalists.includes(guess);
+                        const isIncorrect = activeFinalists.length > 0 && !isCorrect;
+                        
+                        if (isCorrect) {
+                            finalistPoints += 2;
+                            return `<div style="display: flex; align-items: center; gap: 6px;"><span style="color: var(--primary); font-weight: 600;">${getFlag(guess)} ${displayTeam(guess)}</span> <i class="fa-solid fa-circle-check" style="color: var(--primary); font-size: 0.8rem;"></i></div>`;
+                        } else if (isIncorrect) {
+                            const isDefinitelyEliminated = active34.includes(guess) || (activeFinalists.length === 2 && !activeFinalists.includes(guess));
+                            if (isDefinitelyEliminated) {
+                                return `<div style="display: flex; align-items: center; gap: 6px; opacity: 0.6;"><span style="text-decoration: line-through; color: var(--text-muted);">${getFlag(guess)} ${displayTeam(guess)}</span> <i class="fa-solid fa-circle-xmark" style="color: var(--danger); font-size: 0.8rem;"></i></div>`;
+                            }
+                        }
+                        return `<div>${getFlag(guess)} ${displayTeam(guess)}</div>`;
+                    }).join('');
+
+                    let thirdFourthPoints = 0;
+                    const bronzeGuessesHtml = p.thirdFourthGuesses.map(guess => {
+                        if (!guess) return '<span style="color: var(--text-muted); font-style: italic;">Ei veikkausta</span>';
+                        const isCorrect = active34.includes(guess);
+                        const isIncorrect = active34.length > 0 && !isCorrect;
+                        
+                        if (isCorrect) {
+                            thirdFourthPoints += 2;
+                            return `<div style="display: flex; align-items: center; gap: 6px;"><span style="color: var(--primary); font-weight: 600;">${getFlag(guess)} ${displayTeam(guess)}</span> <i class="fa-solid fa-circle-check" style="color: var(--primary); font-size: 0.8rem;"></i></div>`;
+                        } else if (isIncorrect) {
+                            const isDefinitelyEliminated = activeFinalists.includes(guess) || (active34.length === 2 && !active34.includes(guess));
+                            if (isDefinitelyEliminated) {
+                                return `<div style="display: flex; align-items: center; gap: 6px; opacity: 0.6;"><span style="text-decoration: line-through; color: var(--text-muted);">${getFlag(guess)} ${displayTeam(guess)}</span> <i class="fa-solid fa-circle-xmark" style="color: var(--danger); font-size: 0.8rem;"></i></div>`;
+                            }
+                        }
+                        return `<div>${getFlag(guess)} ${displayTeam(guess)}</div>`;
+                    }).join('');
+
+                    const totalFinalPoints = finalistPoints + thirdFourthPoints;
+
+                    const tr = document.createElement('tr');
+                    tr.style.cursor = 'pointer';
+                    tr.onclick = () => {
+                        switchTab('profiles');
+                        document.getElementById('player-select').value = p.sheetName;
+                        showPlayerProfile(p.sheetName);
+                    };
+
+                    let rankContent = '';
+                    let rankClass = `rank-${p.rank}`;
+                    if (p.rank === 1) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span> ';
+                    else if (p.rank === 2) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span> ';
+                    else if (p.rank === 3) rankContent = '<span class="rank-medal"><i class="fa-solid fa-medal"></i></span> ';
+                    tr.className = rankClass;
+
+                    const finalistPointsText = `${finalistPoints} p`;
+                    const bronzePointsText = `${thirdFourthPoints} p`;
+                    const totalPointsText = `<strong>${totalFinalPoints} p</strong>`;
+
+                    tr.innerHTML = `
+                        <td class="td-rank" style="vertical-align: middle;">${rankContent}<span style="font-size: 0.85rem; font-weight: 500;">#${p.rank}</span></td>
+                        <td class="td-name"><strong>${p.name}</strong></td>
+                        <td style="vertical-align: middle;"><div style="display: flex; flex-direction: column; gap: 0.25rem;">${finalGuessesHtml}</div></td>
+                        <td style="vertical-align: middle;"><div style="display: flex; flex-direction: column; gap: 0.25rem;">${bronzeGuessesHtml}</div></td>
+                        <td style="text-align: center; vertical-align: middle;" class="td-sub-points hide-mobile">${finalistPointsText}</td>
+                        <td style="text-align: center; vertical-align: middle;" class="td-sub-points hide-mobile">${bronzePointsText}</td>
+                        <td style="text-align: center; vertical-align: middle;" class="td-points">${totalPointsText}</td>
+                    `;
+                    body.appendChild(tr);
+                });
+            }
+        }
+
+        function runFinalsSimulation() {
+            const semi1 = document.getElementById('sim-semi-1').value;
+            const semi2 = document.getElementById('sim-semi-2').value;
+
+            activeFinalists = [...actualFinalists];
+            active34 = [...actual34];
+
+            if (semi1 === 'ranska') {
+                if (!activeFinalists.includes('Ranska')) activeFinalists.push('Ranska');
+                if (!active34.includes('Espanja')) active34.push('Espanja');
+            } else if (semi1 === 'espanja') {
+                if (!activeFinalists.includes('Espanja')) activeFinalists.push('Espanja');
+                if (!active34.includes('Ranska')) active34.push('Ranska');
+            }
+
+            if (semi2 === 'englanti') {
+                if (!activeFinalists.includes('Englanti')) activeFinalists.push('Englanti');
+                if (!active34.includes('Argentiina')) active34.push('Argentiina');
+            } else if (semi2 === 'argentiina') {
+                if (!activeFinalists.includes('Argentiina')) activeFinalists.push('Argentiina');
+                if (!active34.includes('Englanti')) active34.push('Englanti');
+            }
+
+            players = calculateLeaderboard(matches, actualStandings, activeFinalists, active34);
+            
+            renderLeaderboard();
+            renderFinalsView();
+            renderBeatBotmanen();
+
+            if (selectedPlayerSheet) {
+                showPlayerProfile(selectedPlayerSheet);
+            }
+        }
+
         // Tab Switching
         function switchTab(tabId) {
             document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -4350,6 +4675,10 @@
                     renderSimMatches();
                     calculateAndRenderSimulation();
                 }, 50);
+            }
+
+            if (tabId === 'finals') {
+                setTimeout(renderFinalsView, 50);
             }
         }
 
@@ -4907,7 +5236,7 @@
             });
 
             // 3. Compute simulated player points
-            const simPlayers = calculateLeaderboard(simMatches, simStandings, actualFinalists, actual34);
+            const simPlayers = calculateLeaderboard(simMatches, simStandings, activeFinalists, active34);
 
             // 4. Render the simulated leaderboard
             const body = document.getElementById('sim-leaderboard-body');

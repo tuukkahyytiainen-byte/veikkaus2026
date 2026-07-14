@@ -366,8 +366,8 @@ function calculateLeaderboard(customMatches, customStandings, customFinalists, c
         const thirdFourthAdded = custom34.length === 2;
 
         const addedGroupPoints = finishedGroupPoints;
-        const addedFinalistPoints = finalistsAdded ? finalistPoints : 0;
-        const addedThirdFourthPoints = thirdFourthAdded ? thirdFourthPoints : 0;
+        const addedFinalistPoints = finalistPoints;
+        const addedThirdFourthPoints = thirdFourthPoints;
 
         const totalPoints = matchPoints + addedGroupPoints + addedFinalistPoints + addedThirdFourthPoints;
 
