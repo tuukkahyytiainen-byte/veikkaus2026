@@ -3724,6 +3724,10 @@
                     <span>Ottelut: <strong style="color: var(--text-secondary);">${p.matchPoints} p</strong></span>
                     <span style="color: var(--border-color); opacity: 0.5;">|</span>
                     <span>Lohkot: <strong style="color: var(--text-secondary);">${p.finishedGroupPoints} p</strong>${p.finishedGroupsCount < 12 ? ` <span style="font-size: 0.65rem; opacity: 0.85;">(enn. ${p.groupPoints} p)</span>` : ''}</span>
+                    <span style="color: var(--border-color); opacity: 0.5;">|</span>
+                    <span>Loppupelit: <strong style="color: var(--text-secondary);">${p.finalPoints} p</strong></span>
+                    <span style="color: var(--border-color); opacity: 0.5;">|</span>
+                    <span>Oikein: <strong style="color: var(--text-secondary);">${p.exactlyCorrect} kpl</strong></span>
                 `;
 
                 tr.innerHTML = `
