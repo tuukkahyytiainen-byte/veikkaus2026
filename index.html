@@ -2183,7 +2183,7 @@
                                             Englanti – Argentiina
                                         </div>
                                     </div>
-                                    <span id="semi-2-badge" class="badge-exact" style="background: rgba(255, 255, 255, 0.05); color: var(--text-secondary);">Huomenna</span>
+                                    <span id="semi-2-badge" class="badge-exact" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-gold);">Pelataan tänään</span>
                                 </div>
                             </div>
                         </div>
@@ -4511,10 +4511,19 @@
                     semi1Badge.style.background = 'rgba(16, 185, 129, 0.2)';
                     semi1Badge.style.color = 'var(--primary)';
                 } else {
-                    semi1Display.innerHTML = `${getFlag('Ranska')} Ranska – Espanja ${getFlag('Espanja')}`;
-                    semi1Badge.innerHTML = 'Pelataan tänään';
-                    semi1Badge.style.background = 'rgba(245, 158, 11, 0.15)';
-                    semi1Badge.style.color = 'var(--accent-gold)';
+                    // Check if actually played
+                    const hasRealResult = actualFinalists.includes('Espanja') || actualFinalists.includes('Ranska');
+                    if (hasRealResult) {
+                        semi1Display.innerHTML = `${getFlag('Ranska')} Ranska <strong>0 – 2</strong> <strong>Espanja</strong> ${getFlag('Espanja')}`;
+                        semi1Badge.innerHTML = 'Pelattu (0-2)';
+                        semi1Badge.style.background = 'rgba(255, 255, 255, 0.05)';
+                        semi1Badge.style.color = 'var(--text-secondary)';
+                    } else {
+                        semi1Display.innerHTML = `${getFlag('Ranska')} Ranska – Espanja ${getFlag('Espanja')}`;
+                        semi1Badge.innerHTML = 'Pelataan tänään';
+                        semi1Badge.style.background = 'rgba(245, 158, 11, 0.15)';
+                        semi1Badge.style.color = 'var(--accent-gold)';
+                    }
                 }
             }
 
@@ -4534,9 +4543,9 @@
                     semi2Badge.style.color = 'var(--primary)';
                 } else {
                     semi2Display.innerHTML = `${getFlag('Englanti')} Englanti – Argentiina ${getFlag('Argentiina')}`;
-                    semi2Badge.innerHTML = 'Huomenna';
-                    semi2Badge.style.background = 'rgba(255, 255, 255, 0.05)';
-                    semi2Badge.style.color = 'var(--text-secondary)';
+                    semi2Badge.innerHTML = 'Pelataan tänään';
+                    semi2Badge.style.background = 'rgba(245, 158, 11, 0.15)';
+                    semi2Badge.style.color = 'var(--accent-gold)';
                 }
             }
 

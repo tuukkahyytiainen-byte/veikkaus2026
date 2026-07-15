@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-15T03:31:40.834Z",
+  "generatedAt": "2026-07-15T05:04:22.433Z",
   "summary": {
     "playedMatchesCount": 72,
     "totalMatches": 72,
@@ -78,7 +78,7 @@
     {
       "rank": 2,
       "name": "Johnny Rotten",
-      "totalPoints": 264,
+      "totalPoints": 266,
       "matchPoints": 194,
       "groupPoints": 70,
       "finishedGroupPoints": 70,
@@ -87,6 +87,16 @@
     },
     {
       "rank": 3,
+      "name": "Kiiskiministeri",
+      "totalPoints": 261,
+      "matchPoints": 197,
+      "groupPoints": 60,
+      "finishedGroupPoints": 60,
+      "finishedGroupsCount": 12,
+      "exactlyCorrect": 8
+    },
+    {
+      "rank": 4,
       "name": "Tero H",
       "totalPoints": 258,
       "matchPoints": 192,
@@ -97,6 +107,16 @@
     },
     {
       "rank": 4,
+      "name": "Pontemon",
+      "totalPoints": 258,
+      "matchPoints": 194,
+      "groupPoints": 60,
+      "finishedGroupPoints": 60,
+      "finishedGroupsCount": 12,
+      "exactlyCorrect": 7
+    },
+    {
+      "rank": 6,
       "name": "Neyney",
       "totalPoints": 257,
       "matchPoints": 197,
@@ -106,19 +126,9 @@
       "exactlyCorrect": 12
     },
     {
-      "rank": 4,
-      "name": "Kiiskiministeri",
-      "totalPoints": 257,
-      "matchPoints": 197,
-      "groupPoints": 60,
-      "finishedGroupPoints": 60,
-      "finishedGroupsCount": 12,
-      "exactlyCorrect": 8
-    },
-    {
-      "rank": 6,
+      "rank": 7,
       "name": "Rosaldo",
-      "totalPoints": 254,
+      "totalPoints": 256,
       "matchPoints": 190,
       "groupPoints": 64,
       "finishedGroupPoints": 64,
@@ -126,29 +136,9 @@
       "exactlyCorrect": 10
     },
     {
-      "rank": 6,
-      "name": "Pontemon",
-      "totalPoints": 254,
-      "matchPoints": 194,
-      "groupPoints": 60,
-      "finishedGroupPoints": 60,
-      "finishedGroupsCount": 12,
-      "exactlyCorrect": 7
-    },
-    {
-      "rank": 8,
-      "name": "Drent",
-      "totalPoints": 253,
-      "matchPoints": 187,
-      "groupPoints": 66,
-      "finishedGroupPoints": 66,
-      "finishedGroupsCount": 12,
-      "exactlyCorrect": 8
-    },
-    {
       "rank": 8,
       "name": "Jossu",
-      "totalPoints": 253,
+      "totalPoints": 255,
       "matchPoints": 189,
       "groupPoints": 64,
       "finishedGroupPoints": 64,
@@ -158,12 +148,22 @@
     {
       "rank": 8,
       "name": "Agueero",
-      "totalPoints": 253,
+      "totalPoints": 255,
       "matchPoints": 189,
       "groupPoints": 64,
       "finishedGroupPoints": 64,
       "finishedGroupsCount": 12,
       "exactlyCorrect": 6
+    },
+    {
+      "rank": 10,
+      "name": "Drent",
+      "totalPoints": 253,
+      "matchPoints": 187,
+      "groupPoints": 66,
+      "finishedGroupPoints": 66,
+      "finishedGroupsCount": 12,
+      "exactlyCorrect": 8
     }
   ],
   "last3MatchesAnalysis": {
@@ -206,7 +206,7 @@
       {
         "name": "SKA Hänninen",
         "rankNow": 42,
-        "totalPointsNow": 201,
+        "totalPointsNow": 205,
         "pointsInWindow": 11,
         "rankBeforeWindow": 47,
         "rankChange": 5,
@@ -243,11 +243,11 @@
       },
       {
         "name": "Neyney",
-        "rankNow": 4,
+        "rankNow": 6,
         "totalPointsNow": 257,
         "pointsInWindow": 11,
         "rankBeforeWindow": 5,
-        "rankChange": 1,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -281,11 +281,11 @@
       },
       {
         "name": "Rosaldo",
-        "rankNow": 6,
-        "totalPointsNow": 254,
+        "rankNow": 7,
+        "totalPointsNow": 256,
         "pointsInWindow": 11,
         "rankBeforeWindow": 11,
-        "rankChange": 5,
+        "rankChange": 4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -319,11 +319,11 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 20,
+        "rankNow": 21,
         "totalPointsNow": 235,
         "pointsInWindow": 10,
         "rankBeforeWindow": 24,
-        "rankChange": 4,
+        "rankChange": 3,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -395,11 +395,11 @@
       },
       {
         "name": "Kiiskiministeri",
-        "rankNow": 4,
-        "totalPointsNow": 257,
+        "rankNow": 3,
+        "totalPointsNow": 261,
         "pointsInWindow": 10,
         "rankBeforeWindow": 11,
-        "rankChange": 7,
+        "rankChange": 8,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -433,11 +433,11 @@
       },
       {
         "name": "Pontemon",
-        "rankNow": 6,
-        "totalPointsNow": 254,
+        "rankNow": 4,
+        "totalPointsNow": 258,
         "pointsInWindow": 10,
         "rankBeforeWindow": 7,
-        "rankChange": 1,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -472,7 +472,7 @@
       {
         "name": "Agueero",
         "rankNow": 8,
-        "totalPointsNow": 253,
+        "totalPointsNow": 255,
         "pointsInWindow": 10,
         "rankBeforeWindow": 8,
         "rankChange": 0,
@@ -509,11 +509,11 @@
       },
       {
         "name": "Tomas Brolin",
-        "rankNow": 19,
-        "totalPointsNow": 242,
+        "rankNow": 17,
+        "totalPointsNow": 246,
         "pointsInWindow": 10,
         "rankBeforeWindow": 21,
-        "rankChange": 2,
+        "rankChange": 4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -547,11 +547,11 @@
       },
       {
         "name": "Teo ja Noel",
-        "rankNow": 31,
-        "totalPointsNow": 219,
+        "rankNow": 32,
+        "totalPointsNow": 221,
         "pointsInWindow": 10,
         "rankBeforeWindow": 34,
-        "rankChange": 3,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -623,11 +623,11 @@
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 34,
-        "totalPointsNow": 215,
+        "rankNow": 33,
+        "totalPointsNow": 219,
         "pointsInWindow": 9,
         "rankBeforeWindow": 38,
-        "rankChange": 4,
+        "rankChange": 5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -660,47 +660,9 @@
         ]
       },
       {
-        "name": "Drent",
-        "rankNow": 8,
-        "totalPointsNow": 253,
-        "pointsInWindow": 8,
-        "rankBeforeWindow": 10,
-        "rankChange": 2,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 72,
-            "team1": "Kongon DR",
-            "team2": "Uzbekistan",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 69,
-            "team1": "Algeria",
-            "team2": "Itävalta",
-            "resultText": "3-3",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 70,
-            "team1": "Jordania",
-            "team2": "Argentiina",
-            "resultText": "1-3",
-            "predictedResultText": "0-5",
-            "points": 3,
-            "exactResult": false
-          }
-        ]
-      },
-      {
         "name": "Jossu",
         "rankNow": 8,
-        "totalPointsNow": 253,
+        "totalPointsNow": 255,
         "pointsInWindow": 8,
         "rankBeforeWindow": 8,
         "rankChange": 0,
@@ -736,12 +698,12 @@
         ]
       },
       {
-        "name": "Profeetta Möttönen",
-        "rankNow": 14,
-        "totalPointsNow": 249,
+        "name": "Drent",
+        "rankNow": 10,
+        "totalPointsNow": 253,
         "pointsInWindow": 8,
-        "rankBeforeWindow": 16,
-        "rankChange": 2,
+        "rankBeforeWindow": 10,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -749,8 +711,8 @@
             "team1": "Kongon DR",
             "team2": "Uzbekistan",
             "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
+            "predictedResultText": "2-1",
+            "points": 5,
             "exactResult": false
           },
           {
@@ -758,8 +720,8 @@
             "team1": "Algeria",
             "team2": "Itävalta",
             "resultText": "3-3",
-            "predictedResultText": "1-1",
-            "points": 3,
+            "predictedResultText": "1-2",
+            "points": 0,
             "exactResult": false
           },
           {
@@ -767,19 +729,19 @@
             "team1": "Jordania",
             "team2": "Argentiina",
             "resultText": "1-3",
-            "predictedResultText": "0-3",
-            "points": 5,
+            "predictedResultText": "0-5",
+            "points": 3,
             "exactResult": false
           }
         ]
       },
       {
         "name": "IlkkuPro75",
-        "rankNow": 16,
-        "totalPointsNow": 248,
+        "rankNow": 13,
+        "totalPointsNow": 250,
         "pointsInWindow": 8,
         "rankBeforeWindow": 11,
-        "rankChange": -5,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -812,11 +774,11 @@
         ]
       },
       {
-        "name": "Esko",
-        "rankNow": 18,
-        "totalPointsNow": 243,
+        "name": "Profeetta Möttönen",
+        "rankNow": 16,
+        "totalPointsNow": 249,
         "pointsInWindow": 8,
-        "rankBeforeWindow": 18,
+        "rankBeforeWindow": 16,
         "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
@@ -850,12 +812,50 @@
         ]
       },
       {
+        "name": "Esko",
+        "rankNow": 19,
+        "totalPointsNow": 243,
+        "pointsInWindow": 8,
+        "rankBeforeWindow": 18,
+        "rankChange": -1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 72,
+            "team1": "Kongon DR",
+            "team2": "Uzbekistan",
+            "resultText": "3-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 69,
+            "team1": "Algeria",
+            "team2": "Itävalta",
+            "resultText": "3-3",
+            "predictedResultText": "1-1",
+            "points": 3,
+            "exactResult": false
+          },
+          {
+            "matchNr": 70,
+            "team1": "Jordania",
+            "team2": "Argentiina",
+            "resultText": "1-3",
+            "predictedResultText": "0-3",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
         "name": "Suomaldinho",
-        "rankNow": 25,
-        "totalPointsNow": 229,
+        "rankNow": 23,
+        "totalPointsNow": 233,
         "pointsInWindow": 8,
         "rankBeforeWindow": 24,
-        "rankChange": -1,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -927,11 +927,11 @@
       },
       {
         "name": "Ibaldo de Lima",
-        "rankNow": 36,
-        "totalPointsNow": 213,
+        "rankNow": 35,
+        "totalPointsNow": 217,
         "pointsInWindow": 8,
         "rankBeforeWindow": 37,
-        "rankChange": 1,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1003,11 +1003,11 @@
       },
       {
         "name": "Pauli Koponen",
-        "rankNow": 40,
+        "rankNow": 41,
         "totalPointsNow": 207,
         "pointsInWindow": 8,
         "rankBeforeWindow": 38,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1042,7 +1042,7 @@
       {
         "name": "Johnny Rotten",
         "rankNow": 2,
-        "totalPointsNow": 264,
+        "totalPointsNow": 266,
         "pointsInWindow": 7,
         "rankBeforeWindow": 2,
         "rankChange": 0,
@@ -1079,11 +1079,11 @@
       },
       {
         "name": "Max",
-        "rankNow": 14,
-        "totalPointsNow": 249,
+        "rankNow": 12,
+        "totalPointsNow": 251,
         "pointsInWindow": 7,
         "rankBeforeWindow": 15,
-        "rankChange": 1,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1118,7 +1118,7 @@
       {
         "name": "Temez",
         "rankNow": 17,
-        "totalPointsNow": 244,
+        "totalPointsNow": 246,
         "pointsInWindow": 7,
         "rankBeforeWindow": 17,
         "rankChange": 0,
@@ -1156,7 +1156,7 @@
       {
         "name": "Joni",
         "rankNow": 20,
-        "totalPointsNow": 235,
+        "totalPointsNow": 237,
         "pointsInWindow": 7,
         "rankBeforeWindow": 20,
         "rankChange": 0,
@@ -1193,11 +1193,11 @@
       },
       {
         "name": "The Moka",
-        "rankNow": 23,
+        "rankNow": 24,
         "totalPointsNow": 231,
         "pointsInWindow": 7,
         "rankBeforeWindow": 29,
-        "rankChange": 6,
+        "rankChange": 5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1270,7 +1270,7 @@
       {
         "name": "Sipolovic",
         "rankNow": 29,
-        "totalPointsNow": 222,
+        "totalPointsNow": 224,
         "pointsInWindow": 7,
         "rankBeforeWindow": 27,
         "rankChange": -2,
@@ -1307,11 +1307,11 @@
       },
       {
         "name": "Shampoo",
-        "rankNow": 32,
-        "totalPointsNow": 218,
+        "rankNow": 30,
+        "totalPointsNow": 222,
         "pointsInWindow": 7,
         "rankBeforeWindow": 32,
-        "rankChange": 0,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1345,11 +1345,11 @@
       },
       {
         "name": "Chica",
-        "rankNow": 34,
-        "totalPointsNow": 215,
+        "rankNow": 35,
+        "totalPointsNow": 217,
         "pointsInWindow": 7,
         "rankBeforeWindow": 33,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1383,11 +1383,11 @@
       },
       {
         "name": "Eski66",
-        "rankNow": 38,
-        "totalPointsNow": 211,
+        "rankNow": 37,
+        "totalPointsNow": 215,
         "pointsInWindow": 7,
         "rankBeforeWindow": 36,
-        "rankChange": -2,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1421,11 +1421,11 @@
       },
       {
         "name": "Repetti",
-        "rankNow": 11,
+        "rankNow": 13,
         "totalPointsNow": 250,
         "pointsInWindow": 6,
         "rankBeforeWindow": 4,
-        "rankChange": -7,
+        "rankChange": -9,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -1460,7 +1460,7 @@
       {
         "name": "Sanukka",
         "rankNow": 40,
-        "totalPointsNow": 207,
+        "totalPointsNow": 209,
         "pointsInWindow": 6,
         "rankBeforeWindow": 41,
         "rankChange": 1,
@@ -1497,11 +1497,11 @@
       },
       {
         "name": "Tero H",
-        "rankNow": 3,
+        "rankNow": 4,
         "totalPointsNow": 258,
         "pointsInWindow": 5,
         "rankBeforeWindow": 2,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1535,11 +1535,11 @@
       },
       {
         "name": "Minkário de Souza Faria",
-        "rankNow": 29,
+        "rankNow": 30,
         "totalPointsNow": 222,
         "pointsInWindow": 5,
         "rankBeforeWindow": 27,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1573,11 +1573,11 @@
       },
       {
         "name": "PoHan Pullistus",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 212,
         "pointsInWindow": 5,
         "rankBeforeWindow": 35,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1612,7 +1612,7 @@
       {
         "name": "Tommy Favorite",
         "rankNow": 45,
-        "totalPointsNow": 193,
+        "totalPointsNow": 195,
         "pointsInWindow": 5,
         "rankBeforeWindow": 44,
         "rankChange": -1,
@@ -1648,47 +1648,9 @@
         ]
       },
       {
-        "name": "Mike Salmon",
-        "rankNow": 11,
-        "totalPointsNow": 250,
-        "pointsInWindow": 4,
-        "rankBeforeWindow": 5,
-        "rankChange": -6,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 72,
-            "team1": "Kongon DR",
-            "team2": "Uzbekistan",
-            "resultText": "3-1",
-            "predictedResultText": "1-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 69,
-            "team1": "Algeria",
-            "team2": "Itävalta",
-            "resultText": "3-3",
-            "predictedResultText": "0-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 70,
-            "team1": "Jordania",
-            "team2": "Argentiina",
-            "resultText": "1-3",
-            "predictedResultText": "0-2",
-            "points": 4,
-            "exactResult": false
-          }
-        ]
-      },
-      {
         "name": "Temezotti",
         "rankNow": 11,
-        "totalPointsNow": 250,
+        "totalPointsNow": 252,
         "pointsInWindow": 4,
         "rankBeforeWindow": 14,
         "rankChange": 3,
@@ -1724,12 +1686,50 @@
         ]
       },
       {
+        "name": "Mike Salmon",
+        "rankNow": 13,
+        "totalPointsNow": 250,
+        "pointsInWindow": 4,
+        "rankBeforeWindow": 5,
+        "rankChange": -8,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 72,
+            "team1": "Kongon DR",
+            "team2": "Uzbekistan",
+            "resultText": "3-1",
+            "predictedResultText": "1-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 69,
+            "team1": "Algeria",
+            "team2": "Itävalta",
+            "resultText": "3-3",
+            "predictedResultText": "0-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 70,
+            "team1": "Jordania",
+            "team2": "Argentiina",
+            "resultText": "1-3",
+            "predictedResultText": "0-2",
+            "points": 4,
+            "exactResult": false
+          }
+        ]
+      },
+      {
         "name": "werner strandhügel",
-        "rankNow": 20,
+        "rankNow": 21,
         "totalPointsNow": 235,
         "pointsInWindow": 4,
         "rankBeforeWindow": 19,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1763,11 +1763,11 @@
       },
       {
         "name": "Carey Lily",
-        "rankNow": 23,
+        "rankNow": 24,
         "totalPointsNow": 231,
         "pointsInWindow": 4,
         "rankBeforeWindow": 23,
-        "rankChange": 0,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1839,11 +1839,11 @@
       },
       {
         "name": "Heinomar",
-        "rankNow": 33,
-        "totalPointsNow": 216,
+        "rankNow": 34,
+        "totalPointsNow": 218,
         "pointsInWindow": 4,
         "rankBeforeWindow": 31,
-        "rankChange": -2,
+        "rankChange": -3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1878,7 +1878,7 @@
       {
         "name": "Nipa",
         "rankNow": 43,
-        "totalPointsNow": 200,
+        "totalPointsNow": 202,
         "pointsInWindow": 4,
         "rankBeforeWindow": 42,
         "rankChange": -1,
@@ -1915,11 +1915,11 @@
       },
       {
         "name": "Tuna",
-        "rankNow": 46,
-        "totalPointsNow": 191,
+        "rankNow": 45,
+        "totalPointsNow": 195,
         "pointsInWindow": 4,
         "rankBeforeWindow": 45,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -1953,11 +1953,11 @@
       },
       {
         "name": "Ian Rush",
-        "rankNow": 46,
-        "totalPointsNow": 191,
+        "rankNow": 45,
+        "totalPointsNow": 195,
         "pointsInWindow": 4,
         "rankBeforeWindow": 45,
-        "rankChange": -1,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2096,16 +2096,9 @@
       {
         "name": "Kiiskiministeri",
         "rankBeforeWindow": 11,
-        "rankNow": 4,
-        "rankChange": 7,
+        "rankNow": 3,
+        "rankChange": 8,
         "pointsInWindow": 10
-      },
-      {
-        "name": "The Moka",
-        "rankBeforeWindow": 29,
-        "rankNow": 23,
-        "rankChange": 6,
-        "pointsInWindow": 7
       },
       {
         "name": "SKA Hänninen",
@@ -2115,33 +2108,40 @@
         "pointsInWindow": 11
       },
       {
-        "name": "Rosaldo",
-        "rankBeforeWindow": 11,
-        "rankNow": 6,
+        "name": "Keto Armstrong",
+        "rankBeforeWindow": 38,
+        "rankNow": 33,
         "rankChange": 5,
-        "pointsInWindow": 11
+        "pointsInWindow": 9
       },
       {
-        "name": "Xhakku",
-        "rankBeforeWindow": 24,
-        "rankNow": 20,
+        "name": "The Moka",
+        "rankBeforeWindow": 29,
+        "rankNow": 24,
+        "rankChange": 5,
+        "pointsInWindow": 7
+      },
+      {
+        "name": "Rosaldo",
+        "rankBeforeWindow": 11,
+        "rankNow": 7,
         "rankChange": 4,
-        "pointsInWindow": 10
+        "pointsInWindow": 11
       }
     ],
     "biggestFallers": [
       {
         "name": "Repetti",
         "rankBeforeWindow": 4,
-        "rankNow": 11,
-        "rankChange": -7,
+        "rankNow": 13,
+        "rankChange": -9,
         "pointsInWindow": 6
       },
       {
         "name": "Mike Salmon",
         "rankBeforeWindow": 5,
-        "rankNow": 11,
-        "rankChange": -6,
+        "rankNow": 13,
+        "rankChange": -8,
         "pointsInWindow": 4
       },
       {
@@ -2152,18 +2152,18 @@
         "pointsInWindow": 4
       },
       {
-        "name": "IlkkuPro75",
-        "rankBeforeWindow": 11,
-        "rankNow": 16,
-        "rankChange": -5,
-        "pointsInWindow": 8
-      },
-      {
         "name": "Heinomar",
         "rankBeforeWindow": 31,
-        "rankNow": 33,
-        "rankChange": -2,
+        "rankNow": 34,
+        "rankChange": -3,
         "pointsInWindow": 4
+      },
+      {
+        "name": "Minkário de Souza Faria",
+        "rankBeforeWindow": 27,
+        "rankNow": 30,
+        "rankChange": -3,
+        "pointsInWindow": 5
       }
     ],
     "zeroPointers": []
@@ -2172,11 +2172,11 @@
     "participantPoints": [
       {
         "name": "Neyney",
-        "rankNow": 4,
+        "rankNow": 6,
         "totalPointsNow": 257,
         "pointsInWindow": 17,
         "rankBeforeWindow": 5,
-        "rankChange": 1,
+        "rankChange": -1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2284,11 +2284,11 @@
       },
       {
         "name": "Keto Armstrong",
-        "rankNow": 34,
-        "totalPointsNow": 215,
+        "rankNow": 33,
+        "totalPointsNow": 219,
         "pointsInWindow": 17,
         "rankBeforeWindow": 40,
-        "rankChange": 6,
+        "rankChange": 7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2340,11 +2340,11 @@
       },
       {
         "name": "Xhakku",
-        "rankNow": 20,
+        "rankNow": 21,
         "totalPointsNow": 235,
         "pointsInWindow": 16,
         "rankBeforeWindow": 25,
-        "rankChange": 5,
+        "rankChange": 4,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -2452,11 +2452,11 @@
       },
       {
         "name": "Pontemon",
-        "rankNow": 6,
-        "totalPointsNow": 254,
+        "rankNow": 4,
+        "totalPointsNow": 258,
         "pointsInWindow": 16,
         "rankBeforeWindow": 12,
-        "rankChange": 6,
+        "rankChange": 8,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2508,11 +2508,11 @@
       },
       {
         "name": "Profeetta Möttönen",
-        "rankNow": 14,
+        "rankNow": 16,
         "totalPointsNow": 249,
         "pointsInWindow": 16,
         "rankBeforeWindow": 17,
-        "rankChange": 3,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2565,7 +2565,7 @@
       {
         "name": "SKA Hänninen",
         "rankNow": 42,
-        "totalPointsNow": 201,
+        "totalPointsNow": 205,
         "pointsInWindow": 15,
         "rankBeforeWindow": 45,
         "rankChange": 3,
@@ -2621,7 +2621,7 @@
       {
         "name": "Joni",
         "rankNow": 20,
-        "totalPointsNow": 235,
+        "totalPointsNow": 237,
         "pointsInWindow": 15,
         "rankBeforeWindow": 20,
         "rankChange": 0,
@@ -2676,11 +2676,11 @@
       },
       {
         "name": "The Moka",
-        "rankNow": 23,
+        "rankNow": 24,
         "totalPointsNow": 231,
         "pointsInWindow": 15,
         "rankBeforeWindow": 29,
-        "rankChange": 6,
+        "rankChange": 5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2732,11 +2732,11 @@
       },
       {
         "name": "IlkkuPro75",
-        "rankNow": 16,
-        "totalPointsNow": 248,
+        "rankNow": 13,
+        "totalPointsNow": 250,
         "pointsInWindow": 14,
         "rankBeforeWindow": 13,
-        "rankChange": -3,
+        "rankChange": 0,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -2788,11 +2788,11 @@
       },
       {
         "name": "Rosaldo",
-        "rankNow": 6,
-        "totalPointsNow": 254,
+        "rankNow": 7,
+        "totalPointsNow": 256,
         "pointsInWindow": 14,
         "rankBeforeWindow": 5,
-        "rankChange": -1,
+        "rankChange": -2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -2845,7 +2845,7 @@
       {
         "name": "Agueero",
         "rankNow": 8,
-        "totalPointsNow": 253,
+        "totalPointsNow": 255,
         "pointsInWindow": 14,
         "rankBeforeWindow": 8,
         "rankChange": 0,
@@ -2901,7 +2901,7 @@
       {
         "name": "Sipolovic",
         "rankNow": 29,
-        "totalPointsNow": 222,
+        "totalPointsNow": 224,
         "pointsInWindow": 13,
         "rankBeforeWindow": 28,
         "rankChange": -1,
@@ -2956,11 +2956,11 @@
       },
       {
         "name": "Kiiskiministeri",
-        "rankNow": 4,
-        "totalPointsNow": 257,
+        "rankNow": 3,
+        "totalPointsNow": 261,
         "pointsInWindow": 13,
         "rankBeforeWindow": 5,
-        "rankChange": 1,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3012,11 +3012,11 @@
       },
       {
         "name": "Suomaldinho",
-        "rankNow": 25,
-        "totalPointsNow": 229,
+        "rankNow": 23,
+        "totalPointsNow": 233,
         "pointsInWindow": 13,
         "rankBeforeWindow": 23,
-        "rankChange": -2,
+        "rankChange": 0,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3068,11 +3068,11 @@
       },
       {
         "name": "Repetti",
-        "rankNow": 11,
+        "rankNow": 13,
         "totalPointsNow": 250,
         "pointsInWindow": 12,
         "rankBeforeWindow": 9,
-        "rankChange": -2,
+        "rankChange": -4,
         "exactResultsInWindow": 2,
         "matchPoints": [
           {
@@ -3125,7 +3125,7 @@
       {
         "name": "Jossu",
         "rankNow": 8,
-        "totalPointsNow": 253,
+        "totalPointsNow": 255,
         "pointsInWindow": 12,
         "rankBeforeWindow": 11,
         "rankChange": 3,
@@ -3181,7 +3181,7 @@
       {
         "name": "Temezotti",
         "rankNow": 11,
-        "totalPointsNow": 250,
+        "totalPointsNow": 252,
         "pointsInWindow": 12,
         "rankBeforeWindow": 13,
         "rankChange": 2,
@@ -3236,11 +3236,11 @@
       },
       {
         "name": "Max",
-        "rankNow": 14,
-        "totalPointsNow": 249,
+        "rankNow": 12,
+        "totalPointsNow": 251,
         "pointsInWindow": 12,
         "rankBeforeWindow": 15,
-        "rankChange": 1,
+        "rankChange": 3,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3404,11 +3404,11 @@
       },
       {
         "name": "Chica",
-        "rankNow": 34,
-        "totalPointsNow": 215,
+        "rankNow": 35,
+        "totalPointsNow": 217,
         "pointsInWindow": 12,
         "rankBeforeWindow": 36,
-        "rankChange": 2,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3460,11 +3460,11 @@
       },
       {
         "name": "Eski66",
-        "rankNow": 38,
-        "totalPointsNow": 211,
+        "rankNow": 37,
+        "totalPointsNow": 215,
         "pointsInWindow": 12,
         "rankBeforeWindow": 38,
-        "rankChange": 0,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3516,11 +3516,11 @@
       },
       {
         "name": "Tero H",
-        "rankNow": 3,
+        "rankNow": 4,
         "totalPointsNow": 258,
         "pointsInWindow": 11,
         "rankBeforeWindow": 3,
-        "rankChange": 0,
+        "rankChange": -1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3572,11 +3572,11 @@
       },
       {
         "name": "Esko",
-        "rankNow": 18,
+        "rankNow": 19,
         "totalPointsNow": 243,
         "pointsInWindow": 11,
         "rankBeforeWindow": 18,
-        "rankChange": 0,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -3628,11 +3628,11 @@
       },
       {
         "name": "werner strandhügel",
-        "rankNow": 20,
+        "rankNow": 21,
         "totalPointsNow": 235,
         "pointsInWindow": 10,
         "rankBeforeWindow": 22,
-        "rankChange": 2,
+        "rankChange": 1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3740,11 +3740,11 @@
       },
       {
         "name": "Tuna",
-        "rankNow": 46,
-        "totalPointsNow": 191,
+        "rankNow": 45,
+        "totalPointsNow": 195,
         "pointsInWindow": 10,
         "rankBeforeWindow": 46,
-        "rankChange": 0,
+        "rankChange": 1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3796,11 +3796,11 @@
       },
       {
         "name": "Ian Rush",
-        "rankNow": 46,
-        "totalPointsNow": 191,
+        "rankNow": 45,
+        "totalPointsNow": 195,
         "pointsInWindow": 10,
         "rankBeforeWindow": 46,
-        "rankChange": 0,
+        "rankChange": 1,
         "exactResultsInWindow": 1,
         "matchPoints": [
           {
@@ -3851,9 +3851,65 @@
         ]
       },
       {
+        "name": "Tomas Brolin",
+        "rankNow": 17,
+        "totalPointsNow": 246,
+        "pointsInWindow": 10,
+        "rankBeforeWindow": 18,
+        "rankChange": 1,
+        "exactResultsInWindow": 0,
+        "matchPoints": [
+          {
+            "matchNr": 68,
+            "team1": "Kroatia",
+            "team2": "Ghana",
+            "resultText": "2-1",
+            "predictedResultText": "1-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 71,
+            "team1": "Kolumbia",
+            "team2": "Portugali",
+            "resultText": "0-0",
+            "predictedResultText": "2-1",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 72,
+            "team1": "Kongon DR",
+            "team2": "Uzbekistan",
+            "resultText": "3-1",
+            "predictedResultText": "2-1",
+            "points": 5,
+            "exactResult": false
+          },
+          {
+            "matchNr": 69,
+            "team1": "Algeria",
+            "team2": "Itävalta",
+            "resultText": "3-3",
+            "predictedResultText": "0-2",
+            "points": 0,
+            "exactResult": false
+          },
+          {
+            "matchNr": 70,
+            "team1": "Jordania",
+            "team2": "Argentiina",
+            "resultText": "1-3",
+            "predictedResultText": "0-3",
+            "points": 5,
+            "exactResult": false
+          }
+        ]
+      },
+      {
         "name": "Temez",
         "rankNow": 17,
-        "totalPointsNow": 244,
+        "totalPointsNow": 246,
         "pointsInWindow": 10,
         "rankBeforeWindow": 16,
         "rankChange": -1,
@@ -3907,68 +3963,12 @@
         ]
       },
       {
-        "name": "Tomas Brolin",
-        "rankNow": 19,
-        "totalPointsNow": 242,
-        "pointsInWindow": 10,
-        "rankBeforeWindow": 18,
-        "rankChange": -1,
-        "exactResultsInWindow": 0,
-        "matchPoints": [
-          {
-            "matchNr": 68,
-            "team1": "Kroatia",
-            "team2": "Ghana",
-            "resultText": "2-1",
-            "predictedResultText": "1-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 71,
-            "team1": "Kolumbia",
-            "team2": "Portugali",
-            "resultText": "0-0",
-            "predictedResultText": "2-1",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 72,
-            "team1": "Kongon DR",
-            "team2": "Uzbekistan",
-            "resultText": "3-1",
-            "predictedResultText": "2-1",
-            "points": 5,
-            "exactResult": false
-          },
-          {
-            "matchNr": 69,
-            "team1": "Algeria",
-            "team2": "Itävalta",
-            "resultText": "3-3",
-            "predictedResultText": "0-2",
-            "points": 0,
-            "exactResult": false
-          },
-          {
-            "matchNr": 70,
-            "team1": "Jordania",
-            "team2": "Argentiina",
-            "resultText": "1-3",
-            "predictedResultText": "0-3",
-            "points": 5,
-            "exactResult": false
-          }
-        ]
-      },
-      {
         "name": "Minkário de Souza Faria",
-        "rankNow": 29,
+        "rankNow": 30,
         "totalPointsNow": 222,
         "pointsInWindow": 10,
         "rankBeforeWindow": 26,
-        "rankChange": -3,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4020,11 +4020,11 @@
       },
       {
         "name": "Teo ja Noel",
-        "rankNow": 31,
-        "totalPointsNow": 219,
+        "rankNow": 32,
+        "totalPointsNow": 221,
         "pointsInWindow": 10,
         "rankBeforeWindow": 33,
-        "rankChange": 2,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4076,11 +4076,11 @@
       },
       {
         "name": "PoHan Pullistus",
-        "rankNow": 37,
+        "rankNow": 38,
         "totalPointsNow": 212,
         "pointsInWindow": 10,
         "rankBeforeWindow": 37,
-        "rankChange": 0,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4188,11 +4188,11 @@
       },
       {
         "name": "Carey Lily",
-        "rankNow": 23,
+        "rankNow": 24,
         "totalPointsNow": 231,
         "pointsInWindow": 9,
         "rankBeforeWindow": 26,
-        "rankChange": 3,
+        "rankChange": 2,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4245,7 +4245,7 @@
       {
         "name": "Tommy Favorite",
         "rankNow": 45,
-        "totalPointsNow": 193,
+        "totalPointsNow": 195,
         "pointsInWindow": 9,
         "rankBeforeWindow": 44,
         "rankChange": -1,
@@ -4300,11 +4300,11 @@
       },
       {
         "name": "Drent",
-        "rankNow": 8,
+        "rankNow": 10,
         "totalPointsNow": 253,
         "pointsInWindow": 8,
         "rankBeforeWindow": 4,
-        "rankChange": -4,
+        "rankChange": -6,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4356,11 +4356,11 @@
       },
       {
         "name": "Mike Salmon",
-        "rankNow": 11,
+        "rankNow": 13,
         "totalPointsNow": 250,
         "pointsInWindow": 8,
         "rankBeforeWindow": 9,
-        "rankChange": -2,
+        "rankChange": -4,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4412,11 +4412,11 @@
       },
       {
         "name": "Ibaldo de Lima",
-        "rankNow": 36,
-        "totalPointsNow": 213,
+        "rankNow": 35,
+        "totalPointsNow": 217,
         "pointsInWindow": 8,
         "rankBeforeWindow": 34,
-        "rankChange": -2,
+        "rankChange": -1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4468,11 +4468,11 @@
       },
       {
         "name": "Pauli Koponen",
-        "rankNow": 40,
+        "rankNow": 41,
         "totalPointsNow": 207,
         "pointsInWindow": 8,
         "rankBeforeWindow": 34,
-        "rankChange": -6,
+        "rankChange": -7,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4525,7 +4525,7 @@
       {
         "name": "Johnny Rotten",
         "rankNow": 2,
-        "totalPointsNow": 264,
+        "totalPointsNow": 266,
         "pointsInWindow": 7,
         "rankBeforeWindow": 1,
         "rankChange": -1,
@@ -4580,11 +4580,11 @@
       },
       {
         "name": "Shampoo",
-        "rankNow": 32,
-        "totalPointsNow": 218,
+        "rankNow": 30,
+        "totalPointsNow": 222,
         "pointsInWindow": 7,
         "rankBeforeWindow": 31,
-        "rankChange": -1,
+        "rankChange": 1,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4693,7 +4693,7 @@
       {
         "name": "Sanukka",
         "rankNow": 40,
-        "totalPointsNow": 207,
+        "totalPointsNow": 209,
         "pointsInWindow": 6,
         "rankBeforeWindow": 41,
         "rankChange": 1,
@@ -4748,11 +4748,11 @@
       },
       {
         "name": "Heinomar",
-        "rankNow": 33,
-        "totalPointsNow": 216,
+        "rankNow": 34,
+        "totalPointsNow": 218,
         "pointsInWindow": 4,
         "rankBeforeWindow": 29,
-        "rankChange": -4,
+        "rankChange": -5,
         "exactResultsInWindow": 0,
         "matchPoints": [
           {
@@ -4805,7 +4805,7 @@
       {
         "name": "Nipa",
         "rankNow": 43,
-        "totalPointsNow": 200,
+        "totalPointsNow": 202,
         "pointsInWindow": 4,
         "rankBeforeWindow": 43,
         "rankChange": 0,
@@ -4896,35 +4896,35 @@
       {
         "name": "Johnny Rotten",
         "rank": 2,
-        "points": 264,
-        "pointsBehindLeader": 4
+        "points": 266,
+        "pointsBehindLeader": 2
+      },
+      {
+        "name": "Kiiskiministeri",
+        "rank": 3,
+        "points": 261,
+        "pointsBehindLeader": 7
       },
       {
         "name": "Tero H",
-        "rank": 3,
+        "rank": 4,
+        "points": 258,
+        "pointsBehindLeader": 10
+      },
+      {
+        "name": "Pontemon",
+        "rank": 4,
         "points": 258,
         "pointsBehindLeader": 10
       },
       {
         "name": "Neyney",
-        "rank": 4,
-        "points": 257,
-        "pointsBehindLeader": 11
-      },
-      {
-        "name": "Kiiskiministeri",
-        "rank": 4,
-        "points": 257,
-        "pointsBehindLeader": 11
-      },
-      {
-        "name": "Rosaldo",
         "rank": 6,
-        "points": 254,
-        "pointsBehindLeader": 14
+        "points": 257,
+        "pointsBehindLeader": 11
       }
     ],
-    "tightTopComment": "Johtaja pitää 4 pisteen eron seuraavaan.",
-    "suggestedFinnishSummary": "Koko kisan kärjessä on Ice Cold (268p). Lähimpänä haastajana on Johnny Rotten (264p, eroa vain 4p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt SKA Hänninen keräten 11p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Kiiskiministeri (+7 sijaa). Eniten sijoitustaan menetti Repetti (-7 sijaa). Täydellisiä 6 pisteen osumia saivat: SKA Hänninen (Jordania–Argentiina veikkaus 1-3), Xhakku (Kongon DR–Uzbekistan veikkaus 3-1), LegendaryLebu (Jordania–Argentiina veikkaus 1-3)."
+    "tightTopComment": "Kärki on erittäin tiukka, eroa vain 2 pistettä.",
+    "suggestedFinnishSummary": "Koko kisan kärjessä on Ice Cold (268p). Lähimpänä haastajana on Johnny Rotten (266p, eroa vain 2p). Viimeisen 3 ottelun aikana parasta tahtia on pitänyt SKA Hänninen keräten 11p. Suurin nousija sarjataulukossa viimeisen 3 ottelun aikana on ollut Kiiskiministeri (+8 sijaa). Eniten sijoitustaan menetti Repetti (-9 sijaa). Täydellisiä 6 pisteen osumia saivat: SKA Hänninen (Jordania–Argentiina veikkaus 1-3), Xhakku (Kongon DR–Uzbekistan veikkaus 3-1), LegendaryLebu (Jordania–Argentiina veikkaus 1-3)."
   }
 }

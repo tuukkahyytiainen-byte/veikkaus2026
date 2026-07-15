@@ -81,6 +81,7 @@
 70: 
 71: 
 72: 
+101: 0 - 2
 
 # ==========================================
 # 2. LOHKOJEN LOPULLISET JÄRJESTYKSET
@@ -103,5 +104,6 @@ Lohko L:
 # 3. MITALIPELIT JA FINALISTIT
 # Syötä joukkueet pilkulla erotettuna. Järjestyksellä ei ole väliä.
 # ==========================================
-Finaali: 
-Pronssi: 
+Finaali: Espanja
+Pronssi: Ranska
+
