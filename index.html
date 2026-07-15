@@ -2191,16 +2191,8 @@
                         <!-- Välieräsimulaattori -->
                         <div class="glass-card" style="padding: 1.25rem; background: rgba(30, 41, 59, 0.4); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 0;">
                             <h3 style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--primary);"></i> Välieräsimulaattori</h3>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.75rem;">Simuloi välierien voittajia nähdäksesi niiden vaikutuksen veikkaajien pisteisiin.</p>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.75rem;">Simuloi toisen välierän voittajaa nähdäksesi sen vaikutuksen veikkaajien pisteisiin.</p>
                             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                                <div>
-                                    <label style="font-size: 0.75rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 0.25rem;">Välierä 1: Ranska – Espanja</label>
-                                    <select id="sim-semi-1" class="player-dropdown" onchange="runFinalsSimulation()" style="width: 100%; background: rgba(15, 23, 42, 0.6); padding: 0.35rem 0.5rem; font-size: 0.85rem; border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff;">
-                                        <option value="none" selected>Ei vielä pelattu (todellinen tilanne)</option>
-                                        <option value="ranska">Ranska finaaliin, Espanja pronssipeliin</option>
-                                        <option value="espanja">Espanja finaaliin, Ranska pronssipeliin</option>
-                                    </select>
-                                </div>
                                 <div>
                                     <label style="font-size: 0.75rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 0.25rem;">Välierä 2: Englanti – Argentiina</label>
                                     <select id="sim-semi-2" class="player-dropdown" onchange="runFinalsSimulation()" style="width: 100%; background: rgba(15, 23, 42, 0.6); padding: 0.35rem 0.5rem; font-size: 0.85rem; border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff;">
@@ -3649,7 +3641,7 @@
             populatePlayerDropdowns();
 
             // Run simulation (which computes leaderboard and renders final view & leaderboard)
-            if (document.getElementById('sim-semi-1')) {
+            if (document.getElementById('sim-semi-2')) {
                 runFinalsSimulation();
             } else {
                 players = calculateLeaderboard(matches, actualStandings, activeFinalists, active34);
@@ -4499,31 +4491,18 @@
             const semi1Badge = document.getElementById('semi-1-badge');
             const semi1Display = document.getElementById('semi-1-match-display');
             if (semi1Badge && semi1Display) {
-                const s1 = document.getElementById('sim-semi-1').value;
-                if (s1 === 'ranska') {
-                    semi1Display.innerHTML = `${getFlag('Ranska')} <strong>Ranska</strong> – Espanja ${getFlag('Espanja')}`;
-                    semi1Badge.innerHTML = 'Ranska finaaliin';
-                    semi1Badge.style.background = 'rgba(16, 185, 129, 0.2)';
-                    semi1Badge.style.color = 'var(--primary)';
-                } else if (s1 === 'espanja') {
-                    semi1Display.innerHTML = `${getFlag('Ranska')} Ranska – <strong>Espanja</strong> ${getFlag('Espanja')}`;
-                    semi1Badge.innerHTML = 'Espanja finaaliin';
-                    semi1Badge.style.background = 'rgba(16, 185, 129, 0.2)';
-                    semi1Badge.style.color = 'var(--primary)';
+                // Check if actually played
+                const hasRealResult = actualFinalists.includes('Espanja') || actualFinalists.includes('Ranska');
+                if (hasRealResult) {
+                    semi1Display.innerHTML = `${getFlag('Ranska')} Ranska <strong>0 – 2</strong> <strong>Espanja</strong> ${getFlag('Espanja')}`;
+                    semi1Badge.innerHTML = 'Pelattu (0-2)';
+                    semi1Badge.style.background = 'rgba(255, 255, 255, 0.05)';
+                    semi1Badge.style.color = 'var(--text-secondary)';
                 } else {
-                    // Check if actually played
-                    const hasRealResult = actualFinalists.includes('Espanja') || actualFinalists.includes('Ranska');
-                    if (hasRealResult) {
-                        semi1Display.innerHTML = `${getFlag('Ranska')} Ranska <strong>0 – 2</strong> <strong>Espanja</strong> ${getFlag('Espanja')}`;
-                        semi1Badge.innerHTML = 'Pelattu (0-2)';
-                        semi1Badge.style.background = 'rgba(255, 255, 255, 0.05)';
-                        semi1Badge.style.color = 'var(--text-secondary)';
-                    } else {
-                        semi1Display.innerHTML = `${getFlag('Ranska')} Ranska – Espanja ${getFlag('Espanja')}`;
-                        semi1Badge.innerHTML = 'Pelataan tänään';
-                        semi1Badge.style.background = 'rgba(245, 158, 11, 0.15)';
-                        semi1Badge.style.color = 'var(--accent-gold)';
-                    }
+                    semi1Display.innerHTML = `${getFlag('Ranska')} Ranska – Espanja ${getFlag('Espanja')}`;
+                    semi1Badge.innerHTML = 'Pelataan tänään';
+                    semi1Badge.style.background = 'rgba(245, 158, 11, 0.15)';
+                    semi1Badge.style.color = 'var(--accent-gold)';
                 }
             }
 
@@ -4629,19 +4608,10 @@
         }
 
         function runFinalsSimulation() {
-            const semi1 = document.getElementById('sim-semi-1').value;
             const semi2 = document.getElementById('sim-semi-2').value;
 
             activeFinalists = [...actualFinalists];
             active34 = [...actual34];
-
-            if (semi1 === 'ranska') {
-                if (!activeFinalists.includes('Ranska')) activeFinalists.push('Ranska');
-                if (!active34.includes('Espanja')) active34.push('Espanja');
-            } else if (semi1 === 'espanja') {
-                if (!activeFinalists.includes('Espanja')) activeFinalists.push('Espanja');
-                if (!active34.includes('Ranska')) active34.push('Ranska');
-            }
 
             if (semi2 === 'englanti') {
                 if (!activeFinalists.includes('Englanti')) activeFinalists.push('Englanti');
