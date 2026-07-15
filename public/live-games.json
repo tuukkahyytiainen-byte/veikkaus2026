@@ -1729,7 +1729,7 @@
       "matchday": "1",
       "local_date": "07/15/2026 19:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "semi_finals",
       "home_team_name_en": "England",
       "away_team_name_en": "Argentina"
