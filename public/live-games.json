@@ -1737,7 +1737,7 @@
     {
       "id": "103",
       "home_team_id": "773",
-      "away_team_id": "null",
+      "away_team_id": "770",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1749,12 +1749,12 @@
       "time_elapsed": "notstarted",
       "type": "third_place",
       "home_team_name_en": "France",
-      "away_team_name_en": "null"
+      "away_team_name_en": "England"
     },
     {
       "id": "104",
       "home_team_id": "760",
-      "away_team_id": "null",
+      "away_team_id": "762",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1766,7 +1766,7 @@
       "time_elapsed": "notstarted",
       "type": "final",
       "home_team_name_en": "Spain",
-      "away_team_name_en": "null"
+      "away_team_name_en": "Argentina"
     }
   ],
   "groups": [
