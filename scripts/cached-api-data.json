@@ -1,5 +1,5 @@
 {
-  "footballDataLastFetched": 1784092345608,
+  "footballDataLastFetched": 1784186730343,
   "apiGames": [
     {
       "id": "1",
@@ -1722,23 +1722,23 @@
       "id": "102",
       "home_team_id": "770",
       "away_team_id": "762",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "1",
+      "away_score": "2",
       "home_scorers": "null",
       "away_scorers": "null",
       "group": "",
       "matchday": "1",
       "local_date": "07/15/2026 22:00",
-      "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "finished": "TRUE",
+      "time_elapsed": "finished",
       "type": "semi_finals",
       "home_team_name_en": "England",
       "away_team_name_en": "Argentina"
     },
     {
       "id": "103",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "773",
+      "away_team_id": "770",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1749,13 +1749,13 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "third_place",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "France",
+      "away_team_name_en": "England"
     },
     {
       "id": "104",
-      "home_team_id": "null",
-      "away_team_id": "null",
+      "home_team_id": "760",
+      "away_team_id": "762",
       "home_score": "0",
       "away_score": "0",
       "home_scorers": "null",
@@ -1766,8 +1766,8 @@
       "finished": "FALSE",
       "time_elapsed": "notstarted",
       "type": "final",
-      "home_team_name_en": "null",
-      "away_team_name_en": "null"
+      "home_team_name_en": "Spain",
+      "away_team_name_en": "Argentina"
     }
   ],
   "apiGroups": [
