@@ -1763,7 +1763,7 @@
       "matchday": "1",
       "local_date": "07/19/2026 19:00",
       "finished": "FALSE",
-      "time_elapsed": "notstarted",
+      "time_elapsed": "live",
       "type": "final",
       "home_team_name_en": "Spain",
       "away_team_name_en": "Argentina"
